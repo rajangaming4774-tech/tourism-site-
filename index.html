@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>India Heritage Map — 2000 BC to 2026</title>
+  <meta name="description" content="Interactive map of India's heritage across 4,000 years: rock paintings, temple architecture, ASI &amp; UNESCO sites, excavations, ruling dynasties, and the post-1947 record." />
+  <meta property="og:title" content="India Heritage Map — 2000 BC to 2026" />
+  <meta property="og:description" content="Slide through 4,000 years of India: 198 heritage sites, 149 ruling powers, and the year-by-year record since 1947." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/vendor/maplibre-gl.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="splash" class="splash" role="dialog" aria-modal="true" aria-labelledby="splash-title" aria-describedby="splash-sub">
+    <svg class="splash-scene" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <circle class="ss-star" cx="220" cy="140" r="3" style="animation-delay:0s" />
+      <circle class="ss-star" cx="1380" cy="110" r="2.5" style="animation-delay:.6s" />
+      <circle class="ss-star" cx="500" cy="90" r="2" style="animation-delay:1.4s" />
+      <circle class="ss-star" cx="1120" cy="200" r="3" style="animation-delay:2.1s" />
+      <circle class="ss-star" cx="1500" cy="300" r="2" style="animation-delay:.9s" />
+      <circle class="ss-star" cx="120" cy="330" r="2.5" style="animation-delay:1.8s" />
+      <circle class="ss-star" cx="900" cy="70" r="2" style="animation-delay:2.6s" />
+      <circle class="ss-star" cx="1250" cy="420" r="2.5" style="animation-delay:.3s" />
+      <circle class="ss-star" cx="330" cy="470" r="2" style="animation-delay:1.2s" />
+      <circle class="ss-glow-halo" cx="800" cy="345" r="90" />
+      <polygon class="ss-silhouette" points="300,900 460,610 620,900" />
+      <polygon class="ss-silhouette" points="980,900 1140,610 1300,900" />
+      <rect class="ss-silhouette" x="620" y="760" width="360" height="140" />
+      <rect class="ss-silhouette" x="660" y="660" width="280" height="100" />
+      <rect class="ss-silhouette" x="700" y="570" width="200" height="90" />
+      <rect class="ss-silhouette" x="730" y="490" width="140" height="80" />
+      <rect class="ss-silhouette" x="755" y="420" width="90" height="70" />
+      <rect class="ss-silhouette" x="775" y="360" width="50" height="60" />
+      <circle class="ss-apex-dot" cx="800" cy="345" r="15" />
+    </svg>
+    <div class="splash-scrim" aria-hidden="true"></div>
+    <div class="splash-content">
+      <svg class="splash-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="40" height="40" aria-hidden="true">
+        <path d="M12 2 L19 8 V21 H5 V8 Z" /><path d="M9 21 V13 H15 V21" /><path d="M12 2 V5" />
+      </svg>
+      <h2 class="splash-title" id="splash-title">India Heritage Map</h2>
+      <p class="splash-sub" id="splash-sub">Slide through 4,000 years — rock paintings, temples,<br />monuments and the digs that found them.</p>
+      <button id="splash-cta" class="splash-cta" disabled>Preparing the map…</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M12 2 L19 8 V21 H5 V8 Z" /><path d="M9 21 V13 H15 V21" /><path d="M12 2 V5" />
+      </svg>
+      <div>
+        <h1>India Heritage Map</h1>
+        <p class="tagline">4,000 years of rock art, temples, monuments &amp; excavations</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true" class="search-icon"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" type="search" placeholder="Search sites &amp; dynasties…" aria-label="Search sites and dynasties" autocomplete="off" />
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+      <button id="browse-btn" class="hdr-btn" type="button" aria-pressed="false">Explore</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <div id="map" role="application" aria-label="Interactive map of Indian heritage sites"></div>
+
+    <!-- Layer toggles: one card, not five chips -->
+    <div class="layer-panel" role="group" aria-label="Map layers">
+      <div class="lp-title">Layers</div>
+      <button class="lrow" data-layer="rock_art" aria-pressed="true" type="button">
+        <span class="dot dot-rock"></span>Rock art
+      </button>
+      <button class="lrow" data-layer="temple" aria-pressed="true" type="button">
+        <span class="dot dot-temple"></span>Temples
+      </button>
+      <button class="lrow" data-layer="asi_site" aria-pressed="true" type="button">
+        <span class="dot dot-asi"></span>ASI / UNESCO
+      </button>
+      <button class="lrow" data-layer="excavation" aria-pressed="true" type="button">
+        <span class="dot dot-dig"></span>Excavations
+      </button>
+      <button id="kingdoms-chip" class="lrow" aria-pressed="true" type="button" hidden>
+        <span class="dot dot-kingdom"></span>Kingdoms
+      </button>
+    </div>
+
+    <!-- Who-ruled legend: collapsed to one pill until expanded -->
+    <div id="kingdom-legend" class="kingdom-legend" aria-label="Ruling powers in this period" hidden>
+      <button id="legend-toggle" class="k-pill k-toggle" type="button" aria-expanded="false"></button>
+      <div id="legend-pills" class="legend-pills" hidden></div>
+    </div>
+
+    <!-- 3D terrain toggle -->
+    <button id="terrain-btn" class="terrain-btn" type="button" aria-pressed="false" aria-label="Toggle 3D terrain" title="3D terrain">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="m3 18 6-9 4 6 3-4 5 7z"/><path d="M8.5 10.5 10 12"/></svg>
+    </button>
+
+    <!-- Only on screen while the building massing is: it is not measurement -->
+    <p id="massing-note" class="massing-note" hidden>
+      Buildings are <strong>massing, not measurement</strong> — tagged heights where
+      OpenStreetMap has them, estimates where it doesn't. Mahabalipuram's monuments are the
+      exception: each one carries a published height.
+    </p>
+
+    <!-- Opt-in entry to the post-1947 record -->
+    <button id="records-btn" class="records-btn" type="button" hidden aria-pressed="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+      The 1947–2026 record
+    </button>
+
+    <!-- Detail panel -->
+    <aside id="detail-panel" class="detail-panel" hidden aria-label="Site details">
+      <button id="detail-close" class="detail-close" aria-label="Close details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div id="detail-content"></div>
+    </aside>
+
+    <!-- Modern track (1947-2026) -->
+    <aside id="records-panel" class="records-panel" hidden aria-label="Post-1947 heritage record">
+      <div class="records-head">
+        <h2>The record since 1947</h2>
+        <p class="records-sub">Laws, UNESCO inscriptions, excavations &amp; discoveries, year by year</p>
+        <div class="year-scrub">
+          <input id="year-slider" type="range" min="1947" max="2026" step="1" value="1947" aria-label="Scrub to a year" />
+          <span id="year-label" class="year-label">1947</span>
+        </div>
+      </div>
+      <div id="records-list" class="records-list"></div>
+    </aside>
+
+    <!-- Explore: trails + accessible index of the current period -->
+    <aside id="browse-panel" class="records-panel browse-panel" hidden aria-label="Explore sites and trails">
+      <div class="records-head">
+        <h2>Explore</h2>
+        <p class="records-sub" id="browse-sub"></p>
+        <div id="trail-row" class="trail-row" aria-label="Heritage trails"></div>
+      </div>
+      <div id="browse-list" class="records-list"></div>
+    </aside>
+  </main>
+
+  <!-- Time slider -->
+  <section class="timeline" aria-label="Time period selector">
+    <div class="timeline-info">
+      <button id="play-btn" class="play-btn" type="button" aria-label="Play through history" aria-pressed="false">
+        <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <span id="period-label" class="period-label">1800–2026 AD</span>
+      <span id="site-count" class="site-count-inline" aria-live="polite"></span>
+      <button id="period-caption" class="period-caption" type="button" title="Show the full period note" aria-expanded="false"></button>
+    </div>
+    <div class="timeline-slider">
+      <span class="timeline-end">2000 BC</span>
+      <div class="slider-track">
+        <input id="period-slider" type="range" min="0" max="19" step="1" value="19" aria-label="Historical period" />
+        <div id="tick-row" class="tick-row" aria-hidden="true"></div>
+      </div>
+      <span class="timeline-end">2026</span>
+    </div>
+  </section>
+
+  <script src="assets/vendor/maplibre-gl.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

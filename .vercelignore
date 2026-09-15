@@ -1,0 +1,42 @@
+# Reference material, deliberately not deployed.
+#
+# assets/reference/ holds the source photographs the monuments are built FROM —
+# 922 Commons images of the Shore Temple, plus the photogrammetry working set
+# with full-resolution originals. Several gigabytes. Nothing in the site loads
+# any of it (js/wiki-photo.js fetches its photographs from Wikipedia at runtime),
+# so shipping it would mean uploading gigabytes on every deploy to serve nothing.
+#
+# There is a licensing reason too. Most of these are CC BY-SA: publishing them
+# from this domain would be redistribution, and redistribution carries the
+# attribution condition. The credits exist — assets/reference/*/SOURCES.md — but
+# they are not rendered anywhere on the site, so the honest position is not to
+# serve the images at all until they are.
+assets/reference/
+
+# Local build caches for the fetch scripts. Regenerated on demand.
+scripts/.shore-temple-cache.json
+scripts/.shore-temple-survey.json
+
+# The uncompressed original of the monument GLB. Kept in the repo because any
+# re-export must start from it (recompressing already-quantized data stacks the
+# error), but it is 1.6 MB and nothing loads it at runtime.
+assets/models/mamallapuram-monuments.glb.bak
+
+# Two three.js r185 minified files that nothing imports. The live build is the
+# r169 assets/vendor/three.module.js (which is itself minified); these two were
+# measured at 188 KB gzipped TOGETHER against 170 KB for the file in use, so
+# "switching to the min build" would be larger, not smaller, and would need the
+# addons' './three.module.js' specifiers rewritten. Kept for reference, not shipped.
+assets/vendor/three.module.min.js
+assets/vendor/three.core.min.js
+
+# Never loaded at runtime: the superseded penance base GLB (302 KB gz) and a
+# 1.4 MB render preview of the Shore Temple model.
+assets/models/arjunas-penance-base.glb
+assets/models/shore-temple-preview.png
+
+# The uncompressed Shore Temple export (JPEG textures, no vertex normals) that
+# meshopt compression starts from. Kept for the same reason as the monuments
+# .bak — never recompress an already-quantized file — and never served.
+assets/models/shore-temple.glb.bak
+assets/models/pancha-rathas.glb.bak

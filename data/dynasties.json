@@ -1,0 +1,3668 @@
+{
+ "P01": {
+  "polities": [
+   {
+    "name": "Late Harappan (Cemetery H phase, north-western India)",
+    "dynasty": "Harappan / Indus Valley tradition (Late-Localisation era)",
+    "rulers": [],
+    "capital": "Type site: Harappa (Cemetery H); Indian sites: Bara, Ropar, Manda",
+    "states": [
+     "Punjab",
+     "Haryana",
+     "Chandigarh",
+     "Jammu and Kashmir"
+    ],
+    "summary": "As the great Indus cities faded after 1900 BC, their descendants lived on in villages across Punjab and Haryana, burying their dead in painted urns of the distinctive Cemetery H style. Visitors today can see their legacy at Ropar in Punjab and in the hundreds of Late Harappan mounds dotting the Ghaggar (Sarasvati) plain, with Manda in Jammu marking the civilisation's northernmost outpost.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Cemetery_H_culture",
+     "https://www.harappa.com/indus2/180.html"
+    ]
+   },
+   {
+    "name": "Late Harappan of Gujarat (Rangpur / Sorath Harappan)",
+    "dynasty": "Harappan tradition, Rangpur regional phase",
+    "rulers": [],
+    "capital": "Type site: Rangpur (Surendranagar); major sites: Lothal, Rojdi",
+    "states": [
+     "Gujarat"
+    ],
+    "summary": "In Gujarat the Harappan world wound down gently: the dockyard town of Lothal and villages like Rangpur and Rojdi carried on farming millets and making sturdy red pottery long after the big cities declined. Their sites remain among Gujarat's premier archaeological attractions today.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rangpur,_Gujarat_(archaeological_site)",
+     "https://www.harappa.com/indus2/180.html"
+    ]
+   },
+   {
+    "name": "Ochre Coloured Pottery – Copper Hoard culture",
+    "dynasty": "OCP / Copper Hoard tradition",
+    "rulers": [],
+    "capital": "Type site: Sinauli (Baghpat, UP)",
+    "states": [
+     "Uttar Pradesh",
+     "Delhi",
+     "Uttarakhand"
+    ],
+    "summary": "Farmers of the upper Ganga-Yamuna doab left behind fragile ochre-washed pottery and spectacular hoards of copper harpoons, swords and strange anthropomorphic figures. The royal-looking burials with wooden 'chariots' excavated at Sinauli near Delhi belong to this world and have made headlines across India.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ochre_Coloured_Pottery_culture",
+     "https://en.wikipedia.org/wiki/Copper_Hoard_culture"
+    ]
+   },
+   {
+    "name": "Ahar-Banas culture",
+    "dynasty": "Ahar-Banas Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Ahar (Udaipur); major site: Balathal",
+    "states": [
+     "Rajasthan"
+    ],
+    "summary": "Along the Banas river of southern Rajasthan, copper-smelting villagers built stone-and-mud houses and produced striking black-and-red ware pottery, trading with the Harappans to their west. The excavated mound of Ahar sits inside modern Udaipur, and Balathal near it shows some of India's earliest fortified village life.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ahar%E2%80%93Banas_culture"
+    ]
+   },
+   {
+    "name": "Kayatha culture",
+    "dynasty": "Kayatha Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Kayatha (Ujjain district)",
+    "states": [
+     "Madhya Pradesh"
+    ],
+    "summary": "On the Malwa plateau, the Kayatha people (c. 2100-1800 BC) lived in wattle-and-daub huts, kept cattle, and made violet-painted chocolate-brown pottery alongside copper axes and bead necklaces. Their type site lies near Ujjain, later famed in legend as the birthplace of astronomer Varahamihira.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kayatha_culture",
+     "https://en.wikipedia.org/wiki/Chalcolithic"
+    ]
+   },
+   {
+    "name": "Southern Neolithic (ash-mound tradition)",
+    "dynasty": "South Indian Neolithic ash-mound culture",
+    "rulers": [],
+    "capital": "Type site: Sanganakallu (Ballari); ash-mounds at Budihal, Utnur",
+    "states": [
+     "Karnataka",
+     "Andhra Pradesh",
+     "Telangana"
+    ],
+    "summary": "Cattle-herding communities of the Deccan periodically burned vast heaps of cow dung, creating the mysterious 'ash-mounds' that still rise from the Karnataka and Andhra landscape. They ground millets, polished stone axes, and settled granite hilltops like Sanganakallu near Hampi, one of South Asia's largest Neolithic hill settlements.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/South_Asian_Stone_Age",
+     "https://link.springer.com/chapter/10.1007/978-981-97-6207-1_4"
+    ]
+   },
+   {
+    "name": "Eastern Neolithic (Chirand)",
+    "dynasty": "Middle Ganga Neolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Chirand (Saran district, Bihar)",
+    "states": [
+     "Bihar"
+    ],
+    "summary": "At Chirand on the Ganga near Chhapra, some of eastern India's earliest farmers grew rice, wheat and lentils and crafted delicate bone and antler tools from round mud huts. The riverside mound preserves an unbroken story of village life stretching back over four thousand years.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chirand"
+    ]
+   }
+  ]
+ },
+ "P02": {
+  "polities": [
+   {
+    "name": "Late Harappan (Cemetery H phase)",
+    "dynasty": "Harappan tradition, Cemetery H phase",
+    "rulers": [],
+    "capital": "Type site: Harappa (Cemetery H); Indian sites: Bara, Sanghol",
+    "states": [
+     "Punjab",
+     "Haryana",
+     "Chandigarh",
+     "Jammu and Kashmir"
+    ],
+    "summary": "The Cemetery H folk of Punjab and Haryana cremated or urn-buried their dead beneath pottery painted with peacocks and stars, hinting at new beliefs about the afterlife. Their village mounds along the drying Ghaggar-Hakra (Sarasvati) river can still be visited across Haryana, including near Rakhigarhi.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Cemetery_H_culture",
+     "https://www.harappa.com/indus2/180.html"
+    ]
+   },
+   {
+    "name": "Late Harappan of Gujarat (Rangpur phase)",
+    "dynasty": "Harappan tradition, Rangpur regional phase",
+    "rulers": [],
+    "capital": "Type site: Rangpur; major site: Rojdi",
+    "states": [
+     "Gujarat"
+    ],
+    "summary": "Saurashtra's villages thrived on drought-hardy millets as the Harappan urban world receded, developing the glossy Lustrous Red Ware that defines Gujarat's later prehistory. Rangpur and Rojdi show how ordinary farmers kept Harappan craft skills alive for centuries.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rangpur,_Gujarat_(archaeological_site)"
+    ]
+   },
+   {
+    "name": "Ochre Coloured Pottery – Copper Hoard culture",
+    "dynasty": "OCP / Copper Hoard tradition",
+    "rulers": [],
+    "capital": "Type site: Sinauli (Baghpat); hoard sites: Bisauli, Rajpur Parsu",
+    "states": [
+     "Uttar Pradesh",
+     "Delhi",
+     "Uttarakhand"
+    ],
+    "summary": "Over 950 OCP sites blanket the western Ganga plain, where villagers stashed hoards of copper weapons — including the enigmatic 'anthropomorph' figures now displayed in museums in Delhi and Lucknow. A famous hoard from Bahadarabad near Haridwar ties Uttarakhand's Ganga gateway into this copper-rich world.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ochre_Coloured_Pottery_culture",
+     "https://en.wikipedia.org/wiki/Copper_Hoard_culture"
+    ]
+   },
+   {
+    "name": "Ahar-Banas culture",
+    "dynasty": "Ahar-Banas Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Ahar (Udaipur)",
+    "states": [
+     "Rajasthan"
+    ],
+    "summary": "The Ahar-Banas villages of Mewar were at their height, smelting copper from the Aravalli hills and turning out elegant black-and-red bowls. Gilund, another of their towns, even boasted a large parallel-walled public building — a rarity for village India of this age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ahar%E2%80%93Banas_culture"
+    ]
+   },
+   {
+    "name": "Malwa culture (early phase)",
+    "dynasty": "Malwa Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Navdatoli (Maheshwar, Narmada valley)",
+    "states": [
+     "Madhya Pradesh"
+    ],
+    "summary": "Succeeding the Kayatha folk, the Malwa culture spread farming villages across the Narmada valley and Malwa plateau, painting buff pottery with lively animals, dancers and sun symbols. Navdatoli, opposite the temple town of Maheshwar, is one of the largest Chalcolithic villages ever excavated in India.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Malwa_culture"
+    ]
+   },
+   {
+    "name": "Southern Neolithic (ash-mound tradition)",
+    "dynasty": "South Indian Neolithic ash-mound culture",
+    "rulers": [],
+    "capital": "Type site: Sanganakallu; other sites: Brahmagiri, Utnur, Nagarjunakonda region",
+    "states": [
+     "Karnataka",
+     "Andhra Pradesh",
+     "Telangana",
+     "Tamil Nadu"
+    ],
+    "summary": "Deccan herder-farmers expanded southward, carrying their millet-and-cattle way of life into the hills of Tamil Nadu (as at Paiyampalli). Their hilltop villages, ash-mounds and polished stone axes mark South India's first farming societies.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/South_Asian_Stone_Age",
+     "https://ebooks.inflibnet.ac.in/icp02/chapter/87/"
+    ]
+   },
+   {
+    "name": "Eastern Neolithic (Chirand)",
+    "dynasty": "Middle Ganga Neolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Chirand (Saran district, Bihar)",
+    "states": [
+     "Bihar"
+    ],
+    "summary": "Chirand's rice farmers flourished on the fertile Ganga floodplain, their bone tools and terracotta beads showing a self-sufficient village world far from the collapsing Indus cities. The site remains Bihar's window into its deepest agricultural past.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chirand"
+    ]
+   }
+  ]
+ },
+ "P03": {
+  "polities": [
+   {
+    "name": "Early Vedic tribes over Late Harappan substrate",
+    "dynasty": "Early Rigvedic janas (Purus, Bharatas and others) / final Cemetery H",
+    "rulers": [],
+    "capital": "No capital: mobile cattle-keeping clans of the Sapta Sindhu (Punjab-Sarasvati region)",
+    "states": [
+     "Punjab",
+     "Haryana",
+     "Chandigarh",
+     "Himachal Pradesh",
+     "Jammu and Kashmir"
+    ],
+    "summary": "Around this time Sanskrit-speaking pastoral clans — the janas of the Rigveda, such as the Purus and Bharatas — became established in the land of the seven rivers, mingling with the last Cemetery H villagers. They left almost no monuments, but their hymns, composed on these very plains, are the oldest living literature on Earth.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rigveda",
+     "https://en.wikipedia.org/wiki/Cemetery_H_culture"
+    ]
+   },
+   {
+    "name": "Lustrous Red Ware culture (Late Harappan Gujarat)",
+    "dynasty": "Rangpur III / Lustrous Red Ware tradition",
+    "rulers": [],
+    "capital": "Type site: Rangpur (period III)",
+    "states": [
+     "Gujarat"
+    ],
+    "summary": "Gujarat's post-Harappan farmers perfected a beautiful glossy red pottery — Lustrous Red Ware — found from Saurashtra to the Gulf of Khambhat. Their modest villages are the final chapter of the Harappan story in western India.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rangpur,_Gujarat_(archaeological_site)"
+    ]
+   },
+   {
+    "name": "Late OCP – Copper Hoard culture",
+    "dynasty": "OCP / Copper Hoard tradition (late phase)",
+    "rulers": [],
+    "capital": "Hoard sites: Saipai (Etawah), Rajpur Parsu",
+    "states": [
+     "Uttar Pradesh",
+     "Delhi",
+     "Uttarakhand"
+    ],
+    "summary": "The last OCP communities of the doab still deposited copper hoards before their tradition faded around 1500 BC, giving way to new pottery styles. Many of their gleaming harpoons and swords can be seen in the National Museum, New Delhi.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ochre_Coloured_Pottery_culture",
+     "https://en.wikipedia.org/wiki/Copper_Hoard_culture"
+    ]
+   },
+   {
+    "name": "Ahar-Banas culture (late phase)",
+    "dynasty": "Ahar-Banas Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Ahar (Udaipur); major site: Balathal",
+    "states": [
+     "Rajasthan"
+    ],
+    "summary": "The long-lived Ahar-Banas villages entered their final centuries, still working Aravalli copper as their settlements slowly contracted. Udaipur's Ahar mound and its adjoining royal cenotaph complex make an easy half-day heritage stop today.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ahar%E2%80%93Banas_culture"
+    ]
+   },
+   {
+    "name": "Malwa culture",
+    "dynasty": "Malwa Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Navdatoli; Deccan sites: Daimabad, Inamgaon (Malwa phase)",
+    "states": [
+     "Madhya Pradesh",
+     "Maharashtra"
+    ],
+    "summary": "Malwa farmers pushed south across the Tapi into Maharashtra, founding large villages like Daimabad and Inamgaon with granaries, shrines and painted pottery. Daimabad later yielded the famous bronze chariot-and-animals hoard displayed in Mumbai's CSMVS museum.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Malwa_culture",
+     "https://en.wikipedia.org/wiki/Daimabad"
+    ]
+   },
+   {
+    "name": "Southern Neolithic",
+    "dynasty": "South Indian Neolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Sanganakallu; other sites: Brahmagiri, Hallur, Paiyampalli",
+    "states": [
+     "Karnataka",
+     "Andhra Pradesh",
+     "Telangana",
+     "Tamil Nadu"
+    ],
+    "summary": "The Deccan's Neolithic villages matured into sizeable hilltop communities growing native millets and pulses, with the great ash-mound burnings winding down. Sites like Brahmagiri and Hallur would soon witness South India's leap into the Iron Age.",
+    "sources": [
+     "https://ebooks.inflibnet.ac.in/icp02/chapter/87/",
+     "https://www.researchgate.net/publication/273293264"
+    ]
+   },
+   {
+    "name": "Eastern Neolithic–Chalcolithic transition",
+    "dynasty": "Chirand–Pandu Rajar Dhibi tradition",
+    "rulers": [],
+    "capital": "Type sites: Chirand (Bihar), Pandu Rajar Dhibi (West Bengal)",
+    "states": [
+     "Bihar",
+     "West Bengal"
+    ],
+    "summary": "Eastern India's rice villages began adopting copper tools and black-and-red pottery, with Pandu Rajar Dhibi on the Ajay river marking Bengal's earliest known farming settlement. Together these sites trace the dawn of metal-using village life in the eastern Ganga plains.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chirand",
+     "https://en.wikipedia.org/wiki/Pandu_Rajar_Dhibi"
+    ]
+   }
+  ]
+ },
+ "P04": {
+  "polities": [
+   {
+    "name": "Rigvedic tribes (Bharatas, Purus and rival janas)",
+    "dynasty": "Early Vedic (Rigvedic) tribal confederacies",
+    "rulers": [
+     {
+      "name": "Divodasa of the Bharatas (traditional/inferred from Rigveda)",
+      "reign": "c. 14th-13th century BC (traditional)"
+     }
+    ],
+    "capital": "No capital: clan territories along the Sarasvati, Sutlej and Yamuna",
+    "states": [
+     "Punjab",
+     "Haryana",
+     "Chandigarh",
+     "Himachal Pradesh",
+     "Delhi",
+     "Jammu and Kashmir"
+    ],
+    "summary": "Cattle-wealthy Vedic clans now dominated the northwest, their chiefs — like the Bharata king Divodasa remembered in the Rigveda — raiding and sacrificing across the Punjab-Haryana plains. Their world of fire altars, chariots and soma rituals shaped Hindu tradition for all time, though they built in perishable wood and left the land itself as their monument.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rigveda",
+     "https://en.wikipedia.org/wiki/Bharatas_(tribe)"
+    ]
+   },
+   {
+    "name": "Lustrous Red Ware culture",
+    "dynasty": "Rangpur III / Lustrous Red Ware tradition",
+    "rulers": [],
+    "capital": "Type site: Rangpur (period III); site: Prabhas Patan (Somnath)",
+    "states": [
+     "Gujarat"
+    ],
+    "summary": "Gujarat's Lustrous Red Ware villages carried on around Saurashtra's coasts, including at Prabhas Patan beside the later great temple of Somnath. Their glossy pottery is the signature of Gujarat's twilight Bronze Age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rangpur,_Gujarat_(archaeological_site)"
+    ]
+   },
+   {
+    "name": "Malwa culture (final phase)",
+    "dynasty": "Malwa Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Navdatoli (Maheshwar)",
+    "states": [
+     "Madhya Pradesh"
+    ],
+    "summary": "The Malwa villages of the Narmada valley entered their last flourishing, their potters still painting bulls, deer and dancing figures on buff-slipped jars. Visitors to Maheshwar's riverside ghats stand within sight of Navdatoli, their greatest excavated settlement.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Malwa_culture"
+    ]
+   },
+   {
+    "name": "Jorwe culture",
+    "dynasty": "Jorwe Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Jorwe (Ahmadnagar); chief town: Inamgaon",
+    "states": [
+     "Maharashtra"
+    ],
+    "summary": "From about 1400 BC the Jorwe culture spread across almost all of Maharashtra, with Inamgaon growing into a planned farming town complete with an irrigation channel, granaries and a chief's house. Its red-painted pottery and touching urn burials of children are highlights of Pune's Deccan College museum.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Jorwe_culture",
+     "https://en.wikipedia.org/wiki/Inamgaon"
+    ]
+   },
+   {
+    "name": "Ganga Valley Black-and-Red Ware Chalcolithic",
+    "dynasty": "Black-and-Red Ware (pre-PGW) tradition",
+    "rulers": [],
+    "capital": "Type sites: Atranjikhera (UP), Chirand (Bihar), Pandu Rajar Dhibi (WB), Golbai Sasan (Odisha)",
+    "states": [
+     "Uttar Pradesh",
+     "Bihar",
+     "West Bengal",
+     "Odisha"
+    ],
+    "summary": "After the OCP faded, rice-growing villages using black-and-red pottery spread along the Ganga from the doab to the Bengal delta and coastal Odisha. These humble settlements laid the groundwork for the great cities and kingdoms that would rise here a few centuries later.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Black_and_red_ware_culture",
+     "https://en.wikipedia.org/wiki/Golbai_Sasan"
+    ]
+   },
+   {
+    "name": "Southern Neolithic (final phase)",
+    "dynasty": "South Indian Neolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Hallur (Karnataka)",
+    "states": [
+     "Karnataka",
+     "Andhra Pradesh",
+     "Telangana",
+     "Tamil Nadu"
+    ],
+    "summary": "The Deccan's Neolithic villagers were on the cusp of a revolution: at Hallur in Karnataka some of India's earliest iron objects appear around the end of this period. Their millet fields and cattle pens set the pattern of South Indian rural life that endures today.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Hallur",
+     "https://www.researchgate.net/publication/273293264"
+    ]
+   },
+   {
+    "name": "Northeastern Neolithic",
+    "dynasty": "Northeast Indian Neolithic tradition",
+    "rulers": [],
+    "capital": "Type site: Daojali Hading (Dima Hasao, Assam)",
+    "states": [
+     "Assam",
+     "Meghalaya",
+     "Nagaland",
+     "Manipur",
+     "Tripura",
+     "Arunachal Pradesh",
+     "Mizoram"
+    ],
+    "summary": "In the misty hills of the Northeast, Neolithic communities polished shouldered stone hoes and made cord-marked pottery with links to Southeast Asia and China. Sites like Daojali Hading in Assam reveal a distinct highland world of shifting cultivators, ancestral to the region's rich tribal cultures.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Daojali_Hading"
+    ]
+   }
+  ]
+ },
+ "P05": {
+  "polities": [
+   {
+    "name": "Painted Grey Ware culture / Later Vedic tribes",
+    "dynasty": "Painted Grey Ware (PGW) tradition; Vedic janas coalescing toward the Kuru realm",
+    "rulers": [
+     {
+      "name": "Sudas of the Bharatas, victor of the Battle of the Ten Kings (traditional/inferred)",
+      "reign": "c. 1200-1000 BC (traditional dating range)"
+     }
+    ],
+    "capital": "Type site: Hastinapura (Meerut district, UP)",
+    "states": [
+     "Punjab",
+     "Haryana",
+     "Chandigarh",
+     "Delhi",
+     "Uttar Pradesh",
+     "Uttarakhand",
+     "Rajasthan"
+    ],
+    "summary": "Iron-using villagers making fine grey pottery painted with black designs spread across the Sarasvati-Ganga divide — the very landscape of the Mahabharata, whose Hastinapura is a PGW site. Vedic tradition remembers this broad era for king Sudas of the Bharatas, whose victory in the Battle of the Ten Kings on the Ravi paved the way for the Kuru realm centred on Kurukshetra.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Painted_Grey_Ware_culture",
+     "https://en.wikipedia.org/wiki/Battle_of_the_Ten_Kings"
+    ]
+   },
+   {
+    "name": "Lustrous Red Ware culture (final phase)",
+    "dynasty": "Late Harappan legacy / Lustrous Red Ware tradition",
+    "rulers": [],
+    "capital": "Type site: Rangpur (period III, terminal)",
+    "states": [
+     "Gujarat"
+    ],
+    "summary": "The last Lustrous Red Ware villages of Saurashtra mark the end of Gujarat's two-thousand-year Harappan legacy before a quieter Early Iron Age. Their mounds at Rangpur and Prabhas Patan close the region's Bronze Age story.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rangpur,_Gujarat_(archaeological_site)"
+    ]
+   },
+   {
+    "name": "Late Jorwe culture",
+    "dynasty": "Jorwe Chalcolithic tradition (late phase)",
+    "rulers": [],
+    "capital": "Chief town: Inamgaon (Pune district)",
+    "states": [
+     "Maharashtra"
+    ],
+    "summary": "As the climate turned drier, Jorwe farmers at Inamgaon shifted from wheat to hardy millets and from square houses to round huts, a vivid archaeological record of adaptation. Inamgaon's excavations near Pune are among the most complete portraits of prehistoric village life in India.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Jorwe_culture",
+     "https://en.wikipedia.org/wiki/Inamgaon"
+    ]
+   },
+   {
+    "name": "South Indian Iron Age – megalithic beginnings",
+    "dynasty": "Early megalithic / Iron Age tradition of the peninsula",
+    "rulers": [],
+    "capital": "Key sites: Hallur, Brahmagiri (Karnataka); Adichanallur region (Tamil Nadu)",
+    "states": [
+     "Karnataka",
+     "Andhra Pradesh",
+     "Telangana",
+     "Tamil Nadu",
+     "Kerala"
+    ],
+    "summary": "South India entered the Iron Age: communities began raising stone burial monuments — dolmens, stone circles and cists — with iron dagger and cattle offerings, a tradition dated as early as c. 1200 BC in northern Karnataka. Thousands of these megaliths still stand across the peninsula, from Hire Benakal's rock shelters to Kerala's umbrella-stones.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/South_Indian_Iron_Age",
+     "https://en.wikipedia.org/wiki/Hallur"
+    ]
+   },
+   {
+    "name": "Eastern Chalcolithic (Black-and-Red Ware villages)",
+    "dynasty": "Chirand-Pandu Rajar Dhibi Chalcolithic tradition",
+    "rulers": [],
+    "capital": "Type sites: Chirand (Bihar), Pandu Rajar Dhibi (WB), Golbai Sasan (Odisha)",
+    "states": [
+     "Bihar",
+     "West Bengal",
+     "Odisha"
+    ],
+    "summary": "Copper-using rice farmers prospered along the middle and lower Ganga and the Odisha coast, working bone, shell and semi-precious stone beads. Within a few centuries their villages would grow into the cities of Magadha and Kalinga that shaped Indian history.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chirand",
+     "https://en.wikipedia.org/wiki/Golbai_Sasan"
+    ]
+   },
+   {
+    "name": "Northeastern Neolithic",
+    "dynasty": "Northeast Indian Neolithic tradition",
+    "rulers": [],
+    "capital": "Type sites: Daojali Hading (Assam), Selbalgre (Meghalaya)",
+    "states": [
+     "Assam",
+     "Meghalaya",
+     "Nagaland",
+     "Manipur",
+     "Tripura",
+     "Arunachal Pradesh",
+     "Mizoram"
+    ],
+    "summary": "The hill peoples of the Northeast continued their long Neolithic tradition of jhum-style cultivation, polished stone tools and cord-impressed pottery. In the Garo and Khasi hills this deep past flows into the living megalith-raising customs still visible around villages like Nartiang in Meghalaya.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Daojali_Hading",
+     "https://en.wikipedia.org/wiki/Neolithic#South_Asia"
+    ]
+   }
+  ]
+ },
+ "P06": {
+  "polities": [
+   {
+    "name": "Kuru Kingdom",
+    "dynasty": "Kuru (Bharata lineage)",
+    "rulers": [
+     {
+      "name": "Parikshit (traditional)",
+      "reign": "c. 10th-9th century BC"
+     },
+     {
+      "name": "Janamejaya (traditional)",
+      "reign": "c. 9th century BC"
+     }
+    ],
+    "capital": "Asandivat and Hastinapura",
+    "states": [
+     "Haryana",
+     "Delhi",
+     "Punjab",
+     "Chandigarh"
+    ],
+    "summary": "The Kuru realm around Kurukshetra was the first true political center of Vedic India, where the hymns of the Rigveda were compiled and the rituals of classical Hinduism took shape. Its kings Parikshit and Janamejaya, praised in the Atharva Veda, later became heroes of the Mahabharata. Archaeologists link this kingdom to the elegant Painted Grey Ware pottery found at Hastinapura and across Haryana.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kuru_kingdom",
+     "https://en.wikipedia.org/wiki/Painted_Grey_Ware_culture"
+    ]
+   },
+   {
+    "name": "Panchala",
+    "dynasty": "Panchala janapada",
+    "rulers": [
+     {
+      "name": "Keshin Dalbhya (traditional)",
+      "reign": "c. 9th century BC"
+     },
+     {
+      "name": "Pravahana Jaivali (traditional)",
+      "reign": "c. 8th century BC"
+     }
+    ],
+    "capital": "Ahichchhatra and Kampilya",
+    "states": [
+     "Uttar Pradesh",
+     "Uttarakhand"
+    ],
+    "summary": "Twin to the Kurus, the Panchalas ruled the fertile Ganga-Yamuna doab from the walled towns of Ahichchhatra and Kampilya, both of which can still be visited as archaeological mounds in Uttar Pradesh. Panchala courts were famous for philosopher-kings whose debates appear in the Upanishads. Together, Kuru-Panchala country was the heartland of later Vedic civilization.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Panchala",
+     "https://en.wikipedia.org/wiki/Ahichchhatra"
+    ]
+   },
+   {
+    "name": "Videha",
+    "dynasty": "Janaka line of Mithila",
+    "rulers": [
+     {
+      "name": "Janaka of Videha (traditional)",
+      "reign": "c. 8th century BC"
+     }
+    ],
+    "capital": "Mithila (Janakpur region)",
+    "states": [
+     "Bihar"
+    ],
+    "summary": "East of the Kuru-Panchala world, the kingdom of Videha flourished in north Bihar with its storied capital Mithila. Its most famous ruler, the philosopher-king Janaka, hosted the sage Yajnavalkya in debates recorded in the Brihadaranyaka Upanishad and is remembered in the Ramayana as the father of Sita. Neighboring Kashi and Kosala were also emerging as centers of power in this age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Videha",
+     "https://en.wikipedia.org/wiki/Janaka"
+    ]
+   },
+   {
+    "name": "Adichanallur Urn-Burial Culture (early Tamil country)",
+    "dynasty": "Iron Age chiefdoms (no recorded dynasty)",
+    "rulers": [],
+    "capital": "Adichanallur (Thamirabarani valley burial site)",
+    "states": [
+     "Tamil Nadu",
+     "Kerala"
+    ],
+    "summary": "While Vedic kingdoms rose in the north, the far south was home to a sophisticated Iron Age culture that buried its dead in great terracotta urns. At Adichanallur on the Thamirabarani river, thousands of urns with bronze ornaments, iron weapons, and gold diadems reveal a prosperous people ancestral to the later Pandya country. It is one of the largest Iron Age burial sites in India.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Adichanallur",
+     "https://www.britannica.com/place/Adichanallur"
+    ]
+   },
+   {
+    "name": "Brahmagiri Megalithic Culture",
+    "dynasty": "Megalithic chiefdoms (no recorded dynasty)",
+    "rulers": [],
+    "capital": "Brahmagiri (settlement and burial complex)",
+    "states": [
+     "Karnataka",
+     "Andhra Pradesh",
+     "Telangana"
+    ],
+    "summary": "Across the Deccan plateau, Iron Age communities raised megalithic monuments - stone circles, dolmens, and cist graves - over their dead. Brahmagiri in Karnataka, excavated by Mortimer Wheeler, is the classic site, showing a thriving farming and iron-working society. These megalith builders laid the foundations of later south Indian civilization.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Brahmagiri_archaeological_site",
+     "https://asi.nic.in/"
+    ]
+   }
+  ]
+ },
+ "P07": {
+  "polities": [
+   {
+    "name": "Kuru",
+    "dynasty": "Kuru (later line)",
+    "rulers": [
+     {
+      "name": "Nichakshu (traditional)",
+      "reign": "c. 8th century BC"
+     }
+    ],
+    "capital": "Indraprastha and Hastinapura",
+    "states": [
+     "Haryana",
+     "Delhi",
+     "Chandigarh"
+    ],
+    "summary": "The once-mighty Kuru realm continued as one of the sixteen mahajanapadas, though its golden age had passed; tradition says a Ganga flood at Hastinapura forced its kings to shift their seat. Its territory around Delhi and Haryana, including the site of Indraprastha under Delhi's Purana Qila, remained a revered heartland. Pilgrims already honored Kurukshetra as the field of the Mahabharata war.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kuru_kingdom",
+     "https://en.wikipedia.org/wiki/Mahajanapadas"
+    ]
+   },
+   {
+    "name": "Panchala",
+    "dynasty": "Panchala janapada",
+    "rulers": [
+     {
+      "name": "Pravahana Jaivali (traditional)",
+      "reign": "c. 8th-7th century BC"
+     }
+    ],
+    "capital": "Ahichchhatra (north) and Kampilya (south)",
+    "states": [
+     "Uttar Pradesh"
+    ],
+    "summary": "Panchala remained a major power of the doab as the age of the sixteen mahajanapadas dawned, its two capitals commanding the routes along the Ganga. To its east, Kashi (Varanasi) and Kosala (Shravasti and Ayodhya) were fast-growing rivals in the same region. This was an era of new cities, coined money, and the first urban boom on the Ganga plain.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Panchala",
+     "https://www.newworldencyclopedia.org/entry/Mahajanapadas"
+    ]
+   },
+   {
+    "name": "Magadha",
+    "dynasty": "Brihadratha dynasty (traditional)",
+    "rulers": [
+     {
+      "name": "Brihadratha (traditional)",
+      "reign": "legendary founder"
+     },
+     {
+      "name": "Ripunjaya (traditional)",
+      "reign": "c. 7th century BC"
+     }
+    ],
+    "capital": "Girivraja (Rajgir)",
+    "states": [
+     "Bihar",
+     "Jharkhand",
+     "West Bengal"
+    ],
+    "summary": "In the hills of south Bihar the kingdom of Magadha was taking shape around its fortress capital Girivraja, modern Rajgir, whose cyclopean stone walls can still be walked today. Tradition assigns its earliest kings to the Brihadratha dynasty of Mahabharata fame. Alongside it lay Anga, with its rich river port of Champa near Bhagalpur, and the Videha-Vajji lands to the north.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Magadha"
+    ]
+   },
+   {
+    "name": "Avanti",
+    "dynasty": "Avanti janapada",
+    "rulers": [
+     {
+      "name": "Punika (traditional)",
+      "reign": "c. 7th century BC"
+     }
+    ],
+    "capital": "Ujjayini (Ujjain) and Mahishmati",
+    "states": [
+     "Madhya Pradesh"
+    ],
+    "summary": "Avanti, straddling the Malwa plateau, was among the greatest of the sixteen mahajanapadas, controlling the trade road from the Ganga plain to the Arabian Sea ports. Its northern capital Ujjain became one of India's seven sacred cities. Neighboring Chedi, in the Bundelkhand region, was another of the sixteen.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Avanti_(Ancient_India)",
+     "https://en.wikipedia.org/wiki/Mahajanapadas"
+    ]
+   },
+   {
+    "name": "Matsya",
+    "dynasty": "Matsya janapada",
+    "rulers": [
+     {
+      "name": "Virata (traditional)",
+      "reign": "legendary"
+     }
+    ],
+    "capital": "Viratanagara (Bairat)",
+    "states": [
+     "Rajasthan"
+    ],
+    "summary": "The Matsya kingdom occupied the Jaipur-Alwar region of eastern Rajasthan, with its capital at Viratanagara, today's Bairat. Legend makes it the court where the Pandavas spent their year in disguise. Its pastoral hills linked the Vedic heartland with the desert trade routes.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Matsya_(tribe)",
+     "https://en.wikipedia.org/wiki/Mahajanapadas"
+    ]
+   },
+   {
+    "name": "Assaka",
+    "dynasty": "Assaka janapada",
+    "rulers": [
+     {
+      "name": "Brahmadatta (traditional)",
+      "reign": "c. 7th century BC"
+     }
+    ],
+    "capital": "Potali (Podana) on the Godavari",
+    "states": [
+     "Maharashtra",
+     "Telangana",
+     "Andhra Pradesh"
+    ],
+    "summary": "Assaka (Ashmaka) was the only one of the sixteen mahajanapadas south of the Vindhyas, planted on the banks of the Godavari river. It marked the southern frontier of the Sanskritic world and a gateway for trade into the Deccan. Its memory survives in early Buddhist texts describing the southern road, the Dakshinapatha.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Assaka",
+     "https://en.wikipedia.org/wiki/Mahajanapadas"
+    ]
+   },
+   {
+    "name": "Gandhara",
+    "dynasty": "Gandhara janapada",
+    "rulers": [
+     {
+      "name": "Naggaji (traditional)",
+      "reign": "c. 7th century BC"
+     }
+    ],
+    "capital": "Takshashila (Taxila)",
+    "states": [
+     "Jammu and Kashmir"
+    ],
+    "summary": "Far in the northwest, Gandhara commanded the passes between India and Central Asia, with its famed capital Takshashila soon to become the subcontinent's greatest seat of learning. Together with neighboring Kamboja it was counted among the sixteen mahajanapadas. Its territory spanned the upper Indus, touching modern Jammu and Kashmir.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Gandhara",
+     "https://www.worldhistory.org/Gandhara_Civilization/"
+    ]
+   },
+   {
+    "name": "Southern Megalithic Cultures",
+    "dynasty": "Iron Age chiefdoms (no recorded dynasty)",
+    "rulers": [],
+    "capital": "Adichanallur and Brahmagiri (major sites)",
+    "states": [
+     "Tamil Nadu",
+     "Kerala",
+     "Karnataka"
+    ],
+    "summary": "South of the mahajanapadas, megalith-building Iron Age peoples flourished from the Deccan to Cape Comorin, trading iron, gold, and pearls. Their stone circles and urn burials dot the landscape of Karnataka, Kerala, and Tamil Nadu. These communities were the direct ancestors of the Tamil kingdoms of the Sangam age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/South_Indian_Iron_Age",
+     "https://en.wikipedia.org/wiki/Adichanallur"
+    ]
+   }
+  ]
+ },
+ "P08": {
+  "polities": [
+   {
+    "name": "Magadha",
+    "dynasty": "Haryanka, then Shishunaga",
+    "rulers": [
+     {
+      "name": "Bimbisara",
+      "reign": "r. c. 544-492 BC"
+     },
+     {
+      "name": "Ajatashatru",
+      "reign": "r. c. 492-460 BC"
+     },
+     {
+      "name": "Shishunaga",
+      "reign": "r. c. 413-395 BC"
+     }
+    ],
+    "capital": "Rajagriha (Rajgir), later Pataliputra (Patna)",
+    "states": [
+     "Bihar",
+     "Jharkhand",
+     "West Bengal"
+    ],
+    "summary": "This is the age of the Buddha, and Magadha was its rising superpower. King Bimbisara and his son Ajatashatru, both patrons of the Buddha, annexed Anga and crushed the Vajji republic of Vaishali, the world's earliest known confederate republic, before the capital moved to Pataliputra. Visitors can walk Rajgir's ancient walls, Vulture's Peak, and the stupa-strewn ruins of Vaishali.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bimbisara",
+     "https://en.wikipedia.org/wiki/Ajatashatru",
+     "https://www.worldhistory.org/Ajatashatru/"
+    ]
+   },
+   {
+    "name": "Kosala",
+    "dynasty": "Ikshvaku line of Kosala",
+    "rulers": [
+     {
+      "name": "Prasenajit",
+      "reign": "r. c. mid-6th to late 6th century BC"
+     },
+     {
+      "name": "Vidudabha",
+      "reign": "r. c. late 6th century BC"
+     }
+    ],
+    "capital": "Shravasti",
+    "states": [
+     "Uttar Pradesh",
+     "Uttarakhand"
+    ],
+    "summary": "Kosala under King Prasenajit was Magadha's great rival and the Buddha's favorite residence: he spent more rainy seasons at Shravasti's Jetavana monastery than anywhere else. The kingdom embraced the sacred cities of Ayodhya and Varanasi-facing Kashi. Shravasti's excavated stupas and monasteries remain a major Buddhist pilgrimage stop.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Prasenajit",
+     "https://en.wikipedia.org/wiki/Kosala"
+    ]
+   },
+   {
+    "name": "Avanti",
+    "dynasty": "Pradyota dynasty",
+    "rulers": [
+     {
+      "name": "Pradyota (Chanda Pradyota)",
+      "reign": "r. c. late 6th century BC"
+     },
+     {
+      "name": "Palaka",
+      "reign": "r. c. early 5th century BC"
+     }
+    ],
+    "capital": "Ujjayini (Ujjain)",
+    "states": [
+     "Madhya Pradesh"
+    ],
+    "summary": "Under the fierce king Chanda Pradyota, Avanti was one of the four great powers of the Buddha's India and fought Magadha to a standstill for decades. Its capital Ujjain grew into a legendary city of trade, astronomy, and sanctity. Avanti was finally absorbed by Magadha's Shishunaga dynasty in the early 4th century BC.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Avanti%E2%80%93Magadhan_War",
+     "https://en.wikipedia.org/wiki/Pradyota_dynasty"
+    ]
+   },
+   {
+    "name": "Gandhara (Achaemenid satrapy)",
+    "dynasty": "Local kings, then Achaemenid Persian governors",
+    "rulers": [
+     {
+      "name": "Pukkusati (traditional)",
+      "reign": "c. mid-6th century BC"
+     },
+     {
+      "name": "Darius I of Persia (overlord)",
+      "reign": "r. 522-486 BC"
+     }
+    ],
+    "capital": "Takshashila (Taxila) and Pushkalavati",
+    "states": [
+     "Jammu and Kashmir",
+     "Punjab"
+    ],
+    "summary": "Around 518 BC the Persian Achaemenid Empire annexed Gandhara and the Indus lands, making the far northwest a satrapy of the world's largest empire. Taxila thrived as a cosmopolitan university town where Persian, Indian, and later Greek worlds met. King Pukkusati of Gandhara is remembered as a contemporary and correspondent of Bimbisara.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Achaemenid_conquest_of_the_Indus_Valley",
+     "https://www.iranicaonline.org/articles/achaemenid-satrapies/"
+    ],
+    "note": "Punjab's inclusion reflects the Achaemenid Indus satrapies; the eastern Punjab plain remained under local janapadas."
+   },
+   {
+    "name": "Matsya",
+    "dynasty": "Matsya janapada",
+    "rulers": [
+     {
+      "name": "Virata (traditional)",
+      "reign": "legendary"
+     }
+    ],
+    "capital": "Viratanagara (Bairat)",
+    "states": [
+     "Rajasthan"
+    ],
+    "summary": "The quiet kingdom of Matsya held eastern Rajasthan through the age of the Buddha, its capital Bairat sitting amid copper-rich hills. It was eventually drawn into the orbit of its stronger neighbors. Bairat later gained fame for its circular Buddhist temple and Ashokan inscriptions.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Matsya_(tribe)",
+     "https://en.wikipedia.org/wiki/Bairat"
+    ]
+   },
+   {
+    "name": "Kalinga",
+    "dynasty": "Early Kalinga kings (names unrecorded)",
+    "rulers": [],
+    "capital": "Dantapura (traditional)",
+    "states": [
+     "Odisha"
+    ],
+    "summary": "On the Bay of Bengal coast, Kalinga was renowned for its sailors and elephant forests, trading as far as Southeast Asia. Early Buddhist texts say it received relics of the Buddha, enshrined at its capital Dantapura, the 'city of the tooth'. Its fierce independence would later provoke history's most famous war of conscience.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kalinga_(historical_region)",
+     "https://historyofodisha.in/"
+    ]
+   },
+   {
+    "name": "Early Pandya country (Keeladi urban culture)",
+    "dynasty": "Early Pandyas",
+    "rulers": [
+     {
+      "name": "Early Pandya chiefs (traditional)",
+      "reign": "dates unknown"
+     }
+    ],
+    "capital": "Keeladi-Madurai region on the Vaigai",
+    "states": [
+     "Tamil Nadu"
+    ],
+    "summary": "Excavations at Keeladi near Madurai reveal that a literate, urban Tamil society was flourishing on the Vaigai river by the 6th century BC, parallel to the Ganges cities of the north. Finds include brick buildings, Tamil-Brahmi inscribed pottery, and fine beads and games. This culture is linked to the rise of the Pandya kingdom celebrated in Sangam poetry.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Keezhadi_excavation_site"
+    ]
+   },
+   {
+    "name": "Deccan and Southern Megalithic Cultures",
+    "dynasty": "Iron Age chiefdoms (no recorded dynasty)",
+    "rulers": [],
+    "capital": "Brahmagiri and related sites",
+    "states": [
+     "Karnataka",
+     "Kerala",
+     "Andhra Pradesh",
+     "Telangana"
+    ],
+    "summary": "The megalithic peoples of the Deccan and the southwest continued to raise stone monuments over their dead while trading iron, gold from Karnataka's mines, and spices from the Kerala coast. Their prosperous chiefdoms formed the bridge between prehistoric south India and the Tamil kingdoms soon to emerge. Sites like Brahmagiri and Hire Benakal preserve hundreds of their monuments.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/South_Indian_Iron_Age",
+     "https://en.wikipedia.org/wiki/Hirebenakal"
+    ]
+   }
+  ]
+ },
+ "P09": {
+  "polities": [
+   {
+    "name": "Maurya Empire",
+    "dynasty": "Maurya (preceded by the Nanda dynasty)",
+    "rulers": [
+     {
+      "name": "Mahapadma Nanda",
+      "reign": "r. c. 345-329 BC"
+     },
+     {
+      "name": "Dhana Nanda",
+      "reign": "r. c. 329-321 BC"
+     },
+     {
+      "name": "Chandragupta Maurya",
+      "reign": "r. c. 321-297 BC"
+     },
+     {
+      "name": "Bindusara",
+      "reign": "r. c. 297-273 BC"
+     },
+     {
+      "name": "Ashoka",
+      "reign": "r. c. 268-232 BC"
+     }
+    ],
+    "capital": "Pataliputra (Patna)",
+    "states": [
+     "Bihar",
+     "Jharkhand",
+     "West Bengal",
+     "Uttar Pradesh",
+     "Uttarakhand",
+     "Delhi",
+     "Haryana",
+     "Chandigarh",
+     "Punjab",
+     "Himachal Pradesh",
+     "Jammu and Kashmir",
+     "Rajasthan",
+     "Gujarat",
+     "Madhya Pradesh",
+     "Chhattisgarh",
+     "Maharashtra",
+     "Goa",
+     "Telangana",
+     "Andhra Pradesh",
+     "Karnataka"
+    ],
+    "summary": "First the fabulously wealthy Nandas united the Ganga plain, then Chandragupta Maurya, guided by the strategist Chanakya, seized Pataliputra in 321 BC and built India's first empire, even defeating Alexander's successor Seleucus. His grandson Ashoka ruled nearly the entire subcontinent and, after the bloody Kalinga war, embraced Buddhism and preached peace on rock and pillar edicts from Kandahar to Karnataka. You can still read Ashoka's words at Girnar, Kalsi, Sanchi, Sarnath, and Brahmagiri.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Maurya_Empire",
+     "https://en.wikipedia.org/wiki/Nanda_Empire",
+     "https://en.wikipedia.org/wiki/Ashoka"
+    ]
+   },
+   {
+    "name": "Kalinga",
+    "dynasty": "Independent Kalinga kingdom (kings unrecorded), then Mauryan province",
+    "rulers": [],
+    "capital": "Tosali (near Dhauli)",
+    "states": [
+     "Odisha"
+    ],
+    "summary": "Prosperous, maritime Kalinga stayed defiantly independent of both Nandas and Mauryas until Ashoka's devastating invasion of 261 BC, in which his own edicts admit over a hundred thousand perished. The horror of the war transformed Ashoka into an apostle of non-violence. At Dhauli near Bhubaneswar, a rock-cut elephant and Ashoka's edicts of remorse still overlook the battlefield by the Daya river.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kalinga_War",
+     "https://www.britannica.com/event/Kalinga-War"
+    ]
+   },
+   {
+    "name": "Chola and Pandya kingdoms (early Sangam age)",
+    "dynasty": "Early Cholas of Uraiyur and Early Pandyas of Madurai",
+    "rulers": [
+     {
+      "name": "Ilamcetcenni of Uraiyur (traditional)",
+      "reign": "dates unknown"
+     },
+     {
+      "name": "Palyagasalai Mudukudumi Peruvaludi (traditional)",
+      "reign": "dates unknown"
+     }
+    ],
+    "capital": "Uraiyur (Chola) and Madurai (Pandya)",
+    "states": [
+     "Tamil Nadu",
+     "Puducherry"
+    ],
+    "summary": "Beyond the Maurya frontier, Ashoka's edicts respectfully name the Cholas and Pandyas as friendly southern neighbors, the earliest datable record of the Tamil kingdoms. The Cholas ruled the Kaveri delta from Uraiyur while the Pandyas held Madurai and the pearl-rich Gulf of Mannar, patronizing the first Sangam assemblies of Tamil poets. Keeladi's urban finds and Tamil-Brahmi inscriptions bring this world vividly to life.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sangam_period",
+     "https://en.wikipedia.org/wiki/Early_Pandyan_kingdom",
+     "https://en.wikipedia.org/wiki/Early_Cholas"
+    ]
+   },
+   {
+    "name": "Chera kingdom (early Sangam age)",
+    "dynasty": "Early Cheras",
+    "rulers": [
+     {
+      "name": "Perumchottu Utiyan Cheralatan (traditional)",
+      "reign": "dates unknown"
+     }
+    ],
+    "capital": "Vanchi (Karuvur region)",
+    "states": [
+     "Kerala"
+    ],
+    "summary": "The Cheras, called Keralaputra or 'sons of Kerala' in Ashoka's edicts, ruled the spice-laden Malabar coast and western Tamil hills. Their ports would soon draw traders from as far as the Mediterranean seeking pepper, ivory, and cardamom. Sangam poems celebrate their kings under the bow-and-arrow banner.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chera_dynasty",
+     "https://en.wikipedia.org/wiki/Keralaputra"
+    ]
+   }
+  ]
+ },
+ "P10": {
+  "polities": [
+   {
+    "name": "Shunga Empire (later Kanva dynasty)",
+    "dynasty": "Shunga, succeeded by Kanva c. 73 BC",
+    "rulers": [
+     {
+      "name": "Pushyamitra Shunga",
+      "reign": "r. c. 185-149 BC"
+     },
+     {
+      "name": "Agnimitra",
+      "reign": "r. c. 149-141 BC"
+     },
+     {
+      "name": "Vasudeva Kanva",
+      "reign": "r. c. 73-64 BC"
+     }
+    ],
+    "capital": "Pataliputra (with Vidisha as a major royal seat)",
+    "states": [
+     "Bihar",
+     "Uttar Pradesh",
+     "Madhya Pradesh",
+     "West Bengal",
+     "Jharkhand",
+     "Delhi"
+    ],
+    "summary": "After toppling the last Maurya, general Pushyamitra Shunga made the Gangetic plain his stage, and under his line Buddhist art flowered spectacularly at Bharhut and Sanchi. At Vidisha you can still see the Heliodorus pillar, raised by a Greek ambassador who embraced the worship of Vishnu. Around 73 BC the Shungas gave way to their ministers, the short-lived Kanva dynasty.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Shunga_Empire",
+     "https://www.britannica.com/topic/Shunga-dynasty"
+    ]
+   },
+   {
+    "name": "Indo-Greek Kingdom",
+    "dynasty": "Indo-Greek (Euthydemid and rival Hellenistic houses)",
+    "rulers": [
+     {
+      "name": "Menander I (Milinda)",
+      "reign": "r. c. 165-130 BC"
+     },
+     {
+      "name": "Strato I",
+      "reign": "r. c. 125-110 BC"
+     },
+     {
+      "name": "Antialcidas",
+      "reign": "r. c. 115-95 BC"
+     }
+    ],
+    "capital": "Sagala (modern Sialkot)",
+    "states": [
+     "Punjab",
+     "Haryana",
+     "Himachal Pradesh",
+     "Jammu and Kashmir",
+     "Chandigarh"
+    ],
+    "summary": "Greek kings descended from Alexander's successors ruled India's northwest, minting some of the subcontinent's most beautiful bilingual coins. The greatest, Menander I, is immortalized in the Buddhist classic Milinda Panha as the philosopher-king who debated the sage Nagasena. His realm blended Greek and Indian art, faith and trade.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Indo-Greek_Kingdom",
+     "https://www.britannica.com/biography/Menander-Indo-Greek-king"
+    ]
+   },
+   {
+    "name": "Early Satavahana Kingdom",
+    "dynasty": "Satavahana",
+    "rulers": [
+     {
+      "name": "Simuka (founder)",
+      "reign": "r. c. 1st century BC (traditional chronology c. 228-205 BC; dating debated)"
+     },
+     {
+      "name": "Kanha (Krishna)",
+      "reign": "r. c. 100-70 BC"
+     },
+     {
+      "name": "Satakarni I",
+      "reign": "r. c. 70-60 BC"
+     }
+    ],
+    "capital": "Pratishthana (modern Paithan, on the Godavari)",
+    "states": [
+     "Maharashtra",
+     "Telangana",
+     "Andhra Pradesh",
+     "Goa"
+    ],
+    "summary": "The Satavahanas rose from the Deccan plateau to become its first great imperial power, controlling the trade roads between north and south. At Naneghat pass near Junnar, a queen's inscription records Satakarni I's grand Vedic sacrifices. Their patronage began the great age of Deccan cave monasteries.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Satavahana_dynasty",
+     "https://www.britannica.com/topic/Satavahana-dynasty"
+    ]
+   },
+   {
+    "name": "Kalinga under the Mahameghavahanas",
+    "dynasty": "Mahameghavahana (Chedi) dynasty",
+    "rulers": [
+     {
+      "name": "Kharavela",
+      "reign": "r. c. mid-1st century BC (dating debated, 2nd-1st century BC)"
+     },
+     {
+      "name": "Kudepasiri",
+      "reign": "r. c. late 1st century BC"
+     }
+    ],
+    "capital": "Kalinganagara (near modern Bhubaneswar)",
+    "states": [
+     "Odisha"
+    ],
+    "summary": "The warrior-king Kharavela restored Kalinga's glory a century after Ashoka's bloody conquest, recording his victories year by year in the famous Hathigumpha inscription. A devoted patron of Jainism, he carved monastic caves into the twin hills of Udayagiri and Khandagiri, which visitors can explore just outside Bhubaneswar today.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kharavela",
+     "https://historyofodisha.in/kharavela/"
+    ]
+   },
+   {
+    "name": "Early Chera Kingdom",
+    "dynasty": "Chera (Sangam age)",
+    "rulers": [
+     {
+      "name": "Perum Chottru Uthiyan Cheralathan",
+      "reign": "r. c. 1st century BC (Sangam tradition)"
+     }
+    ],
+    "capital": "Vanji (associated with modern Karur)",
+    "states": [
+     "Kerala"
+    ],
+    "summary": "The Cheras, already named in Ashoka's edicts, ruled the spice-rich Malabar coast from their inland capital of Vanji. Their pepper, ivory and pearls were beginning to draw merchants from across the Arabian Sea, laying the foundations of the legendary port of Muziris. Sangam poets sang of their kings' feasts and battles.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chera_dynasty",
+     "https://www.britannica.com/topic/Chera-dynasty"
+    ]
+   },
+   {
+    "name": "Early Chola and Pandya Kingdoms",
+    "dynasty": "Chola and Pandya (Sangam age)",
+    "rulers": [
+     {
+      "name": "Ilamcetcenni (Chola)",
+      "reign": "r. c. 1st century BC"
+     },
+     {
+      "name": "Nedunjeliyan I (Pandya)",
+      "reign": "r. c. 1st century BC"
+     }
+    ],
+    "capital": "Uraiyur (Chola) and Madurai (Pandya)",
+    "states": [
+     "Tamil Nadu",
+     "Puducherry"
+    ],
+    "summary": "The Tamil country flourished under the twin Sangam crowns: the Cholas of the Kaveri delta and the Pandyas of Madurai, home of the celebrated Tamil literary academies. Both kingdoms were old enough to be mentioned in Ashoka's edicts, and their coastal towns, including Arikamedu near Puducherry, were on the verge of a booming trade with Rome.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sangam_period",
+     "https://www.britannica.com/topic/Pandya-dynasty"
+    ]
+   }
+  ]
+ },
+ "P11": {
+  "polities": [
+   {
+    "name": "Kushan Empire",
+    "dynasty": "Kushan (Yuezhi)",
+    "rulers": [
+     {
+      "name": "Kujula Kadphises",
+      "reign": "r. c. 30-80 AD"
+     },
+     {
+      "name": "Vima Kadphises",
+      "reign": "r. c. 113-127 AD"
+     },
+     {
+      "name": "Kanishka I",
+      "reign": "r. c. 127-150 AD"
+     },
+     {
+      "name": "Huvishka",
+      "reign": "r. c. 150-190 AD"
+     }
+    ],
+    "capital": "Purushapura (Peshawar), with Mathura as the Indian capital",
+    "states": [
+     "Jammu and Kashmir",
+     "Ladakh",
+     "Punjab",
+     "Chandigarh",
+     "Haryana",
+     "Himachal Pradesh",
+     "Delhi",
+     "Uttar Pradesh",
+     "Uttarakhand",
+     "Bihar"
+    ],
+    "summary": "Straddling the Silk Road from Central Asia to the Ganges, the Kushans under Kanishka I built one of antiquity's richest empires; his Rabatak inscription claims sway as far as Pataliputra. Kanishka convened a great Buddhist council in Kashmir and his reign perfected the Gandhara and Mathura schools of sculpture, the first to show the Buddha in human form.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kushan_Empire",
+     "https://www.britannica.com/topic/Kushan-dynasty"
+    ],
+    "note": "The Kushans' reach into Bihar rests on the Rabatak inscription's claim over Pataliputra; their firm rule that far east is debated."
+   },
+   {
+    "name": "Satavahana Empire at its height",
+    "dynasty": "Satavahana",
+    "rulers": [
+     {
+      "name": "Gautamiputra Satakarni",
+      "reign": "r. c. 106-130 AD"
+     },
+     {
+      "name": "Vasishthiputra Pulumavi",
+      "reign": "r. c. 130-159 AD"
+     },
+     {
+      "name": "Yajna Sri Satakarni",
+      "reign": "r. c. 165-195 AD"
+     }
+    ],
+    "capital": "Pratishthana (Paithan), with Amaravati flourishing in the east",
+    "states": [
+     "Maharashtra",
+     "Telangana",
+     "Andhra Pradesh",
+     "Karnataka",
+     "Goa"
+    ],
+    "summary": "Gautamiputra Satakarni crushed the Saka invaders and carried Satavahana power across the whole Deccan, celebrated in his mother's moving inscription at the Nashik caves. This was the golden age of the rock-cut monasteries of Karla and Kanheri and of the great marble stupa of Amaravati on the Krishna river.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Gautamiputra_Satakarni",
+     "https://www.britannica.com/topic/Satavahana-dynasty"
+    ]
+   },
+   {
+    "name": "Western Kshatrapas",
+    "dynasty": "Kshaharata, then Kardamaka (Saka)",
+    "rulers": [
+     {
+      "name": "Nahapana",
+      "reign": "r. c. 119-124 AD (dating debated)"
+     },
+     {
+      "name": "Chashtana",
+      "reign": "r. from c. 78 AD"
+     },
+     {
+      "name": "Rudradaman I",
+      "reign": "r. c. 130-150 AD"
+     }
+    ],
+    "capital": "Ujjain",
+    "states": [
+     "Gujarat",
+     "Rajasthan",
+     "Madhya Pradesh",
+     "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "summary": "Saka satraps ruled the merchant heartland of Gujarat and Malwa from cosmopolitan Ujjain, growing rich on ports like Bharuch that traded with Rome. Rudradaman I's rock inscription at Junagadh, the first major royal inscription in classical Sanskrit, proudly records his conquests and his repair of the ancient Sudarshana lake.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Western_Satraps",
+     "https://www.britannica.com/biography/Rudradaman"
+    ]
+   },
+   {
+    "name": "Chera Kingdom and the Muziris trade",
+    "dynasty": "Chera (Sangam age)",
+    "rulers": [
+     {
+      "name": "Nedum Cheralathan",
+      "reign": "r. c. 1st-2nd century AD (Sangam tradition)"
+     },
+     {
+      "name": "Senguttuvan (Cheran Senguttuvan)",
+      "reign": "r. c. 2nd century AD"
+     }
+    ],
+    "capital": "Vanji (Karur), with the great port of Muziris",
+    "states": [
+     "Kerala"
+    ],
+    "summary": "Roman ships arrived each monsoon at Muziris to exchange gold for black pepper, making the Chera coast one of the richest shores of the ancient world. The celebrated king Senguttuvan, hero of the epic Silappadikaram, is remembered for spreading the cult of the goddess Kannagi.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chera_dynasty",
+     "https://en.wikipedia.org/wiki/Muziris"
+    ]
+   },
+   {
+    "name": "Chola and Pandya Kingdoms of the Sangam age",
+    "dynasty": "Chola and Pandya",
+    "rulers": [
+     {
+      "name": "Karikala Chola",
+      "reign": "r. c. early 2nd century AD (traditional)"
+     },
+     {
+      "name": "Nedunjeliyan II (Pandya, victor of Talaiyalanganam)",
+      "reign": "r. c. 2nd century AD"
+     }
+    ],
+    "capital": "Uraiyur and Puhar (Chola); Madurai (Pandya)",
+    "states": [
+     "Tamil Nadu",
+     "Puducherry"
+    ],
+    "summary": "Karikala Chola, victor of the battle of Venni and traditional builder of the Kallanai dam on the Kaveri, presided over the bustling port of Kaveripattinam, while the Pandyas shipped pearls from Korkai. Roman amphorae dug up at Arikamedu near Puducherry testify to the era's thriving Indo-Roman trade sung of in Sangam poetry.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Karikala",
+     "https://en.wikipedia.org/wiki/Arikamedu"
+    ]
+   }
+  ]
+ },
+ "P12": {
+  "polities": [
+   {
+    "name": "Rise of the Gupta Empire",
+    "dynasty": "Gupta",
+    "rulers": [
+     {
+      "name": "Sri Gupta (founder)",
+      "reign": "r. c. 240-280 AD"
+     },
+     {
+      "name": "Chandragupta I",
+      "reign": "r. c. 319-335 AD"
+     },
+     {
+      "name": "Samudragupta",
+      "reign": "r. c. 335-375 AD"
+     }
+    ],
+    "capital": "Pataliputra",
+    "states": [
+     "Bihar",
+     "Uttar Pradesh",
+     "West Bengal",
+     "Jharkhand",
+     "Delhi",
+     "Haryana"
+    ],
+    "summary": "From modest beginnings in Magadha, the Guptas exploded onto the stage when Chandragupta I took the imperial title in 319 AD. His son Samudragupta, the 'Napoleon of India', swept armies from Bengal to the far south, his victories engraved on the Allahabad pillar, opening India's classical golden age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Gupta_Empire",
+     "https://www.britannica.com/biography/Samudra-Gupta"
+    ]
+   },
+   {
+    "name": "Late Kushan Kingdom",
+    "dynasty": "Kushan (later line, under Kushano-Sasanian pressure)",
+    "rulers": [
+     {
+      "name": "Vasudeva I",
+      "reign": "r. c. 190-230 AD"
+     },
+     {
+      "name": "Kanishka II",
+      "reign": "r. c. 230-247 AD"
+     },
+     {
+      "name": "Shaka (late Kushan king)",
+      "reign": "r. c. 325-345 AD"
+     }
+    ],
+    "capital": "Purushapura (Peshawar), with Mathura in the east",
+    "states": [
+     "Punjab",
+     "Jammu and Kashmir",
+     "Ladakh",
+     "Himachal Pradesh",
+     "Chandigarh"
+    ],
+    "summary": "The once-mighty Kushans still ruled the northwest passes, but Sasanian Persia gnawed at their western lands while new powers rose in the Ganges valley. By Samudragupta's day the last Kushan kings were reduced to sending humble embassies to the Gupta court.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kushan_Empire",
+     "https://en.wikipedia.org/wiki/Kushano-Sasanian_Kingdom"
+    ]
+   },
+   {
+    "name": "Western Kshatrapas (later line)",
+    "dynasty": "Kardamaka (Saka)",
+    "rulers": [
+     {
+      "name": "Rudrasena II",
+      "reign": "r. c. 255-278 AD"
+     },
+     {
+      "name": "Rudrasimha II",
+      "reign": "r. c. 305-313 AD"
+     },
+     {
+      "name": "Rudrasena III",
+      "reign": "r. c. 348-380 AD"
+     }
+    ],
+    "capital": "Ujjain",
+    "states": [
+     "Gujarat",
+     "Rajasthan",
+     "Madhya Pradesh",
+     "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "summary": "The Saka satraps of Ujjain remained western India's dominant power for two more centuries, their finely dated silver coins a boon to historians. Their long run ended around 400 AD when Chandragupta II conquered Malwa and Gujarat for the Guptas.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Western_Satraps"
+    ]
+   },
+   {
+    "name": "Ikshvaku Kingdom of Vijayapuri",
+    "dynasty": "Ikshvaku (Andhra Ikshvakus)",
+    "rulers": [
+     {
+      "name": "Vasishthiputra Chamtamula",
+      "reign": "r. c. 220-253 AD"
+     },
+     {
+      "name": "Virapurushadatta",
+      "reign": "r. c. 253-278 AD"
+     },
+     {
+      "name": "Ehuvala Chamtamula",
+      "reign": "r. c. 278-300 AD"
+     }
+    ],
+    "capital": "Vijayapuri (Nagarjunakonda)",
+    "states": [
+     "Andhra Pradesh",
+     "Telangana"
+    ],
+    "summary": "Heirs to the Satavahanas in the Krishna valley, the Ikshvakus made Vijayapuri a dazzling city of monasteries, stadiums and stupas, patronized especially by its devout royal women. Its remains, rescued from the Nagarjuna Sagar reservoir, can be visited today on the island museum of Nagarjunakonda.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Andhra_Ikshvaku",
+     "https://www.researchgate.net/publication/328892103_CULTURAL_CONDITIONS_DURING_IKSHVAKUS_OF_VIJAYAPURI"
+    ]
+   },
+   {
+    "name": "Vakataka Kingdom",
+    "dynasty": "Vakataka",
+    "rulers": [
+     {
+      "name": "Vindhyashakti (founder)",
+      "reign": "r. c. 250-270 AD"
+     },
+     {
+      "name": "Pravarasena I",
+      "reign": "r. c. 270-330 AD"
+     },
+     {
+      "name": "Rudrasena II",
+      "reign": "r. c. 380-385 AD"
+     }
+    ],
+    "capital": "Nandivardhana (near Nagpur), with Vatsagulma as a second seat",
+    "states": [
+     "Maharashtra"
+    ],
+    "summary": "As Satavahana power faded, the Vakatakas rose to rule the central Deccan, with Pravarasena I performing grand Vedic sacrifices and taking the title of emperor. Their marriage alliance with the Guptas, sealed by princess Prabhavatigupta, made them partners in India's classical age and future patrons of Ajanta.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Vakataka_dynasty",
+     "https://www.britannica.com/topic/Vakataka-dynasty"
+    ]
+   },
+   {
+    "name": "Early Pallava Kingdom",
+    "dynasty": "Pallava",
+    "rulers": [
+     {
+      "name": "Sivaskandavarman",
+      "reign": "r. c. 275-300 AD (some scholars place him in the early 4th century)"
+     },
+     {
+      "name": "Skandavarman",
+      "reign": "r. c. mid-4th century AD"
+     }
+    ],
+    "capital": "Kanchipuram",
+    "states": [
+     "Tamil Nadu",
+     "Puducherry"
+    ],
+    "summary": "The Pallavas emerged at Kanchipuram as the Sangam age waned, issuing India's earliest southern copper-plate charters in Prakrit. Their capital, the 'city of a thousand temples', grew into one of South India's great centers of learning even as the shadowy Kalabhras began pressing on the old Tamil kingdoms.",
+    "sources": [
+     "https://www.britannica.com/topic/Pallava-dynasty",
+     "https://en.wikipedia.org/wiki/Pallava_dynasty"
+    ]
+   },
+   {
+    "name": "Kadambas and Western Gangas",
+    "dynasty": "Kadamba of Banavasi; Western Ganga of Kolar",
+    "rulers": [
+     {
+      "name": "Mayurasharma (Kadamba)",
+      "reign": "r. c. 345-365 AD"
+     },
+     {
+      "name": "Konganivarma Madhava (Western Ganga)",
+      "reign": "r. c. 350-370 AD"
+     }
+    ],
+    "capital": "Banavasi (Kadamba) and Kolar (Western Ganga)",
+    "states": [
+     "Karnataka"
+    ],
+    "summary": "The scholar Mayurasharma, humiliated at the Pallava court, famously traded his sacred grass for the sword and carved out the Kadamba kingdom at Banavasi around 345 AD. Together with the newly founded Western Ganga dynasty, these were the first truly native kingdoms of Karnataka.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mayurasharma",
+     "https://en.wikipedia.org/wiki/Western_Ganga_dynasty"
+    ]
+   },
+   {
+    "name": "Varman Kingdom of Kamarupa",
+    "dynasty": "Varman",
+    "rulers": [
+     {
+      "name": "Pushyavarman (founder)",
+      "reign": "r. c. 350-374 AD"
+     },
+     {
+      "name": "Samudravarman",
+      "reign": "r. c. 374-398 AD"
+     }
+    ],
+    "capital": "Pragjyotishpura (modern Guwahati)",
+    "states": [
+     "Assam"
+    ],
+    "summary": "Around 350 AD Pushyavarman founded the Varman dynasty of Kamarupa in the Brahmaputra valley, the first historical kingdom of Assam. A contemporary of Samudragupta, whose Allahabad inscription names Kamarupa a frontier kingdom, his line would rule for three centuries from ancient Guwahati.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pushyavarman",
+     "https://en.wikipedia.org/wiki/Varman_dynasty"
+    ]
+   }
+  ]
+ },
+ "P13": {
+  "polities": [
+   {
+    "name": "Gupta Empire at its height and decline",
+    "dynasty": "Gupta",
+    "rulers": [
+     {
+      "name": "Chandragupta II (Vikramaditya)",
+      "reign": "r. c. 375-415 AD"
+     },
+     {
+      "name": "Kumaragupta I",
+      "reign": "r. c. 415-455 AD"
+     },
+     {
+      "name": "Skandagupta",
+      "reign": "r. c. 455-467 AD"
+     }
+    ],
+    "capital": "Pataliputra (with Ujjain as a favored royal seat)",
+    "states": [
+     "Uttar Pradesh",
+     "Bihar",
+     "West Bengal",
+     "Jharkhand",
+     "Madhya Pradesh",
+     "Rajasthan",
+     "Delhi",
+     "Haryana",
+     "Uttarakhand"
+    ],
+    "summary": "Under Chandragupta II India's golden age reached its zenith: Kalidasa's poetry, the rust-free Delhi iron pillar, the founding of Nalanda under Kumaragupta, and the admiring travelogue of the Chinese pilgrim Faxian. Skandagupta heroically threw back the first Huna invasions, but the strain broke the empire, which crumbled through the 6th century.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Gupta_Empire",
+     "https://www.britannica.com/topic/Gupta-dynasty"
+    ],
+    "note": "Rajasthan and the western fringe were held through vassals; Gupta control there loosened rapidly after Skandagupta."
+   },
+   {
+    "name": "Huna (Alchon Hun) Kingdom",
+    "dynasty": "Alchon Huns (Huna)",
+    "rulers": [
+     {
+      "name": "Toramana",
+      "reign": "r. c. 493-515 AD"
+     },
+     {
+      "name": "Mihirakula",
+      "reign": "r. c. 515-540 AD"
+     }
+    ],
+    "capital": "Sagala (Sialkot)",
+    "states": [
+     "Punjab",
+     "Jammu and Kashmir",
+     "Himachal Pradesh",
+     "Chandigarh"
+    ],
+    "summary": "Sweeping down from Central Asia, the Huna kings Toramana and Mihirakula overran the northwest and struck deep into Gupta India. Mihirakula, remembered in Kashmir's chronicles as a fearsome persecutor of Buddhism, was finally broken by an Indian coalition under Yashodharman around 528 AD.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Alchon_Huns",
+     "https://en.wikipedia.org/wiki/Mihirakula"
+    ]
+   },
+   {
+    "name": "Vakatakas and Vishnukundins",
+    "dynasty": "Vakataka; Vishnukundin (allied by marriage)",
+    "rulers": [
+     {
+      "name": "Pravarasena II (Vakataka)",
+      "reign": "r. c. 420-455 AD"
+     },
+     {
+      "name": "Harishena (Vakataka)",
+      "reign": "r. c. 475-500 AD"
+     },
+     {
+      "name": "Madhava Varma II (Vishnukundin)",
+      "reign": "r. c. 460-510 AD (dates debated)"
+     }
+    ],
+    "capital": "Vatsagulma and Nandivardhana (Vakataka); Indrapalanagara (Vishnukundin)",
+    "states": [
+     "Maharashtra",
+     "Telangana",
+     "Andhra Pradesh"
+    ],
+    "summary": "The Vakataka emperor Harishena was the great patron of the breathtaking painted caves of Ajanta, a UNESCO World Heritage site whose murals define classical Indian art. To their east, the allied Vishnukundin dynasty ruled Telangana and coastal Andhra, with Madhava Varma celebrated for his grand sacrifices. Both Deccan houses faded by the mid-6th century, clearing the way for the Chalukyas.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Vakataka_dynasty",
+     "https://en.wikipedia.org/wiki/Vishnukundina_dynasty"
+    ]
+   },
+   {
+    "name": "Pallavas of Kanchi and the Kalabhra interregnum",
+    "dynasty": "Pallava; Kalabhra",
+    "rulers": [
+     {
+      "name": "Simhavarman II (Pallava)",
+      "reign": "r. c. 436-460 AD"
+     },
+     {
+      "name": "Achyuta Vikkanta (Kalabhra)",
+      "reign": "r. c. 5th-6th century AD"
+     },
+     {
+      "name": "Simhavishnu (Pallava)",
+      "reign": "r. c. 575-600 AD"
+     }
+    ],
+    "capital": "Kanchipuram (Pallava)",
+    "states": [
+     "Tamil Nadu",
+     "Puducherry",
+     "Kerala"
+    ],
+    "summary": "For two centuries the mysterious Kalabhras upended the old Chera, Chola and Pandya order in the Tamil and Kerala country, a 'dark age' that nonetheless nurtured Buddhist and Jain learning under kings like Achyuta Vikkanta. The Pallavas held on at Kanchipuram until Simhavishnu crushed the Kalabhras around 575 AD, launching the great age of Tamil temple building.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kalabhra_dynasty",
+     "https://www.britannica.com/topic/Pallava-dynasty"
+    ]
+   },
+   {
+    "name": "Kadambas, Western Gangas and the rise of the Chalukyas",
+    "dynasty": "Kadamba; Western Ganga; Chalukya of Badami (from 543 AD)",
+    "rulers": [
+     {
+      "name": "Kakusthavarma (Kadamba)",
+      "reign": "r. c. 425-455 AD"
+     },
+     {
+      "name": "Ravivarma (Kadamba)",
+      "reign": "r. c. 485-519 AD"
+     },
+     {
+      "name": "Durvinita (Western Ganga)",
+      "reign": "r. c. 529-579 AD"
+     },
+     {
+      "name": "Pulakeshin I (Chalukya)",
+      "reign": "r. c. 543-566 AD"
+     }
+    ],
+    "capital": "Banavasi (Kadamba); Talakad (Western Ganga); Badami (Chalukya, from 543 AD)",
+    "states": [
+     "Karnataka",
+     "Goa"
+    ],
+    "summary": "Karnataka's first native dynasties flourished: the Kadambas peaked under Kakusthavarma, whose daughters married into the Gupta and Vakataka royal houses, while the Western Gangas ruled the south from Talakad. In 543 AD Pulakeshin I fortified the dramatic red cliffs of Badami and founded the Chalukya dynasty, which soon swallowed the Kadamba realm.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kadamba_dynasty",
+     "https://en.wikipedia.org/wiki/Pulakeshin_I"
+    ]
+   },
+   {
+    "name": "Maitraka Kingdom of Valabhi",
+    "dynasty": "Maitraka",
+    "rulers": [
+     {
+      "name": "Bhatarka (founder)",
+      "reign": "r. c. 470-492 AD"
+     },
+     {
+      "name": "Dhruvasena I",
+      "reign": "r. c. 519-549 AD"
+     },
+     {
+      "name": "Guhasena",
+      "reign": "r. c. 553-569 AD"
+     }
+    ],
+    "capital": "Valabhi (near modern Bhavnagar, Saurashtra)",
+    "states": [
+     "Gujarat",
+     "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "summary": "As Gupta power ebbed, the general Bhatarka founded an independent kingdom at Valabhi around 475 AD. His Maitraka successors made the city a celebrated seat of learning whose Buddhist university rivaled Nalanda, and tradition holds that the final Jain council that fixed the Jain canon met at Valabhi in the 5th century.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Maitraka_dynasty",
+     "https://en.wikipedia.org/wiki/Kingdom_of_Valabhi"
+    ]
+   },
+   {
+    "name": "Varman Kingdom of Kamarupa",
+    "dynasty": "Varman",
+    "rulers": [
+     {
+      "name": "Kalyanavarman",
+      "reign": "r. c. 422-446 AD"
+     },
+     {
+      "name": "Sthitavarman",
+      "reign": "r. c. 566-590 AD"
+     },
+     {
+      "name": "Susthitavarman",
+      "reign": "r. c. 590-595 AD"
+     }
+    ],
+    "capital": "Pragjyotishpura (modern Guwahati)",
+    "states": [
+     "Assam"
+    ],
+    "summary": "The Varman kings ruled the Brahmaputra valley from ancient Pragjyotishpura, steadily building the power that their famous descendant Bhaskaravarman would wield as an ally of emperor Harsha. Their era anchors Assam's oldest historical heritage around modern Guwahati.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Varman_dynasty",
+     "https://en.wikipedia.org/wiki/Sthitavarman"
+    ]
+   },
+   {
+    "name": "Sharabhapuriyas and Nalas of Dakshina Kosala",
+    "dynasty": "Sharabhapuriya; Nala",
+    "rulers": [
+     {
+      "name": "Bhavadatta Varman (Nala)",
+      "reign": "r. c. mid-5th century AD"
+     },
+     {
+      "name": "Prasannamatra (Sharabhapuriya)",
+      "reign": "r. c. 525-550 AD"
+     },
+     {
+      "name": "Sudevaraja (Sharabhapuriya)",
+      "reign": "r. c. 550-560 AD"
+     }
+    ],
+    "capital": "Sharabhapura and Shripura (Sirpur) for the Sharabhapuriyas; Pushkari (Bastar) for the Nalas",
+    "states": [
+     "Chhattisgarh",
+     "Odisha"
+    ],
+    "summary": "In the forested country of Dakshina Kosala, spanning Chhattisgarh and western Odisha, the Sharabhapuriya kings minted rare gold coins and issued elegant copper-plate grants, while the Nala kings ruled from Pushkari in Bastar. Their capitals seeded the region's temple heritage, most famously at Sirpur on the Mahanadi.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sharabhapuriya_dynasty",
+     "https://en.wikipedia.org/wiki/Nala_dynasty"
+    ]
+   }
+  ]
+ },
+ "P14": {
+  "polities": [
+   {
+    "name": "Empire of Harsha",
+    "dynasty": "Pushyabhuti (Vardhana)",
+    "rulers": [
+     {
+      "name": "Harshavardhana",
+      "reign": "606-647 CE"
+     }
+    ],
+    "capital": "Kannauj",
+    "states": [
+     "Uttar Pradesh",
+     "Haryana",
+     "Delhi",
+     "Punjab",
+     "Uttarakhand",
+     "Bihar",
+     "West Bengal"
+    ],
+    "summary": "Harsha united most of northern India from his glittering capital at Kannauj, hosting the Chinese pilgrim Xuanzang and grand religious assemblies at Prayag. A patron of poets and Buddhist monasteries like Nalanda, his empire stretched from Punjab to Bengal. His southward march was famously halted at the Narmada by Pulakeshin II around 618 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Harsha",
+     "https://www.britannica.com/biography/Harsha"
+    ]
+   },
+   {
+    "name": "Chalukyas of Badami",
+    "dynasty": "Chalukya (Vatapi branch)",
+    "rulers": [
+     {
+      "name": "Pulakeshin II",
+      "reign": "c. 610-642 CE"
+     },
+     {
+      "name": "Vikramaditya I",
+      "reign": "655-680 CE"
+     },
+     {
+      "name": "Vikramaditya II",
+      "reign": "733-744 CE"
+     }
+    ],
+    "capital": "Badami (Vatapi)",
+    "states": [
+     "Karnataka",
+     "Goa",
+     "Telangana",
+     "Andhra Pradesh"
+    ],
+    "summary": "From the red sandstone cliffs of Badami, Pulakeshin II built a Deccan empire that stopped even Harsha at the Narmada. The dynasty's rock-cut caves and the temple clusters of Aihole and Pattadakal, now a UNESCO site, form the cradle of Indian temple architecture. A branch line, the Eastern Chalukyas, was planted at Vengi in Andhra in 624 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pulakeshin_II",
+     "https://en.wikipedia.org/wiki/Chalukya_dynasty"
+    ]
+   },
+   {
+    "name": "Rashtrakutas (rising)",
+    "dynasty": "Rashtrakuta",
+    "rulers": [
+     {
+      "name": "Dantidurga",
+      "reign": "c. 735-756 CE"
+     },
+     {
+      "name": "Krishna I",
+      "reign": "c. 756-774 CE"
+     }
+    ],
+    "capital": "Ellora region, later Manyakheta",
+    "states": [
+     "Maharashtra"
+    ],
+    "summary": "In 753 CE the Rashtrakuta chief Dantidurga overthrew his Chalukya overlords and launched a new Deccan superpower. His successor Krishna I commissioned the astonishing Kailasa temple at Ellora, a full-scale Shiva temple carved downward out of a single mountainside. It remains one of the greatest rock-cut monuments on Earth.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rashtrakuta_Empire",
+     "https://en.wikipedia.org/wiki/Kailasa_Temple,_Ellora"
+    ]
+   },
+   {
+    "name": "Pallavas of Kanchipuram",
+    "dynasty": "Pallava",
+    "rulers": [
+     {
+      "name": "Mahendravarman I",
+      "reign": "c. 600-630 CE"
+     },
+     {
+      "name": "Narasimhavarman I",
+      "reign": "630-668 CE"
+     },
+     {
+      "name": "Narasimhavarman II Rajasimha",
+      "reign": "c. 700-728 CE"
+     }
+    ],
+    "capital": "Kanchipuram",
+    "states": [
+     "Tamil Nadu",
+     "Puducherry"
+    ],
+    "summary": "The Pallavas turned Kanchipuram into a city of a thousand temples and their port of Mamallapuram into an open-air sculpture gallery, today a UNESCO World Heritage Site. Narasimhavarman I avenged his father by sacking the Chalukya capital Vatapi in 642 CE. The Shore Temple and the great relief 'Descent of the Ganges' date from this golden age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pallava_dynasty",
+     "https://en.wikipedia.org/wiki/Narasimhavarman_I"
+    ]
+   },
+   {
+    "name": "Pandyas of Madurai (revived)",
+    "dynasty": "Pandya",
+    "rulers": [
+     {
+      "name": "Kadungon",
+      "reign": "c. 590-620 CE"
+     },
+     {
+      "name": "Arikesari Maravarman",
+      "reign": "c. 670-700 CE"
+     }
+    ],
+    "capital": "Madurai",
+    "states": [
+     "Kerala"
+    ],
+    "summary": "Revived by Kadungon after centuries of eclipse, the Pandyas of Madurai pushed their fish-banner armies across the southern tip of India, warring with the Ay chiefs of the Kerala hills and coast. Their heartland around the Meenakshi temple city made Madurai the cultural capital of the far south. This era set the stage for a millennium of Pandya power.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pandya_dynasty",
+     "https://en.wikipedia.org/wiki/Kadungon"
+    ],
+    "note": "Shown over Kerala as an approximation: the Pandya heartland was southern Tamil Nadu (assigned here to the Pallavas), and the Kerala coast was locally ruled by Ay and Chera chiefs under shifting Pandya pressure."
+   },
+   {
+    "name": "Karkota Dynasty of Kashmir",
+    "dynasty": "Karkota",
+    "rulers": [
+     {
+      "name": "Durlabhavardhana",
+      "reign": "c. 625-662 CE"
+     },
+     {
+      "name": "Lalitaditya Muktapida",
+      "reign": "c. 724-760 CE"
+     }
+    ],
+    "capital": "Srinagar (Parihasapura built by Lalitaditya)",
+    "states": [
+     "Jammu and Kashmir",
+     "Ladakh",
+     "Himachal Pradesh"
+    ],
+    "summary": "Under the Karkotas, Kashmir became a Himalayan empire, and Lalitaditya Muktapida is remembered as its greatest conqueror, campaigning from Central Asia to the Gangetic plains. He built the magnificent Martand Sun Temple, whose colossal ruins still crown the Anantnag plateau. The Rajatarangini chronicle calls his reign Kashmir's golden age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Lalitaditya_Muktapida",
+     "https://en.wikipedia.org/wiki/Karkota_dynasty"
+    ]
+   },
+   {
+    "name": "Kamarupa Kingdom",
+    "dynasty": "Varman, then Mlechchha (Salastambha)",
+    "rulers": [
+     {
+      "name": "Bhaskaravarman",
+      "reign": "c. 600-650 CE"
+     },
+     {
+      "name": "Salastambha",
+      "reign": "c. 655-670 CE"
+     }
+    ],
+    "capital": "Pragjyotishpura (Guwahati)",
+    "states": [
+     "Assam",
+     "Meghalaya"
+    ],
+    "summary": "Bhaskaravarman, ally of Harsha and host to the pilgrim Xuanzang, made ancient Kamarupa a power reaching deep into Bengal. His capital Pragjyotishpura stood near modern Guwahati, home of the famous Kamakhya temple hill. After his line ended, the Salastambha dynasty carried Kamarupa's independent tradition forward.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bhaskaravarman",
+     "https://en.wikipedia.org/wiki/Kamarupa"
+    ]
+   },
+   {
+    "name": "Shailodbhavas and Bhauma-Karas of Odisha",
+    "dynasty": "Shailodbhava, then Bhauma-Kara",
+    "rulers": [
+     {
+      "name": "Madhavaraja II Sainyabhita",
+      "reign": "c. 620-670 CE"
+     },
+     {
+      "name": "Kshemankaradeva",
+      "reign": "c. 736 CE onward"
+     }
+    ],
+    "capital": "Kongoda, later Guhadevapataka (Jajpur)",
+    "states": [
+     "Odisha"
+    ],
+    "summary": "The Shailodbhavas of coastal Kongoda pioneered Odisha's temple-building tradition, including early shrines at Bhubaneswar such as the exquisite Parashurameshvara temple. From the mid-8th century the Buddhist-leaning Bhauma-Karas ruled from Jajpur, patronizing the great monastic complexes of Ratnagiri, Udayagiri and Lalitgiri.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Shailodbhava_dynasty",
+     "https://en.wikipedia.org/wiki/Bhauma-Kara_dynasty"
+    ]
+   },
+   {
+    "name": "Gurjara-Pratiharas (emerging)",
+    "dynasty": "Gurjara-Pratihara",
+    "rulers": [
+     {
+      "name": "Nagabhata I",
+      "reign": "c. 730-760 CE"
+     },
+     {
+      "name": "Vatsaraja",
+      "reign": "c. 775-805 CE"
+     }
+    ],
+    "capital": "Bhinmal, later Ujjain",
+    "states": [
+     "Rajasthan",
+     "Gujarat",
+     "Madhya Pradesh"
+    ],
+    "summary": "Rising from Rajasthan, Nagabhata I won fame as the shield of western India, repelling Arab armies advancing from newly conquered Sind at the empire's far edge. His successors expanded across Gujarat and Malwa, absorbing the old Maitraka lands of Vallabhi. By 800 CE the Pratiharas stood poised to contest all of northern India.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Gurjara-Pratihara_dynasty",
+     "https://en.wikipedia.org/wiki/Nagabhata_I"
+    ]
+   }
+  ]
+ },
+ "P15": {
+  "polities": [
+   {
+    "name": "Gurjara-Pratihara Empire",
+    "dynasty": "Gurjara-Pratihara",
+    "rulers": [
+     {
+      "name": "Nagabhata II",
+      "reign": "c. 805-833 CE"
+     },
+     {
+      "name": "Mihira Bhoja",
+      "reign": "c. 836-885 CE"
+     },
+     {
+      "name": "Mahendrapala I",
+      "reign": "c. 885-910 CE"
+     }
+    ],
+    "capital": "Kannauj",
+    "states": [
+     "Uttar Pradesh",
+     "Rajasthan",
+     "Haryana",
+     "Delhi",
+     "Punjab",
+     "Gujarat"
+    ],
+    "summary": "Victors of the great Tripartite Struggle for Kannauj, the Pratiharas under Mihira Bhoja ruled one of the largest empires in India, praised by Arab travelers for its cavalry and safe roads. Their legacy survives in the temples of Osian and Bateshwar. As their grip loosened in the 10th century, new houses like the Chaulukyas of Anahilavada (founded by Mularaja in 941) rose in Gujarat.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mihira_Bhoja",
+     "https://en.wikipedia.org/wiki/Gurjara-Pratihara_dynasty"
+    ]
+   },
+   {
+    "name": "Pala Empire",
+    "dynasty": "Pala",
+    "rulers": [
+     {
+      "name": "Dharmapala",
+      "reign": "c. 775-810 CE"
+     },
+     {
+      "name": "Devapala",
+      "reign": "c. 810-850 CE"
+     }
+    ],
+    "capital": "Pataliputra and Gauda",
+    "states": [
+     "Bihar",
+     "West Bengal"
+    ],
+    "summary": "The Buddhist Pala emperors made Bengal and Bihar the intellectual heart of Asia, founding Vikramashila and lavishing patronage on Nalanda, whose vast ruins are now a UNESCO site. Dharmapala briefly crowned his own nominee at Kannauj during the Tripartite Struggle. Pala bronzes and manuscript art influenced Buddhist culture from Tibet to Java; late in the era the Kamboja-Pala line briefly held western Bengal.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pala_Empire",
+     "https://en.wikipedia.org/wiki/Dharmapala_of_Bengal"
+    ]
+   },
+   {
+    "name": "Rashtrakuta Empire",
+    "dynasty": "Rashtrakuta",
+    "rulers": [
+     {
+      "name": "Govinda III",
+      "reign": "793-814 CE"
+     },
+     {
+      "name": "Amoghavarsha I",
+      "reign": "814-878 CE"
+     },
+     {
+      "name": "Krishna III",
+      "reign": "939-967 CE"
+     }
+    ],
+    "capital": "Manyakheta (Malkhed)",
+    "states": [
+     "Karnataka",
+     "Maharashtra",
+     "Goa",
+     "Telangana"
+    ],
+    "summary": "Arab visitors ranked the Rashtrakutas among the four great empires of the world. The scholar-emperor Amoghavarsha I wrote the earliest Kannada classic, while Krishna III marched as far south as Rameswaram. Their Western Ganga allies in southern Karnataka raised the colossal 57-foot Gomateshwara monolith at Shravanabelagola in 981 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rashtrakuta_Empire",
+     "https://en.wikipedia.org/wiki/Amoghavarsha"
+    ]
+   },
+   {
+    "name": "Chola Kingdom of Thanjavur (revived)",
+    "dynasty": "Chola",
+    "rulers": [
+     {
+      "name": "Vijayalaya Chola",
+      "reign": "c. 850-870 CE"
+     },
+     {
+      "name": "Aditya I",
+      "reign": "c. 871-907 CE"
+     },
+     {
+      "name": "Parantaka I",
+      "reign": "907-955 CE"
+     }
+    ],
+    "capital": "Thanjavur",
+    "states": [
+     "Tamil Nadu",
+     "Puducherry"
+    ],
+    "summary": "Around 850 CE Vijayalaya seized Thanjavur and rekindled the ancient Chola line. His son Aditya I toppled the last great Pallava king in 897, and Parantaka I overran Madurai of the Pandyas, uniting the Tamil country. Their early stone temples along the Kaveri foreshadow the imperial masterpieces to come.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Vijayalaya_Chola",
+     "https://en.wikipedia.org/wiki/Aditya_I"
+    ]
+   },
+   {
+    "name": "Eastern Chalukyas of Vengi",
+    "dynasty": "Eastern Chalukya",
+    "rulers": [
+     {
+      "name": "Vijayaditya III",
+      "reign": "848-892 CE"
+     },
+     {
+      "name": "Bhima I",
+      "reign": "892-921 CE"
+     }
+    ],
+    "capital": "Vengi",
+    "states": [
+     "Andhra Pradesh"
+    ],
+    "summary": "This long-lived branch of the Chalukyas ruled the fertile Godavari-Krishna delta for over four centuries, caught between Rashtrakuta and later Chola ambitions. Bhima I built the celebrated Bhimeshwara temples at Draksharamam and Samalkot, still major pilgrimage sites. Under their patronage Telugu first blossomed as a literary language.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Eastern_Chalukyas",
+     "https://en.wikipedia.org/wiki/Vijayaditya_III"
+    ]
+   },
+   {
+    "name": "Utpala Dynasty of Kashmir",
+    "dynasty": "Utpala",
+    "rulers": [
+     {
+      "name": "Avantivarman",
+      "reign": "855-883 CE"
+     },
+     {
+      "name": "Shankaravarman",
+      "reign": "883-902 CE"
+     }
+    ],
+    "capital": "Srinagar (Avantipora founded by Avantivarman)",
+    "states": [
+     "Jammu and Kashmir",
+     "Ladakh"
+    ],
+    "summary": "Avantivarman brought Kashmir a celebrated age of peace, and his engineer Suyya tamed the Jhelum's floods, multiplying the valley's harvests. The dramatic ruined temples of Avantipora, which he founded, are among Kashmir's most atmospheric sights. His court poets and chroniclers fed the tradition that produced the Rajatarangini.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Avantivarman_(Utpala_dynasty)",
+     "https://en.wikipedia.org/wiki/Utpala_dynasty"
+    ]
+   },
+   {
+    "name": "Bhauma-Karas then Somavamshis of Odisha",
+    "dynasty": "Bhauma-Kara, then Somavamshi (Keshari)",
+    "rulers": [
+     {
+      "name": "Tribhuvana Mahadevi I",
+      "reign": "mid-9th century CE"
+     },
+     {
+      "name": "Janmejaya I",
+      "reign": "c. 882-922 CE"
+     },
+     {
+      "name": "Yayati I",
+      "reign": "c. 922-955 CE"
+     }
+    ],
+    "capital": "Guhadevapataka, later Yayatinagara (Jajpur)",
+    "states": [
+     "Odisha"
+    ],
+    "summary": "Odisha in this age was remarkable for its ruling queens, the Bhauma-Kara empresses like Tribhuvana Mahadevi. The Somavamshis who followed fused Kalinga and inland Kosala into one kingdom and began Bhubaneswar's great temple age, including the jewel-like Mukteshvara temple. Tradition credits Yayati with reviving the Jagannath worship at Puri.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Somavamshi_dynasty",
+     "https://en.wikipedia.org/wiki/Bhauma-Kara_dynasty"
+    ]
+   },
+   {
+    "name": "Chandelas of Jejakabhukti",
+    "dynasty": "Chandela",
+    "rulers": [
+     {
+      "name": "Yashovarman",
+      "reign": "c. 925-950 CE"
+     },
+     {
+      "name": "Dhanga",
+      "reign": "c. 950-999 CE"
+     }
+    ],
+    "capital": "Khajuraho (Kharjuravahaka)",
+    "states": [
+     "Madhya Pradesh"
+    ],
+    "summary": "Breaking free of Pratihara overlordship, the Chandelas of Bundelkhand began the temple city of Khajuraho, whose sublime sandstone shrines and famous sculptures are today a UNESCO World Heritage Site. Yashovarman built the Lakshmana temple and Dhanga the towering Vishvanatha. Their neighbors, the Paramaras of Malwa under Munja (r. c. 972-990), ruled a rival court of poets at Dhar.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chandela_dynasty",
+     "https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments"
+    ]
+   },
+   {
+    "name": "Cheras of Mahodayapuram",
+    "dynasty": "Chera Perumals (Kulasekhara)",
+    "rulers": [
+     {
+      "name": "Rajashekhara Varman",
+      "reign": "c. 820-844 CE"
+     },
+     {
+      "name": "Sthanu Ravi Varman",
+      "reign": "c. 844-883 CE"
+     }
+    ],
+    "capital": "Mahodayapuram (Kodungallur)",
+    "states": [
+     "Kerala"
+    ],
+    "summary": "The Chera Perumals ruled Kerala's spice coast from Mahodayapuram near modern Kodungallur, welcoming Jewish, Christian and Muslim trading communities in one of medieval India's most cosmopolitan ports. Kings like Kulasekhara Alvar and Cheraman Perumal Nayanar are revered as saint-poets. Their era shaped Kerala's distinctive temple culture and the Malayalam calendar begun in 825 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chera_Perumals_of_Makotai",
+     "https://en.wikipedia.org/wiki/Sthanu_Ravi_Varma"
+    ]
+   }
+  ]
+ },
+ "P16": {
+  "polities": [
+   {
+    "name": "Chola Empire",
+    "dynasty": "Chola",
+    "rulers": [
+     {
+      "name": "Rajaraja I",
+      "reign": "985-1014 CE"
+     },
+     {
+      "name": "Rajendra I",
+      "reign": "1014-1044 CE"
+     },
+     {
+      "name": "Kulottunga I",
+      "reign": "1070-1122 CE"
+     }
+    ],
+    "capital": "Thanjavur, later Gangaikonda Cholapuram",
+    "states": [
+     "Tamil Nadu",
+     "Kerala",
+     "Puducherry",
+     "Andhra Pradesh",
+     "Lakshadweep",
+     "Andaman and Nicobar Islands"
+    ],
+    "summary": "At its zenith the Chola Empire ruled the Tamil country, the Kerala coast, Sri Lanka and island outposts from Lakshadweep to the Andamans, even launching a naval expedition to Southeast Asia in 1025. Rajaraja I's Brihadisvara temple at Thanjavur, with its 66-metre granite tower, anchors the UNESCO 'Great Living Chola Temples'. Under Kulottunga I the Vengi Chalukya line of Andhra merged into the Chola crown.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rajaraja_I",
+     "https://en.wikipedia.org/wiki/Rajendra_I",
+     "https://en.wikipedia.org/wiki/Chola_dynasty"
+    ]
+   },
+   {
+    "name": "Western Chalukyas of Kalyani",
+    "dynasty": "Western Chalukya (Kalyani)",
+    "rulers": [
+     {
+      "name": "Someshvara I",
+      "reign": "1042-1068 CE"
+     },
+     {
+      "name": "Vikramaditya VI",
+      "reign": "1076-1126 CE"
+     }
+    ],
+    "capital": "Kalyani (Basavakalyan)",
+    "states": [
+     "Karnataka",
+     "Maharashtra",
+     "Goa"
+    ],
+    "summary": "The Kalyani Chalukyas dominated the Deccan for over a century, fighting epic wars with the Cholas across the Tungabhadra. Vikramaditya VI's fifty-year reign inspired the ornate temples of Lakkundi, Gadag and Itagi, whose lathe-turned pillars bridge Badami and Hoysala art. Their vassals included the Kadambas of Goa and, from the early 1100s, the rising Hoysalas of Belur under Vishnuvardhana (r. 1108-1152), builders of Belur and Halebidu.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Western_Chalukya_Empire",
+     "https://en.wikipedia.org/wiki/Vikramaditya_VI"
+    ]
+   },
+   {
+    "name": "Kakatiyas of Warangal (emerging)",
+    "dynasty": "Kakatiya",
+    "rulers": [
+     {
+      "name": "Prola II",
+      "reign": "c. 1116-1157 CE"
+     },
+     {
+      "name": "Rudradeva (Prataparudra I)",
+      "reign": "1158-1195 CE"
+     }
+    ],
+    "capital": "Anmakonda (Hanamkonda), later Warangal",
+    "states": [
+     "Telangana"
+    ],
+    "summary": "Beginning as Chalukya vassals, the Kakatiyas declared independence under Rudradeva in 1163 and made Telangana their own. Rudradeva built the Thousand Pillar Temple at Hanamkonda, a marvel of polished basalt, and began the move to the fortress city of Warangal. Their engineering genius also dotted the land with great irrigation tanks still in use today.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kakatiya_dynasty",
+     "https://en.wikipedia.org/wiki/Rudra_Deva"
+    ]
+   },
+   {
+    "name": "Paramaras of Malwa",
+    "dynasty": "Paramara",
+    "rulers": [
+     {
+      "name": "Bhoja",
+      "reign": "c. 1010-1055 CE"
+     },
+     {
+      "name": "Udayaditya",
+      "reign": "c. 1070-1086 CE"
+     }
+    ],
+    "capital": "Dhar (Dhara)",
+    "states": [
+     "Madhya Pradesh"
+    ],
+    "summary": "King Bhoja of Dhar was medieval India's legendary philosopher-king, credited with writings on everything from poetics to engineering, and with founding Bhopal's vast lake and the Sanskrit academy of Bhojashala. His unfinished Bhojeshwar temple at Bhojpur houses one of India's largest Shiva lingas. To the northeast, the Chandelas under Vidyadhara (r. c. 1003-1035) completed Khajuraho's crowning Kandariya Mahadeva temple and defied Mahmud of Ghazni.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bhoja",
+     "https://en.wikipedia.org/wiki/Paramara_dynasty"
+    ]
+   },
+   {
+    "name": "Chaulukyas (Solankis) of Gujarat",
+    "dynasty": "Chaulukya (Solanki)",
+    "rulers": [
+     {
+      "name": "Bhima I",
+      "reign": "1022-1064 CE"
+     },
+     {
+      "name": "Jayasimha Siddharaja",
+      "reign": "1092-1142 CE"
+     },
+     {
+      "name": "Kumarapala",
+      "reign": "1143-1172 CE"
+     }
+    ],
+    "capital": "Anahilavada (Patan)",
+    "states": [
+     "Gujarat"
+    ],
+    "summary": "From Anahilavada-Patan the Solankis presided over Gujarat's golden age of trade and temple art. Bhima I's queen Udayamati built Patan's Rani-ki-Vav stepwell, now a UNESCO wonder, while his reign also saw Mahmud of Ghazni's infamous raid on Somnath in 1026, later grandly rebuilt. Under Kumarapala, Jain culture flourished across sites like Taranga and the Modhera Sun Temple country.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chaulukya_dynasty",
+     "https://en.wikipedia.org/wiki/Rani_ki_Vav"
+    ]
+   },
+   {
+    "name": "Chahamanas of Ajmer",
+    "dynasty": "Chahamana (Chauhan)",
+    "rulers": [
+     {
+      "name": "Vigraharaja IV",
+      "reign": "c. 1150-1164 CE"
+     },
+     {
+      "name": "Prithviraja III (Prithviraj Chauhan)",
+      "reign": "1178-1192 CE"
+     }
+    ],
+    "capital": "Ajmer (Ajayameru)",
+    "states": [
+     "Rajasthan",
+     "Delhi",
+     "Haryana"
+    ],
+    "summary": "The Chauhans of Ajmer ruled Rajasthan and the Delhi region as the last great Rajput bulwark of the north, heirs to lands long raided by the Ghaznavids of Lahore. The chivalric hero Prithviraj Chauhan defeated Muhammad of Ghor at the first Battle of Tarain in 1191, but fell at the second in 1192; Delhi was taken that year, opening the era of the Delhi Sultanate. Ajmer's Adhai Din ka Jhonpra and Taragarh fort recall their capital.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Prithviraj_Chauhan",
+     "https://en.wikipedia.org/wiki/Battles_of_Tarain"
+    ]
+   },
+   {
+    "name": "Gahadavalas of Kannauj and Varanasi",
+    "dynasty": "Gahadavala",
+    "rulers": [
+     {
+      "name": "Govindachandra",
+      "reign": "c. 1114-1155 CE"
+     },
+     {
+      "name": "Jayachandra",
+      "reign": "c. 1170-1194 CE"
+     }
+    ],
+    "capital": "Kannauj and Varanasi",
+    "states": [
+     "Uttar Pradesh",
+     "Bihar"
+    ],
+    "summary": "The Gahadavalas restored the glory of Kannauj and made Varanasi a flourishing second capital, endowing the sacred city's temples and ghats in their thousands of surviving copper-plate grants. Govindachandra's queen Kumaradevi patronized Buddhist Sarnath in its final medieval bloom. Jayachandra, famed in legend as Prithviraj's rival, fell to the Ghurids at Chandawar in 1194.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Gahadavala_dynasty",
+     "https://en.wikipedia.org/wiki/Jayachandra"
+    ]
+   },
+   {
+    "name": "Senas of Bengal",
+    "dynasty": "Sena",
+    "rulers": [
+     {
+      "name": "Vijayasena",
+      "reign": "c. 1098-1160 CE"
+     },
+     {
+      "name": "Ballalasena",
+      "reign": "c. 1160-1179 CE"
+     },
+     {
+      "name": "Lakshmanasena",
+      "reign": "1178-1207 CE"
+     }
+    ],
+    "capital": "Nabadwip and Vikramapura",
+    "states": [
+     "West Bengal"
+    ],
+    "summary": "As the ancient Buddhist Pala empire faded, the Sena kings united Bengal under a brilliant Hindu court. Lakshmanasena's circle included Jayadeva, whose Gita Govinda remains one of India's best-loved devotional poems. Nabadwip, their riverside capital, later became Bengal's great center of learning and the birthplace of Chaitanya.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sena_dynasty",
+     "https://en.wikipedia.org/wiki/Lakshmana_Sena"
+    ]
+   },
+   {
+    "name": "Eastern Gangas of Kalinga",
+    "dynasty": "Eastern Ganga",
+    "rulers": [
+     {
+      "name": "Anantavarman Chodaganga",
+      "reign": "1077-1147 CE"
+     }
+    ],
+    "capital": "Kalinganagara (Mukhalingam), later Cuttack",
+    "states": [
+     "Odisha"
+    ],
+    "summary": "Anantavarman Chodaganga, heir to both Ganga and Chola bloodlines, forged a Kalinga empire stretching from the Ganga to the Godavari. He began the towering Jagannath temple at Puri, still the goal of the world-famous Rath Yatra chariot festival. His dynasty's later kings would crown Odishan art with the Sun Temple at Konark.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Anantavarman_Chodaganga",
+     "https://en.wikipedia.org/wiki/Eastern_Ganga_dynasty"
+    ]
+   }
+  ]
+ },
+ "P17": {
+  "polities": [
+   {
+    "name": "Delhi Sultanate",
+    "dynasty": "Mamluk, Khalji and Tughlaq dynasties",
+    "rulers": [
+     {
+      "name": "Shams-ud-din Iltutmish",
+      "reign": "1211-1236"
+     },
+     {
+      "name": "Razia Sultana",
+      "reign": "1236-1240"
+     },
+     {
+      "name": "Ghiyasuddin Balban",
+      "reign": "1266-1287"
+     },
+     {
+      "name": "Alauddin Khalji",
+      "reign": "1296-1316"
+     },
+     {
+      "name": "Muhammad bin Tughluq",
+      "reign": "1325-1351"
+     },
+     {
+      "name": "Firuz Shah Tughlaq",
+      "reign": "1351-1388"
+     }
+    ],
+    "capital": "Delhi",
+    "states": [
+     "Delhi",
+     "Haryana",
+     "Punjab",
+     "Chandigarh",
+     "Uttar Pradesh",
+     "Bihar",
+     "Madhya Pradesh",
+     "Gujarat",
+     "West Bengal"
+    ],
+    "summary": "From the soaring Qutb Minar to the ramparts of Tughlaqabad, Delhi's sultans ruled the largest empire India had seen since the Mauryas, with Alauddin Khalji repelling Mongol invasions and raiding deep into the Deccan. Under Muhammad bin Tughluq the sultanate reached its greatest extent before Bengal broke away in 1352 and Timur's devastating sack of Delhi in 1398 left it a shadow of itself. Visit the Qutb complex, Alauddin's Siri Fort and Alai Darwaza, and Firuz Shah Kotla for this era in stone.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Delhi_Sultanate",
+     "https://www.britannica.com/place/Delhi-sultanate",
+     "https://en.wikipedia.org/wiki/Muhammad_bin_Tughluq"
+    ],
+    "note": "Gujarat and Bengal were annexed only mid-period (1297-1352) and Bengal broke away again in 1352; the sultanate's grip outside the core was episodic."
+   },
+   {
+    "name": "Kakatiya Kingdom",
+    "dynasty": "Kakatiya dynasty",
+    "rulers": [
+     {
+      "name": "Ganapati Deva",
+      "reign": "1199-1262"
+     },
+     {
+      "name": "Rudrama Devi",
+      "reign": "1262-1289"
+     },
+     {
+      "name": "Prataparudra",
+      "reign": "1289-1323"
+     }
+    ],
+    "capital": "Warangal (Orugallu)",
+    "states": [
+     "Telangana",
+     "Andhra Pradesh"
+    ],
+    "summary": "The Kakatiyas ruled the Telugu country from mighty Warangal Fort, and were famously led by Rudrama Devi, one of medieval India's very few female sovereigns. Their engineers built vast irrigation tanks and the UNESCO-listed Ramappa Temple with its floating bricks. The kingdom fell to a Delhi Sultanate siege in 1323, after which the Musunuri Nayaks and Reddis of Kondavidu carried on Telugu rule.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rudrama_Devi",
+     "https://en.wikipedia.org/wiki/Prataparudra",
+     "https://en.wikipedia.org/wiki/Siege_of_Warangal_(1323)"
+    ]
+   },
+   {
+    "name": "Yadavas of Devagiri",
+    "dynasty": "Seuna (Yadava) dynasty",
+    "rulers": [
+     {
+      "name": "Simhana II",
+      "reign": "c. 1200-1246"
+     },
+     {
+      "name": "Ramachandra",
+      "reign": "1271-1311"
+     }
+    ],
+    "capital": "Devagiri (Daulatabad)",
+    "states": [
+     "Maharashtra"
+    ],
+    "summary": "From the near-impregnable hill fortress of Devagiri, the Yadavas ruled the Marathi-speaking Deccan and patronized early Marathi literature and the saint-poet Dnyaneshwar. Alauddin Khalji's surprise raid of 1296 launched Delhi's push into the south, and the dynasty was extinguished by 1317. Today the fort, renamed Daulatabad, is one of Maharashtra's most dramatic day trips near Ellora.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Seuna_(Yadava)_dynasty",
+     "https://en.wikipedia.org/wiki/Daulatabad_Fort"
+    ]
+   },
+   {
+    "name": "Hoysala Kingdom",
+    "dynasty": "Hoysala dynasty",
+    "rulers": [
+     {
+      "name": "Veera Ballala II",
+      "reign": "1173-1220"
+     },
+     {
+      "name": "Veera Ballala III",
+      "reign": "1292-1343"
+     }
+    ],
+    "capital": "Dwarasamudra (Halebidu)",
+    "states": [
+     "Karnataka"
+    ],
+    "summary": "The Hoysalas covered southern Karnataka with jewel-like star-shaped temples whose soapstone carvings at Belur, Halebidu and Somanathapura are now UNESCO World Heritage sites. Veera Ballala III fought the Delhi invasions for decades before dying in battle around 1343. From the wreckage of his kingdom rose Vijayanagara, founded in 1336 on the Tungabhadra by the brothers Harihara I and Bukka I, while the Bahmani Sultanate (founded 1347) claimed the northern Deccan.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Hoysala_Kingdom",
+     "https://en.wikipedia.org/wiki/Veera_Ballala_III",
+     "https://en.wikipedia.org/wiki/Vijayanagara_Empire"
+    ]
+   },
+   {
+    "name": "Pandya Empire of Madurai",
+    "dynasty": "Later Pandya dynasty",
+    "rulers": [
+     {
+      "name": "Maravarman Sundara Pandyan I",
+      "reign": "1216-1238"
+     },
+     {
+      "name": "Jatavarman Sundara Pandyan I",
+      "reign": "1251-1268"
+     },
+     {
+      "name": "Maravarman Kulasekhara Pandyan I",
+      "reign": "1268-1310"
+     }
+    ],
+    "capital": "Madurai",
+    "states": [
+     "Tamil Nadu",
+     "Puducherry"
+    ],
+    "summary": "Thirteenth-century Madurai was the glittering heart of the Tamil country, its pearl fisheries and spice ports praised by Marco Polo, and its Meenakshi Amman Temple the city's living centrepiece. Jatavarman Sundara Pandyan I carried Pandya power to its peak, gilding temple roofs from Srirangam to Chidambaram. A succession war invited Delhi's raids, the short-lived Madurai Sultanate followed in 1335, and Vijayanagara absorbed the region by 1378.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pandya_dynasty",
+     "https://en.wikipedia.org/wiki/Jatavarman_Sundara_Pandyan_I",
+     "https://en.wikipedia.org/wiki/Madurai_Sultanate"
+    ]
+   },
+   {
+    "name": "Venad (Later Chera) Kingdom",
+    "dynasty": "Venad Chera (Kulasekhara) dynasty",
+    "rulers": [
+     {
+      "name": "Ravi Varma Kulasekhara",
+      "reign": "1299-1314"
+     }
+    ],
+    "capital": "Kollam (Quilon)",
+    "states": [
+     "Kerala"
+    ],
+    "summary": "On Kerala's spice coast, the Venad kings ruled from the great pepper port of Kollam, where Chinese junks and Arab dhows met and travellers like Marco Polo and Ibn Battuta called. Ravi Varma Kulasekhara, a poet-king and author of a Sanskrit drama, even briefly conquered Madurai and crowned himself emperor of the south. His trading kingdom laid the foundations of later Travancore.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ravivarman_Kulasekhara",
+     "https://en.wikipedia.org/wiki/Venadu_kingdom"
+    ]
+   },
+   {
+    "name": "Eastern Ganga Kingdom",
+    "dynasty": "Eastern Ganga dynasty",
+    "rulers": [
+     {
+      "name": "Anangabhima Deva III",
+      "reign": "1211-1238"
+     },
+     {
+      "name": "Narasimhadeva I",
+      "reign": "1238-1264"
+     }
+    ],
+    "capital": "Kataka (Cuttack)",
+    "states": [
+     "Odisha"
+    ],
+    "summary": "The Eastern Gangas kept Odisha independent while northern India fell to the sultans, and celebrated their victories in stone: Narasimhadeva I built the colossal Konark Sun Temple, a chariot of the sun god with twelve carved wheels, now a UNESCO World Heritage site. The dynasty also lavished patronage on the Jagannath Temple at Puri, still one of India's greatest pilgrimage destinations.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Eastern_Ganga_dynasty",
+     "https://en.wikipedia.org/wiki/Narasingha_Deva_I",
+     "https://whc.unesco.org/en/list/246/"
+    ]
+   },
+   {
+    "name": "Ahom Kingdom",
+    "dynasty": "Ahom dynasty",
+    "rulers": [
+     {
+      "name": "Sukaphaa",
+      "reign": "1228-1268"
+     },
+     {
+      "name": "Subinphaa",
+      "reign": "1281-1293"
+     }
+    ],
+    "capital": "Charaideo",
+    "states": [
+     "Assam"
+    ],
+    "summary": "In 1228 the Tai prince Sukaphaa crossed the Patkai hills into the Brahmaputra valley and founded the Ahom kingdom, a dynasty that would rule Assam for nearly 600 years. His capital at Charaideo remained the sacred coronation and burial ground of Ahom kings, and its pyramid-like royal mounds, the Moidams, are now a UNESCO World Heritage site. Assam still celebrates Sukaphaa every December on Asom Divas.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sukaphaa",
+     "https://en.wikipedia.org/wiki/Ahom_kingdom",
+     "https://en.wikipedia.org/wiki/Charaideo"
+    ]
+   },
+   {
+    "name": "Kingdom of Mewar",
+    "dynasty": "Guhila (Sisodia) dynasty",
+    "rulers": [
+     {
+      "name": "Ratnasimha (Rawal Ratan Singh)",
+      "reign": "1302-1303"
+     },
+     {
+      "name": "Rana Hammir Singh",
+      "reign": "1326-1364"
+     }
+    ],
+    "capital": "Chittorgarh",
+    "states": [
+     "Rajasthan"
+    ],
+    "summary": "Chittorgarh, one of India's largest hill forts and a UNESCO World Heritage site, was the stage for Alauddin Khalji's famous 1303 siege, forever linked to the legend of Rani Padmini. In 1326 Rana Hammir Singh recaptured the fort, founded the Sisodia line and restored Rajput rule in Mewar. His resurgent kingdom set Rajasthan's tradition of defiance that later Ranas would make legendary.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Hammir_Singh",
+     "https://en.wikipedia.org/wiki/Siege_of_Chittorgarh_(1303)",
+     "https://en.wikipedia.org/wiki/Chittorgarh_Fort"
+    ]
+   },
+   {
+    "name": "Kashmir Sultanate",
+    "dynasty": "Shah Mir dynasty",
+    "rulers": [
+     {
+      "name": "Shah Mir",
+      "reign": "1339-1342"
+     },
+     {
+      "name": "Shihabuddin",
+      "reign": "1354-1373"
+     },
+     {
+      "name": "Sikandar Shah",
+      "reign": "1389-1413"
+     }
+    ],
+    "capital": "Srinagar",
+    "states": [
+     "Jammu and Kashmir"
+    ],
+    "summary": "In 1339 Shah Mir supplanted the last Hindu Lohara rulers and founded Kashmir's first sultanate, beginning a new chapter for the valley. The era gave Srinagar its distinctive wooden mosque architecture, including the Khanqah-e-Moula shrine on the Jhelum, as Sufi saints like Shah-e-Hamadan shaped Kashmiri culture. The dynasty ruled the valley into the sixteenth century.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Shah_Mir_dynasty",
+     "https://en.wikipedia.org/wiki/Kashmir_Sultanate"
+    ]
+   }
+  ]
+ },
+ "P18": {
+  "polities": [
+   {
+    "name": "Vijayanagara Empire",
+    "dynasty": "Sangama, Saluva, Tuluva and Aravidu dynasties",
+    "rulers": [
+     {
+      "name": "Devaraya II",
+      "reign": "1424-1446"
+     },
+     {
+      "name": "Krishnadevaraya",
+      "reign": "1509-1529"
+     },
+     {
+      "name": "Achyuta Deva Raya",
+      "reign": "1529-1542"
+     }
+    ],
+    "capital": "Vijayanagara (Hampi)",
+    "states": [
+     "Karnataka",
+     "Andhra Pradesh",
+     "Tamil Nadu",
+     "Puducherry"
+    ],
+    "summary": "For two centuries Vijayanagara ruled virtually the whole of South India from Hampi, a boulder-strewn capital of temples, bazaars and elephant stables that awed Persian and Portuguese visitors and is now a UNESCO World Heritage site. Under Krishnadevaraya, patron of Telugu poets and builder of the Vitthala Temple's stone chariot, the empire reached its golden age. After the catastrophic defeat at Talikota in 1565 the city was sacked, and its governors, the Nayaks of Madurai and Thanjavur, carried the legacy onward.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Vijayanagara_Empire",
+     "https://en.wikipedia.org/wiki/Krishnadevaraya",
+     "https://whc.unesco.org/en/list/241/"
+    ],
+    "note": "Extent shown is pre-1565; after Talikota the far south passed to the Madurai and Thanjavur Nayaks."
+   },
+   {
+    "name": "Bahmani Sultanate and the Deccan Sultanates",
+    "dynasty": "Bahmani; then Adil Shahi (Bijapur), Qutb Shahi (Golconda), Nizam Shahi (Ahmadnagar), Imad Shahi (Berar), Barid Shahi (Bidar)",
+    "rulers": [
+     {
+      "name": "Firuz Shah Bahmani",
+      "reign": "1397-1422"
+     },
+     {
+      "name": "Yusuf Adil Shah",
+      "reign": "1490-1510"
+     },
+     {
+      "name": "Sultan Quli Qutb-ul-Mulk",
+      "reign": "1518-1543"
+     },
+     {
+      "name": "Muhammad Quli Qutb Shah",
+      "reign": "1580-1612"
+     }
+    ],
+    "capital": "Gulbarga, then Bidar; later Bijapur, Golconda and Ahmadnagar",
+    "states": [
+     "Maharashtra",
+     "Telangana"
+    ],
+    "summary": "The Bahmani Sultanate, Vijayanagara's great rival across the Deccan, ruled from Gulbarga and then Bidar, whose fort and Persian-style madrasa of Mahmud Gawan still stand. Around 1490-1518 it splintered into five sultanates - Bijapur, Golconda, Ahmadnagar, Berar and Bidar - which united just once, to crush Vijayanagara at Talikota in 1565. Their legacy includes the diamond-trading fortress of Golconda and the Charminar, built in 1591 as the centrepiece of newly founded Hyderabad.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bahmani_Sultanate",
+     "https://en.wikipedia.org/wiki/Deccan_sultanates",
+     "https://en.wikipedia.org/wiki/Golconda_Fort"
+    ]
+   },
+   {
+    "name": "Mughal Empire",
+    "dynasty": "Timurid (Mughal) dynasty",
+    "rulers": [
+     {
+      "name": "Babur",
+      "reign": "1526-1530"
+     },
+     {
+      "name": "Humayun",
+      "reign": "1530-1540 and 1555-1556"
+     },
+     {
+      "name": "Akbar",
+      "reign": "1556-1605"
+     }
+    ],
+    "capital": "Agra and Delhi (later Fatehpur Sikri, Lahore)",
+    "states": [
+     "Delhi",
+     "Haryana",
+     "Punjab",
+     "Chandigarh",
+     "Bihar"
+    ],
+    "summary": "Babur's victory at the First Battle of Panipat in 1526 founded the Mughal Empire, though his son Humayun was driven out by Sher Shah Suri, whose brilliant interregnum (1540-1555) gave India the Grand Trunk Road and his magnificent tomb at Sasaram in Bihar. Akbar rebuilt and vastly expanded the empire, annexing Gujarat, Bengal and Kashmir and preaching tolerance from his red-sandstone city of Fatehpur Sikri. Humayun's Tomb in Delhi, the garden-tomb that inspired the Taj Mahal, is the era's UNESCO-listed masterpiece.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mughal_Empire",
+     "https://en.wikipedia.org/wiki/Akbar",
+     "https://en.wikipedia.org/wiki/Sher_Shah_Suri"
+    ]
+   },
+   {
+    "name": "Delhi Sultanate (Sayyid and Lodi dynasties)",
+    "dynasty": "Sayyid and Lodi dynasties",
+    "rulers": [
+     {
+      "name": "Khizr Khan",
+      "reign": "1414-1421"
+     },
+     {
+      "name": "Bahlul Lodi",
+      "reign": "1451-1489"
+     },
+     {
+      "name": "Sikandar Lodi",
+      "reign": "1489-1517"
+     },
+     {
+      "name": "Ibrahim Lodi",
+      "reign": "1517-1526"
+     }
+    ],
+    "capital": "Delhi, then Agra (from 1504)",
+    "states": [
+     "Uttar Pradesh"
+    ],
+    "summary": "After Timur's sack, a shrunken Delhi Sultanate passed to the Sayyids and then the Afghan Lodis, who rebuilt power across the Gangetic plain and absorbed the Sharqi sultanate of Jaunpur, famed for its monumental mosques. Sikandar Lodi founded Agra as his capital in 1504, setting the stage for its Mughal glory. The dynasty's domed tombs give Delhi's Lodi Gardens their romance, and Ibrahim Lodi's death at Panipat in 1526 ended the sultanate forever.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Lodi_dynasty",
+     "https://en.wikipedia.org/wiki/Sayyid_dynasty",
+     "https://en.wikipedia.org/wiki/Sikandar_Lodi"
+    ]
+   },
+   {
+    "name": "Gujarat Sultanate",
+    "dynasty": "Muzaffarid dynasty",
+    "rulers": [
+     {
+      "name": "Ahmad Shah I",
+      "reign": "1411-1442"
+     },
+     {
+      "name": "Mahmud Begada",
+      "reign": "1458-1511"
+     }
+    ],
+    "capital": "Ahmedabad (later also Champaner)",
+    "states": [
+     "Gujarat",
+     "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "summary": "Ahmad Shah I founded Ahmedabad in 1411, today India's first UNESCO World Heritage City, filled with exquisite stone-latticed mosques like the Sidi Saiyyed Jali. Mahmud Begada, conqueror of the twin forts of Junagadh and Pavagadh, presided over the sultanate's golden age and built the abandoned royal city of Champaner, another UNESCO site. The Portuguese seized Diu in 1535 and Daman in 1559, and Akbar annexed the sultanate in 1573.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Gujarat_Sultanate",
+     "https://en.wikipedia.org/wiki/Mahmud_Begada",
+     "https://whc.unesco.org/en/list/1101/"
+    ]
+   },
+   {
+    "name": "Malwa Sultanate",
+    "dynasty": "Ghurid (Malwa) and Khalji of Malwa dynasties",
+    "rulers": [
+     {
+      "name": "Hoshang Shah",
+      "reign": "1406-1435"
+     },
+     {
+      "name": "Mahmud Khalji I",
+      "reign": "1436-1469"
+     },
+     {
+      "name": "Baz Bahadur",
+      "reign": "1555-1562"
+     }
+    ],
+    "capital": "Mandu (Shadiabad)",
+    "states": [
+     "Madhya Pradesh"
+    ],
+    "summary": "The sultans of Malwa turned the hilltop fortress city of Mandu into 'Shadiabad', the City of Joy, whose Jahaz Mahal seems to float like a ship between two lakes. Hoshang Shah's white marble tomb there is said to have inspired the builders of the Taj Mahal. The romance of its last sultan Baz Bahadur and the singer Rani Roopmati still haunts Mandu's pavilions; Akbar annexed the kingdom in 1562.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Malwa_Sultanate",
+     "https://en.wikipedia.org/wiki/Mandu,_Madhya_Pradesh",
+     "https://en.wikipedia.org/wiki/Baz_Bahadur"
+    ]
+   },
+   {
+    "name": "Bengal Sultanate",
+    "dynasty": "Ilyas Shahi and Hussain Shahi dynasties",
+    "rulers": [
+     {
+      "name": "Jalaluddin Muhammad Shah",
+      "reign": "1415-1433"
+     },
+     {
+      "name": "Alauddin Hussain Shah",
+      "reign": "1494-1519"
+     },
+     {
+      "name": "Nasiruddin Nasrat Shah",
+      "reign": "1519-1533"
+     }
+    ],
+    "capital": "Gaur (and Pandua)",
+    "states": [
+     "West Bengal"
+    ],
+    "summary": "Independent of Delhi since 1352, the Bengal Sultanate grew rich on rice, muslin and river trade, and its capital Gaur was among the most populous cities on earth. Under Alauddin Hussain Shah, Bengali literature flourished and the mystic Chaitanya Mahaprabhu began his devotional movement. The atmospheric brick ruins of Gaur and Pandua, near Malda, preserve its distinctive terracotta mosque architecture; the Mughals absorbed Bengal in 1576.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bengal_Sultanate",
+     "https://en.wikipedia.org/wiki/Alauddin_Husain_Shah",
+     "https://en.wikipedia.org/wiki/Gauda_(city)"
+    ]
+   },
+   {
+    "name": "Gajapati Empire",
+    "dynasty": "Suryavamsha Gajapati dynasty",
+    "rulers": [
+     {
+      "name": "Kapilendra Deva",
+      "reign": "1435-1467"
+     },
+     {
+      "name": "Purushottama Deva",
+      "reign": "1467-1497"
+     },
+     {
+      "name": "Prataparudra Deva",
+      "reign": "1497-1540"
+     }
+    ],
+    "capital": "Cuttack",
+    "states": [
+     "Odisha"
+    ],
+    "summary": "Kapilendra Deva, a soldier who seized the throne in 1435, forged the Gajapati Empire that stretched from the Ganga to the Kaveri, making Odisha the great Hindu power of eastern India. The dynasty were devoted patrons of the Jagannath Temple at Puri, and the saint Chaitanya spent his last years there under Prataparudra Deva. Cuttack's Barabati Fort and Puri's living temple traditions recall Odisha's imperial age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kapilendra_Deva",
+     "https://en.wikipedia.org/wiki/Gajapati_Empire",
+     "https://historyofodisha.in/kapilendradeva/"
+    ]
+   },
+   {
+    "name": "Kingdom of Mewar",
+    "dynasty": "Sisodia dynasty",
+    "rulers": [
+     {
+      "name": "Rana Kumbha",
+      "reign": "1433-1468"
+     },
+     {
+      "name": "Rana Sanga",
+      "reign": "1509-1528"
+     },
+     {
+      "name": "Maharana Pratap",
+      "reign": "1572-1597"
+     }
+    ],
+    "capital": "Chittorgarh, then Udaipur (from 1559)",
+    "states": [
+     "Rajasthan"
+    ],
+    "summary": "This was Mewar's heroic age: Rana Kumbha built the massive Kumbhalgarh fort, whose 36-kilometre wall is among the longest on earth, and raised the Vijay Stambha victory tower at Chittorgarh - both UNESCO-listed hill forts of Rajasthan. Rana Sanga united the Rajputs and nearly toppled Babur before falling at Khanwa in 1527. After Akbar sacked Chittor in 1568, Udai Singh II's new lake city of Udaipur became the capital, and Maharana Pratap's defiance at Haldighati in 1576 made him a legend.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rana_Kumbha",
+     "https://en.wikipedia.org/wiki/Rana_Sanga",
+     "https://en.wikipedia.org/wiki/Maharana_Pratap"
+    ]
+   },
+   {
+    "name": "Portuguese India (Estado da India)",
+    "dynasty": "Portuguese Crown (Aviz and Habsburg viceroys)",
+    "rulers": [
+     {
+      "name": "Francisco de Almeida (Viceroy)",
+      "reign": "1505-1509"
+     },
+     {
+      "name": "Afonso de Albuquerque (Governor)",
+      "reign": "1509-1515"
+     }
+    ],
+    "capital": "Velha Goa (Old Goa)",
+    "states": [
+     "Goa"
+    ],
+    "summary": "Vasco da Gama's landing at the Zamorin of Calicut's shore in 1498 opened the sea route from Europe, and in 1510 Afonso de Albuquerque seized Goa from Bijapur, making it the capital of Portugal's Asian empire. Old Goa grew into the 'Rome of the East', its UNESCO-listed churches including the Basilica of Bom Jesus, resting place of St. Francis Xavier. Portuguese forts at Cochin, Daman and Diu still dot the western seaboard, alongside the spice kingdoms of the Zamorin and Cochin they traded and warred with.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Portuguese_India",
+     "https://en.wikipedia.org/wiki/Afonso_de_Albuquerque",
+     "https://whc.unesco.org/en/list/234/"
+    ]
+   }
+  ]
+ },
+ "P19": {
+  "polities": [
+   {
+    "name": "Mughal Empire",
+    "dynasty": "Timurid (Mughal)",
+    "rulers": [
+     {
+      "name": "Jahangir",
+      "reign": "1605-1627"
+     },
+     {
+      "name": "Shah Jahan",
+      "reign": "1628-1658"
+     },
+     {
+      "name": "Aurangzeb",
+      "reign": "1658-1707"
+     },
+     {
+      "name": "Muhammad Shah 'Rangila'",
+      "reign": "1719-1748"
+     }
+    ],
+    "capital": "Agra, then Shahjahanabad (Delhi)",
+    "states": [
+     "Delhi",
+     "Uttar Pradesh",
+     "Haryana",
+     "Uttarakhand",
+     "Jammu and Kashmir",
+     "Ladakh"
+    ],
+    "summary": "Under Shah Jahan the Mughals built the Taj Mahal, and under Aurangzeb (d. 1707) the empire reached its greatest extent, covering almost the entire subcontinent. After 1707 it declined with astonishing speed, shrinking within decades to the country around Delhi and Agra, though the emperor remained a potent symbol. Its legacy survives in the Red Fort, Jama Masjid, Fatehpur Sikri and the gardens of Kashmir.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mughal_Empire",
+     "https://en.wikipedia.org/wiki/Mughal_successor_states",
+     "https://www.britannica.com/place/Mughal-dynasty"
+    ]
+   },
+   {
+    "name": "Maratha Empire (Confederacy)",
+    "dynasty": "Bhonsle Chhatrapatis and Bhat Peshwas (with Scindia, Holkar, Gaekwad, Bhonsle of Nagpur)",
+    "rulers": [
+     {
+      "name": "Chhatrapati Shivaji",
+      "reign": "crowned 1674, d. 1680"
+     },
+     {
+      "name": "Peshwa Baji Rao I",
+      "reign": "1720-1740"
+     },
+     {
+      "name": "Peshwa Balaji Baji Rao (Nanasaheb)",
+      "reign": "1740-1761"
+     }
+    ],
+    "capital": "Raigad, later Pune (Peshwa seat)",
+    "states": [
+     "Maharashtra",
+     "Madhya Pradesh",
+     "Gujarat",
+     "Chhattisgarh",
+     "Odisha"
+    ],
+    "summary": "From Shivaji's daring hill-fort kingdom, the Marathas rose to become India's dominant power by the mid-1700s, their horsemen ranging from the Deccan to Delhi and Lahore at their peak around 1758. The catastrophic Third Battle of Panipat (1761) against Ahmad Shah Abdali checked their northern advance, but the confederacy remained formidable until 1818. Visit Raigad, Shaniwar Wada in Pune and Shivaji's sea forts along the Konkan coast.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Maratha_Empire",
+     "https://www.britannica.com/topic/Maratha-confederacy",
+     "https://panipat.gov.in/third-battle/"
+    ],
+    "note": "Odisha and much of central India came under Maratha control only after the 1740s-50s campaigns."
+   },
+   {
+    "name": "Sikh Misls (Sikh Confederacy)",
+    "dynasty": "Khalsa misl chiefdoms (Sukerchakia, Bhangi, Ahluwalia and others)",
+    "rulers": [
+     {
+      "name": "Guru Gobind Singh (10th Sikh Guru)",
+      "reign": "1675-1708"
+     },
+     {
+      "name": "Banda Singh Bahadur",
+      "reign": "1708-1716"
+     },
+     {
+      "name": "Jassa Singh Ahluwalia",
+      "reign": "c. 1748-1783"
+     }
+    ],
+    "capital": "Amritsar (spiritual centre)",
+    "states": [
+     "Punjab",
+     "Himachal Pradesh",
+     "Chandigarh"
+    ],
+    "summary": "After Guru Gobind Singh founded the Khalsa in 1699 and Banda Singh Bahadur's uprising shook Mughal Punjab, Sikh warrior bands called misls carved the region into a confederacy through the chaotic mid-1700s. Their rise set the stage for Maharaja Ranjit Singh's later Sikh Empire. The Golden Temple at Amritsar and Anandpur Sahib are the great pilgrimage sites of this era.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Misl",
+     "https://en.wikipedia.org/wiki/Sukerchakia_Misl",
+     "https://www.britannica.com/topic/Sikhism"
+    ]
+   },
+   {
+    "name": "Rajput Kingdoms (Mewar, Marwar, Amber-Jaipur)",
+    "dynasty": "Sisodia, Rathore and Kachwaha Rajputs",
+    "rulers": [
+     {
+      "name": "Sawai Jai Singh II of Amber-Jaipur",
+      "reign": "1699-1743"
+     },
+     {
+      "name": "Maharana Sangram Singh II of Mewar",
+      "reign": "1710-1734"
+     },
+     {
+      "name": "Ajit Singh of Marwar",
+      "reign": "1707-1724"
+     }
+    ],
+    "capital": "Udaipur, Jodhpur and Jaipur (founded 1727)",
+    "states": [
+     "Rajasthan"
+    ],
+    "summary": "As Mughal power waned after 1707, the great Rajput houses of Mewar, Marwar and Amber reasserted their independence. The astronomer-king Sawai Jai Singh II founded the planned pink city of Jaipur and its remarkable Jantar Mantar observatory in 1727. Rajasthan's forts and palaces - Amber, Mehrangarh, Udaipur's City Palace - are living monuments of this age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Jai_Singh_II",
+     "https://www.britannica.com/topic/Rajput",
+     "https://en.wikipedia.org/wiki/Kingdom_of_Mewar"
+    ]
+   },
+   {
+    "name": "Nizam of Hyderabad (Asaf Jahi State)",
+    "dynasty": "Asaf Jahi",
+    "rulers": [
+     {
+      "name": "Nizam-ul-Mulk Asaf Jah I",
+      "reign": "1724-1748"
+     },
+     {
+      "name": "Salabat Jang",
+      "reign": "1751-1762"
+     },
+     {
+      "name": "Nizam Ali Khan Asaf Jah II",
+      "reign": "1762-1803"
+     }
+    ],
+    "capital": "Aurangabad, then Hyderabad",
+    "states": [
+     "Telangana",
+     "Andhra Pradesh"
+    ],
+    "summary": "In 1724 the Mughal viceroy of the Deccan, Nizam-ul-Mulk Asaf Jah I, made himself effectively independent, founding a dynasty that ruled Hyderabad for over two centuries. The Nizams became fabled as among the richest rulers on earth. Explore Golconda Fort, the Charminar and the opulent Chowmahalla Palace.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Nizam-ul-Mulk,_Asaf_Jah_I",
+     "https://www.britannica.com/place/Hyderabad-historical-state-India",
+     "https://en.wikipedia.org/wiki/Hyderabad_State"
+    ]
+   },
+   {
+    "name": "Kingdom of Mysore",
+    "dynasty": "Wodeyar (Wadiyar), then Hyder Ali and Tipu Sultan",
+    "rulers": [
+     {
+      "name": "Krishnaraja Wodeyar II",
+      "reign": "1734-1766"
+     },
+     {
+      "name": "Hyder Ali",
+      "reign": "1761-1782"
+     },
+     {
+      "name": "Tipu Sultan",
+      "reign": "1782-1799"
+     }
+    ],
+    "capital": "Mysore, then Srirangapatna",
+    "states": [
+     "Karnataka",
+     "Tamil Nadu"
+    ],
+    "summary": "The old Wodeyar kingdom of Mysore was transformed by the soldier Hyder Ali and his son Tipu Sultan, the 'Tiger of Mysore', into the East India Company's most feared Indian adversary, campaigning deep into the Carnatic. Tipu fell defending Srirangapatna in 1799, after which the British restored the Wodeyars. Mysore Palace, Srirangapatna's fort and Tipu's summer palace at Bengaluru evoke this dramatic era.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kingdom_of_Mysore",
+     "https://www.britannica.com/biography/Tipu-Sultan",
+     "https://en.wikipedia.org/wiki/Tipu_Sultan"
+    ],
+    "note": "Tamil Nadu was contested: the Nawab of Arcot, the Nayak successor states and the Company all held parts of the Carnatic through this period."
+   },
+   {
+    "name": "Travancore and Cochin (with the Zamorin of Calicut)",
+    "dynasty": "Venad (Travancore) and Perumpadappu (Cochin) royal houses",
+    "rulers": [
+     {
+      "name": "Marthanda Varma of Travancore",
+      "reign": "1729-1758"
+     },
+     {
+      "name": "Dharma Raja Karthika Thirunal Rama Varma",
+      "reign": "1758-1798"
+     }
+    ],
+    "capital": "Padmanabhapuram, later Thiruvananthapuram; Cochin at Thrissur/Ernakulam",
+    "states": [
+     "Kerala",
+     "Lakshadweep"
+    ],
+    "summary": "Marthanda Varma forged modern Travancore and in 1741 crushed the Dutch East India Company at the Battle of Colachel - celebrated as the first defeat of a European naval power by an Indian state. He famously dedicated his kingdom to the deity Padmanabha in 1750, ruling as the god's servant. The Padmanabhaswamy Temple and the wooden Padmanabhapuram Palace are unmissable legacies.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Colachel",
+     "https://en.wikipedia.org/wiki/Marthanda_Varma",
+     "https://www.britannica.com/place/Travancore"
+    ]
+   },
+   {
+    "name": "Nawabs of Bengal and the British East India Company",
+    "dynasty": "Nasiri and Afshar Nawabs; then Company rule (Diwani 1765)",
+    "rulers": [
+     {
+      "name": "Murshid Quli Khan",
+      "reign": "1717-1727"
+     },
+     {
+      "name": "Alivardi Khan",
+      "reign": "1740-1756"
+     },
+     {
+      "name": "Siraj-ud-Daulah",
+      "reign": "1756-1757"
+     },
+     {
+      "name": "Robert Clive (Company Governor of Bengal)",
+      "reign": "1757-1760, 1765-1767"
+     }
+    ],
+    "capital": "Murshidabad; Company seat at Calcutta",
+    "states": [
+     "West Bengal",
+     "Bihar",
+     "Jharkhand"
+    ],
+    "summary": "Bengal, richest province of the Mughal world, became virtually independent under Murshid Quli Khan from 1717. Young Nawab Siraj-ud-Daulah's defeat by Robert Clive at Plassey in 1757, and the grant of the Diwani in 1765, made the East India Company the real ruler of Bengal and Bihar - the beginning of British power in India. Murshidabad's Hazarduari Palace and the Plassey battlefield tell the story.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Plassey",
+     "https://en.wikipedia.org/wiki/Nawabs_of_Bengal",
+     "https://www.britannica.com/event/Battle-of-Plassey"
+    ]
+   },
+   {
+    "name": "Ahom Kingdom",
+    "dynasty": "Ahom (Tai-Ahom)",
+    "rulers": [
+     {
+      "name": "Gadadhar Singha",
+      "reign": "1681-1696"
+     },
+     {
+      "name": "Rudra Singha",
+      "reign": "1696-1714"
+     },
+     {
+      "name": "Rajeswar Singha",
+      "reign": "1751-1769"
+     }
+    ],
+    "capital": "Rangpur (Sivasagar)",
+    "states": [
+     "Assam",
+     "Arunachal Pradesh",
+     "Nagaland"
+    ],
+    "summary": "The Ahoms ruled the Brahmaputra valley for six centuries and famously repelled the Mughals - most memorably at the naval Battle of Saraighat in 1671, where general Lachit Borphukan defeated a far larger imperial force. Under Rudra Singha (1696-1714) the kingdom reached its cultural zenith. Sivasagar's Rang Ghar amphitheatre, Talatal Ghar and towering temple tanks survive from this golden age.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Saraighat",
+     "https://en.wikipedia.org/wiki/Ahom_kingdom",
+     "https://en.wikipedia.org/wiki/Lachit_Borphukan"
+    ]
+   },
+   {
+    "name": "Northeastern Kingdoms: Manipur, Tripura and the Jaintia-Khasi States",
+    "dynasty": "Ningthouja (Manipur), Manikya (Tripura), Jaintia and Khasi chiefships",
+    "rulers": [
+     {
+      "name": "Pamheiba (Garib Niwaz) of Manipur",
+      "reign": "1709-1748"
+     },
+     {
+      "name": "Dharma Manikya II of Tripura",
+      "reign": "1714-1729"
+     },
+     {
+      "name": "Ram Singh II of Jaintiapur",
+      "reign": "c. 1707-1731"
+     }
+    ],
+    "capital": "Imphal (Manipur); Udaipur/Agartala (Tripura); Jaintiapur (Jaintia)",
+    "states": [
+     "Manipur",
+     "Tripura",
+     "Meghalaya",
+     "Mizoram"
+    ],
+    "summary": "The eastern hills sheltered proud independent kingdoms: Manipur under the warrior-king Garib Niwaz, Tripura under its ancient Manikya dynasty, and the Jaintia and Khasi states of the Meghalaya highlands, while Mizo chiefs ruled the Lushai Hills. These realms kept distinct courts, faiths and traditions outside both Mughal and Ahom control. Kangla Fort in Imphal, Tripura's Neermahal region and Nartiang's monoliths recall them.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Manipur_(princely_state)",
+     "https://en.wikipedia.org/wiki/Kingdom_of_Tripura",
+     "https://en.wikipedia.org/wiki/Jaintia_Kingdom"
+    ]
+   },
+   {
+    "name": "Kingdom of Sikkim",
+    "dynasty": "Namgyal (Chogyal)",
+    "rulers": [
+     {
+      "name": "Chogyal Chakdor Namgyal",
+      "reign": "1700-1717"
+     },
+     {
+      "name": "Chogyal Phuntsog Namgyal II",
+      "reign": "1733-1780"
+     }
+    ],
+    "capital": "Rabdentse",
+    "states": [
+     "Sikkim"
+    ],
+    "summary": "The Buddhist Namgyal dynasty, consecrated in 1642, ruled Sikkim as Chogyals ('righteous kings') from mountain capitals at Yuksom and Rabdentse, weathering invasions from Bhutan and Nepal. The kingdom endured until it joined India in 1975. The Rabdentse palace ruins and the great monasteries of Pemayangtse and Tashiding date from this era.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kingdom_of_Sikkim",
+     "https://www.britannica.com/place/Sikkim/History"
+    ]
+   },
+   {
+    "name": "European Coastal Enclaves: Portuguese Goa and French India",
+    "dynasty": "Portuguese Estado da India; French Compagnie des Indes",
+    "rulers": [
+     {
+      "name": "Marquis of Alorna (Portuguese Viceroy)",
+      "reign": "1744-1750"
+     },
+     {
+      "name": "Joseph Francois Dupleix (French Governor-General)",
+      "reign": "1742-1754"
+     }
+    ],
+    "capital": "Velha Goa / Panjim (Portuguese); Pondicherry (French)",
+    "states": [
+     "Goa",
+     "Puducherry",
+     "Dadra and Nagar Haveli and Daman and Diu"
+    ],
+    "summary": "Portugal had held Goa since 1510, and its baroque churches of Old Goa remain a UNESCO World Heritage site, while Daman and Diu guarded its northern sea lanes. From Pondicherry the ambitious Dupleix nearly won southern India for France in the Carnatic Wars of the 1740s-50s before the British prevailed. Pondicherry's White Town still charms with its French boulevards and cafes.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Portuguese_India",
+     "https://en.wikipedia.org/wiki/Joseph_Fran%C3%A7ois_Dupleix",
+     "https://www.britannica.com/biography/Joseph-Francois-Dupleix"
+    ]
+   }
+  ]
+ },
+ "P20": {
+  "polities": [
+   {
+    "name": "British India (Company rule, 1800-1858)",
+    "dynasty": "British East India Company (Governors-General)",
+    "rulers": [
+     {
+      "name": "Marquess Wellesley (Governor-General)",
+      "reign": "1798-1805"
+     },
+     {
+      "name": "Lord William Bentinck (Governor-General)",
+      "reign": "1828-1835"
+     },
+     {
+      "name": "Marquess of Dalhousie (Governor-General)",
+      "reign": "1848-1856"
+     }
+    ],
+    "capital": "Calcutta",
+    "states": [],
+    "summary": "In little over half a century the East India Company swallowed the subcontinent: Mysore fell in 1799, the Marathas in 1818, Sindh in 1843, Punjab in 1849 after the Anglo-Sikh Wars, and Awadh in 1856. Dalhousie's annexations and sweeping changes helped ignite the great Revolt of 1857, after which the Crown took direct control. Lucknow's Residency and Delhi's ridge preserve haunting memorials of 1857.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Company_rule_in_India",
+     "https://www.britannica.com/event/Indian-Mutiny",
+     "https://en.wikipedia.org/wiki/Indian_Rebellion_of_1857"
+    ]
+   },
+   {
+    "name": "Sikh Empire (1801-1849)",
+    "dynasty": "Sukerchakia (house of Ranjit Singh)",
+    "rulers": [
+     {
+      "name": "Maharaja Ranjit Singh",
+      "reign": "1801-1839"
+     },
+     {
+      "name": "Maharaja Kharak Singh",
+      "reign": "1839-1840"
+     },
+     {
+      "name": "Maharaja Sher Singh",
+      "reign": "1841-1843"
+     },
+     {
+      "name": "Maharaja Duleep Singh",
+      "reign": "1843-1849"
+     }
+    ],
+    "capital": "Lahore",
+    "states": [],
+    "summary": "The 'Lion of Punjab', Maharaja Ranjit Singh, united the Sikh misls into a powerful empire spanning Punjab, Kashmir, Ladakh and the Khyber frontier, with a modern army drilled by European officers. After his death in 1839 the empire unravelled, and the British annexed Punjab in 1849 following two Anglo-Sikh Wars - the young Duleep Singh surrendering the Koh-i-noor diamond. He gilded Amritsar's Harmandir Sahib, giving the Golden Temple its name.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ranjit_Singh",
+     "https://www.britannica.com/biography/Ranjit-Singh-Sikh-maharaja",
+     "https://en.wikipedia.org/wiki/Sikh_Empire"
+    ]
+   },
+   {
+    "name": "British Raj (Crown rule, 1858-1947)",
+    "dynasty": "British Crown (Empress/Emperors of India, governed through Viceroys)",
+    "rulers": [
+     {
+      "name": "Queen Victoria (Empress of India)",
+      "reign": "1858-1901 (Empress from 1876)"
+     },
+     {
+      "name": "Lord Curzon (Viceroy)",
+      "reign": "1899-1905"
+     },
+     {
+      "name": "Lord Mountbatten (last Viceroy)",
+      "reign": "1947"
+     }
+    ],
+    "capital": "Calcutta, then New Delhi (from 1911)",
+    "states": [],
+    "summary": "After 1858 India was ruled directly by the British Crown: eleven provinces alongside more than 560 princely states, from the Nizam's Hyderabad and the Wodeyars' Mysore to Dogra Kashmir, Baroda, Gwalior and the Rajput courts, with the Ahom lands having been annexed in 1826 by the Treaty of Yandabo. Railways, Lutyens' New Delhi and the Victoria Memorial rose even as Gandhi's freedom movement gathered strength, culminating in independence and Partition in August 1947.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/British_Raj",
+     "https://www.britannica.com/event/British-raj",
+     "https://en.wikipedia.org/wiki/Princely_state"
+    ]
+   },
+   {
+    "name": "Republic of India (1947-2026)",
+    "dynasty": "Parliamentary democracy (Prime Ministers)",
+    "rulers": [
+     {
+      "name": "Jawaharlal Nehru (Prime Minister)",
+      "reign": "1947-1964"
+     },
+     {
+      "name": "Indira Gandhi (Prime Minister)",
+      "reign": "1966-1977, 1980-1984"
+     },
+     {
+      "name": "Narendra Modi (Prime Minister)",
+      "reign": "2014-present"
+     }
+    ],
+    "capital": "New Delhi",
+    "states": [
+     "Andhra Pradesh",
+     "Arunachal Pradesh",
+     "Assam",
+     "Bihar",
+     "Chhattisgarh",
+     "Goa",
+     "Gujarat",
+     "Haryana",
+     "Himachal Pradesh",
+     "Jharkhand",
+     "Karnataka",
+     "Kerala",
+     "Madhya Pradesh",
+     "Maharashtra",
+     "Manipur",
+     "Meghalaya",
+     "Mizoram",
+     "Nagaland",
+     "Odisha",
+     "Punjab",
+     "Rajasthan",
+     "Sikkim",
+     "Tamil Nadu",
+     "Telangana",
+     "Tripura",
+     "Uttar Pradesh",
+     "Uttarakhand",
+     "West Bengal",
+     "Andaman and Nicobar Islands",
+     "Chandigarh",
+     "Dadra and Nagar Haveli and Daman and Diu",
+     "Delhi",
+     "Jammu and Kashmir",
+     "Ladakh",
+     "Lakshadweep",
+     "Puducherry"
+    ],
+    "summary": "Independent from 15 August 1947, India knitted together over 560 princely states under Sardar Patel and redrew its map along linguistic lines with the States Reorganisation Act of 1956. New states followed - Gujarat and Maharashtra (1960), Punjab and Haryana (1966), the northeastern states (1963-87), Chhattisgarh, Jharkhand and Uttarakhand (2000), Telangana (2014) - with Jammu and Kashmir reorganised into two union territories in 2019. Today the world's largest democracy and most populous nation spans 28 states and 8 union territories, from Himalayan Ladakh to tropical Lakshadweep.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/States_Reorganisation_Act,_1956",
+     "https://en.wikipedia.org/wiki/Political_integration_of_India",
+     "https://www.britannica.com/place/India/History"
+    ]
+   }
+  ]
+ }
+}

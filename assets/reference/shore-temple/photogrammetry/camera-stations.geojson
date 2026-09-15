@@ -1,0 +1,1856 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "what": "EXIF GPS positions of the photographs in photogrammetry/images/",
+  "accuracy": "consumer GPS, roughly 5-10 m per fix; use in aggregate, never singly",
+  "source": "Wikimedia Commons uploaders; see ../SOURCES.md for per-file credit",
+  "generated": "2026-09-07"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19929444444445,
+     12.616361111111111
+    ]
+   },
+   "properties": {
+    "file": "a-view-of-shore-temples-gopuram.jpg",
+    "altitude_m": 15.585895117540687,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19824722222222,
+     12.620750000000001
+    ]
+   },
+   "properties": {
+    "file": "chennai-mahabalipuram-temple.jpg",
+    "altitude_m": -62.8,
+    "metres_from_temple": 484
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19921525000001,
+     12.61675138888889
+    ]
+   },
+   "properties": {
+    "file": "folk-architecture.jpg",
+    "altitude_m": 4.678,
+    "metres_from_temple": 30
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19798931333334,
+     12.614982845
+    ]
+   },
+   "properties": {
+    "file": "foodstalls-at-mamallapuram-beach-wus-01821.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 214
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1991268888889,
+     12.616609694444444
+    ]
+   },
+   "properties": {
+    "file": "huge-stone-figures-of-the-lion-elephant-and-a-bull-2.jpg",
+    "altitude_m": -85.737,
+    "metres_from_temple": 19
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19898333333333,
+     12.616408333333332
+    ]
+   },
+   "properties": {
+    "file": "inside-shore-temple-facing-west.jpg",
+    "altitude_m": 1.9997807498355624,
+    "metres_from_temple": 28
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937333333333,
+     12.616716666666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-55438886752.jpg",
+    "altitude_m": -75,
+    "metres_from_temple": 30
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19894833333333,
+     12.617181666666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-55438888352.jpg",
+    "altitude_m": -72,
+    "metres_from_temple": 84
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1994253,
+     12.6167009
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-55439972113.jpg",
+    "altitude_m": -81,
+    "metres_from_temple": 32
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937333333333,
+     12.616716666666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-55440250125.jpg",
+    "altitude_m": -75,
+    "metres_from_temple": 30
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19705555555556,
+     12.616180555555555
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-92979.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 239
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19820404,
+     12.618171691666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-img-20250221-101944.jpg",
+    "altitude_m": -60.9,
+    "metres_from_temple": 218
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19857599666666,
+     12.614358946666666
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01811.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 245
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19857599666666,
+     12.614358946666666
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01813.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 245
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19798931333334,
+     12.614982845
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01818.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 214
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19751463666667,
+     12.61645429
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01953.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 187
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198694265,
+     12.616940955
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01954.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 78
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19909123166667,
+     12.617113705
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01959.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 72
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199398345,
+     12.616743338333333
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01960.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 34
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19951368,
+     12.616556191666668
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01962.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 31
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19957268833333,
+     12.616421393333333
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01963.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199350065,
+     12.616155721666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01964.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 38
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19936343166667,
+     12.616167375
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01966.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19936343166667,
+     12.616167375
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01968.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19936343166667,
+     12.616167375
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01969.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19936343166667,
+     12.616167375
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01970.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19936343166667,
+     12.616167375
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01971.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19936343166667,
+     12.616167375
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01972.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937626333333,
+     12.61641978
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01973.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 17
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937626333333,
+     12.61641978
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01974.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 17
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199365535,
+     12.61641978
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01975.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 16
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19914022833333,
+     12.616459041666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01977.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 11
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19920460166666,
+     12.616527096666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01981.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19919387333333,
+     12.616534948333333
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01982.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 8
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19923008333333,
+     12.616519243333334
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01983.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19922337666667,
+     12.616529713333334
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01984.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19920996666667,
+     12.616558505
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01985.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19943259,
+     12.616524478333334
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01986.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 22
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19943259,
+     12.616536256666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01987.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 22
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19936955833333,
+     12.616540183333333
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01988.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 16
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19940576833334,
+     12.616537565
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01989.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 20
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19951037333334,
+     12.616567666666667
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01990.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 31
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19951708,
+     12.616571591666666
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01991.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 32
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19865187,
+     12.616964003333333
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01995.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 83
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19701035833333,
+     12.616419575
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01996.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 242
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.18794212833333,
+     12.620865878333333
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-shore-temple-wus01998.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 1319
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19943333333333,
+     12.616668333333333
+    ]
+   },
+   "properties": {
+    "file": "mahabalipuram-temple-india.jpg",
+    "altitude_m": 6.5,
+    "metres_from_temple": 30
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19914244444445,
+     12.616415972222223
+    ]
+   },
+   "properties": {
+    "file": "mahaballipuram-pic-11.jpg",
+    "altitude_m": -91,
+    "metres_from_temple": 12
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19914244444445,
+     12.616415972222223
+    ]
+   },
+   "properties": {
+    "file": "mahaballipuram-pic-12.jpg",
+    "altitude_m": -91,
+    "metres_from_temple": 12
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19920277777778,
+     12.616807777777778
+    ]
+   },
+   "properties": {
+    "file": "mahaballipuram-shore-temple.jpg",
+    "altitude_m": 4.948,
+    "metres_from_temple": 36
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19888333333334,
+     12.616397222222222
+    ]
+   },
+   "properties": {
+    "file": "mamallapuram.in-shore-temple-panoramio.jpg",
+    "altitude_m": 4.77,
+    "metres_from_temple": 39
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19931111111111,
+     12.616702777777778
+    ]
+   },
+   "properties": {
+    "file": "pit-beside-shore-temple.jpg",
+    "altitude_m": -11.297235023041475,
+    "metres_from_temple": 26
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19928611111112,
+     12.616619444444444
+    ]
+   },
+   "properties": {
+    "file": "pit-near-shore-temple-2.jpg",
+    "altitude_m": -0.3401562079181255,
+    "metres_from_temple": 16
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19907500000001,
+     12.616975
+    ]
+   },
+   "properties": {
+    "file": "pits-infront-of-shore-temple.jpg",
+    "altitude_m": 2.374416097736256,
+    "metres_from_temple": 57
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19989972222223,
+     12.616428055555556
+    ]
+   },
+   "properties": {
+    "file": "recumbent-vischnu.jpg",
+    "altitude_m": 3.9,
+    "metres_from_temple": 72
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "rivagesculpture-1.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "rivagesculpture-10.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "rivagesculpture-11.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "rivagesculpture-2.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "rivagesculpture-3.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "rivagesculpture-6.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "rivagesculpture-8.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "rivagesculpture-9.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19941666666666,
+     12.616325
+    ]
+   },
+   "properties": {
+    "file": "sculptures-near-shore-temple.jpg",
+    "altitude_m": -4.054227941176471,
+    "metres_from_temple": 26
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199425,
+     12.616455555555556
+    ]
+   },
+   "properties": {
+    "file": "sculptures-on-shore-temples-compound-wall.jpg",
+    "altitude_m": 9.846222222222222,
+    "metres_from_temple": 21
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19917222222223,
+     12.616816666666667
+    ]
+   },
+   "properties": {
+    "file": "sea-shore-temple-mahabalipuram-d298301.jpg",
+    "altitude_m": -4294967216,
+    "metres_from_temple": 38
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19861111111112,
+     12.616111111111111
+    ]
+   },
+   "properties": {
+    "file": "shiven.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 79
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19905,
+     12.616522472222222
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-10.jpg",
+    "altitude_m": 4.633,
+    "metres_from_temple": 21
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19927222222222,
+     12.616605555555555
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-12.jpg",
+    "altitude_m": 2.277,
+    "metres_from_temple": 14
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19920277777778,
+     12.616807777777778
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-5-bba1c71.jpg",
+    "altitude_m": 4.948,
+    "metres_from_temple": 36
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199,
+     12.624
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-5139349364.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 832
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19913997222223,
+     12.61680025
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-9.jpg",
+    "altitude_m": 8.063,
+    "metres_from_temple": 37
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19952563888889,
+     12.61643011111111
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-at-at-sun-set.jpg",
+    "altitude_m": -81,
+    "metres_from_temple": 32
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19898333333333,
+     12.616697222222223
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-at-mahabalipuram-2k22tnkan-2.jpg",
+    "altitude_m": -83.9,
+    "metres_from_temple": 36
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19905833333334,
+     12.616575
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-at-mahabalipuram-2k22tnkan-9.jpg",
+    "altitude_m": -83.9,
+    "metres_from_temple": 22
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19920802777779,
+     12.616805277777779
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-at-mahabalipuram-f934100.jpg",
+    "altitude_m": 0.1111111111111111,
+    "metres_from_temple": 36
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19853888888889,
+     12.616713888888889
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-at-mahaballipuram-tamil-nadu.jpg",
+    "altitude_m": 1,
+    "metres_from_temple": 80
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19953391666667,
+     12.616402527777778
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-back-view.jpg",
+    "altitude_m": -81,
+    "metres_from_temple": 34
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19928133333333,
+     12.616615694444445
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-in-a-lensball.jpg",
+    "altitude_m": -84.242,
+    "metres_from_temple": 16
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19893333333334,
+     12.616658333333334
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-in-mamallapuramtamil-nadu.jpg",
+    "altitude_m": 0.6,
+    "metres_from_temple": 38
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19713833333333,
+     12.616451666666666
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-in-the-morning.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 228
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19895555555556,
+     12.617080527777778
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahab-2.jpg",
+    "altitude_m": -76.454,
+    "metres_from_temple": 73
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1991318888889,
+     12.616824833333334
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahab-3.jpg",
+    "altitude_m": -81.441,
+    "metres_from_temple": 40
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1991566388889,
+     12.616543194444445
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahab-4.jpg",
+    "altitude_m": -79.614,
+    "metres_from_temple": 11
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19919327777778,
+     12.616509055555555
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahab-5.jpg",
+    "altitude_m": -86.926,
+    "metres_from_temple": 6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19921708333334,
+     12.616469972222221
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahab-6.jpg",
+    "altitude_m": -94.479,
+    "metres_from_temple": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19909883333334,
+     12.616918277777778
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahab-7.jpg",
+    "altitude_m": -75.907,
+    "metres_from_temple": 51
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19842858333334,
+     12.616540944444445
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahab.jpg",
+    "altitude_m": -83.307,
+    "metres_from_temple": 88
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199111,
+     12.616915
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahabalipuram-497ce86.jpg",
+    "altitude_m": -85.947,
+    "metres_from_temple": 50
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19911397222222,
+     12.616426972222222
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahabalipuram-50969234856.jpg",
+    "altitude_m": -89.045,
+    "metres_from_temple": 14
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19933333333333,
+     12.616458333333334
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahabalipuram-india.jpg",
+    "altitude_m": 4.1704,
+    "metres_from_temple": 11
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19895933333333,
+     12.61708163888889
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mahabalipuram-tamilnadu-img-20191218-104514.jpg",
+    "altitude_m": 8,
+    "metres_from_temple": 73
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19949491666667,
+     12.616675027777779
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-mb.jpg",
+    "altitude_m": -67.058,
+    "metres_from_temple": 36
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19876111111111,
+     12.616427777777778
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-near-mahabalipuram-1.jpg",
+    "altitude_m": 5.888455538221529,
+    "metres_from_temple": 52
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19881388888889,
+     12.61645
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-near-mahabalipuram-2.jpg",
+    "altitude_m": 14.676193467336683,
+    "metres_from_temple": 46
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19931111111111,
+     12.616505555555555
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-near-mahabalipuram-3.jpg",
+    "altitude_m": 8.159605911330049,
+    "metres_from_temple": 9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19899722222223,
+     12.616541666666667
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-near-mahabalipuram-4.jpg",
+    "altitude_m": 5.073423782920989,
+    "metres_from_temple": 27
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19913611111112,
+     12.616747222222223
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-near-mahabalipuram-5.jpg",
+    "altitude_m": -8.485451761102603,
+    "metres_from_temple": 31
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19859225,
+     12.616536083333333
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-new-angle.jpg",
+    "altitude_m": -77,
+    "metres_from_temple": 70
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19907847222223,
+     12.6163395
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-night.jpg",
+    "altitude_m": 90,
+    "metres_from_temple": 23
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1975,
+     12.618333333333334
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-panorama-2.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 278
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19921111111111,
+     12.6166
+    ]
+   },
+   "properties": {
+    "file": "shore-temple-view-2cb124a.jpg",
+    "altitude_m": 13.973411534701857,
+    "metres_from_temple": 14
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1986045,
+     12.616664916666666
+    ]
+   },
+   "properties": {
+    "file": "shoretemplemani.jpg",
+    "altitude_m": -218,
+    "metres_from_temple": 71
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19936916666667,
+     12.616527666666666
+    ]
+   },
+   "properties": {
+    "file": "somaskanda-panel-at-mahabalipuram.jpg",
+    "altitude_m": -79,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19954722222222,
+     12.616397222222222
+    ]
+   },
+   "properties": {
+    "file": "sun-on-shore-temple-2.jpg",
+    "altitude_m": 1.4317988064791134,
+    "metres_from_temple": 35
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19954722222222,
+     12.616397222222222
+    ]
+   },
+   "properties": {
+    "file": "sun-on-shore-temple.jpg",
+    "altitude_m": 3.0864217252396164,
+    "metres_from_temple": 35
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19989722222222,
+     12.616205555555554
+    ]
+   },
+   "properties": {
+    "file": "sunset-at-shore-temple-mahaballipuramtamil-nadu.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 78
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19779319444444,
+     12.617651694444445
+    ]
+   },
+   "properties": {
+    "file": "temple-city.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 203
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-1.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-2.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-3.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-4.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-5.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-6.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-7.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-8.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19937371991809,
+     12.616477070027043
+    ]
+   },
+   "properties": {
+    "file": "templerivage-9.jpg",
+    "altitude_m": 4,
+    "metres_from_temple": 15
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1985638888889,
+     12.616563888888889
+    ]
+   },
+   "properties": {
+    "file": "the-majestic-shore-temple-mamallapuram.jpg",
+    "altitude_m": -95.18,
+    "metres_from_temple": 73
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.1963983888889,
+     12.618664194444445
+    ]
+   },
+   "properties": {
+    "file": "the-shore-temple-mahabalipuram-best-view.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 392
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19903611111111,
+     12.616791666666668
+    ]
+   },
+   "properties": {
+    "file": "the-shore-temple-mamallapuram.jpg",
+    "altitude_m": 10.367058751455001,
+    "metres_from_temple": 41
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19930883333333,
+     12.616515138888888
+    ]
+   },
+   "properties": {
+    "file": "twin-towers-at-shore-temple.jpg",
+    "altitude_m": -80,
+    "metres_from_temple": 9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19934844444445,
+     12.616589527777778
+    ]
+   },
+   "properties": {
+    "file": "vaddipar-ganesh-mahabalipuram.jpg",
+    "altitude_m": -88,
+    "metres_from_temple": 17
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19916666666667,
+     12.616388888888888
+    ]
+   },
+   "properties": {
+    "file": "vaddipar-mahabalipuram.jpg",
+    "altitude_m": null,
+    "metres_from_temple": 13
+   }
+  }
+ ]
+}

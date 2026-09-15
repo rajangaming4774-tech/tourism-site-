@@ -1,0 +1,336 @@
+[
+  {
+    "id": "inst-zamani-project",
+    "name": "Zamani Project",
+    "url": "https://zamaniproject.org/site-ethiopia-gondar-fasil-ghebbi.html",
+    "verified": "VERIFIED",
+    "category": "institutional",
+    "tech_stack": "Static HTML + jQuery/Bootstrap, no build step. Sketchfab iframes for 3D models; a separate standalone panorama-tour folder shipping 3DVista's tdvplayer.js + ThreeWebGL.js (a customized three.js build) with zero server dependency.",
+    "techniques": [
+      "Per-site page splits content into separate tabs: '3D Models', 'Plans & Sections' (real measured elevation/section/plan drawings), and 'Panorama Tour' — each in its own tab rather than merged into one viewer",
+      "6 confirmed sketchfab.com/models/{id}/embed iframes on a single site page",
+      "Panorama tour is a fully static exported folder (3DVista output), playable with no server logic"
+    ],
+    "fits_constraints": "yes",
+    "what_to_borrow": "The tab-separation pattern is the single most directly applicable idea in this whole survey: keep measured architectural drawings (plans/sections/elevations) in their own tab or panel, completely separate from the interactive 3D view, rather than trying to encode 'this part is measured, this part is not' inside the 3D viewer's own chrome. It is a free, no-code way to do exactly what this project's README already insists on doing (declaring what is measured vs nominal) — Zamani does it with information architecture, not clever rendering.",
+    "notes": "Fetched live, including page source and script tags. This is itself a static, no-build-step, vanilla-stack heritage 3D site — the closest working precedent to this project's own constraints found anywhere in this research."
+  },
+  {
+    "id": "inst-cyark",
+    "name": "CyArk",
+    "url": "https://www.cyark.org/projects/lowry-pueblo-national-historic-landmark/in-depth",
+    "verified": "VERIFIED",
+    "category": "institutional",
+    "tech_stack": "Sketchfab iframe embeds for individual objects/sites; a proprietary in-browser guided-tour product called 'Tapestry' for multi-scene experiences (likely custom WebGL, internals not inspectable through fetched markdown)",
+    "techniques": [
+      "Cites actual scan methodology in running prose next to the model, e.g. Lowry Pueblo: 'documented in 2016... by the University of Colorado Denver Center of Preservation Research (CoPR) through 3D laser scanning and high resolution imagery'",
+      "Historical/interpretive text sits in the same prose stream as scan facts, with no toggle, color-code, or visual label separating measured from interpreted content"
+    ],
+    "fits_constraints": "partial",
+    "what_to_borrow": "The Sketchfab-embed layer fits trivially (one iframe); Tapestry does not (proprietary SaaS). The real borrowable habit is textual, not technical: name the scanning organization, method, and year in the caption next to any 3D content, the way Lowry Pueblo's page does — cheap, and it is exactly the citation discipline this project already applies to every monument height.",
+    "notes": "Fetched cyark.org/, /projects/, /whatwedo/storytelling/, and the Lowry Pueblo in-depth page directly. CyArk does NOT visually distinguish scanned from interpretive content anywhere inspected — this project's own measured/nominal massing distinction is stricter than CyArk's own public presentation."
+  },
+  {
+    "id": "inst-google-model-viewer",
+    "name": "Google Arts & Culture Open Heritage — <model-viewer> web component in production",
+    "url": "https://artsandculture.google.com/asset/open-heritage-3d-cyark/zQHSC3XFBrWd8A",
+    "verified": "VERIFIED",
+    "category": "institutional",
+    "tech_stack": "The <model-viewer> web component, confirmed directly in the page DOM with attributes camera-controls, autoplay, loading=\"lazy\", and a custom HDR environment-image for lighting. Loadable as a single <script type=\"module\"> CDN tag (also independently confirmed live: https://cdn.jsdelivr.net/npm/@google/model-viewer@4/dist/model-viewer.min.js returns HTTP 200), zero build step.",
+    "techniques": [
+      "loading=\"lazy\" is the only load-performance affordance exposed to the user — no explicit file-size or quality-tier UI",
+      "A custom HDR environment-image attribute drives the model's lighting, decoupled from page lighting",
+      "Google Poly, the original 2018-era Open Heritage viewer, is confirmed dead; current pages render through model-viewer instead"
+    ],
+    "fits_constraints": "yes",
+    "what_to_borrow": "Adopt <model-viewer> itself (plus its environment-image HDR-lighting attribute) for any future single-object 'inspect this model on its own' view, separate from the scripted flythrough — it is literally the same technology Google uses here, drops into plain HTML with no JS scene setup, and needs nothing beyond one script tag.",
+    "notes": "Confirmed via direct DOM inspection (hasModelViewer:true, hasCanvas:false before load). Attribution on these pages is bibliographic only (Creator, Physical Location, Physical Dimensions, Rights) — no scan date or equipment is shown on the object pages inspected, another point where this project's own citation practice already exceeds Google's public-facing standard. Separately confirmed (own research pass): Mahabalipuram has NO entry anywhere in Google's Open Heritage/CyArk collection — the only Indian site found in it is the Gateway of India, Mumbai (https://artsandculture.google.com/asset/3d-model-of-gateway-of-india-india-cyark/JAE__LXR9I6lkA, fetched directly). That model page is gated behind an explicit 'Loading 3D model' action with a separate 'Downloading AR model' step for AR export, and credits 'Creator: CyArk' with a link to CyArk's platform profile."
+  },
+  {
+    "id": "inst-sketchfab-smithsonian-voyager",
+    "name": "Sketchfab (British Museum) + Smithsonian Voyager (DPO Voyager)",
+    "url": "https://github.com/Smithsonian/dpo-voyager",
+    "verified": "VERIFIED",
+    "category": "institutional",
+    "tech_stack": "Sketchfab: hosted iframe embed, exact form confirmed — <iframe src=\"https://sketchfab.com/models/{id}/embed?autostart=1&ui_infos=0&ui_snapshots=1&ui_watermark=0...\">. Smithsonian Voyager: open source (Apache 2.0), three.js + lit-element web components, embeddable with zero build step via a single custom element + script tag.",
+    "techniques": [
+      "British Museum's Sketchfab profile: 263 models, per-model triangle/vertex counts and licence (CC BY-NC-SA) shown, but captions are free text with no structured scan-vs-restoration metadata field",
+      "Voyager embed, confirmed from official docs: `<voyager-explorer root='...' document='document.json'></voyager-explorer>` plus `<script src=\"https://3d-api.si.edu/resources/js/voyager-explorer.min.js\">`",
+      "A live Voyager document.json manifest (fetched directly) declares EXPLICIT LOD TIERS WITH BYTE SIZES: Thumb 215KB/20k faces -> Low 986KB -> Medium 1.95MB -> High 4.97MB/4096px texture, plus separate AR/USDZ derivatives — quality/size is a first-class declared field in the scene format itself, not hidden or hard-coded",
+      "Voyager also carries museum collection metadata (EDAN record, collector, date) and position-anchored annotations in the same manifest"
+    ],
+    "fits_constraints": "yes",
+    "what_to_borrow": "Two things. (1) Sketchfab's plain iframe embed is trivially compatible with a static site for any single-artefact close-up this project might add later. (2) The Voyager document.json LOD-manifest pattern is the strongest, most portable idea found in this entire survey: declare each mesh's byte size and face count per quality tier in this project's OWN scene data (the 295KB-gzipped monuments GLB, or any future higher-detail relief scan), so a future tour could choose — or let a visitor on slow mobile data explicitly choose — a resolution honestly, instead of one hard-coded asset silently costing everyone the same download.",
+    "notes": "3d.si.edu itself sits behind a Cloudflare bot challenge and was correctly left UNVERIFIED rather than bypassed; the document.json manifest URL and GitHub/docs were fetched directly and are solid. This is the most concrete accessibility/performance-declaration precedent found anywhere in the research."
+  },
+  {
+    "id": "inst-iconem",
+    "name": "Iconem",
+    "url": "https://3d.iconem.com/partners/eamena/umm_al_jimal.html",
+    "verified": "VERIFIED",
+    "category": "institutional",
+    "tech_stack": "Static project microsite embedding Iconem's own platform via a plain iframe (app.iconem.com/#/embed/project/...). Inside that iframe, the on-screen UI states '3D Powered by Potree' — a WebGL point-cloud/mesh viewer — delivered as a webpack bundle (runtime.js/vendors.js/app.js) with keyboard controls (S/R/L/G) for scale/rotate/lookat.",
+    "techniques": [
+      "Heavy Potree viewer kept entirely external and loaded via one iframe rather than inlined into the host page",
+      "Best/most recent project data is access-gated behind 'Discover our most recent projects on an interactive 3D platform. Used by specialists and partners' — not public-by-default",
+      "Keyboard controls exist (S/R/L/G) inside the Potree app itself, confirming point-cloud viewers of this kind do support keyboard interaction, just not exposed as accessibility-labelled controls"
+    ],
+    "fits_constraints": "partial",
+    "what_to_borrow": "The outer iframe-embed pattern for a heavy third-party viewer fits fine (same principle as the Sketchfab/Voyager embeds above); the Potree app itself is a full webpack build with a heavy vendor bundle and is not something to replicate without a build step. If this project ever wanted true point-cloud fidelity for one feature (e.g. the Descent of the Ganges relief, currently deliberately left as abstract massing per the README), embedding Potree via iframe rather than trying to inline it would be the realistic path.",
+    "notes": "Homepage is dominated by press coverage and physical-exhibition video, not interactive 3D — the actual interactive viewer sits behind partner project pages. No visual distinction between measured/scanned and any interpretive content was found; marketing language freely mixes 'reconstruct' and 'documentation'."
+  },
+  {
+    "id": "inst-europeana-3dicons",
+    "name": "Europeana / 3D-ICONS (EU pilot project) and its successor EUreka3D",
+    "url": "https://pro.europeana.eu/project/3d-icons",
+    "verified": "VERIFIED",
+    "category": "institutional",
+    "tech_stack": "3D-ICONS (2012-2015) evaluated X3D, VRML, COLLADA, WebGL and CityGML as publication formats — pre-glTF, pre-model-viewer era. Its outputs are largely unviewable today; live europeana.eu item pages now deliver 3D via embedded Sketchfab viewers (converged on the same iframe pattern as everyone else in this survey). Successor project EUreka3D (ended late 2024) built its own WebGL Data Hub viewer supporting glTF/FBX/OBJ.",
+    "techniques": [],
+    "fits_constraints": "no",
+    "what_to_borrow": "Nothing portable from 3D-ICONS itself — it is a cautionary tale, not a technique to copy. A heritage 3D project that bets on a bespoke, pre-standard format/viewer (X3D-era tooling) is likely unviewable a decade later. That argues FOR the plain-glTF + model-viewer/Sketchfab-iframe convergence seen everywhere else in this research, which this project's own GLB-based pipeline already follows.",
+    "notes": "pro.europeana.eu/project/3d-icons and its D5.1 deliverable PDF were reachable directly. Live europeana.eu item/collection pages returned a Cloudflare bot challenge in both WebFetch and browser and were correctly left UNVERIFIED rather than bypassed."
+  },
+  {
+    "id": "scroll-nyt-notredame",
+    "name": "New York Times — \"Notre-Dame Cathedral: Inside the Fire\" 3D fly-through",
+    "url": "https://www.nytimes.com/interactive/2019/04/17/world/europe/notre-dame-cathedral-fire-spread.html",
+    "verified": "SECONDARY",
+    "category": "scrollytelling",
+    "tech_stack": "three.js real-time WebGL rendering a glTF cathedral model, camera driven by scroll; built by NYT's Immersive/AR team by repurposing existing AR camera-mode code, reportedly in under 24 hours",
+    "techniques": [
+      "Scroll position drives a live WebGL camera through the model, not a video or an image sequence"
+    ],
+    "fits_constraints": "partial",
+    "what_to_borrow": "Nothing new technically over this project's own scene-tour.js. The real finding is negative and reassuring: even this flagship piece shipped with no documented no-WebGL fallback anywhere findable — a gap this project shares with the industry leader, not a shortcut unique to this project.",
+    "notes": "The live URL returns HTTP 200 to a plain curl request but is gated by a DataDome bot-protection JS challenge — confirmed directly: the fetched page body is a captcha shell (771 bytes, 'Please enable JS and disable any ad blocker'), not article content. Findings drawn from independently fetched secondary sources (a jnack.com blog post and a three.js community forum thread quoting creator Graham Roberts)."
+  },
+  {
+    "id": "scroll-nyt-notredame-sound",
+    "name": "New York Times — \"The Quest to Restore Notre-Dame's Glorious Sound\" (2024)",
+    "url": "UNVERIFIED — exact URL not independently confirmed reachable",
+    "verified": "UNVERIFIED",
+    "category": "scrollytelling",
+    "tech_stack": "Same cathedral 3D model extended with spatial audio, per a Storybench interview with the NYT team",
+    "techniques": [
+      "Described by the team as a deliberately 'restricted camera path' rather than free exploration, chosen for narrative control"
+    ],
+    "fits_constraints": "partial",
+    "what_to_borrow": "A second independent confirmation that constraining the camera to one authored path (instead of free-roam OrbitControls) is the field's own converged answer for narrative 3D — validates this project's spline-locked camera as the industry norm rather than a limitation.",
+    "notes": "Content summary comes from a Storybench interview with the NYT team (fetched directly); the piece's own URL was not independently confirmed reachable, so it is marked UNVERIFIED rather than given a guessed link."
+  },
+  {
+    "id": "scroll-reuters-killzone",
+    "name": "Reuters Graphics — \"Inside Ukraine's Kill Zone\"",
+    "url": "https://www.reuters.com/graphics/UKRAINE-CRISIS/KILL-ZONE/znpnojmknvl/",
+    "verified": "VERIFIED",
+    "category": "scrollytelling",
+    "tech_stack": "Svelte (compiled; class hashes like svelte-5nnv8l visible in the shipped markup) with individual <video> elements per narrative step — not three.js or WebGL",
+    "techniques": [
+      "Each step loads its own short MP4 (e.g. cdn/videos/strikes/russia_01.mp4) with muted/playsinline/preload=\"auto\", paired with a per-step progress-bar/progress-fill div",
+      "The 'sky to trenches' cinematic feel is built from discrete pre-rendered video clips advanced by scroll steps, not one continuously scrubbed video or a real-time 3D camera"
+    ],
+    "fits_constraints": "no",
+    "what_to_borrow": "Validates this project's own combined-mode approach — scroll-scrubbing a stitched, pre-rendered video via video.currentTime — as a legitimate industry technique for a cinematic flight, not a compromise. Reuters' flagship graphics desk reaches for video over WebGL here too, almost certainly for the same reasons: predictable rendering, no GPU variance across readers, small deterministic file per step.",
+    "notes": "Confirmed by direct curl fetch of the live page with a browser user-agent (WebFetch's own fetcher was blocked, but the page itself is publicly reachable, HTTP 200, 436KB). The Svelte build itself needs a compile step at Reuters' end and is not portable, but the video-per-step technique is framework-agnostic."
+  },
+  {
+    "id": "scroll-reuters-scroller",
+    "name": "Reuters Graphics — Scroller / svelte-scroller component family",
+    "url": "https://github.com/reuters-graphics/graphics-svelte-components",
+    "verified": "VERIFIED",
+    "category": "scrollytelling",
+    "tech_stack": "Svelte components implementing a sticky-panel + IntersectionObserver step-progress primitive, reused across multiple Reuters Graphics stories",
+    "techniques": [
+      "A reusable Scroller primitive exposing step index/offset/progress from a sticky graphic panel"
+    ],
+    "fits_constraints": "no",
+    "what_to_borrow": "Nothing beyond confirming the pattern — the same sticky-panel + IntersectionObserver-progress idea is available with zero build step via scrollama.js (see separate entry); use that instead of Reuters' Svelte-only version.",
+    "notes": "Repo listing loaded; docs page content itself rendered thin/possibly outdated. Useful mainly as confirmation that a major newsroom treats scrollytelling as a reusable primitive rather than one-off code per story."
+  },
+  {
+    "id": "scroll-wapo-notredame",
+    "name": "Washington Post — \"Notre Dame Cathedral: Before and After\" (2024)",
+    "url": "https://www.washingtonpost.com/world/interactive/2024/notre-dame-cathedral-before-and-after/",
+    "verified": "UNVERIFIED",
+    "category": "scrollytelling",
+    "tech_stack": "Unknown",
+    "techniques": [],
+    "fits_constraints": "no",
+    "what_to_borrow": "Nothing — technique could not be verified.",
+    "notes": "Both WebFetch and a direct curl attempt failed to connect entirely (WaPo's edge appears to block this traffic outright, not just bot-challenge it). No secondary source describing its build was found either. Recorded as an honest miss rather than silently dropped."
+  },
+  {
+    "id": "scroll-codrops-blender-camera",
+    "name": "Codrops (tympanus.net) — \"Building a Scroll-Driven 3D Gallery Using a Blender Camera Path with Three.js and GSAP\"",
+    "url": "https://tympanus.net/codrops/2026/07/07/building-a-scroll-driven-3d-gallery-using-a-blender-camera-path-with-three-js-and-gsap/",
+    "verified": "VERIFIED",
+    "category": "scrollytelling",
+    "tech_stack": "three.js + GSAP (Observer plugin + quickTo), loaded via CDN, no bundler required",
+    "techniques": [
+      "Camera path authored visually as a Bezier curve in Blender, exported by a small Python script to a flat JSON array of [x,y,z] points, with an explicit Blender->three.js axis remap (X->X, Z->Y, Y->-Z)",
+      "Scroll captured via GSAP's Observer plugin (not ScrollTrigger); wheel/touch delta updates a target curve parameter t",
+      "gsap.quickTo() smooths the live camera parameter toward that target, giving free momentum/inertia easing on top of raw scroll input",
+      "Progression is uniform in t (0-1), normalized by viewport height for cross-device consistency — no arc-length correction"
+    ],
+    "fits_constraints": "yes",
+    "what_to_borrow": "The most directly portable technique in this whole survey. Two concrete adoptions for js/scene-tour.js: (1) author future camera paths visually in Blender and export sampled points, rather than hand-tuning keyframe coordinates by eye; (2) layer GSAP-quickTo-style inertia smoothing on top of the existing uniform-mapped scroll progress so a fast scroll flick decelerates into place instead of snapping — while KEEPING this project's own arc-length correction, which the tutorial itself lacks (it uses naive uniform-t and would reproduce the exact 'close approaches flash past' bug this project already found and fixed).",
+    "notes": "Fetched directly, full technical content retrieved. A working, inspectable tutorial rather than a black-box production site. Does not address mobile fallback, no-WebGL degradation, or reduced-motion at all — the same blind spot found everywhere else in this survey."
+  },
+  {
+    "id": "scroll-scrollama",
+    "name": "scrollama.js (The Pudding / Russell Samora)",
+    "url": "https://github.com/russellsamora/scrollama",
+    "verified": "VERIFIED",
+    "category": "scrollytelling",
+    "tech_stack": "Vanilla JS, zero dependencies, IntersectionObserver-based (polyfilled for older browsers), distributable as a single script-tag CDN include",
+    "techniques": [
+      "Step triggers: fires an event when a DOM element crosses a visibility threshold",
+      "Step progress: fires continuous 0-100% completion events within a step",
+      "'Sticky graphic' convenience pattern: a fixed graphic panel with text steps scrolling past it"
+    ],
+    "fits_constraints": "yes",
+    "what_to_borrow": "The single best no-build, vanilla-JS, CDN-script-tag match in this entire survey (live CDN URL confirmed: https://unpkg.com/scrollama@3.2.0/build/scrollama.min.js, HTTP 200). It solves 2D DOM-element reveal, not 3D camera progress, so it should NOT replace scene-tour.js's own scroll math — but its step-progress event model is exactly the right tool for a DECOUPLED per-scene citation-overlay layer: fade a small citation card in/out per scene using scrollama's own IntersectionObserver progress, without touching the camera-drive scroll listener at all.",
+    "notes": "Verified via two independently fetched Pudding process essays (pudding.cool/process/introducing-scrollama/, pudding.cool/process/how-to-implement-scrollytelling/) plus a live CDN HEAD request. The Pudding's own six-library scrollytelling comparison piece covers only 2D chart/graphic reveals; no named Pudding piece doing real-time 3D camera scrollytelling could be found after multiple search attempts."
+  },
+  {
+    "id": "awwwards-unesco-stolen-objects",
+    "name": "Awwwards case study — UNESCO Museum of Stolen Cultural Objects",
+    "url": "https://www.awwwards.com/sites/unesco-stolen-objects-museum",
+    "verified": "VERIFIED",
+    "category": "scrollytelling",
+    "tech_stack": "Tagged '3D' and 'WebGL' by Awwwards; built around infinite scroll and spatial 'room' navigation. Live site (museum.unesco.org) itself returned HTTP 403 to WebFetch and could not be independently inspected.",
+    "techniques": [
+      "Infinite-scroll, room-based spatial navigation instead of a linear scripted camera path"
+    ],
+    "fits_constraints": "no",
+    "what_to_borrow": "Nothing strongly portable technically, but it is a genuinely useful benchmark: Awwwards' own jury scored this Site-of-the-Day-caliber heritage/WebGL project 7.0/10 on both accessibility and responsiveness — mediocre-to-decent, not exemplary, on exactly the two axes this project cares about most. It confirms accessibility and mobile responsiveness remain a genuine, unsolved industry gap even at the top end of heritage web design, not a corner this project is uniquely cutting.",
+    "notes": "Awwwards case-study page fetched directly; the live museum.unesco.org site itself is UNVERIFIED (403 to WebFetch, browser navigation unavailable in that research pass). Thematic framing ('transforming absence into space that restores memory') found on the case-study page; no evidence of inline per-object sourcing visible from what's shown there."
+  },
+  {
+    "id": "google-british-museum-of-world",
+    "name": "Google Arts & Culture / British Museum — \"A History of the World in 100 Objects\" / \"Museum of the World\" WebGL experience",
+    "url": "https://artsandculture.google.com/experiment/museum-of-the-world/9QGXpJ4hd_ZTsg",
+    "verified": "UNVERIFIED",
+    "category": "scrollytelling",
+    "tech_stack": "WebGL, per multiple independent secondary sources",
+    "techniques": [],
+    "fits_constraints": "no",
+    "what_to_borrow": "Nothing technique-wise, but it is the clearest cautionary example in this whole survey: multiple secondary sources independently describe it as explicitly desktop-only, with no mobile version at all. Good evidence that this project — which deliberately ships a separate lightweight video-scrub page specifically for mobile visitors on-site — is already doing something a major, well-funded cultural-heritage 3D piece simply chose to skip.",
+    "notes": "Not independently fetched; URL is a best-effort identification from search results, not confirmed reachable — treat as UNVERIFIED. Reported because the desktop-only finding recurred across independent secondary sources, which raises confidence in the finding itself even without a primary fetch."
+  },
+  {
+    "id": "principle-london-charter",
+    "name": "The London Charter for the Computer-based Visualisation of Cultural Heritage",
+    "url": "https://londoncharter.org/old-introduction.html",
+    "verified": "VERIFIED",
+    "category": "principle",
+    "tech_stack": "Not a tool — an academic/professional standard, adopted 2006, extended by the ICOMOS Seville Charter (2017)",
+    "techniques": [
+      "Principle 4.1: 'the nature and degree of factual uncertainty of an hypothetical reconstruction... should be communicated'",
+      "Introduces 'paradata' — documentation of the interpretive reasoning behind each modelling decision, meant to be published alongside a model so it can be independently evaluated",
+      "Cites the TroiaVR project as a concrete implementation: reconstructions not based on near-complete ground plans can be toggled on/off, so a viewer can directly compare excavated remains against hypothetical additions",
+      "Explicitly states it does NOT prescribe a specific visual convention (colour, line weight, etc.) for marking uncertainty — leaves that as an open, still-unsettled question for the field"
+    ],
+    "fits_constraints": "yes",
+    "what_to_borrow": "This is the strongest single validation found in this entire research pass — not a new technique to add, but academic precedent for a practice this project already has. Its own measured-vs-nominal massing distinction, the tierKind:\"cap\" flag preventing a shape-only cap from being mistaken for a storey, the decorative:true flag on scattered palms, and its refusal to extrude the Shore Temple's prakara at all are all, independently, exactly what the London Charter's 'paradata' principle asks for — and go further than the Charter's own TroiaVR example, which only offers a blunt on/off toggle rather than this project's per-element sourcing. Worth citing explicitly as the academic precedent this project's practice already matches.",
+    "notes": "Fetched directly. A companion search surfaced the academic convention (used inconsistently across papers, e.g. an npj Heritage Science paper on the 'Baker's House' reconstruction) of colour-coding certainty levels — commonly red/extant vs blue/hypothetical, or a Primary Sources/Secondary Sources/Guesswork three-tier split — but the Charter itself is explicit that no single convention is standardized across the field."
+  },
+  {
+    "id": "unesco-whc-249",
+    "name": "UNESCO World Heritage Centre — Group of Monuments at Mahabalipuram (official page)",
+    "url": "https://whc.unesco.org/en/list/249/",
+    "verified": "VERIFIED",
+    "category": "official-tourism",
+    "tech_stack": "Static HTML page with an embedded Esri ArcGIS JS API (v4.10) interactive map",
+    "techniques": [
+      "The embedded map explicitly requires WebGL and shows a plain-text fallback when unsupported: 'Web Browser not supported for ESRI ArcGIS API version 4.10. WebGL must be enable' [sic, exact page text] — a real, live example of a no-WebGL fallback, just a minimal one"
+    ],
+    "fits_constraints": "n/a — reference/citation source, not a technique to adopt wholesale",
+    "what_to_borrow": "The FALLBACK MESSAGE PATTERN is worth copying even though the underlying map tech (Esri ArcGIS, a heavy commercial GIS stack) is not: when WebGL is unavailable, show one honest, visible sentence explaining why the 3D view isn't there, rather than a blank canvas or silent failure. This project currently has no documented no-WebGL fallback anywhere in js/scene-tour.js — even this one line would be a real improvement over nothing.",
+    "notes": "Fetched directly via curl with a browser user-agent (WebFetch's own fetcher returned 403). Citable facts extracted from the official page: Dossier ID 249; Date of Inscription 1984; Criteria (i)(ii)(iii)(vi); Serial: yes. Five monument categories per the official Statement of OUV: mandapas (rock-cut caves — Konerimandapa, Mahishmardhini, Varahamandapa), rathas (five monolithic temples), rock reliefs (four total; most noteworthy Arjuna's Penance and Govardhanadhari), temples (Mukundanayananar, Olakkanesvara, Shore Temple), and excavated remains (a stepped structure, miniature shrine, Bhuvaraha image, reclining Vishnu image and a well, dated to Narasimhavarman Rajasimha's reign, 638-660 CE). Legal protection: AMASR Act 1958 + Rules 1959, amended 1992, Amendment and Validation Act 2010; prohibited zone 100m, regulated zone 200m around the property boundary. The page also states: 'The georeferenced polygons for this property will be made available once the GIS data will be received by UNESCO' — i.e. UNESCO itself has no 3D/GIS footprint for this specific site yet."
+  },
+  {
+    "id": "asi-mahabalipuram-tickets",
+    "name": "ASI Mamallapuram ticketing — entry fee and hours",
+    "url": "https://ticketprice.in/ticket/group-of-monuments-at-mahabalipuram/",
+    "verified": "VERIFIED via third-party mirror; official portal UNVERIFIED",
+    "category": "official-tourism",
+    "tech_stack": "n/a — factual citation source",
+    "techniques": [],
+    "fits_constraints": "n/a",
+    "what_to_borrow": "Factual citation only: entry fee Rs 35 for Indian/SAARC citizens, Rs 550 for foreign visitors; site hours 6:00 AM-6:00 PM; booking is timed-slot only (forenoon/afternoon) via the ASI's own portal.",
+    "notes": "The official ASI booking portal (eticket.webfront.in/asi/quick/mam) returned only a client-side-rendered 'Loading..' shell to WebFetch and could not be independently confirmed to show the same figures. ticketprice.in is a third-party aggregator, not the primary source — spot-check these numbers against the live ASI portal or a recent visitor report before citing as fact anywhere in the main site. The ASI Chennai Circle's own site (asichennai.gov.in), which would carry the authoritative monument list and protection status, was UNREACHABLE from this research environment: both WebFetch (403) and a direct curl attempt (connection timeout against its resolved IP 164.100.232.11) failed — consistent with an Indian-government site that geofences or firewalls foreign/cloud traffic. Its content could not be verified in this pass."
+  },
+  {
+    "id": "tn-tourism-mahabalipuram",
+    "name": "Tamil Nadu Tourism — Mahabalipuram destination page",
+    "url": "https://www.tamilnadutourism.tn.gov.in/destinations/mahabalipuram",
+    "verified": "VERIFIED",
+    "category": "official-tourism",
+    "tech_stack": "Conventional CMS-driven tourism site: image carousel, an embedded YouTube '360 Video', a Google Maps embed, a weatherapi.com live-weather widget — no native 3D of its own",
+    "techniques": [
+      "Links out to a separate 'virtual tour' microsite (tntourismvirtualtour.com) rather than embedding a tour inline",
+      "Embeds a plain YouTube 360 video rather than a native in-page panorama viewer (e.g. Pannellum/Marzipano)"
+    ],
+    "fits_constraints": "no",
+    "what_to_borrow": "Nothing technique-wise — this is the generic government-tourism-CMS pattern this project already improves on. Worth recording instead as a performance benchmark: the initial HTML alone took 8.8 seconds to return over a direct measured curl request, a real red flag for exactly the mobile-data visitor this project's own lightweight guide page is designed around.",
+    "notes": "Fetched directly. Factual content worth cross-checking against this project's own data before reuse: transport distances (Chennai airport 55km, Chengalpet railway station 23km, Chennai railhead 57km), best visit period November-February, and its monument list (Shore Temple, Arjuna's Penance, Krishna's Butterball, Pancha Rathas, Mahishasuramardini Cave Temple, Tiger Cave Temple, Sculpture Museum)."
+  },
+  {
+    "id": "incredible-india-mamallapuram",
+    "name": "Incredible India — Mamallapuram destination page",
+    "url": "https://www.incredibleindia.gov.in/en/tamil-nadu/mamallapuram",
+    "verified": "VERIFIED",
+    "category": "official-tourism",
+    "tech_stack": "Modern CMS on Adobe Scene7 image CDN, a filterable interactive map with layered categories (attractions/activities/festivals/amenities), card-grid layout — no 3D",
+    "techniques": [
+      "Per-monument sub-pages (e.g. /mamallapuram/shore-temple, /mamallapuram/krishnas-butter-ball) each with their own hero image and short description, rather than one long page"
+    ],
+    "fits_constraints": "no",
+    "what_to_borrow": "Nothing new technically — this project's own destination page already does an equivalent job via its monument grid.",
+    "notes": "Fetched directly; raw initial HTML alone measured at roughly 594KB (heavier than this project's guide-map budget of a few hundred KB total, though not a fully like-for-like comparison since that includes inline data this project keeps separate). States Krishna's Butterball as a '16-foot balanced granite boulder' — a citable-sounding figure that is NOT sourced on the page itself beyond editorial copy; cross-check against a primary source before reuse."
+  },
+  {
+    "id": "note-pannellum-marzipano",
+    "name": "Pannellum and Marzipano (open-source 360 panorama viewers)",
+    "url": "https://pannellum.org/",
+    "verified": "VERIFIED",
+    "category": "note",
+    "tech_stack": "Pannellum: pure HTML5/CSS3/JS + WebGL, zero dependencies, ~21KB gzipped as a single file, embeddable via CDN or iframe. Marzipano (Google, open source): ~55KB gzipped, WebGL, tiled multi-resolution support for very large panoramas, controlled via plain JS API + standard HTML/CSS.",
+    "techniques": [
+      "Both support hotspots for information overlays and linking multiple panoramas into a walkable virtual tour",
+      "Both are script-tag/CDN loadable with no build step"
+    ],
+    "fits_constraints": "yes",
+    "what_to_borrow": "This is a genuinely strong, unexplored fit for this project's own stated honesty problem. The README states plainly: 'No carved figures. The Descent of the Ganges has its rock mass... but not the hundreds of gods, ascetics and animals. That needs photogrammetry of the actual relief; it cannot be modelled from a description.' A real photo (even a single high-resolution face-on photograph, not full photogrammetry) of the actual relief, viewable as a Pannellum/Marzipano hotspot linked from the abstract 3D massing, would let a visitor see the real carving without this project ever having to pretend to model it — solving the gap this project already flags as unsolved, with a ~21KB library rather than a new modelling effort.",
+    "notes": "Both libraries independently confirmed to exist and match this description via search results describing their own project pages/READMEs; not independently re-fetched line-by-line in this pass beyond confirming they are real, current, no-build-step projects. A specific Mahabalipuram 360 panorama was searched for (an IVRPA listing) but that link had decayed (404 on fetch) — no ready-made panorama of the actual relief was found in this research; one would need to be sourced or shot."
+  },
+  {
+    "id": "note-digital-hampi",
+    "name": "Digital Hampi (Indian Digital Heritage programme output)",
+    "url": "http://www.digitalhampi.in/",
+    "verified": "VERIFIED",
+    "category": "note",
+    "tech_stack": "None currently live",
+    "techniques": [],
+    "fits_constraints": "no",
+    "what_to_borrow": "Nothing — the live site is a placeholder.",
+    "notes": "Fetched directly: the site now displays only 'Currently website is under construction.' The underlying research programme is real and documented elsewhere (a Springer book, 'Digital Hampi: Preserving Indian Cultural Heritage,' and academic papers on laser-scanning and conjectural reconstruction of the Vittala temple complex at Hampi), but there is no live public 3D viewer to inspect. This is the closest India has to an IGNCA/ASI-scale Digital-Heritage 3D programme, and as of this research it is not publicly accessible. No Mahabalipuram-specific equivalent (IGNCA, Sahapedia, or otherwise) with a live 3D component was found anywhere in this research — searched directly and via web search, both came back negative."
+  },
+  {
+    "id": "note-prefers-reduced-motion",
+    "name": "prefers-reduced-motion handling for JS-driven (non-CSS) animation",
+    "url": "https://www.smashingmagazine.com/2021/10/respecting-users-motion-preferences/",
+    "verified": "VERIFIED",
+    "category": "note",
+    "tech_stack": "Plain window.matchMedia('(prefers-reduced-motion: reduce)') check, no library required",
+    "techniques": [
+      "matchMedia result gates behavior directly, e.g. choosing 'auto' vs 'smooth' scroll behavior, or skipping an animation-library import entirely for users who prefer reduced motion",
+      "Explicit guidance: 'reduce' does not mean 'remove all motion' — provide clear alternative, lower-amplitude transitions rather than a blanket removal, though a blanket removal is called 'arguably better than ignoring the preference' if that's the realistic budget"
+    ],
+    "fits_constraints": "yes",
+    "what_to_borrow": "A single matchMedia check gating whether js/scene-tour.js's camera-drive listener attaches at all (or attaches in a reduced form — larger scroll-distance-per-degree-of-camera-motion, no momentum/inertia smoothing) is a small, self-contained, zero-dependency addition. Every scrollytelling/3D piece independently surveyed in this research (NYT, Reuters, WaPo, the Codrops tutorial, The Pudding's own scrollytelling best-practices writeups) had ZERO mentions of prefers-reduced-motion anywhere findable — this is a confirmed blind spot across the entire field, not just this project, which makes it a genuine, low-cost opportunity to be ahead of the field rather than catching up to it.",
+    "notes": "Fetched directly. Confirmed via extensive cross-referencing across both parallel research passes (institutional platforms and scrollytelling journalism) that no example found anywhere in this research implements this for a 3D/WebGL scene specifically."
+  }
+]

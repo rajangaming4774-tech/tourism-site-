@@ -1,0 +1,482 @@
+/* The schematic layer — a drawing, not a render.
+ *
+ * The palette is deliberately cool and paper-like, against the warm diorama of
+ * mahabalipuram-3d.html. That is a functional choice, not a decorative one: a
+ * screenshot of this page must never be mistaken for a screenshot of the
+ * finished view, or an approval will get attached to the wrong thing.
+ */
+
+.schematic {
+  --sch-paper: #eef2f6;
+  --sch-sheet: #f8fafc;
+  --sch-ink: #2b3f54;
+  --sch-ink-2: #64809a;
+  --sch-ink-faint: #c2cedb;
+  --sch-line: #d3dde6;
+  --sch-accent: #a8742c;
+  background: var(--sch-paper);
+  color: var(--sch-ink);
+}
+
+.sch-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  /* The nav is position:fixed, so the sheet has to clear it or the title sits
+     under the bar. Same offset the 3D page uses. */
+  padding: calc(var(--nav-h) + 1.2rem) 1.1rem 4rem;
+}
+
+/* The shared nav is dressed for a dark page — light text on a black gradient,
+   which is invisible on paper. place.css already solves this for its own light
+   sections under `.past-tours`; this is the same idea in the cool palette. */
+.schematic .place-bar {
+  background: linear-gradient(180deg, rgba(238, 242, 246, .95) 0%, rgba(238, 242, 246, .65) 60%, rgba(238, 242, 246, 0) 100%);
+}
+.schematic .back-link {
+  color: var(--sch-ink);
+  border-color: var(--sch-line);
+  background: rgba(255, 255, 255, .7);
+}
+.schematic .back-link:hover,
+.schematic .back-link:focus-visible {
+  background: var(--sch-ink);
+  border-color: var(--sch-ink);
+  color: #fff;
+}
+.schematic .bar-brand { color: var(--sch-accent); }
+.schematic .bar-brand::before,
+.schematic .bar-brand::after { background: var(--sch-line); }
+.schematic .bar-tag { color: var(--sch-ink-2); }
+
+/* ---------- Head ---------- */
+
+.sch-head { margin: 0 0 1.1rem; }
+
+.sch-eyebrow {
+  margin: 0 0 .35rem;
+  font: 600 .72rem/1 "Inter", system-ui, sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--sch-accent);
+}
+
+.sch-head h1 {
+  margin: 0 0 .5rem;
+  font: 600 clamp(1.5rem, 3.4vw, 2.1rem)/1.15 "Cinzel", Georgia, serif;
+  color: var(--sch-ink);
+}
+
+.sch-intro {
+  margin: 0;
+  max-width: 62ch;
+  font: 400 1rem/1.6 "Cormorant Garamond", Georgia, serif;
+  color: #40566d;
+}
+.sch-intro b { font-weight: 600; color: var(--sch-ink); }
+
+/* ---------- Stage ---------- */
+
+.sch-stage {
+  position: relative;
+  height: min(70vh, 660px);
+  min-height: 380px;
+  margin: 1.1rem 0 .7rem;
+  border: 1px solid var(--sch-line);
+  border-radius: 3px;
+  background:
+    /* A faint drafting grid on the sheet itself, so the panel reads as paper
+       even before WebGL paints anything into it. */
+    linear-gradient(var(--sch-line) 1px, transparent 1px) 0 0 / 100% 32px,
+    linear-gradient(90deg, var(--sch-line) 1px, transparent 1px) 0 0 / 32px 100%,
+    var(--sch-sheet);
+  background-blend-mode: normal;
+  overflow: hidden;
+}
+.sch-stage.is-live { background-image: none; background: var(--sch-sheet); }
+.sch-stage canvas { display: block; width: 100%; height: 100%; }
+
+.sch-status {
+  position: absolute;
+  inset: auto 0 50% 0;
+  margin: 0;
+  text-align: center;
+  font: 400 .9rem/1.4 "Inter", system-ui, sans-serif;
+  color: var(--sch-ink-2);
+}
+
+.sch-markers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.sch-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  gap: 1px;
+  padding: .25rem .5rem;
+  border: 1px solid var(--sch-line);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, .92);
+  font: 500 .72rem/1.25 "Inter", system-ui, sans-serif;
+  color: var(--sch-ink);
+  white-space: nowrap;
+}
+.sch-label span {
+  font-weight: 400;
+  font-size: .66rem;
+  color: var(--sch-ink-2);
+  font-variant-numeric: tabular-nums;
+}
+
+/* `display: grid` above beats the user-agent's `[hidden] { display: none }` —
+   same specificity, and this sheet comes later. Without this rule the
+   decluttered labels stayed painted, stacked in the top-left corner with no
+   transform, which looked exactly like a label attached to the wrong monument. */
+.sch-label[hidden] { display: none; }
+
+/* Scene readout, bottom-left of the sheet like a drawing's title block. */
+.sch-scene {
+  position: absolute;
+  left: .8rem;
+  bottom: .7rem;
+  display: grid;
+  gap: 2px;
+  padding: .4rem .65rem;
+  border-left: 2px solid var(--sch-accent);
+  background: rgba(255, 255, 255, .86);
+  z-index: 3;
+}
+.sch-scene-n {
+  font: 600 .64rem/1 "Inter", system-ui, sans-serif;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--sch-ink-2);
+}
+.sch-scene-t {
+  font: 500 1rem/1.2 "Cormorant Garamond", Georgia, serif;
+  color: var(--sch-ink);
+}
+
+/* Key, top-right. */
+.sch-key {
+  position: absolute;
+  right: .7rem;
+  top: .7rem;
+  display: grid;
+  gap: .22rem;
+  padding: .45rem .6rem;
+  border: 1px solid var(--sch-line);
+  background: rgba(255, 255, 255, .88);
+  font: 400 .68rem/1.3 "Inter", system-ui, sans-serif;
+  color: var(--sch-ink-2);
+  z-index: 3;
+}
+.sch-key span { display: flex; align-items: center; gap: .4rem; }
+.sch-key i { width: 16px; height: 0; border-top: 2px solid; flex: none; }
+.k-cited { color: #a8742c; }
+.k-mark { color: #2b3f54; }
+.k-ctx { color: #8ba0b4; }
+.k-contour { color: #c2cedb; }
+
+/* ---------- Controls ---------- */
+
+.sch-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  align-items: center;
+  margin: 0 0 1.8rem;
+}
+
+.sch-btn {
+  padding: .45rem .8rem;
+  border: 1px solid var(--sch-line);
+  border-radius: 2px;
+  background: #fff;
+  font: 500 .78rem/1 "Inter", system-ui, sans-serif;
+  color: var(--sch-ink);
+  cursor: pointer;
+}
+.sch-btn:hover:not(:disabled) { border-color: var(--sch-ink-2); }
+.sch-btn:disabled { opacity: .42; cursor: default; }
+.sch-btn[aria-pressed="true"] { background: var(--sch-ink); border-color: var(--sch-ink); color: #fff; }
+.sch-btn:focus-visible { outline: 2px solid var(--sch-accent); outline-offset: 2px; }
+
+.sch-check {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  margin-left: .3rem;
+  font: 400 .78rem/1 "Inter", system-ui, sans-serif;
+  color: var(--sch-ink-2);
+}
+
+/* ---------- The written half ---------- */
+
+.sch-doc { max-width: 78ch; }
+
+.sch-doc h2 {
+  margin: 2rem 0 .6rem;
+  font: 600 1.15rem/1.25 "Cinzel", Georgia, serif;
+  color: var(--sch-ink);
+}
+.sch-doc h3 {
+  margin: 1.7rem 0 .5rem;
+  font: 600 .74rem/1 "Inter", system-ui, sans-serif;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--sch-ink-2);
+}
+.sch-doc p {
+  margin: 0 0 .8rem;
+  font: 400 1rem/1.65 "Cormorant Garamond", Georgia, serif;
+  color: #40566d;
+}
+.sch-doc p b { font-weight: 600; color: var(--sch-ink); }
+
+.sch-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 .7rem;
+  font: 400 .82rem/1.45 "Inter", system-ui, sans-serif;
+}
+.sch-table th {
+  text-align: left;
+  padding: .35rem .5rem;
+  border-bottom: 1px solid var(--sch-ink-2);
+  font-weight: 600;
+  font-size: .68rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--sch-ink-2);
+}
+.sch-table td {
+  padding: .42rem .5rem;
+  border-bottom: 1px solid var(--sch-line);
+  vertical-align: top;
+  color: var(--sch-ink);
+}
+.sch-table .sch-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sch-table .sch-why { color: #52687d; font-size: .78rem; }
+.sch-table .sch-src { font-size: .74rem; }
+.sch-table a { color: var(--sch-accent); }
+
+/* Tables must never push the page sideways on a phone. */
+@media (max-width: 640px) {
+  .sch-table { display: block; overflow-x: auto; white-space: nowrap; }
+  .sch-table .sch-why { white-space: normal; min-width: 22rem; display: inline-block; }
+}
+
+.sch-foot, .sch-note {
+  font: 400 .85rem/1.55 "Inter", system-ui, sans-serif;
+  color: #52687d;
+}
+.sch-foot { padding-left: .7rem; border-left: 2px solid var(--sch-line); }
+
+.sch-next { margin: 0 0 1rem; padding-left: 1.1rem; }
+.sch-next li {
+  margin: 0 0 .45rem;
+  font: 400 1rem/1.6 "Cormorant Garamond", Georgia, serif;
+  color: #40566d;
+}
+.sch-next b { font-weight: 600; color: var(--sch-ink); }
+
+.sch-prov {
+  margin-top: 1.4rem;
+  padding-top: .7rem;
+  border-top: 1px solid var(--sch-line);
+  font: 400 .74rem/1.55 "Inter", system-ui, sans-serif !important;
+  color: #6a7f93 !important;
+}
+
+.sch-noscript {
+  max-width: 60ch;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font: 400 1rem/1.6 "Cormorant Garamond", Georgia, serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sch-btn { transition: none; }
+}
+
+/* ---------- Elevations and sections ----------
+ *
+ * SVG drawing sheets. The visual grammar is standard drafting practice and each
+ * choice carries meaning, so none of it is decoration:
+ *   - solid heavy line = something measured (the OSM plan outline, the ground)
+ *   - dashed thin line = a construction line, i.e. a convention, not a level
+ *   - the cited dimension is the only one set in the accent
+ */
+
+.sch-warn {
+  margin: 0 0 .9rem;
+  padding: .6rem .8rem;
+  border-left: 3px solid var(--sch-accent);
+  background: rgba(168, 116, 44, .06);
+  font: 400 .85rem/1.55 "Inter", system-ui, sans-serif;
+  color: #52687d;
+}
+.sch-warn b { color: var(--sch-ink); }
+
+.sch-sheets {
+  display: grid;
+  gap: 1.1rem;
+  margin: 0 0 1.4rem;
+}
+
+.sheet {
+  margin: 0;
+  padding: .85rem .9rem 1rem;
+  border: 1px solid var(--sch-line);
+  border-radius: 3px;
+  background: var(--sch-sheet);
+}
+
+.sheet-head { margin: 0 0 .35rem; }
+.sheet-head h4 {
+  margin: 0;
+  font: 600 1rem/1.2 "Cinzel", Georgia, serif;
+  color: var(--sch-ink);
+}
+.sheet-meta {
+  margin: .15rem 0 0;
+  font: 400 .76rem/1.4 "Inter", system-ui, sans-serif !important;
+  color: var(--sch-ink-2) !important;
+}
+.sheet-meta b { color: var(--sch-accent); font-weight: 600; }
+
+/* The drawing itself. Wide sheets scroll inside their own box rather than
+   pushing the page sideways. */
+.sheet-svg {
+  display: block;
+  width: 100%;
+  max-width: 880px;
+  height: auto;
+  margin: .3rem 0 .5rem;
+  overflow: visible;
+}
+
+.sheet-svg .p-title {
+  font: 600 8px/1 "Inter", system-ui, sans-serif;
+  letter-spacing: .1em;
+  fill: var(--sch-ink);
+}
+.sheet-svg .p-sub {
+  font: 400 7px/1 "Inter", system-ui, sans-serif;
+  fill: var(--sch-ink-2);
+}
+
+/* Plan: the ground ring is the measured one and carries the weight. */
+.sheet-svg .plan-ring {
+  fill: none;
+  stroke: var(--sch-ink-2);
+  stroke-width: .7;
+}
+.sheet-svg .plan-ring.is-base {
+  fill: rgba(240, 230, 214, .55);
+  stroke: var(--sch-ink);
+  stroke-width: 1.2;
+}
+.sheet-svg .plan-ring.is-cap { stroke-dasharray: 2 2; }
+
+/* Elevation and section bodies. */
+.sheet-svg .face {
+  fill: #f0e6d6;
+  stroke: var(--sch-accent);
+  stroke-width: 1;
+}
+/* A cap is a shape step, never a storey — dashed so it can never be counted
+   as one. */
+.sheet-svg .face.is-cap { stroke-dasharray: 3 2; }
+/* Cut material is hatched, the drafting convention for "you are looking at
+   solid stone here". */
+.sheet-svg .face.is-cut { fill: var(--hatch, #f0e6d6); stroke: var(--sch-ink); }
+
+.sheet-svg .ground { stroke: var(--sch-ink); stroke-width: 1.4; }
+
+.sheet-svg .tier-line {
+  stroke: var(--sch-ink-2);
+  stroke-width: .5;
+  stroke-dasharray: 4 3;
+  opacity: .8;
+}
+
+.sheet-svg .cut line { stroke: var(--sch-accent); stroke-width: .7; stroke-dasharray: 6 2 2 2; }
+.sheet-svg .cut text {
+  font: 600 8px/1 "Inter", system-ui, sans-serif;
+  fill: var(--sch-accent);
+}
+
+.sheet-svg .dim line { stroke: var(--sch-ink-2); stroke-width: .5; }
+.sheet-svg .dim text {
+  font: 400 7.5px/1 "Inter", system-ui, sans-serif;
+  fill: var(--sch-ink-2);
+}
+/* The cited dimension is the only measured number on the sheet. */
+.sheet-svg .dim.is-cited line { stroke: var(--sch-accent); }
+.sheet-svg .dim.is-cited text { fill: var(--sch-accent); font-weight: 600; }
+
+.sheet-svg .scalebar rect { fill: var(--sch-ink); }
+.sheet-svg .scalebar rect.alt { fill: #fff; stroke: var(--sch-ink); stroke-width: .5; }
+.sheet-svg .scalebar text {
+  font: 400 7px/1 "Inter", system-ui, sans-serif;
+  fill: var(--sch-ink-2);
+}
+
+.sheet-notes { display: grid; gap: .25rem; }
+.sheet-notes p {
+  margin: 0;
+  font: 400 .76rem/1.5 "Inter", system-ui, sans-serif !important;
+  color: #52687d !important;
+}
+.sheet-notes .lbl {
+  display: inline-block;
+  min-width: 5.6rem;
+  font-weight: 600;
+  font-size: .64rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--sch-ink-2);
+}
+.sheet-notes b { color: var(--sch-ink); }
+.sheet-notes a { color: var(--sch-accent); }
+
+@media print {
+  .sch-stage, .sch-controls, .place-bar { display: none !important; }
+  .sheet { break-inside: avoid; border-color: #999; }
+}
+
+.sheet-svg .north line { stroke: var(--sch-ink); stroke-width: 1; }
+.sheet-svg .north path { fill: var(--sch-ink); }
+.sheet-svg .north text {
+  font: 600 7px/1 "Inter", system-ui, sans-serif;
+  fill: var(--sch-ink);
+}
+
+/* Axonometric: the same warm massing as the elevation, with the top faces
+   lifted so the stepping reads as solid form rather than as outline. */
+.sheet-svg .axo-side {
+  fill: #e6d8c2;
+  /* No stroke: the walls are fill only, and .axo-edge draws the linework, so a
+     28-facet traced outline does not turn into 28 visible flutes. */
+  stroke: none;
+}
+.sheet-svg .axo-edge {
+  stroke: var(--sch-accent);
+  stroke-width: .7;
+  stroke-linecap: round;
+}
+.sheet-svg .axo-top {
+  fill: #f6efe3;
+  stroke: var(--sch-accent);
+  stroke-width: .7;
+  stroke-linejoin: round;
+}
+/* A cap is a shape step, not a storey — dashed here as everywhere else. */
+.sheet-svg .axo-side.is-cap,
+.sheet-svg .axo-top.is-cap { stroke-dasharray: 3 2; }

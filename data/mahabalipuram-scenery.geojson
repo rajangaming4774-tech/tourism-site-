@@ -1,0 +1,2424 @@
+{
+ "type": "FeatureCollection",
+ "note": "DECORATIVE. OpenStreetMap maps no individual trees in this area, so these positions are invented. What is real is the land cover: every palm falls inside a polygon OSM tags as grass, park, garden, scrub or similar, listed in each feature's `within` and `landcover`. Do not read a palm as a tree that exists at that spot, or as shade.",
+ "generated": "2026-09-06",
+ "seed": 20260906,
+ "convention": "1 palm per 420 m2, min spacing 7 m, max 40 per polygon",
+ "attribution": "Land cover © OpenStreetMap contributors (ODbL); planting is decorative",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.9500000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191249,
+     12.615255
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.93
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191686,
+     12.617824
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191201,
+     12.617947
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.92
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192253,
+     12.615291
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.19
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.190955,
+     12.618321
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191101,
+     12.62006
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.190461,
+     12.614854
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.8600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191707,
+     12.617671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.09
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.190949,
+     12.615116
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.17
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191011,
+     12.615822
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.91
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191863,
+     12.619912
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.04
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191349,
+     12.618562
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.8700000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192459,
+     12.615767
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.03
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191565,
+     12.618983
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.99
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192464,
+     12.619622
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.11
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19108,
+     12.615324
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.89
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.190809,
+     12.614403
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192404,
+     12.619228
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.17
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192127,
+     12.619404
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.04
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191672,
+     12.614512
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.9600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191665,
+     12.61943
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.9400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191224,
+     12.616601
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.02
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.190415,
+     12.616467
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.12
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192466,
+     12.618465
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.93
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191757,
+     12.614494
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.9400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.190694,
+     12.615098
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.04
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191648,
+     12.617305
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.9600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192541,
+     12.620022
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.8500000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192581,
+     12.618575
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.98
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191828,
+     12.619111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19246,
+     12.618555
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.8400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192166,
+     12.619782
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.1600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.190965,
+     12.61905
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.1300000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.190993,
+     12.615306
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.19
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191826,
+     12.617704
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.11
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191849,
+     12.617199
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192368,
+     12.617888
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 0.81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.191513,
+     12.618385
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.11
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.192229,
+     12.618323
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/103163461",
+    "landcover": "park",
+    "size": 1.1300000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19148,
+     12.614594
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 0.99
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.18088,
+     12.619699
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 0.98
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.181103,
+     12.619825
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 0.81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.180972,
+     12.619729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 0.8300000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.181341,
+     12.619891
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 1.07
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.180992,
+     12.619887
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 1.15
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.181499,
+     12.620016
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 0.9600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.181389,
+     12.620189
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 1.06
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.181086,
+     12.620297
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/350598161",
+    "landcover": "garden",
+    "size": 1.1600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.180866,
+     12.619769
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 1.2000000000000002
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197676,
+     12.616109
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 1.15
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197064,
+     12.616336
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 1.11
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198199,
+     12.616441
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 1.06
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19793,
+     12.616053
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 0.8300000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197967,
+     12.616324
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 1.1600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197317,
+     12.616241
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 1.1800000000000002
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197455,
+     12.616382
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 1.17
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197624,
+     12.616055
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 1.1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197965,
+     12.616157
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 0.92
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197739,
+     12.616129
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370015800",
+    "landcover": "grass",
+    "size": 0.99
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197589,
+     12.616124
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135168",
+    "landcover": "grass",
+    "size": 1.19
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198483,
+     12.617189
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135168",
+    "landcover": "grass",
+    "size": 0.88
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198462,
+     12.617073
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135168",
+    "landcover": "grass",
+    "size": 0.8200000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198586,
+     12.616977
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135168",
+    "landcover": "grass",
+    "size": 0.9700000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198452,
+     12.616751
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135168",
+    "landcover": "grass",
+    "size": 1.04
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198677,
+     12.617102
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135168",
+    "landcover": "grass",
+    "size": 1.01
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198357,
+     12.617206
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 1.1300000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198783,
+     12.616372
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 0.88
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198371,
+     12.616123
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 1.2000000000000002
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198602,
+     12.616436
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 0.91
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198278,
+     12.616093
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 0.8700000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198952,
+     12.617052
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 1.04
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198363,
+     12.616316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 0.91
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198821,
+     12.616713
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 1.03
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198552,
+     12.616177
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 1.12
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198633,
+     12.616846
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 0.98
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198572,
+     12.616714
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135172",
+    "landcover": "grass",
+    "size": 0.8500000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198675,
+     12.61649
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135173",
+    "landcover": "grass",
+    "size": 0.91
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199576,
+     12.616341
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135173",
+    "landcover": "grass",
+    "size": 0.8700000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199518,
+     12.616239
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135173",
+    "landcover": "grass",
+    "size": 1.1800000000000002
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199449,
+     12.616859
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135173",
+    "landcover": "grass",
+    "size": 0.81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199449,
+     12.616787
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135173",
+    "landcover": "grass",
+    "size": 1.2000000000000002
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199782,
+     12.616418
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135173",
+    "landcover": "grass",
+    "size": 1.12
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199465,
+     12.616298
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135173",
+    "landcover": "grass",
+    "size": 1.11
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199679,
+     12.616356
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135174",
+    "landcover": "grass",
+    "size": 0.88
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.196793,
+     12.616574
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135174",
+    "landcover": "grass",
+    "size": 1.12
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.196671,
+     12.616549
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135174",
+    "landcover": "grass",
+    "size": 1.1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.196886,
+     12.616774
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135174",
+    "landcover": "grass",
+    "size": 1.04
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.196655,
+     12.61671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135175",
+    "landcover": "grass",
+    "size": 1.1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.196578,
+     12.616928
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135175",
+    "landcover": "grass",
+    "size": 0.8300000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.196685,
+     12.617246
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135175",
+    "landcover": "grass",
+    "size": 1.02
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19686,
+     12.617142
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135175",
+    "landcover": "grass",
+    "size": 1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.196695,
+     12.617123
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135176",
+    "landcover": "grass",
+    "size": 0.9700000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19897,
+     12.616091
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135176",
+    "landcover": "grass",
+    "size": 0.8400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198965,
+     12.616379
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135176",
+    "landcover": "grass",
+    "size": 0.91
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.199095,
+     12.616134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/370135176",
+    "landcover": "grass",
+    "size": 1.08
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198903,
+     12.616135
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397128",
+    "landcover": "garden",
+    "size": 1.1400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195686,
+     12.627089
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397128",
+    "landcover": "garden",
+    "size": 0.81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195451,
+     12.627107
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397128",
+    "landcover": "garden",
+    "size": 0.99
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195208,
+     12.626964
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397128",
+    "landcover": "garden",
+    "size": 0.9400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195394,
+     12.626924
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397128",
+    "landcover": "garden",
+    "size": 1.11
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195299,
+     12.626995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397128",
+    "landcover": "garden",
+    "size": 0.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195234,
+     12.627141
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397128",
+    "landcover": "garden",
+    "size": 0.99
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195584,
+     12.626836
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397128",
+    "landcover": "garden",
+    "size": 0.8600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19557,
+     12.627042
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397131",
+    "landcover": "park",
+    "size": 0.9600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.194928,
+     12.626874
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397131",
+    "landcover": "park",
+    "size": 0.89
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.194775,
+     12.626979
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397131",
+    "landcover": "park",
+    "size": 1.1400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.194724,
+     12.6271
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397131",
+    "landcover": "park",
+    "size": 0.8200000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.194853,
+     12.62713
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397131",
+    "landcover": "park",
+    "size": 1.12
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.194625,
+     12.627151
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397131",
+    "landcover": "park",
+    "size": 0.8400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.194733,
+     12.627287
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397131",
+    "landcover": "park",
+    "size": 0.91
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.195007,
+     12.627025
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/564397131",
+    "landcover": "park",
+    "size": 0.9600000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.194643,
+     12.62735
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/596631372",
+    "landcover": "scrub",
+    "size": 0.93
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.189202,
+     12.620793
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/596631372",
+    "landcover": "scrub",
+    "size": 0.99
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.18917,
+     12.621032
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/596631372",
+    "landcover": "scrub",
+    "size": 0.9400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.189249,
+     12.620979
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/596631372",
+    "landcover": "scrub",
+    "size": 0.8300000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.189187,
+     12.620699
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/596631372",
+    "landcover": "scrub",
+    "size": 1.02
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.189242,
+     12.620896
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/596631372",
+    "landcover": "scrub",
+    "size": 1.19
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.18908,
+     12.620691
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/596631372",
+    "landcover": "scrub",
+    "size": 1.11
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.189049,
+     12.620949
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 0.99
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19808,
+     12.623361
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.1400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19825,
+     12.623117
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.11
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19808,
+     12.623487
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.1400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198133,
+     12.62331
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.1300000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198315,
+     12.623394
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.19
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198217,
+     12.623738
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 0.8200000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.19816,
+     12.623034
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 0.9400000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198573,
+     12.623627
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 0.9
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198646,
+     12.6236
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.09
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198487,
+     12.62335
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.04
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198323,
+     12.62349
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.19
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198721,
+     12.623323
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 0.9700000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198246,
+     12.623619
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 0.8200000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198664,
+     12.623471
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 0.8700000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198853,
+     12.623874
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.09
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198844,
+     12.623486
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736069",
+    "landcover": "grass",
+    "size": 1.08
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.198054,
+     12.623025
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736071",
+    "landcover": "grass",
+    "size": 1.2000000000000002
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197229,
+     12.623045
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736071",
+    "landcover": "grass",
+    "size": 0.81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197464,
+     12.623266
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736071",
+    "landcover": "grass",
+    "size": 0.81
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197346,
+     12.623289
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736071",
+    "landcover": "grass",
+    "size": 0.9500000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197102,
+     12.623342
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736071",
+    "landcover": "grass",
+    "size": 0.88
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.196956,
+     12.623154
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "palm",
+    "decorative": true,
+    "within": "way/1474736071",
+    "landcover": "grass",
+    "size": 0.8500000000000001
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     80.197591,
+     12.623255
+    ]
+   }
+  }
+ ]
+}

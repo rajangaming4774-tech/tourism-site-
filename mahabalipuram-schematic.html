@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mahabalipuram — schematic massing study | India Heritage Map</title>
+  <meta name="description" content="A schematic massing study of the Mahabalipuram monument complex: cited heights drawn as massing, everything uncited drawn flat, with the twelve camera scenes. For design approval before 3D modelling." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#eef2f6" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/place.css" />
+  <link rel="stylesheet" href="css/scene-schematic.css" />
+</head>
+<body class="schematic">
+  <nav class="place-bar guide-bar">
+    <div class="wrap">
+      <a class="back-link" href="mahabalipuram.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        The guide
+      </a>
+      <span class="bar-brand">Schematic</span>
+      <a class="bar-tag" href="mahabalipuram-3d.html">The 3D view →</a>
+    </div>
+  </nav>
+
+  <main class="sch-shell">
+    <header class="sch-head">
+      <p class="sch-eyebrow">Massing study — for approval</p>
+      <h1>Mahabalipuram: schematic layer</h1>
+      <p class="sch-intro" id="sch-intro">Loading…</p>
+    </header>
+
+    <div class="sch-stage" id="sch-stage">
+      <div class="sch-markers" id="sch-markers"></div>
+      <p class="sch-status" id="sch-status" role="status">Preparing the drawing…</p>
+      <div class="sch-scene" aria-live="polite">
+        <span class="sch-scene-n" id="sch-scene-n"></span>
+        <span class="sch-scene-t" id="sch-scene-t"></span>
+      </div>
+      <div class="sch-key" aria-hidden="true">
+        <span><i class="k-cited"></i>cited massing</span>
+        <span><i class="k-mark"></i>position only</span>
+        <span><i class="k-ctx"></i>town &amp; granite</span>
+        <span><i class="k-contour"></i>contours, 2 m</span>
+      </div>
+    </div>
+
+    <div class="sch-controls">
+      <button type="button" class="sch-btn" id="sch-prev">‹ Prev</button>
+      <button type="button" class="sch-btn" id="sch-next">Next ›</button>
+      <button type="button" class="sch-btn" id="sch-play" aria-pressed="false">Play the twelve scenes</button>
+      <button type="button" class="sch-btn" id="sch-plan">Plan view</button>
+      <button type="button" class="sch-btn" id="sch-home">Overview</button>
+      <label class="sch-check"><input type="checkbox" id="sch-labels" checked /> Labels</label>
+    </div>
+
+    <section class="sch-doc">
+      <h2>What this drawing commits to</h2>
+      <p>
+        A schematic is where an invented dimension would slip through unnoticed and then get
+        built, so this one draws <b>only what the sources give</b>. A monument with a published
+        height and a published storey count is drawn as massing. Everything else is a position
+        on the ground with no height at all — and the reason is written down rather than
+        smoothed over.
+      </p>
+
+      <h3>Drawn as massing — <span id="sch-cited-count">0</span> monuments</h3>
+      <table class="sch-table">
+        <thead>
+          <tr><th>Monument</th><th class="sch-num">Height</th><th class="sch-num">Tiers</th><th>Form</th><th>Source</th></tr>
+        </thead>
+        <tbody id="sch-cited-body"></tbody>
+      </table>
+      <p class="sch-foot">
+        Heights are cited totals. <b>How the height splits between storeys, and how far each
+        one steps in, is stylised</b> — a constant-slope tower stepped at the storey lines. The
+        storey <i>count</i> is cited; the profile is not, and that is one of the things this
+        drawing is asking you to approve.
+      </p>
+
+      <h3>Elevations and sections — <span id="sch-sheets-count">0</span> sheets</h3>
+      <p class="sch-note">
+        Plan, elevation and section for every monument that has cited dimensions, all drawn
+        to <b>one common scale</b> so they can be compared with each other — an 11 m tower and
+        a 5.5 m hut should not occupy the same space on the page. Every line is projected from
+        the same per-tier geometry the 3D massing extrudes; nothing is redrawn by hand.
+      </p>
+      <p class="sch-warn">
+        <b>Do not scale the plan.</b> The outline is the OpenStreetMap way and every one runs
+        wider than the published plan, because OSM maps the visible footing and apron rather
+        than the building line. Both figures are printed on each sheet. The sections are solid
+        because <b>no interior dimension is published for any of these</b> — the rathas are
+        monoliths and largely are solid, but each has a small shrine cell that is not drawn.
+      </p>
+      <div class="sch-sheets" id="sch-sheets"></div>
+
+      <h3>Blocked before modelling — <span id="sch-blocked-count">0</span> monuments</h3>
+      <p class="sch-note">
+        This is the modelling backlog. Each row is a monument that cannot be built from what we
+        have, with the specific obstacle. These are not oversights to be filled in by eye; each
+        needs a measurement, a different source, or a decision.
+      </p>
+      <table class="sch-table">
+        <thead><tr><th>Monument</th><th>Form</th><th>Why there is no height</th></tr></thead>
+        <tbody id="sch-blocked-body"></tbody>
+      </table>
+
+      <h3>Positions only — <span id="sch-positions-count">0</span> records</h3>
+      <p class="sch-note">
+        Every monument OpenStreetMap records inside the sheet is marked with a ground cross, so
+        the layout can be judged complete. A cross claims a location and nothing else.
+      </p>
+
+      <h2>What happens after approval</h2>
+      <ol class="sch-next">
+        <li><b>Layout and proportion</b> — the footprints and cited heights above. If these are
+          right, the site plan is right.</li>
+        <li><b>The twelve scenes</b> — play them through. Each is a camera pose on one
+          continuous path; approving them fixes what the finished view will show.</li>
+        <li><b>Then modelling</b> — and only for monuments in the first table, unless a source
+          is found for one in the second.</li>
+      </ol>
+
+      <p class="sch-prov">
+        Outlines and positions: OpenStreetMap contributors, ODbL 1.0. Elevation: Mapzen / AWS
+        Terrain Tiles, 2 m contours from a ~30 m DEM — good for landform, not for a monument's
+        own base. Heights as cited per row.
+      </p>
+    </section>
+  </main>
+
+  <noscript>
+    <p class="sch-noscript">
+      This drawing needs JavaScript. Every monument, with its history and sources, is written
+      out on the <a href="mahabalipuram.html">Mahabalipuram guide</a>.
+    </p>
+  </noscript>
+
+  <script src="content/mahabalipuram-heights.js"></script>
+  <script type="module" src="js/scene-schematic.js"></script>
+</body>
+</html>

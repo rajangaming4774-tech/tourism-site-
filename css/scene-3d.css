@@ -1,0 +1,460 @@
+/* The 3D scene page. Colour tokens all come from css/place.css — this file
+ * defines none of its own, same rule the guide follows.
+ *
+ * Deliberately absent: no fade-and-slide-up on the panel, and no spinner over
+ * a black screen. The stage carries the ground tone from the first paint, so
+ * what you see while monuments stream in is the site, not a void.
+ *
+ * The idle auto-rotate that this comment used to rule out now exists, on
+ * purpose and bounded: after 20 s without input the camera drifts at 0.6°/s,
+ * stops on any input, and gives up after 90 s. Chosen by the user; see the
+ * motion policy in js/scene-3d.js. Never under prefers-reduced-motion.
+ */
+
+.scene3d {
+  margin: 0;
+  background: var(--paper-deep);
+  color: var(--ink);
+  font-family: var(--font-ui);
+}
+
+.s3-shell {
+  position: relative;
+  min-height: 100dvh;
+  padding-top: var(--nav-h);
+  box-sizing: border-box;
+}
+
+/* --- Stage --- */
+.s3-stage {
+  position: relative;
+  width: 100%;
+  height: min(72dvh, 720px);
+  overflow: hidden;
+  /* Retuned to the rendered sky (js/scene-sky.js): this is what shows before
+     the canvas is live and if WebGL never starts, so it must not pop when the
+     real sky arrives over it. */
+  background: linear-gradient(180deg, #b6c6d3 0%, #dad7cb 55%, #e6dfd0 100%);
+}
+.s3-stage canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+
+/* Cinematic tour dressing: letterbox bars, no label pills, the caption fading
+   between scenes. A trailer has no pills; the joystick stays, dimmed, because
+   it is the documented way out. */
+.s3-bars { position: absolute; inset: 0; z-index: 4; pointer-events: none; }
+.s3-bars span {
+  position: absolute; left: 0; right: 0; height: 7%;
+  background: var(--ink);
+  transform: scaleY(0); transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.s3-bars span:first-child { top: 0; transform-origin: top; }
+.s3-bars span:last-child { bottom: 0; transform-origin: bottom; }
+body.is-cine .s3-bars span { transform: scaleY(1); }
+body.is-cine .s3-marker, body.is-cine .s3-amenity { display: none; }
+body.is-cine .s3-stick { opacity: 0.55; }
+.s3-scene { transition: opacity 350ms ease; }
+.s3-scene.is-changing { opacity: 0; transition-duration: 250ms; }
+@media (prefers-reduced-motion: reduce) {
+  .s3-bars span, .s3-scene { transition: none; }
+}
+
+/* The terrain silhouette that stands in before anything loads. */
+.s3-ground {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -8%;
+  height: 58%;
+  background: radial-gradient(60% 100% at 50% 100%, var(--paper-deep) 0%, rgba(233, 222, 200, 0) 72%);
+}
+.s3-stage.is-live .s3-ground { display: none; }
+
+.s3-status {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  background: var(--paper-raised);
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+}
+.s3-status:empty { display: none; }
+
+/* --- POI markers: real buttons, positioned from projected 3D coords --- */
+.s3-markers { position: absolute; inset: 0; pointer-events: none; }
+
+.s3-marker {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  max-width: 42vw;
+  padding: 0.34rem 0.6rem 0.34rem 0.4rem;
+  font: inherit;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper-raised);
+  border: 1px solid var(--gold-line);
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(60, 40, 10, 0.25);
+  cursor: pointer;
+  white-space: nowrap;
+  /* Only opacity is animated, and only for the distance fade. */
+  transition: opacity 160ms linear, border-color 160ms linear;
+}
+.s3-marker:hover { border-color: var(--gold-page); }
+.s3-marker:focus-visible { outline: 2px solid var(--gold-page); outline-offset: 3px; }
+.s3-marker[hidden] { display: none; }
+
+.s3-dot {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: none;
+  display: grid;
+  place-items: center;
+  font-size: 0.68rem;
+  color: var(--paper-raised);
+  background: var(--gold-page);
+  border-radius: 50%;
+}
+.s3-marker.is-cluster .s3-dot { background: var(--gold-deep); }
+
+/* --- Controls --- */
+.s3-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.85rem var(--frame);
+  border-bottom: 1px solid var(--gold-line-soft);
+}
+.s3-btn {
+  font: inherit;
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.9rem;
+  color: var(--ink);
+  background: var(--paper-raised);
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.s3-btn:hover { border-color: var(--gold-page); }
+.s3-btn:focus-visible { outline: 2px solid var(--gold-page); outline-offset: 2px; }
+
+/* --- The plain list: the quality floor and the no-WebGL fallback --- */
+.s3-list { padding: 1.4rem var(--frame) 3rem; max-width: 62rem; }
+.s3-list-h { font-family: var(--font-label); font-size: 1.1rem; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 0.4rem; }
+.s3-list-intro { color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 1.2rem; max-width: 46rem; }
+.s3-list-items { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; }
+.s3-item { border: 1px solid var(--gold-line-soft); border-radius: var(--radius); background: var(--paper-raised); padding: 0.9rem 1rem; }
+.s3-item h3 { margin: 0 0 0.15rem; font-family: var(--font-serif); font-size: 1.16rem; }
+.s3-item .s3-when { display: block; font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 0.45rem; }
+.s3-item p { margin: 0 0 0.5rem; font-size: 0.94rem; line-height: 1.55; color: var(--ink-soft); }
+.s3-item p:last-child { margin-bottom: 0; }
+.s3-meta { font-size: 0.8rem; color: var(--ink-soft); }
+.s3-meta b { color: var(--ink); font-weight: 600; }
+.s3-prov { margin-top: 1.6rem; font-size: 0.76rem; color: var(--ink-soft); line-height: 1.5; }
+
+/* --- Info panel: side sheet on desktop, bottom sheet on mobile --- */
+.s3-panel {
+  position: fixed;
+  z-index: 20;
+  background: var(--paper-raised);
+  border: 1px solid var(--gold-line);
+  box-shadow: 0 -12px 40px rgba(60, 40, 10, 0.18);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.s3-panel[hidden] { display: none; }
+.s3-panel-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  margin: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--ink);
+  background: var(--paper-raised);
+  border: 1px solid var(--gold-line);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.s3-panel-close:focus-visible { outline: 2px solid var(--gold-page); outline-offset: 2px; }
+.s3-panel-body { padding: 1.1rem 1.2rem 1.6rem; }
+.s3-panel-body h2 { font-family: var(--font-serif); font-size: 1.5rem; margin: 0 0 0.15rem; }
+.s3-panel-body .s3-when { display: block; font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 0.7rem; }
+.s3-panel-body p { font-size: 0.95rem; line-height: 1.6; color: var(--ink-soft); margin: 0 0 0.7rem; }
+.s3-tamil { font-size: 1rem; color: var(--ink-soft); margin: -0.1rem 0 0.5rem; }
+.s3-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.8rem 0; }
+.s3-chip { font-size: 0.74rem; letter-spacing: 0.05em; padding: 0.25rem 0.55rem; border: 1px solid var(--gold-line); border-radius: 999px; color: var(--ink-soft); }
+.s3-note { font-size: 0.8rem; color: var(--ink-soft); border-left: 2px solid var(--gold-line); padding-left: 0.7rem; margin: 0.8rem 0; }
+.s3-src { font-size: 0.78rem; color: var(--ink-soft); }
+.s3-src a { color: var(--gold-deep); }
+
+@media (max-width: 819px) {
+  .s3-panel { left: 0; right: 0; bottom: 0; max-height: 62dvh; border-radius: 10px 10px 0 0; }
+}
+@media (min-width: 820px) {
+  .s3-panel { top: var(--nav-h); right: 0; width: 380px; height: calc(100dvh - var(--nav-h)); border-radius: 0; }
+  .s3-stage { height: min(78dvh, 820px); }
+}
+
+.s3-noscript { padding: 1.4rem var(--frame); color: var(--ink-soft); }
+
+/* No motion means no camera easing and no marker transitions. */
+@media (prefers-reduced-motion: reduce) {
+  .s3-marker { transition: none; }
+}
+
+/* The light nav treatment. These five rules are duplicated from css/guide.css
+ * rather than shared: the alternative is loading the whole guide stylesheet on
+ * this page for a header, which would drag in the entire MapLibre UI. Kept
+ * short and adjacent so the duplication is obvious if either changes. */
+.scene3d .guide-bar { background: var(--paper-raised); border-bottom: 1px solid var(--gold-line); }
+.scene3d .guide-bar .back-link { color: var(--ink); border-color: rgba(166, 124, 46, 0.55); background: transparent; }
+.scene3d .guide-bar .back-link:hover,
+.scene3d .guide-bar .back-link:focus-visible { background: var(--gold-page); color: var(--paper-raised); }
+.scene3d .guide-bar .bar-brand { color: var(--gold-page); }
+.scene3d .guide-bar .bar-tag,
+.scene3d .s3-maplink { color: var(--ink-soft); }
+
+/* Facility markers: quieter than the monument labels on purpose — orientation,
+ * not headline content. Still real buttons with real labels. */
+.s3-amenity {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.25rem;
+  font: inherit;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gold-deep);
+  background: var(--paper-raised);
+  border: 1px solid var(--gold-page);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: opacity 160ms linear;
+}
+.s3-amenity:hover { background: var(--gold-page); color: var(--paper-raised); }
+.s3-amenity:focus-visible { outline: 2px solid var(--gold-page); outline-offset: 2px; }
+.s3-amenity[hidden] { display: none; }
+
+.s3-btn[aria-pressed="true"] { background: var(--gold-page); color: var(--paper-raised); border-color: var(--gold-page); }
+
+/* The descent wash — covers the scene swap so the globe-to-site move reads as
+ * one continuous shot rather than a cut. */
+.s3-stage.is-descending::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(60% 60% at 50% 50%, rgba(243, 235, 220, 0) 0%, var(--paper) 100%);
+  animation: s3-wash 1.5s ease-in forwards;
+}
+@keyframes s3-wash { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .s3-stage.is-descending::after { animation: none; opacity: 1; }
+}
+
+/* ---------- Diorama treatment, merged from the guide map ----------
+ * Same two effects, same reasoning as css/guide.css: a warm vignette and a
+ * tilt-shift band, which together are what make a photograph of a real place
+ * read as a photograph of a small model. Purely optical — they make no claim
+ * about anything on the map, so unlike the palms they need no disclosure.
+ */
+.s3-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(120% 85% at 50% 44%, rgba(74, 54, 34, 0) 46%, rgba(74, 54, 34, 0.1) 74%, rgba(74, 54, 34, 0.28) 100%);
+}
+
+/* Blur only the top and bottom bands; a real tilt-shift keeps a sharp strip
+ * through the plane of focus. Suspended while the camera moves — same
+ * precaution as the guide map, for the same unquantified backdrop-filter cost. */
+.s3-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  mask-image: linear-gradient(to bottom, #000 0%, transparent 20%, transparent 80%, #000 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 20%, transparent 80%, #000 100%);
+}
+.s3-stage.is-moving::after,
+body.no-tiltshift .s3-stage::after { display: none; }
+
+/* Markers must sit above the treatment, or the labels blur with the scene. */
+.s3-markers { z-index: 3; }
+
+/* ---------- Twelve-scene scroll camera ----------
+ * The track is twelve screens tall and the stage sticks to the top of it, so
+ * scroll position maps directly to a position along the camera path. Outside
+ * cinematic mode the track collapses to nothing and the stage is an ordinary
+ * panel, which is why the default reading experience is unaffected.
+ */
+.s3-track { position: relative; }
+
+/* The twelve-screen scroll track is gone. The flight plays on a clock now, so
+   the page is an ordinary height again and the stage no longer has to stick to
+   the top of a 1200vh column to stay in view. */
+
+/* The scene caption. Documentary lower-third: the number small and quiet, the
+ * title carrying it. Sits above the tilt-shift so it never blurs. */
+.s3-scene {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2.4rem;
+  z-index: 4;
+  pointer-events: none;
+  display: grid;
+  justify-items: center;
+  gap: 0.3rem;
+  text-align: center;
+  padding: 0 var(--frame);
+}
+.s3-scene[hidden] { display: none; }
+.s3-scene-n {
+  font-size: 0.68rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.s3-scene-t {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4.2vw, 2.6rem);
+  line-height: 1.1;
+  color: var(--ink);
+  text-shadow: 0 1px 14px rgba(243, 235, 220, 0.85);
+}
+
+/* A scroll hint, shown only at the very start of the track. */
+body.is-cine .s3-status { bottom: auto; top: 1rem; }
+
+/* Road directions — an action, stronger than the other outbound links but not
+ * a button. Matches .g-directions on the guide map. */
+.s3-directions {
+  display: inline-block;
+  padding: 0.42rem 0.7rem;
+  font-size: 0.82rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+.s3-directions:hover { border-color: var(--gold-page); }
+.s3-directions:focus-visible { outline: 2px solid var(--gold-page); outline-offset: 2px; }
+
+/* Hover highlight. The pill and the ring on the ground (js/scene-hover.js) are
+   one state: whichever the pointer is over, both light. Border and dot only —
+   the pill must not change size, or hovering a clustered label would reflow the
+   collision layout that placeMarkers() just resolved. */
+.s3-marker.is-hot {
+  border-color: var(--gold-page);
+  box-shadow: 0 2px 10px rgba(60, 40, 10, 0.32), 0 0 0 2px rgba(166, 124, 46, 0.35);
+}
+.s3-marker.is-hot .s3-dot { background: var(--gold-page); }
+
+
+/* ---------- The joystick ----------
+ *
+ * Bottom-left, thumb-reachable on a phone held in either hand, and clear of the
+ * scene caption at the bottom centre and the controls at the top. It sits above
+ * the tilt-shift overlay so the knob never blurs while you are using it.
+ */
+.s3-stick {
+  position: absolute;
+  left: 1.1rem;
+  bottom: 1.6rem;
+  z-index: 5;
+  width: 104px;
+  height: 104px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  /* The pad is the drag surface, so it must take pointer events even though the
+     markers layer above it does not. */
+  touch-action: none;
+  cursor: grab;
+  -webkit-tap-highlight-color: transparent;
+}
+.s3-stick.is-active { cursor: grabbing; }
+
+.s3-stick-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(166, 124, 46, 0.5);
+  background: rgba(247, 241, 230, 0.42);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 2px 14px rgba(40, 30, 16, 0.16);
+  transition: background 180ms ease, border-color 180ms ease;
+}
+.s3-stick:focus-visible { outline: none; }
+.s3-stick:focus-visible .s3-stick-ring {
+  border-color: var(--gold-page, #a67c2e);
+  box-shadow: 0 0 0 3px rgba(166, 124, 46, 0.32);
+}
+.s3-stick.is-active .s3-stick-ring { background: rgba(247, 241, 230, 0.62); }
+
+.s3-stick-knob {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f6efe1 0%, #e3d3b2 100%);
+  border: 1px solid rgba(166, 124, 46, 0.75);
+  box-shadow: 0 3px 10px rgba(40, 30, 16, 0.28);
+  pointer-events: none;
+  /* No transition while it is being dragged — the knob must track the finger
+     exactly, or it lags behind and feels broken. It only eases on release. */
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.s3-stick.is-active .s3-stick-knob { transition: none; }
+
+/* A compass rose of four ticks, so the pad reads as a control rather than a
+   smudge before anyone touches it. */
+.s3-stick-ring::after {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  border-radius: 50%;
+  background:
+    linear-gradient(var(--tick, rgba(166,124,46,0.34)) 0 0) 50% 0 / 1px 8px no-repeat,
+    linear-gradient(var(--tick, rgba(166,124,46,0.34)) 0 0) 50% 100% / 1px 8px no-repeat,
+    linear-gradient(var(--tick, rgba(166,124,46,0.34)) 0 0) 0 50% / 8px 1px no-repeat,
+    linear-gradient(var(--tick, rgba(166,124,46,0.34)) 0 0) 100% 50% / 8px 1px no-repeat;
+}
+
+@media (max-width: 480px) {
+  .s3-stick { width: 92px; height: 92px; left: 0.8rem; bottom: 1.2rem; }
+  .s3-stick-knob { width: 38px; height: 38px; }
+}
+
+/* A pointer-only control is no control at all for someone who cannot use one,
+   so the pad is focusable and answers the arrow keys. Nothing to hide here. */
+@media (prefers-reduced-motion: reduce) {
+  .s3-stick-knob { transition: none; }
+}

@@ -1,0 +1,233 @@
+{
+ "_note": "Source of truth for every later phase. x/z are metres from the origin: +x east, +z south, +y up. Regenerate with `node scripts/fetch-phase1-geo.js`.",
+ "fetched": "2026-09-06",
+ "source": "OpenStreetMap contributors, ODbL",
+ "origin": {
+  "osm": "way/370135158",
+  "label": "Shore Temple",
+  "lat": 12.616453,
+  "lon": 80.19935,
+  "method": "vertex mean of the OSM way",
+  "briefSaid": {
+   "lat": 12.61639,
+   "lon": 80.19861
+  },
+  "whyChanged": "The brief's longitude is ~80 m west of the OSM way, the Google Maps place record and this repo's sites.geojson (TM-018), which all agree with each other. On the brief's origin the Shore Temple lands ~157 m from the coastline and fails the brief's own <100 m check; on this one it is 76.8 m."
+ },
+ "projection": {
+  "mPerLat": 110574,
+  "mPerLon": 108632.08,
+  "note": "Equirectangular about the origin. Good to a few cm over a 3 km scene; do not reuse at country scale."
+ },
+ "crossReference": {
+  "sceneOrigin": {
+   "lng": 80.1915,
+   "lat": 12.6168,
+   "source": "data/pois.json"
+  },
+  "note": "Add these to an anchors.json x/z to get scene coordinates.",
+  "offsetToScene": {
+   "x": 852.76,
+   "z": 38.32
+  }
+ },
+ "anchors": [
+  {
+   "key": "shore_temple",
+   "label": "Shore Temple",
+   "kind": "monument",
+   "osm": "way/370135158",
+   "lat": 12.616453,
+   "lon": 80.19935,
+   "x": 0,
+   "z": 0,
+   "orientation": 90,
+   "orientationSource": "East-facing onto the Bay of Bengal — stated in this repo's own guide copy (mahabalipuram.html) and general to the monument's description.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "pancha_rathas",
+   "label": "Pancha Rathas (compound)",
+   "kind": "monument",
+   "osm": "way/103082949",
+   "lat": 12.609065,
+   "lon": 80.189702,
+   "x": -1048.12,
+   "z": 817,
+   "orientation": null,
+   "orientationWhy": "A compound, not a single shrine — its members do not share a facing. See the individual rathas below.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "dharmaraja_ratha",
+   "label": "Dharmaraja Ratha",
+   "kind": "monument",
+   "osm": "way/576022688",
+   "lat": 12.60871,
+   "lon": 80.189509,
+   "x": -1069.03,
+   "z": 856.2,
+   "orientation": null,
+   "orientationWhy": "The Phase 1 brief states the four western rathas face west. Recorded as unverified — the brief is not a citation.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "bhima_ratha",
+   "label": "Bhima Ratha",
+   "kind": "monument",
+   "osm": "way/576022690",
+   "lat": 12.608849,
+   "lon": 80.189613,
+   "x": -1057.78,
+   "z": 840.86,
+   "orientation": null,
+   "orientationWhy": "The Phase 1 brief states the four western rathas face west. Recorded as unverified — the brief is not a citation.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "arjuna_ratha",
+   "label": "Arjuna Ratha",
+   "kind": "monument",
+   "osm": "way/576022684",
+   "lat": 12.608965,
+   "lon": 80.189679,
+   "x": -1050.59,
+   "z": 828.04,
+   "orientation": null,
+   "orientationWhy": "The Phase 1 brief states the four western rathas face west. Recorded as unverified — the brief is not a citation.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "draupadi_ratha",
+   "label": "Draupadi Ratha",
+   "kind": "monument",
+   "osm": "way/576022681",
+   "lat": 12.609008,
+   "lon": 80.189723,
+   "x": -1045.85,
+   "z": 823.26,
+   "orientation": null,
+   "orientationWhy": "The Phase 1 brief states the four western rathas face west. Recorded as unverified — the brief is not a citation.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "nakula_sahadeva_ratha",
+   "label": "Nakula Sahadeva Ratha",
+   "kind": "monument",
+   "osm": "way/576022679",
+   "lat": 12.609001,
+   "lon": 80.189564,
+   "x": -1063.02,
+   "z": 824.09,
+   "orientation": null,
+   "orientationWhy": "The Phase 1 brief states this ratha faces south while the other four face west. Recorded here as unverified: no source in this repo confirms it, and the brief is not a citation.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "descent_of_the_ganges",
+   "label": "Descent of the Ganges / Arjuna's Penance",
+   "kind": "monument",
+   "osm": "node/353978523",
+   "lat": 12.617909,
+   "lon": 80.192697,
+   "x": -722.74,
+   "z": -160.91,
+   "orientation": null,
+   "orientationWhy": "Open-air relief on a cliff face; no sourced facing.",
+   "note": "Not to be confused with OSM node/5511537906 'Arunjas Penance Model', which is a scale model elsewhere on the site, not the relief.",
+   "confidence": "OSM node"
+  },
+  {
+   "key": "krishnas_butter_ball",
+   "label": "Krishna's Butter Ball",
+   "kind": "monument",
+   "osm": "way/753671961",
+   "lat": 12.619089,
+   "lon": 80.192403,
+   "x": -754.64,
+   "z": -291.42,
+   "orientation": null,
+   "orientationWhy": "No source in this repo states a facing. A natural boulder — facing is meaningless.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "krishna_mandapam",
+   "label": "Krishna Mandapam",
+   "kind": "monument",
+   "osm": "way/596118069",
+   "lat": 12.61737,
+   "lon": 80.192608,
+   "x": -732.45,
+   "z": -101.4,
+   "orientation": null,
+   "orientationWhy": "No source in this repo states a facing.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "varaha_cave",
+   "label": "Varaha Cave Temple",
+   "kind": "monument",
+   "osm": "node/353978532",
+   "lat": 12.618086,
+   "lon": 80.192223,
+   "x": -774.17,
+   "z": -180.48,
+   "orientation": null,
+   "orientationWhy": "No source in this repo states a facing.",
+   "confidence": "OSM node"
+  },
+  {
+   "key": "mahishasuramardini_cave",
+   "label": "Mahishasuramardini Cave",
+   "kind": "monument",
+   "osm": "node/353978541",
+   "lat": 12.615227,
+   "lon": 80.191539,
+   "x": -848.54,
+   "z": 135.67,
+   "orientation": null,
+   "orientationWhy": "No source in this repo states a facing.",
+   "confidence": "OSM node"
+  },
+  {
+   "key": "ganesha_ratha",
+   "label": "Ganesha Ratha",
+   "kind": "monument",
+   "osm": "way/597062759",
+   "lat": 12.618435,
+   "lon": 80.19251,
+   "x": -742.99,
+   "z": -219.09,
+   "orientation": null,
+   "orientationWhy": "No source in this repo states a facing.",
+   "confidence": "OSM way, vertex mean"
+  },
+  {
+   "key": "olakkanesvara_temple",
+   "label": "Olakkanesvara Temple",
+   "kind": "monument",
+   "osm": "node/5685948849",
+   "lat": 12.614924,
+   "lon": 80.191673,
+   "x": -834.01,
+   "z": 169.12,
+   "orientation": null,
+   "orientationWhy": "No source in this repo states a facing. On the hill above the lighthouse.",
+   "confidence": "OSM node"
+  },
+  {
+   "key": "town_centre",
+   "label": "Town centre",
+   "kind": "reference",
+   "osm": null,
+   "lat": 12.61972,
+   "lon": 80.19444,
+   "x": -533.38,
+   "z": -361.19,
+   "orientation": null,
+   "orientationWhy": "A reference point, not a monument.",
+   "note": "Carried over from the Phase 1 brief as a site-wide reference. Not an OSM element.",
+   "confidence": "Brief reference point, not OSM"
+  }
+ ]
+}

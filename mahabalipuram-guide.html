@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mahabalipuram — site map &amp; visitor guide | India Heritage Map</title>
+  <meta name="description" content="An on-site map of the Mahabalipuram monument complex: a suggested walking route between the monuments, and where the toilets, water, parking and other facilities are." />
+  <meta property="og:title" content="Mahabalipuram — site map &amp; visitor guide" />
+  <meta property="og:description" content="Walking routes and facilities across the Mamallapuram monument complex." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f3ebdc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/vendor/maplibre-gl.css" />
+  <link rel="stylesheet" href="css/place.css" />
+  <link rel="stylesheet" href="css/guide.css" />
+</head>
+<body class="guide">
+  <nav class="place-bar guide-bar">
+    <div class="wrap">
+      <a class="back-link" href="mahabalipuram.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        The guide
+      </a>
+      <span class="bar-brand">Site map</span>
+      <span class="bar-tag">Mamallapuram</span>
+    </div>
+  </nav>
+
+  <main class="guide-shell">
+    <div id="guide-map" role="application" aria-label="Map of the Mahabalipuram monument complex"></div>
+
+    <!-- Purely optical: the miniature-photography vignette and tilt-shift blur.
+         Inert to input and hidden from assistive tech, and styled only while
+         body.is-3d, so the flat utility map is never touched by it. -->
+    <div class="g-diorama" id="g-diorama" aria-hidden="true"></div>
+
+    <div class="g-controls">
+      <div class="g-routes" id="g-routes" role="group" aria-label="Suggested walking routes">
+        <button type="button" data-route="half-day" aria-pressed="false" aria-label="Half day route">Half</button>
+        <button type="button" data-route="full-day" aria-pressed="false" aria-label="Full day route">Full</button>
+        <!-- "Everything", not "All 18". The route has 18 stops because the five
+             rathas are visited as one — but the All button beside it opens a
+             sheet headed "All 23 monuments", and two bare numbers side by side
+             with nothing to explain the difference just reads as a mistake. The
+             stop count is still shown, in the sheet, where there is room to say
+             what it counts. -->
+        <button type="button" data-route="everything" aria-pressed="false" aria-label="Everything route, 18 stops">Everything</button>
+      </div>
+      <button type="button" id="g-locate" class="g-locate" aria-label="Show where I am" data-tip="Show where I am">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" width="16" height="16" aria-hidden="true"><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="5"/></svg>
+        <span class="g-btn-text">Where am I</span>
+      </button>
+      <button type="button" id="g-all" class="g-locate" aria-label="List all monuments" data-tip="List all monuments">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" width="16" height="16" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>
+        <span class="g-btn-text">All</span>
+      </button>
+      <!-- Tilt is its own control now that "3D" opens the flythrough.
+           Flattening the map is not decoration: this page is used on site in
+           glare, where the plan view is the legible one, so the way back to
+           flat has to stay on screen. -->
+      <button type="button" id="g-tilt" class="g-locate g-3d" aria-pressed="false" aria-label="Tilt and rotate the map" data-tip="Tilt and rotate the map">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><path d="M12 3 21 8v8l-9 5-9-5V8z"/><path d="M12 12 21 8M12 12v9M12 12 3 8"/></svg>
+        <span class="g-btn-text">Tilt</span>
+      </button>
+      <!-- The cinematic scene, which is a separate page. A link, not a button:
+           it navigates, and middle-click and "open in new tab" should work. -->
+      <a id="g-3d-tour" class="g-locate g-tour" href="mahabalipuram-3d.html#site" aria-label="Fly through the site in 3D" data-tip="Fly through the site in 3D">
+        <!-- A play glyph, not another cube. At phone widths the labels collapse
+             to icons, and two cubes side by side would be indistinguishable;
+             "watch this" is also the honest description of what it opens. -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"/></svg>
+        <span class="g-btn-text">3D</span>
+      </a>
+    </div>
+
+    <div class="g-legend" id="g-legend" role="group" aria-label="Show facilities"></div>
+
+    <aside class="g-sheet" id="g-sheet" aria-label="Stops and facilities">
+      <button type="button" class="g-grab" id="g-grab" aria-expanded="false" aria-controls="g-sheet-body">
+        <span class="g-grab-bar" aria-hidden="true"></span>
+        <span class="g-grab-text">More</span>
+      </button>
+      <div class="g-sheet-body" id="g-sheet-body"></div>
+    </aside>
+
+    <p class="g-provenance" id="g-provenance">Loading facility data…</p>
+  </main>
+
+  <noscript>
+    <p class="g-noscript">
+      This site map needs JavaScript. The monuments, opening times and ticket notes are
+      also written out on the <a href="mahabalipuram.html">Mahabalipuram guide</a>.
+    </p>
+  </noscript>
+
+  <script src="assets/vendor/maplibre-gl.js"></script>
+  <script src="content/mahabalipuram-monuments.js"></script>
+  <script src="content/mahabalipuram-routes.js"></script>
+  <script src="js/wiki-photo.js"></script>
+  <script src="js/monument-pictures.js"></script>
+  <script src="js/guide-map.js"></script>
+  <script src="js/guide-mount.js"></script>
+</body>
+</html>

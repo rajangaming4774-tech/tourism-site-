@@ -1,0 +1,731 @@
+[
+ {
+  "id": "RA-001",
+  "name": "Bhimbetka Rock Shelters",
+  "state": "Madhya Pradesh",
+  "lat": 22.9389,
+  "lng": 77.6133,
+  "period_start": -10000,
+  "period_end": 2026,
+  "created_until": 1000,
+  "style": "Mesolithic hunting scenes, dancing figures, animals in red ochre and white; later Chalcolithic and historic layers",
+  "discovery": "1957, V.S. Wakankar (spotted from a passing train)",
+  "protection": "UNESCO World Heritage (2003) / ASI",
+  "summary": "India's largest and most famous concentration of prehistoric rock art, with over 700 shelters in Vindhyan sandstone hills south of Bhopal. Paintings span the Mesolithic through the medieval period, showing hunting parties, dancers, boar-like mythical beasts and processions of horse riders. Occupation deposits go back to the Acheulian, making it a continuous record of human life for over 100,000 years.",
+  "notes": "Painting dates debated: most art is Mesolithic (c. 10000-2000 BCE) but some scholars claim origins up to 30,000 years ago; cupules in Auditorium Cave may be far older.",
+  "sources": [
+   "https://whc.unesco.org/en/list/925/",
+   "https://asi.nic.in/pages/WorldHeritageBhimbetka",
+   "https://www.newworldencyclopedia.org/entry/Bhimbetka_rock_shelters"
+  ]
+ },
+ {
+  "id": "RA-002",
+  "name": "Jogimara and Sitabenga Caves (Ramgarh Hill)",
+  "state": "Chhattisgarh",
+  "lat": 22.8929,
+  "lng": 82.9064,
+  "period_start": -300,
+  "period_end": 2026,
+  "created_until": 300,
+  "style": "Early historic polychrome frescoes (dancers, elephants, fish) with Brahmi/Magadhi inscriptions; adjacent rock-cut 'theatre' cave",
+  "discovery": "Documented 1904-05 by T. Bloch (ASI); inscriptions read earlier by Cunningham's surveys",
+  "protection": "ASI",
+  "summary": "On Ramgarh hill in Surguja district, Jogimara cave preserves what are among the oldest surviving painted murals in India, dated to the 3rd-1st century BCE. The neighbouring Sitabenga cave, with carved gallery seating, is often called the world's oldest surviving theatre. A famous Brahmi inscription records the love of Devadinna for the 'devadasi' Sutanuka.",
+  "notes": "These are early-historic murals rather than prehistoric rock art; a second cruder painting phase is some centuries later.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jogimara_and_Sitabenga_Caves",
+   "https://puratattva.in/sitabenga-jogimara-caves-colors-of-drama/"
+  ]
+ },
+ {
+  "id": "RA-003",
+  "name": "Lakhudiyar Rock Shelter",
+  "state": "Uttarakhand",
+  "lat": 29.655,
+  "lng": 79.72,
+  "period_start": -6000,
+  "period_end": 2026,
+  "created_until": -1000,
+  "style": "Black, red-ochre and white paintings: dancing human chains, wavy lines, geometric and animal motifs",
+  "discovery": "1968, Dr. M.P. Joshi",
+  "protection": "ASI",
+  "summary": "A painted overhang ('one lakh caves') on the bank of the Suyal river near Barechhina, 19 km from Almora — the best-known rock art site of the Kumaon Himalaya. Its hand-linked dancing human figures and geometric patterns are a textbook image of Himalayan prehistoric art. Easily visited on the Almora-Seraghat road.",
+  "notes": "Coordinates approx (Barechhina village); absolute dating not established — attributions range from late Mesolithic to Chalcolithic.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lakhudiyar_Caves",
+   "https://www.euttaranchal.com/tourism/lakhudiyar-rock-paintings-almora.php"
+  ]
+ },
+ {
+  "id": "RA-004",
+  "name": "Chaturbhujnath Nala Rock Art Gallery",
+  "state": "Madhya Pradesh",
+  "lat": 24.45,
+  "lng": 75.78,
+  "period_start": -10000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Dense Mesolithic-Chalcolithic narrative panels: cattle herding, riders, dancing, hunting — one of the world's longest painted galleries",
+  "discovery": "1977, Ramesh Kumar Pancholi (local schoolteacher)",
+  "protection": "State archaeology (within Gandhi Sagar Wildlife Sanctuary)",
+  "summary": "Along a stream near Bhanpura in Mandsaur district, painted shelters run almost continuously for several kilometres, often called the longest rock art gallery in the world. Thousands of small, lively figures document the shift from hunting to cattle-keeping in the Chambal valley. The site sits inside Gandhi Sagar Sanctuary amid dramatic gorge scenery.",
+  "notes": "Coordinates approx (nala mouth near Chaturbhujnath temple); popular claims of '35,000 years' are exaggerated — most panels are Mesolithic to Chalcolithic.",
+  "sources": [
+   "https://www.mptourism.com/chaturbhujnath-nala-rock-shelters.html",
+   "https://www.incredibleindia.gov.in/en/madhya-pradesh/bhopal/exploring-the-rock-art-wonders-of-madhya-pradesh"
+  ]
+ },
+ {
+  "id": "RA-005",
+  "name": "Daraki-Chattan Cupule Cave",
+  "state": "Madhya Pradesh",
+  "lat": 24.5,
+  "lng": 75.72,
+  "period_start": -200000,
+  "period_end": 2026,
+  "created_until": -10000,
+  "style": "Cupules (hemispherical cup-marks) pecked into quartzite — candidates for the world's oldest surviving rock art",
+  "discovery": "Reported 1990s; investigated 2002-2006 by Giriraj Kumar and Robert Bednarik (EIP Project)",
+  "protection": "State archaeology",
+  "summary": "A narrow quartzite cleft on Indragarh hill near Bhanpura containing over 500 cupules. Excavations recovered hammerstones in Lower Palaeolithic (Acheulian) deposits, leading researchers to argue these are among the earliest known examples of intentional rock markings by humans anywhere on Earth.",
+  "notes": "Coordinates approx. Acheulian age claim is internationally debated; even conservative estimates place the cupules in the Palaeolithic. Map display will clamp to -2000.",
+  "sources": [
+   "https://whc.unesco.org/en/tentativelists/6732/",
+   "https://www.bradshawfoundation.com/india/central_india/index.php"
+  ]
+ },
+ {
+  "id": "RA-006",
+  "name": "Adamgarh Rock Shelters",
+  "state": "Madhya Pradesh",
+  "lat": 22.73,
+  "lng": 77.7326,
+  "period_start": -8000,
+  "period_end": 2026,
+  "created_until": 1000,
+  "style": "Mesolithic paintings of giraffe-like animals, hunters, riders; later historic figures",
+  "discovery": "1922, Manoranjan Ghosh",
+  "protection": "ASI",
+  "summary": "Eighteen shelters on a low hill 2 km south of Hoshangabad (Narmadapuram) overlooking the Narmada river, one of the first Indian rock art sites to be scientifically excavated. Eleven shelters still show paintings of animals, hunters and riders, with microlithic tool deposits beneath. Radiocarbon dates from Adamgarh anchored the chronology of the Indian Mesolithic.",
+  "notes": "Most visible paintings are Chalcolithic to early historic; only a few securely Mesolithic panels survive.",
+  "sources": [
+   "https://asibhopal.nic.in/gallery/hoshangabad_kalamdi_adamgarhrockshelters.html",
+   "https://en.wikipedia.org/wiki/Adamgarh_Hills",
+   "https://www.worldhistory.org/article/1525/rock-art-history-of-madhya-pradesh-adamgarh--nagor/"
+  ]
+ },
+ {
+  "id": "RA-007",
+  "name": "Pachmarhi Hills Rock Shelters (Mahadeo Hills)",
+  "state": "Madhya Pradesh",
+  "lat": 22.4675,
+  "lng": 78.4336,
+  "period_start": -9000,
+  "period_end": 2026,
+  "created_until": 1000,
+  "style": "Mesolithic to historic paintings: hunters, honey collection, battle scenes, in white and red ochre",
+  "discovery": "Documented from 1930s (D.H. Gordon); studied extensively by V.S. Wakankar and later scholars",
+  "protection": "State archaeology (within Satpura Tiger Reserve / UNESCO Biosphere Reserve)",
+  "summary": "Dozens of painted shelters — Dhuandhar, Nimbu Bhoj, Dorothy Deep, Jambu Dwip, Bazaar Cave among them — dot the sandstone ravines of the Pachmarhi plateau in the Satpura range. The art spans hunter-gatherer scenes of the Mesolithic through medieval battle processions. Combined with waterfalls and forest trails, it is the most accessible rock art landscape in central India after Bhimbetka.",
+  "notes": "Coordinates are for Pachmarhi town; shelters are scattered across the surrounding hills. Dating is stylistic, not absolute.",
+  "sources": [
+   "https://www.bradshawfoundation.com/india/pachmarhi/index.php",
+   "https://www.academia.edu/1617752/Rock_Paintings_of_Pachmarhi_Hills_India"
+  ]
+ },
+ {
+  "id": "RA-008",
+  "name": "Kupgal / Hiregudda (Kappagallu) Petroglyphs",
+  "state": "Karnataka",
+  "lat": 15.1814,
+  "lng": 76.9686,
+  "period_start": -2000,
+  "period_end": 2026,
+  "created_until": 1000,
+  "style": "Neolithic petroglyphs — bruised humped cattle, human figures — on dolerite; associated 'rock gong' musical boulders",
+  "discovery": "First reported 1892 (colonial period); rediscovered and studied from 2002 by Nicole Boivin and team",
+  "protection": "Unprotected (parts affected by quarrying)",
+  "summary": "On Hiregudda ('Peacock Hill') near Ballari, thousands of pecked images of long-horned cattle and humans cover a granite-dolerite ridge above Neolithic ash mounds. Certain boulders ring musically when struck, suggesting the hill was a ritual soundscape for South India's first herders. It is among the richest Neolithic petroglyph sites in the subcontinent.",
+  "notes": "Neolithic activity radiocarbon-dated c. 2000-1200 BCE, but imagery accumulated over several millennia into the historic period. Threatened by granite quarrying.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kupgal_petroglyphs",
+   "https://www.researchgate.net/publication/285695854_Rock_Art_and_Rock_Music_Petroglyphs_of_the_South_Indian_Neolithic"
+  ]
+ },
+ {
+  "id": "RA-009",
+  "name": "Onake Kindi Rock Shelters (Anegundi)",
+  "state": "Karnataka",
+  "lat": 15.3687,
+  "lng": 76.4747,
+  "period_start": -1500,
+  "period_end": 2026,
+  "created_until": 300,
+  "style": "Neolithic-Iron Age paintings in red and white: bulls, concentric circles, hunters on horseback, a famous 'spoked wheel' sun motif",
+  "discovery": "Documented in surveys of the Hampi-Anegundi region (late 20th century)",
+  "protection": "Unprotected (within Hampi World Heritage buffer landscape)",
+  "summary": "Hidden among the granite boulder hills of Anegundi, across the Tungabhadra from Hampi, Onake Kindi's shelters carry striking red-and-white paintings of cattle, wheels and mounted hunters. Together with nearby megalithic burials it records the Neolithic-to-Iron Age transition of the Deccan. A short walk from Chikkarampur village makes it an easy add-on to a Hampi visit.",
+  "notes": "Dating is stylistic (roughly 1500 BCE - early historic); site is on private farmland, unsigned.",
+  "sources": [
+   "https://www.megalithic.co.uk/article.php?sid=32023",
+   "https://karnatakatravel.blogspot.com/2012/09/prehistoric-paintings-at-onake-kindi.html"
+  ]
+ },
+ {
+  "id": "RA-010",
+  "name": "Edakkal Caves",
+  "state": "Kerala",
+  "lat": 11.6247,
+  "lng": 76.2358,
+  "period_start": -6000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Deeply incised Neolithic petroglyphs: anthropomorphs with headdresses, wheeled carts, geometric signs; early Tamil-Brahmi inscriptions",
+  "discovery": "1890s, Fred Fawcett (Malabar police superintendent), published 1901",
+  "protection": "State archaeology (Kerala)",
+  "summary": "Two natural fissure-caves high on Ambukuthi hill in Wayanad, whose walls are covered with some of South India's finest prehistoric engravings — stylised human figures, animals and symbols cut into the rock over several millennia. Later visitors added inscriptions, including one linked to the Chera king. The climb rewards with sweeping views over the Wayanad plateau.",
+  "notes": "Engraving phases range from Neolithic (claims to 6000 BCE) to early historic; precise dating unresolved.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Edakkal_caves",
+   "https://www.keralatourism.org/destination/edakkal-caves-wayanad-unique/724/"
+  ]
+ },
+ {
+  "id": "RA-011",
+  "name": "Ezhuthupara (Marayoor / Anjanad Valley)",
+  "state": "Kerala",
+  "lat": 10.28,
+  "lng": 77.16,
+  "period_start": -4000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Red-ochre, white and yellow pictographs: human figures with raised hands, bulls, deer, palm impressions",
+  "discovery": "Documented by Kerala archaeology; Anjanad valley surveys have recorded ~20 painted shelters",
+  "protection": "State archaeology (Kerala; within Koodakkadu sandalwood reserve)",
+  "summary": "The Anjanad valley around Marayoor in Idukki holds Kerala's largest cluster of painted rock shelters, with Ezhuthupara ('writing rock') the best known — a serpent-hood shaped granite overhang bearing dozens of ochre figures. Nearby Attala shelter has over 90 mostly abstract motifs. The paintings sit amid Marayoor's famous dolmens and sandalwood forests.",
+  "notes": "Coordinates approx. Attribution ranges from Mesolithic to Megalithic Iron Age; access to some shelters requires forest permission.",
+  "sources": [
+   "https://www.archaeology.kerala.gov.in/pages/ezhuthupura-marayoor-prehistoric-paintings/141",
+   "https://www.archaeology.kerala.gov.in/monuments/ezhuthupara-marayur/26"
+  ]
+ },
+ {
+  "id": "RA-012",
+  "name": "Unakoti Rock-Cut Sculptures",
+  "state": "Tripura",
+  "lat": 24.3167,
+  "lng": 92.0667,
+  "period_start": 600,
+  "period_end": 2026,
+  "created_until": 900,
+  "style": "Colossal rock-cut bas-reliefs — 9 m Shiva head (Unakotisvara Kal Bhairava), Ganesha, Durga — carved into a forested hillside",
+  "discovery": "Long-known Shaivite pilgrimage site; documented by ASI in the 20th century",
+  "protection": "ASI (on UNESCO tentative list, 2022)",
+  "summary": "Legend says 99,99,999 gods were turned to stone here, giving Unakoti ('one less than a crore') its name. Enormous 7th-9th century CE faces of Shiva and other deities are hewn directly from the hillside beside waterfalls in Kailashahar's forests. It is the premier rock-carving site of Northeast India and an active pilgrimage centre during Ashokastami Mela.",
+  "notes": "Historic-period rock carving, not prehistoric — included for its rock-cut art significance; dating (600-900 CE) is stylistic.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Unakoti",
+   "https://www.incredibleindia.gov.in/en/tripura/unakoti/rock-cut-heritage",
+   "https://unakoti.nic.in/tourist-place/unakoti-heritage-site/"
+  ]
+ },
+ {
+  "id": "RA-013",
+  "name": "Konkan Geoglyphs (Barsu-Kasheli-Ukshi cluster, Ratnagiri)",
+  "state": "Maharashtra",
+  "lat": 16.72,
+  "lng": 73.45,
+  "period_start": -10000,
+  "period_end": 2026,
+  "created_until": -2000,
+  "style": "Petroglyphs/geoglyphs cut into laterite plateaus: an 18 m elephant filled with 70+ animals (Kasheli), 'master of animals' panel (Barsu), sharks, stingrays, abstract labyrinths",
+  "discovery": "Systematically documented from 2012 onward by Sudhir Risbud, Dhananjay Marathe and the 'Konkan Taka' explorers",
+  "protection": "State archaeology; on UNESCO tentative list (2022) — sites at Ukshi, Jambharun, Kasheli, Rundhe Tali, Devihsol, Barsu, Devache Gothane",
+  "summary": "Across the flat laterite plateaus of coastal Ratnagiri and Sindhudurg, over 1,500 large rock engravings ('katal shilpa') at 70+ villages depict elephants, tigers, marine creatures and enigmatic geometric designs, some visible only from above. Attributed to Mesolithic hunter-gatherers, they include the largest rock engravings in India. Barsu and Kasheli are the flagship sites.",
+  "notes": "Cluster coordinates approx (Barsu plateau, Rajapur taluka). Age estimates of 10,000-20,000 BP are stylistic/geological, not radiometric; some sites threatened by proposed refinery.",
+  "sources": [
+   "https://whc.unesco.org/en/tentativelists/6605/",
+   "https://en.wikipedia.org/wiki/Konkan_geoglyphs",
+   "https://www.nextias.com/ca/current-affairs/28-12-2022/geoglyphs-ratnagiris-prehistoric-rock-art"
+  ]
+ },
+ {
+  "id": "RA-014",
+  "name": "Ambadevi Rock Shelters (Gawilgarh Hills)",
+  "state": "Maharashtra (MP border)",
+  "lat": 21.4071,
+  "lng": 77.9481,
+  "period_start": -23000,
+  "period_end": 2026,
+  "created_until": 1000,
+  "style": "Petroglyphs, pictograms, cupules and geometric motifs in sandstone shelters of the Satpura-Tapti valley",
+  "discovery": "2007, Vijay Ingole and team",
+  "protection": "Unprotected",
+  "summary": "A 40 sq km complex of over 100 shelters in the Gawilgarh hills north of Amravati, around the Ambadevi and Salbardi cave temples, discovered only in 2007. Thirty shelters carry paintings, engravings and cupules that researchers argue reach back some 25,000 years. It is Vidarbha's most important prehistoric art landscape.",
+  "notes": "The claimed Upper Palaeolithic age awaits absolute dating; site straddles the Maharashtra-Madhya Pradesh (Betul) border.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ambadevi_rock_shelters",
+   "https://www.researchgate.net/publication/296835115_Distinctive_Features_of_the_Art_of_Ambadevi_Rock_Shelters_in_Satpura-Tapti_Valley"
+  ]
+ },
+ {
+  "id": "RA-015",
+  "name": "Usgalimal (Pansaimol) Rock Engravings",
+  "state": "Goa",
+  "lat": 15.1219,
+  "lng": 74.1306,
+  "period_start": -8000,
+  "period_end": 2026,
+  "created_until": -2000,
+  "style": "Laterite petroglyphs: bulls, deer, peacocks, a spiral labyrinth, 'mother goddess' and dancing figures",
+  "discovery": "1993, exposed by monsoon flood of the Kushavati river; documented by Goa Directorate of Archives & Archaeology",
+  "protection": "State archaeology (Goa)",
+  "summary": "On the bank of the Kushavati river in Sanguem taluka, more than 100 figures are carved into a sloping sheet of laterite — Goa's most important prehistoric monument. Highlights include a large labyrinth spiral and composite animal-human scenes attributed to Mesolithic-Neolithic hunter-fisher communities. A riverside forest setting makes it an atmospheric detour from South Goa.",
+  "notes": "Dating estimates range from Mesolithic (8000+ BP) to Neolithic (4000-6000 BP); no absolute dates.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Usgalimal_rock_engravings",
+   "https://www.outlooktraveller.com/experiences/heritage/why-you-must-visit-the-usgalimal-rock-engravings-on-your-goa-tour"
+  ]
+ },
+ {
+  "id": "RA-016",
+  "name": "Kilvalai (Keezhvalai) Rock Paintings",
+  "state": "Tamil Nadu",
+  "lat": 12.0325,
+  "lng": 79.3403,
+  "period_start": -1000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Red-ochre and white kaolin paintings: bird-headed anthropomorphs, riders, cattle, hunting scenes of the Iron Age/megalithic period",
+  "discovery": "Documented by Tamil Nadu State Archaeology Department (reported from the 1980s onward)",
+  "protection": "State archaeology (Tamil Nadu)",
+  "summary": "In boulder shelters near Kandachipuram, 24 km northwest of Villupuram, Kilvalai preserves the best-known rock paintings of northern Tamil Nadu — strange bird-headed human figures, animals and riders painted around 3,000 years ago. It anchors a cluster of painted sites (Settavarai, Alambadi, Udayanatham) along the Thenpennai valley.",
+  "notes": "Megalithic-period attribution (c. 1000 BCE) is stylistic; some panels use white kaolin over earlier red figures.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kilvalai",
+   "https://travel.bhushavali.com/2014/09/kilvalai-stoneage-rock-art-site.html"
+  ]
+ },
+ {
+  "id": "RA-017",
+  "name": "Settavarai Rock Paintings",
+  "state": "Tamil Nadu",
+  "lat": 12.1561,
+  "lng": 79.2492,
+  "period_start": -1000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "White kaolin and red-ochre animal figures, deer hunts and geometric symbols on granite shelters",
+  "discovery": "Documented by Tamil Nadu State Archaeology Department",
+  "protection": "State archaeology (Tamil Nadu)",
+  "summary": "Near Gingee in Villupuram district, the boulder hill at Settavarai carries megalithic-era paintings dominated by animal imagery — deer, cattle and hunters — executed mostly in white pigment. Together with Kilvalai it forms the core of Tamil Nadu's most accessible rock art circuit, about 40 km from Villupuram town.",
+  "notes": "Dating stylistic (c. 1000 BCE - early historic).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Settavarai",
+   "https://www.tnarch.gov.in/rock-paintings-sethavarai"
+  ]
+ },
+ {
+  "id": "RA-018",
+  "name": "Karikkiyur (Porivarai) Rock Art",
+  "state": "Tamil Nadu",
+  "lat": 11.467,
+  "lng": 76.8796,
+  "period_start": -6000,
+  "period_end": 2026,
+  "created_until": -1000,
+  "style": "Over 300 painted images across a 100 m frieze: hunters, wild cattle, dancing scenes tracing the shift from foraging to herding",
+  "discovery": "Known to local Irula community; brought to scholarly notice in the 20th century, restudied 2000s-2020s",
+  "protection": "Unprotected (sacred site of the Irula community)",
+  "summary": "The east-facing Porivarai shelter near Karikkiyur village, Kotagiri, is the largest rock painting site in Tamil Nadu — a 150 m long rock face in the Nilgiri escarpment bearing more than 300 figures. The imagery moves from hunting scenes to cattle and settled life, and the shelter remains sacred to the Irula people, whose Kurumba neighbours continue related painting traditions.",
+  "notes": "No absolute dates; estimates range c. 8000-2700 BCE for earliest phases. Access is a forest trek requiring local guidance.",
+  "sources": [
+   "https://veludharan.blogspot.com/2019/03/pre-historic-rock-arts-paintings-at.php",
+   "https://www.kurumba.in/painting.html",
+   "https://en.wikipedia.org/wiki/South_Indian_Iron_Age"
+  ]
+ },
+ {
+  "id": "RA-019",
+  "name": "Alaniya Rock Shelters (Chambal Valley)",
+  "state": "Rajasthan",
+  "lat": 25.02,
+  "lng": 75.95,
+  "period_start": -5000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Mesolithic-Chalcolithic red-ochre paintings: deer, bulls, hunters, geometric designs along the Alaniya river gorge",
+  "discovery": "Region first explored by V.S. Wakankar (Dara, 1953); Alaniya documented in subsequent Chambal surveys",
+  "protection": "State archaeology; part of 'Rock Art Sites of the Chambal Valley' UNESCO tentative list",
+  "summary": "Near Alaniya dam south of Kota, painted sandstone shelters line a tributary gorge of the Chambal with animal and hunting imagery dated as far back as c. 5000 BCE. The site belongs to a belt of some 3,000 reported rock shelters in southeastern Rajasthan, the state's richest prehistoric art region.",
+  "notes": "Coordinates approx (Alaniya village/dam area). Dates are stylistic estimates.",
+  "sources": [
+   "https://whc.unesco.org/en/tentativelists/6732/",
+   "https://udaipurkiran.com/rajasthan-a-treasure-of-rock-art-sites/"
+  ]
+ },
+ {
+  "id": "RA-020",
+  "name": "Gararda / Bundi Rock Painting Cluster",
+  "state": "Rajasthan",
+  "lat": 25.28,
+  "lng": 75.72,
+  "period_start": -13000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Mesolithic red-ochre deer, bison, human figures across 100+ shelters along Chambal tributaries (Bijolia-Banki belt)",
+  "discovery": "1997 onward, Om Prakash 'Kukki' Sharma (self-taught explorer, 100+ sites)",
+  "protection": "Mostly unprotected; select sites state-listed",
+  "summary": "Around Bundi and Gararda, over a hundred painted shelters hug the ravines of the Mangli and other Chambal tributaries, discovered largely by local enthusiast 'Kukki' Sharma. Estimated at up to 15,000 years old, the vivid ochre deer, bison and stick-figure hunters make Bundi a rewarding off-beat rock art safari from the famous stepwell town.",
+  "notes": "Coordinates approx (Gararda area). The 15,000-year age is a stylistic claim without absolute dating.",
+  "sources": [
+   "https://ramaarya.blog/2017/09/08/bundi-prehistoric-rock-paintings2/",
+   "https://udaipurkiran.com/rajasthan-a-treasure-of-rock-art-sites/"
+  ]
+ },
+ {
+  "id": "RA-021",
+  "name": "Zawar Rock Art (Tiri-Zawar, Aravalli belt)",
+  "state": "Rajasthan",
+  "lat": 24.35,
+  "lng": 73.74,
+  "period_start": -3000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Red-ochre paintings of animals and human figures in shelters of the Aravalli hills near the ancient Zawar zinc mines",
+  "discovery": "Documented in Mewar-region rock art surveys (V.S. Wakankar and later Rajasthan Vidyapeeth teams)",
+  "protection": "Unprotected",
+  "summary": "South of Udaipur, the hills around Zawar — famous for the world's oldest industrial zinc smelting — also hold painted rock shelters attributed to Chalcolithic and later communities of the Banas-Aravalli culture zone. The pairing of prehistoric art with a landmark of early metallurgy makes this a distinctive heritage stop in Mewar.",
+  "notes": "Coordinates approx (Zawar mines area). Documentation is thin; dating highly uncertain — treat period as indicative.",
+  "sources": [
+   "https://udaipurkiran.com/rajasthan-a-treasure-of-rock-art-sites/",
+   "https://rockartindia.org/major-rock-art-regions-in-india"
+  ]
+ },
+ {
+  "id": "RA-022",
+  "name": "Domkhar Rock Art Sanctuary",
+  "state": "Ladakh",
+  "lat": 34.332,
+  "lng": 76.9285,
+  "period_start": -3000,
+  "period_end": 2026,
+  "created_until": 1000,
+  "style": "Bronze Age 'animal style' petroglyphs — ibex, yaks, hunters, mascoids — pecked on river boulders, with Central Asian steppe affinities",
+  "discovery": "Long known locally; sanctuary created 2012 by villagers with researcher support",
+  "protection": "Community/private sanctuary (unprotected by ASI)",
+  "summary": "On the Indus riverbank at Domkhar Dho, 112 km from Leh on the Sham valley road, hundreds of dark boulders carry elegant petroglyphs of ibex, yaks and hunters, some in the Eurasian steppe 'animal style' dated to around 3000 BCE. A village-run sanctuary protects the finest concentration of Ladakh's estimated 20,000+ petroglyphs.",
+  "notes": "Dating comparative (Bronze Age to early historic); many Ladakh petroglyph sites elsewhere have been lost to road-building.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Domkhar",
+   "https://travellingslacker.com/ladakh-petroglyph-domkhar-rock-art/",
+   "http://www.sahapedia.org/petroglyphs-ladakh"
+  ]
+ },
+ {
+  "id": "RA-023",
+  "name": "Murgi (Nubra) Petroglyph Field",
+  "state": "Ladakh",
+  "lat": 34.77,
+  "lng": 77.56,
+  "period_start": -2000,
+  "period_end": 2026,
+  "created_until": 1200,
+  "style": "Over 3,000 pecked carvings — ibex, hunting scenes, caravans, Buddhist symbols — Ladakh's largest single petroglyph site",
+  "discovery": "Documented in Nubra valley surveys (Laurianne Bruneau and others, 2000s)",
+  "protection": "Unprotected",
+  "summary": "Near Murgi and Panamik in the Nubra valley, along the old caravan route to the Karakoram passes, boulder fields carry more than 3,000 carvings spanning the Bronze Age to the Buddhist era. The site records millennia of herders, hunters and Silk Route travellers writing on stone at the edge of the high Karakoram.",
+  "notes": "Coordinates approx (Murgi village near Panamik). Chronology spans prehistory to historic; no formal protection.",
+  "sources": [
+   "http://www.sahapedia.org/petroglyphs-ladakh",
+   "https://www.ancienttracks.com/rock-arts-of-ladakh-petroglyph-of-ladakh"
+  ]
+ },
+ {
+  "id": "RA-024",
+  "name": "Burzahom (Neolithic hunting-scene engraving)",
+  "state": "Jammu & Kashmir",
+  "lat": 34.1682,
+  "lng": 74.8934,
+  "period_start": -3000,
+  "period_end": 2026,
+  "created_until": -1000,
+  "style": "Neolithic stone-slab engraving of a stag hunt with archer, spearman, dog and twin 'suns' — Kashmir's oldest artwork",
+  "discovery": "Site found 1935 (H. de Terra & T.T. Paterson); excavated 1960-71 by ASI (T.N. Khazanchi), when the engraved slabs were recovered",
+  "protection": "ASI (UNESCO tentative list, 2014)",
+  "summary": "The Neolithic pit-dwelling settlement of Burzahom near Srinagar yielded a famous engraved slab showing hunters spearing a stag beneath two radiant discs — often read as a depiction of a sky event. It is the earliest known art of the Kashmir valley and a touchstone for Neolithic life on the karewa plateaus above Dal Lake.",
+  "notes": "The engraving is an excavated artifact from the site rather than an in-situ rock panel; dated to Neolithic phase II (c. 3rd millennium BCE).",
+  "sources": [
+   "https://ignca.gov.in/PDF_data/RockArt_Jammu_Kashmir.pdf",
+   "https://www.academia.edu/14354322/A_Note_on_Petroglyphs_from_Bomai_Sopore_district_Jammu_and_Kashmir"
+  ]
+ },
+ {
+  "id": "RA-025",
+  "name": "Bomai Petroglyphs (Sopore)",
+  "state": "Jammu & Kashmir",
+  "lat": 34.35,
+  "lng": 74.43,
+  "period_start": -2000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Pecked concentric circles, star clusters (possibly Orion), chase scenes and schematic humans on boulders near Wular lake",
+  "discovery": "Reported 2000s by University of Kashmir researchers (Mumtaz Yatoo and colleagues)",
+  "protection": "Unprotected",
+  "summary": "At Bomai near Sopore, boulders above the Wular lake basin carry Kashmir's only known open-air petroglyphs, attributed to the Neolithic around 2000 BCE. Some researchers read one cluster of cup-marks as an early star map of the Orion constellation, linking the carvings to ancient sky-watching in the valley.",
+  "notes": "Coordinates approx (Bomai village). Astronomical interpretation is speculative; dating comparative.",
+  "sources": [
+   "https://www.academia.edu/14354322/A_Note_on_Petroglyphs_from_Bomai_Sopore_district_Jammu_and_Kashmir",
+   "https://www.researchgate.net/publication/253080383_Some_early_astronomical_sites_in_the_Kashmir_region"
+  ]
+ },
+ {
+  "id": "RA-026",
+  "name": "Gudahandi Rock Shelters",
+  "state": "Odisha",
+  "lat": 19.6181,
+  "lng": 82.5484,
+  "period_start": -8000,
+  "period_end": 2026,
+  "created_until": -1000,
+  "style": "Red and polychrome pictographs: stylised humans, deer, grids, wheels and geometric patterns on 'pot-shaped' hills",
+  "discovery": "Documented in Odisha archaeology surveys (reported from the 1970s-80s)",
+  "protection": "State archaeology (Odisha)",
+  "summary": "In the Ampani hills of Kalahandi district, the paired dome-shaped hills of Gudahandi ('pot of treasure') shelter red and black geometric paintings and animal figures at the mouths of natural caves. They are among the oldest painted images in eastern India, set in a scenic sanctuary landscape near the Nabarangpur border.",
+  "notes": "Popular claims of 20,000-25,000 BP are unverified; scholarly estimates favour Mesolithic to Chalcolithic. Site is remote (about 17 km from Ampani).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gudahandi",
+   "https://odisha.gov.in/en/odisha-tourism/paintings"
+  ]
+ },
+ {
+  "id": "RA-027",
+  "name": "Yogimatha Rock Painting",
+  "state": "Odisha",
+  "lat": 21.8635,
+  "lng": 83.8333,
+  "period_start": -4000,
+  "period_end": 2026,
+  "created_until": -1000,
+  "style": "Neolithic red-ochre frieze of a humped bull with cow, calf and human figure — an icon of early animal domestication",
+  "discovery": "Documented in Nuapada district surveys (20th century)",
+  "protection": "State archaeology (Odisha)",
+  "summary": "Nine kilometres from Khariar in Nuapada district, the Yogimatha shelter bears a celebrated Neolithic painting of a bull, cow, calf and herder — read as one of India's earliest depictions of animal domestication. The forested sandstone outcrop is also a local pilgrimage spot.",
+  "notes": "Traditional claims place it as early as the 10th millennium BCE; Neolithic (c. 4th-2nd millennium BCE) is more widely accepted.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Yogimatha_rock_painting",
+   "https://odisha.gov.in/en/odisha-tourism/paintings"
+  ]
+ },
+ {
+  "id": "RA-028",
+  "name": "Sitabhinji Rock Shelters (Ravana Chhaya)",
+  "state": "Odisha",
+  "lat": 21.5098,
+  "lng": 85.7774,
+  "period_start": 400,
+  "period_end": 2026,
+  "created_until": 600,
+  "style": "Gupta-period tempera mural: royal procession with king Disabhanja on elephant, in white, buff, brown, red and yellow ochre",
+  "discovery": "Documented 1940s-50s (noted by ASI scholars including T.N. Ramachandran)",
+  "protection": "State archaeology (Odisha); ASI-documented",
+  "summary": "Beneath the half-dome boulder called Ravana Chhaya near Danguapasi in Keonjhar district survives one of India's rarest early tempera paintings outside Ajanta — a 5th-6th century CE royal procession with an inscription naming Maharaja Disabhanja. Surrounding shelters hold inscriptions, sculptures and the remains of an ancient settlement.",
+  "notes": "Historic-period mural on a natural rock shelter, included as a bridge between prehistoric rock art and classical painting.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sitabhinji_Group_of_Rock_Shelters",
+   "https://kendujhar.odisha.gov.in/tourism/tourist-places/sitabinji-fresco-painting-and-rock-inscription"
+  ]
+ },
+ {
+  "id": "RA-029",
+  "name": "Pandavula Gutta",
+  "state": "Telangana",
+  "lat": 18.43,
+  "lng": 79.88,
+  "period_start": -8000,
+  "period_end": 2026,
+  "created_until": 1500,
+  "style": "Mesolithic to medieval paintings in green, red, yellow and white: bison, antelope, tiger, swastika and geometric signs",
+  "discovery": "1990, K. Ramakrishna Rao and S.S. Rangacharyulu (ASI Hyderabad)",
+  "protection": "State archaeology (Heritage Telangana); declared Telangana's first geo-heritage site (2024)",
+  "summary": "A sandstone hill complex near Regonda in Jayashankar Bhupalpally district, said to be geologically older than the Himalaya, whose shelters carry paintings from Mesolithic hunters through medieval Jain and Kakatiya-era art. Wild animals, weapons and symbols in multiple pigments make it Telangana's richest rock art destination.",
+  "notes": "Coordinates approx (Kothapally/Regonda area). Habitation span cited as c. 20,500-4,000 years ago; individual panel dates uncertain.",
+  "sources": [
+   "https://bhoopalapally.telangana.gov.in/tourist-place/pandavula-guttalu/",
+   "https://en.wikipedia.org/wiki/Pandavula_Gutta"
+  ]
+ },
+ {
+  "id": "RA-030",
+  "name": "Chintakunta Rock Shelters",
+  "state": "Andhra Pradesh",
+  "lat": 14.62,
+  "lng": 78.34,
+  "period_start": -8000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "About 200 Mesolithic red and white line paintings: deer, humped bulls, elephants, hyenas, anthropomorphs and geometric designs",
+  "discovery": "Recognised 1981 as South India's first major Mesolithic line-painting site",
+  "protection": "State archaeology (accorded national-importance status 2014)",
+  "summary": "On an Erramala hill spur near Muddanur in Kadapa district, ten shelters and fifteen painted boulders make Chintakunta one of India's largest rock art sites after Bhimbetka. Its red and white line paintings of wild animals and hunters document Mesolithic life on the southern Deccan.",
+  "notes": "Coordinates approx (7 km SW of Muddanur on Tadipatri-Renigunta road). Dating stylistic (c. 8000-1500 BCE).",
+  "sources": [
+   "https://www.deccanchronicle.com/140812/nation-current-affairs/article/rock-shelters-chintakunta-get-national-stature",
+   "https://www.researchgate.net/publication/367594271_Visual_Rhetoric_on_Rock_During_Mesolithic_Period_at_Chintakunta_Kadapa_Andhra_Pradesh_India"
+  ]
+ },
+ {
+  "id": "RA-031",
+  "name": "Ketavaram (Kethavaram) Rock Paintings",
+  "state": "Andhra Pradesh",
+  "lat": 15.86,
+  "lng": 78.15,
+  "period_start": -10000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Red-ochre paintings in 10 of 13 shelters: deer, hyena, monkey, humped bulls, tiger, lizards and human figures",
+  "discovery": "Documented in Kurnool district rock art surveys (published 2010s)",
+  "protection": "State archaeology",
+  "summary": "About 18 km from Kurnool on the Srisailam road, the quartzite shelters of Kethavaram overlook the Tungabhadra plain with paintings dominated by deer and wild animals. The Kurnool caves region has yielded some of India's oldest evidence of symbolic behaviour, and Kethavaram is its most visitable painted site.",
+  "notes": "Coordinates approx. Claims of 35,000-40,000 BP relate to regional Palaeolithic context; paintings themselves are likely Mesolithic and later.",
+  "sources": [
+   "https://www.researchgate.net/publication/50219661_New_Rock_Art_Discoveries_in_the_Kurnool_District_Andhra_Pradesh_India",
+   "https://kurnool.ap.gov.in/culture-heritage/"
+  ]
+ },
+ {
+  "id": "RA-032",
+  "name": "Isko (Isco) Rock Art",
+  "state": "Jharkhand",
+  "lat": 23.86,
+  "lng": 85.17,
+  "period_start": -9000,
+  "period_end": 2026,
+  "created_until": -3000,
+  "style": "Meso-Chalcolithic pictographs, over 90% non-figurative: lattices, mandala-like symbols echoed in living Adivasi khovar/sohrai wall art",
+  "discovery": "Brought to wider notice 1991 by Bulu Imam (INTACH Hazaribagh)",
+  "protection": "State-listed; largely unprotected",
+  "summary": "Above Isko village in the Barkagaon valley of Hazaribagh, a long sandstone shelter is covered in enigmatic geometric symbols attributed to the Meso-Chalcolithic (c. 9000-5000 BCE). Local Munda, Birhor and Oraon traditions of painted houses are strikingly similar, making Isko a living link between prehistoric and tribal art. The valley faces coal-mining pressure.",
+  "notes": "Coordinates approx (published coordinates in one paper are erroneous). Dating relative, based on associated tools.",
+  "sources": [
+   "https://www.researchgate.net/publication/360105864_Rock_Art_at_Isko_in_Hazaribagh_District_Jharkhand_Anthropological_Perspective",
+   "https://www.researchgate.net/publication/346651887_Digital_Documentation_of_the_Rock_Art_Site_of_Isko_Hazaribagh_District_Jharkhand"
+  ]
+ },
+ {
+  "id": "RA-033",
+  "name": "Likhaniya Dari (Lakhaniya) Rock Shelters",
+  "state": "Uttar Pradesh",
+  "lat": 24.9589,
+  "lng": 83.0086,
+  "period_start": -8000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Mesolithic red-ochre paintings of hunters, animals and dancing figures beside a 150 m waterfall gorge",
+  "discovery": "Mirzapur region rock art first recorded 1867-68 by A.C.L. Carlleyle — among the earliest rock art discoveries in the world",
+  "protection": "Largely unprotected; some shelters state-listed",
+  "summary": "The Likhaniya ('painted') gorge on the Garai river near Ahraura combines a spectacular seasonal waterfall with ochre paintings left by Mesolithic hunter-foragers of the Vindhya-Kaimur scarp. Mirzapur's painted shelters were noticed by Archibald Carlleyle in the 1860s, years before Altamira made rock art famous.",
+  "notes": "Name variants Likhaniya/Lakhaniya; several painted localities share the gorge. Dating stylistic.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lakhaniya_Dari_Waterfall",
+   "https://www.academia.edu/37350847/Rock_Art_of_Likhaniya_Valley_Mirzapur_Uttar_Pradesh"
+  ]
+ },
+ {
+  "id": "RA-034",
+  "name": "Wyndham Falls & Morhana Pahar Shelters (Mirzapur)",
+  "state": "Uttar Pradesh",
+  "lat": 25.1,
+  "lng": 82.52,
+  "period_start": -8000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Mesolithic paintings including the famous Morhana Pahar 'chariot' scene; hunters, animals and battle imagery",
+  "discovery": "Region documented from 1867-68 (A.C.L. Carlleyle); modern surveys by Ajay Pratap (BHU)",
+  "protection": "Largely unprotected",
+  "summary": "West of Mirzapur, painted shelters cluster around the Wyndham Falls picnic gorge and the Morhana escarpment on the old Grand Trunk alignment. Morhana Pahar's panel of a two-horse 'chariot' ambushed by bowmen is one of the most debated images in Indian rock art. The sites capture hunter-forager and pastoralist camps of the north Vindhyas.",
+  "notes": "Coordinates approx (Wyndham Falls); Morhana Pahar lies further south on the Mirzapur-Robertsganj road. Chariot panel likely early historic overlay on older art.",
+  "sources": [
+   "https://www.antiquity.ac.uk/projgall/pratap321",
+   "https://www.researchgate.net/publication/339832388_Rock_Art_of_the_Vindhyas_An_Archaeological_Survey_Documentation_and_Analysis_of_the_Rock_Art_Of_Mirzapur_District_Uttar_Pradesh"
+  ]
+ },
+ {
+  "id": "RA-035",
+  "name": "Kaimur Range Rock Shelters (Mundeshwari hills area)",
+  "state": "Bihar",
+  "lat": 25.04,
+  "lng": 83.56,
+  "period_start": -10000,
+  "period_end": 2026,
+  "created_until": 500,
+  "style": "Mesolithic and later paintings: humans, animals, trees, geometric and floral designs in 17+ shelters",
+  "discovery": "Explorations 1994-95 and later by Bihar archaeologists (Awadh Kishore Prasad and others)",
+  "protection": "Largely unprotected; near state-protected Mundeshwari temple",
+  "summary": "The Bihar stretch of the Kaimur plateau — around Bhagwanpur, Adhaura and the ancient Mundeshwari temple hill — holds at least 17 painted shelters above rivers and waterfalls. The art, likely 10,000 years old at its earliest, extends the great Vindhya-Kaimur rock art belt into Bihar and pairs well with a visit to India's oldest functioning temple.",
+  "notes": "Coordinates approx (Mundeshwari hill, Kaimur district); painted shelters are dispersed across the plateau. Dating relative.",
+  "sources": [
+   "https://www.academia.edu/42202720/STUDY_OF_ROCK_ART_IN_KAIMUR_REGION_BIHAR",
+   "https://www.outlooktraveller.com/explore/culture/bihar-kaimur-rock-paintings"
+  ]
+ },
+ {
+  "id": "RA-036",
+  "name": "Mangar Bani Cave Paintings",
+  "state": "Haryana",
+  "lat": 28.3949,
+  "lng": 77.156,
+  "period_start": -15000,
+  "period_end": 2026,
+  "created_until": 900,
+  "style": "Paintings and cupules on Aravalli quartzite: human figurines, animals, foliage and geometric designs; associated Palaeolithic tools",
+  "discovery": "May-June 2021, Sunil Harsana (local ecologist) with Haryana Archaeology Department (Banani Bhattacharyya)",
+  "protection": "Unprotected (within sacred grove; protection notification pending)",
+  "summary": "In a sacred grove barely an hour from Delhi, the rocky ridges around Mangar Bani hide hundreds of painted panels and tool scatters announced in 2021 as potentially among India's oldest rock art. Preliminary study links the habitation to the Palaeolithic, with reuse continuing into the 8th-9th century CE — an astonishing survival on the capital's doorstep.",
+  "notes": "Claimed Upper Palaeolithic age of the paintings is provisional pending dating; tool evidence spans c. 100,000-15,000 BP. Coordinates are for Mangar Bani grove.",
+  "sources": [
+   "https://www.nature.com/articles/d44151-021-00024-y",
+   "https://en.wikipedia.org/wiki/Mangar_Bani"
+  ]
+ },
+ {
+  "id": "RA-037",
+  "name": "Chamardi Rock Art",
+  "state": "Gujarat",
+  "lat": 21.79,
+  "lng": 71.87,
+  "period_start": -2000,
+  "period_end": 2026,
+  "created_until": 700,
+  "style": "Petroglyphs and painted panels including a rare Maitraka-period (6th-7th c. CE) scene of two sailing boats with helmsman and warriors",
+  "discovery": "Documented in Saurashtra rock art surveys (V.H. Sonawane and others)",
+  "protection": "Unprotected",
+  "summary": "Near Sihor in Bhavnagar district, the granite outcrops of Chamardi carry Gujarat's best-known rock art, famous for a painted panel of two sea-going boats from the Maitraka era — testimony to Saurashtra's ancient maritime world. Earlier engravings and cupules on the same hills point to prehistoric use.",
+  "notes": "Coordinates approx (Chamardi village). Gujarat's rock art record is sparse and thinly published; periods indicative only.",
+  "sources": [
+   "https://rockartindia.org/major-rock-art-regions-in-india",
+   "https://ebooks.inflibnet.ac.in/icp02/chapter/rock-art-of-india/"
+  ]
+ },
+ {
+  "id": "RA-038",
+  "name": "Tabo-Lari Petroglyphs (Spiti Valley)",
+  "state": "Himachal Pradesh",
+  "lat": 32.0957,
+  "lng": 78.3853,
+  "period_start": -1500,
+  "period_end": 2026,
+  "created_until": 1000,
+  "style": "Over 1,000 carved boulders: ibex, yaks, hunters, swastikas and Zhang Zhung-era symbols beside the Spiti river",
+  "discovery": "Documented 2015 by IGNCA field teams; earlier noted by Tibetologist John Bellezza",
+  "protection": "Unprotected (UNESCO nomination mooted)",
+  "summary": "The lower Spiti valley around Tabo, Lari and Poh holds one of the densest petroglyph concentrations in the Tibetan cultural world — more than 1,000 carved boulders lying in the open beside the river. Ibex, hunters and pre-Buddhist symbols, some around 3,500 years old, complement a visit to the millennium-old Tabo monastery.",
+  "notes": "Coordinates are for Tabo; Lari boulder field lies a few km downstream. Many boulders lost to road widening; dating comparative.",
+  "sources": [
+   "https://ignca.gov.in/rockart_2015/Field_Documentation_Report_Spiti%20Phase-I_Report_2015.pdf",
+   "https://www.tribuneindia.com/news/archive/himachal/unique-rock-art-of-spiti-valley-vies-for-unesco-tag-783130",
+   "https://www.academia.edu/43818917/Preliminary_Exploration_at_Lari_Village_A_Petroglyph_Site_in_Spiti_Valley_Himachal_Pradesh_India"
+  ]
+ }
+]

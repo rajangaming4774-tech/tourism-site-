@@ -1,0 +1,23 @@
+[
+  {
+    "id": "chola",
+    "name": "The Chola Trail",
+    "color": "#a78bfa",
+    "blurb": "Follow the imperial Cholas along the Kaveri: the Great Temple of Rajaraja, his son's capital, the chariot-shrine of Darasuram, the island temple-town of Srirangam, and the palace mound where the emperors actually lived.",
+    "stops": ["TM-031", "TM-042", "TM-035", "EX-023", "TM-026"]
+  },
+  {
+    "id": "buddhist",
+    "name": "Buddhist Circuit",
+    "color": "#7dd3fc",
+    "blurb": "The heartland of the Buddha's life and legacy: enlightenment at Bodh Gaya, the first sermon at Sarnath, the capital of Magadha at Rajgir, the great university of Nalanda, the republic of Vaishali, relic-stupa Piprahwa, and Ashoka's Sanchi.",
+    "stops": ["TM-001", "EX-014", "AS-019", "EX-036", "AS-031", "EX-037", "TM-003"]
+  },
+  {
+    "id": "rockart",
+    "name": "Rock Art Safari",
+    "color": "#fda4af",
+    "blurb": "Painted shelters of central India and beyond: World-Heritage Bhimbetka, the Narmada shelters of Adamgarh, the Satpura plateau of Pachmarhi, the kilometres-long gallery of Chaturbhujnath Nala, Bundi's ravine paintings, and Mangar Bani on Delhi's doorstep.",
+    "stops": ["RA-001", "RA-006", "RA-007", "RA-004", "RA-020", "RA-036"]
+  }
+]

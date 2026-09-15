@@ -1,0 +1,26 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tourism-heritage-map",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "scripts/serve.py"
+      ],
+      "port": 5500,
+      "autoPort": true
+    },
+    {
+      "name": "mahabalipuram-3d-standalone",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "--directory",
+        "../mahabalipuram-3d",
+        "5510"
+      ],
+      "port": 5510
+    }
+  ]
+}

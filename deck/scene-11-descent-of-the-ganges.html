@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Scene 11 of 12 — The Descent of the Ganges</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* One frame of a 12-part archaeological map series. 4:5, 1200x1500.
+     Everything is vector except the monument, which is a swappable layer —
+     see #monument below. */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #E8E2D6; }
+  body { display: grid; place-items: start center; }
+  .frame { width: 1200px; height: 1500px; position: relative; overflow: hidden; }
+</style>
+</head>
+<body>
+<div class="frame" id="frame">
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Ground: warm ivory, faintly warmer toward the lower right -->
+    <linearGradient id="ground" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#FAF6EE"/>
+      <stop offset="0.55" stop-color="#F5EFE3"/>
+      <stop offset="1" stop-color="#EFE6D6"/>
+    </linearGradient>
+
+    <!-- Granite: lit from the upper left, as the sun in the reference photo -->
+    <linearGradient id="rockA" x1="0.1" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#DCCFB6"/>
+      <stop offset="0.45" stop-color="#C9B99C"/>
+      <stop offset="1" stop-color="#A8967A"/>
+    </linearGradient>
+    <linearGradient id="rockLit" x1="0.1" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#E3D7C0"/>
+      <stop offset="0.5" stop-color="#CDBDA0"/>
+      <stop offset="1" stop-color="#AB9A7E"/>
+    </linearGradient>
+    <linearGradient id="rockShade" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#CBBB9E"/>
+      <stop offset="0.5" stop-color="#B4A386"/>
+      <stop offset="1" stop-color="#94836A"/>
+    </linearGradient>
+    <linearGradient id="cleft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7E7059"/>
+      <stop offset="0.5" stop-color="#5E523F"/>
+      <stop offset="1" stop-color="#7E7059"/>
+    </linearGradient>
+
+    <!-- Soft ambient contact shadow -->
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="softer" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="pillShadow" x="-40%" y="-60%" width="180%" height="240%">
+      <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#8C7B5E" flood-opacity="0.20"/>
+    </filter>
+
+    <!-- Relief, not appliqué. A carved figure stands proud of its ground and
+         throws a short shadow down-right from the upper-left sun; without it
+         these shapes read as cut-outs laid on the rock, which is the one thing
+         the monument must never look like. -->
+    <filter id="carve" x="-25%" y="-25%" width="160%" height="165%">
+      <feDropShadow dx="3.5" dy="4.5" stdDeviation="2.6" flood-color="#6E6048" flood-opacity="0.5"/>
+    </filter>
+    <filter id="carveShallow" x="-25%" y="-25%" width="160%" height="165%">
+      <feDropShadow dx="2" dy="2.6" stdDeviation="1.5" flood-color="#6E6048" flood-opacity="0.42"/>
+    </filter>
+
+    <!-- Paper grain: very low amplitude, or it reads as noise not stock -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+
+
+    <!-- The monument's outer silhouette. The photograph is clipped to this,
+         so it reads as a landmark sitting in the map rather than a rectangular
+         photo pasted on top of it. The cleft is included in the union, because
+         the photograph carries its own real cleft and should show it. -->
+    <clipPath id="monumentClip">
+      <path d="M 286 900 C 268 792 276 700 306 636 C 336 572 396 524 470 508 C 528 496 566 512 580 556 L 588 900 Z"/>
+      <path d="M 612 900 L 618 560 C 628 504 676 470 744 468 C 828 466 892 512 916 592 C 936 660 934 790 922 900 Z"/>
+      <path d="M 588 900 L 580 556 C 586 520 600 506 600 506 C 600 506 612 522 618 560 L 612 900 Z"/>
+    </clipPath>
+
+    <!-- Duotone. A raw colour photograph would break the palette instantly, so
+         luminance is remapped into the sandstone ramp: shadows to a warm dark
+         taupe, highlights to warm cream. Low saturation is the point. -->
+    <filter id="sandstone" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0.33 0.60 0.84 0.96"/>
+        <feFuncG type="table" tableValues="0.28 0.53 0.77 0.92"/>
+        <feFuncB type="table" tableValues="0.21 0.41 0.62 0.80"/>
+      </feComponentTransfer>
+    </filter>
+
+    <clipPath id="frameClip"><rect width="1200" height="1500"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frameClip)">
+    <rect width="1200" height="1500" fill="url(#ground)"/>
+
+    <!-- ================= MAP LAYER =================
+         Large irregular territory boundaries running the full composition.
+         Kept to a handful of long lines: the negative space is the point. -->
+    <g id="map">
+      <!-- filled regions, barely separated in tone -->
+      <path d="M-40 300 L 420 214 L 690 330 L 610 592 L 250 700 L -40 612 Z"
+            fill="#F1E9D9" opacity="0.85"/>
+      <path d="M 690 330 L 1130 210 L 1240 470 L 1010 690 L 610 592 Z"
+            fill="#EFE6D3" opacity="0.7"/>
+      <path d="M 250 700 L 610 592 L 1010 690 L 960 1010 L 520 1130 L 180 1000 Z"
+            fill="#F3ECDD" opacity="0.75"/>
+
+      <!-- boundary lines -->
+      <g fill="none" stroke="#C9A961" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M-40 300 L 420 214 L 690 330 L 1130 210 L 1240 190" stroke-width="2.4" opacity="0.75"/>
+        <path d="M 690 330 L 610 592 L 1010 690 L 1240 470" stroke-width="2.0" opacity="0.6"/>
+        <path d="M-40 612 L 250 700 L 610 592" stroke-width="2.0" opacity="0.55"/>
+        <path d="M 180 1000 L 520 1130 L 960 1010 L 1240 1080" stroke-width="2.2" opacity="0.6"/>
+        <path d="M 250 700 L 180 1000" stroke-width="1.6" opacity="0.45"/>
+        <path d="M 1010 690 L 960 1010" stroke-width="1.6" opacity="0.45"/>
+        <!-- one long sweep across the whole frame, for scale -->
+        <path d="M-40 1265 L 300 1210 L 700 1290 L 1240 1215" stroke-width="1.8" opacity="0.4"/>
+      </g>
+
+      <!-- topographic hints: sparse, irregular, very light -->
+      <g fill="none" stroke="#BFAE8C" stroke-width="1.1" opacity="0.32">
+        <path d="M 300 520 q 120 -70 250 -18 q 120 48 96 132 q -26 90 -170 96 q -150 6 -196 -70 q -44 -74 20 -140 Z"/>
+        <path d="M 330 536 q 106 -56 216 -12 q 104 42 82 112 q -24 74 -146 80 q -128 4 -168 -60 q -38 -62 16 -120 Z"/>
+        <path d="M 742 872 q 90 -40 168 4 q 66 36 40 90 q -30 58 -134 56 q -104 -2 -122 -60 q -16 -54 48 -90 Z"/>
+      </g>
+
+      <!-- a few survey dots, the language of a plotted map -->
+      <g fill="#C9A961" opacity="0.5">
+        <circle cx="196" cy="404" r="3"/><circle cx="905" cy="352" r="3"/>
+        <circle cx="1052" cy="880" r="3"/><circle cx="286" cy="936" r="3"/>
+        <circle cx="666" cy="1206" r="2.6"/>
+      </g>
+    </g>
+
+    <!-- ================= MONUMENT =================
+         SWAPPABLE LAYER. Drawn from the reference photograph: two granite
+         masses split by a vertical cleft, the elephant group low and right
+         with the bull in profile, banded registers of small figures above,
+         and the small shrine on the left mass.
+
+         To use the real photograph instead, replace everything inside
+         <g id="monument"> with:
+             <image href="penance.jpg" x="250" y="470" width="700" height="430"
+                    preserveAspectRatio="xMidYMid slice"
+                    clip-path="url(#monumentClip)" filter="url(#duotone)"/>
+         and add a duotone filter to <defs>. The layout around it does not change. -->
+    <g id="monument">
+      <!-- contact shadow on the ground plane -->
+      <ellipse cx="600" cy="902" rx="330" ry="42" fill="#B9A788" opacity="0.38" filter="url(#softer)"/>
+
+      <!-- ~~~~ north (left) mass ~~~~ -->
+      <path d="M 286 900
+               C 268 792 276 700 306 636
+               C 336 572 396 524 470 508
+               C 528 496 566 512 580 556
+               L 588 900 Z"
+            fill="url(#rockLit)"/>
+      <!-- crown highlight -->
+      <path d="M 306 636 C 336 572 396 524 470 508 C 520 498 556 508 574 538
+               C 520 528 452 546 402 588 C 356 626 326 646 306 636 Z"
+            fill="#E7DCC6" opacity="0.55"/>
+
+      <!-- ~~~~ south (right) mass: taller, per the photograph ~~~~ -->
+      <path d="M 612 900
+               L 618 560
+               C 628 504 676 470 744 468
+               C 828 466 892 512 916 592
+               C 936 660 934 790 922 900 Z"
+            fill="url(#rockShade)"/>
+      <path d="M 618 560 C 628 504 676 470 744 468 C 812 466 866 498 894 552
+               C 838 520 764 512 706 534 C 660 552 632 566 618 560 Z"
+            fill="#DCD0B6" opacity="0.5"/>
+
+      <!-- ~~~~ the cleft: a real gap, dark and narrow ~~~~ -->
+      <path d="M 588 900 L 580 556 C 586 520 600 506 600 506
+               C 600 506 612 522 618 560 L 612 900 Z"
+            fill="url(#cleft)"/>
+      <!-- naga: the river, carved inside the cleft -->
+      <path d="M 600 566 q 12 40 -6 78 q -18 38 4 76 q 22 38 2 76 q -20 38 2 74"
+            fill="none" stroke="#8A7B60" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+      <path d="M 600 566 q 12 40 -6 78 q -18 38 4 76 q 22 38 2 76 q -20 38 2 74"
+            fill="none" stroke="#B6A585" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- ~~~~ register bands of small carved figures ~~~~
+           Simplified to rhythm and mass, which is what survives stylisation;
+           individual figures at this scale would be invention. -->
+      <g opacity="0.5" fill="#9C8B6E" filter="url(#carveShallow)">
+        <!-- left mass registers -->
+        <g>
+          <rect x="322" y="596" width="13" height="26" rx="6"/><rect x="346" y="590" width="13" height="28" rx="6"/>
+          <rect x="370" y="584" width="13" height="27" rx="6"/><rect x="394" y="578" width="13" height="29" rx="6"/>
+          <rect x="418" y="574" width="13" height="26" rx="6"/><rect x="442" y="570" width="13" height="28" rx="6"/>
+          <rect x="466" y="566" width="13" height="27" rx="6"/><rect x="490" y="566" width="13" height="26" rx="6"/>
+        </g>
+        <g>
+          <rect x="316" y="656" width="12" height="25" rx="6"/><rect x="338" y="652" width="12" height="26" rx="6"/>
+          <rect x="360" y="650" width="12" height="25" rx="6"/><rect x="382" y="646" width="12" height="27" rx="6"/>
+          <rect x="404" y="644" width="12" height="25" rx="6"/><rect x="426" y="642" width="12" height="26" rx="6"/>
+          <rect x="448" y="640" width="12" height="25" rx="6"/><rect x="470" y="640" width="12" height="26" rx="6"/>
+          <rect x="492" y="640" width="12" height="24" rx="6"/>
+        </g>
+        <!-- right mass registers, denser and higher -->
+        <g>
+          <rect x="646" y="574" width="13" height="27" rx="6"/><rect x="670" y="566" width="13" height="28" rx="6"/>
+          <rect x="694" y="558" width="13" height="29" rx="6"/><rect x="718" y="552" width="13" height="28" rx="6"/>
+          <rect x="742" y="550" width="13" height="27" rx="6"/><rect x="766" y="552" width="13" height="28" rx="6"/>
+          <rect x="790" y="556" width="13" height="27" rx="6"/><rect x="814" y="562" width="13" height="28" rx="6"/>
+          <rect x="838" y="572" width="13" height="26" rx="6"/><rect x="862" y="584" width="13" height="25" rx="6"/>
+        </g>
+        <g>
+          <rect x="642" y="634" width="12" height="26" rx="6"/><rect x="664" y="628" width="12" height="27" rx="6"/>
+          <rect x="686" y="624" width="12" height="26" rx="6"/><rect x="708" y="620" width="12" height="27" rx="6"/>
+          <rect x="730" y="618" width="12" height="26" rx="6"/><rect x="752" y="618" width="12" height="27" rx="6"/>
+          <rect x="774" y="620" width="12" height="26" rx="6"/><rect x="796" y="624" width="12" height="26" rx="6"/>
+          <rect x="818" y="630" width="12" height="25" rx="6"/><rect x="840" y="640" width="12" height="25" rx="6"/>
+          <rect x="862" y="652" width="12" height="24" rx="6"/>
+        </g>
+        <g>
+          <rect x="650" y="692" width="11" height="24" rx="5"/><rect x="670" y="690" width="11" height="24" rx="5"/>
+          <rect x="690" y="688" width="11" height="24" rx="5"/><rect x="710" y="686" width="11" height="24" rx="5"/>
+          <rect x="856" y="706" width="11" height="23" rx="5"/><rect x="876" y="714" width="11" height="22" rx="5"/>
+        </g>
+      </g>
+
+      <!-- ~~~~ the small shrine on the left mass ~~~~ -->
+      <g>
+        <g filter="url(#carveShallow)"><rect x="352" y="742" width="76" height="86" rx="3" fill="#D5C7AC"/>
+        <path d="M 348 742 L 390 700 L 432 742 Z" fill="#C6B698"/>
+        <rect x="374" y="778" width="30" height="50" rx="2" fill="#8B7C61" opacity="0.75"/>
+        <circle cx="390" cy="694" r="7" fill="#C9A961" opacity="0.9"/>
+        <rect x="344" y="826" width="92" height="10" rx="3" fill="#C2B296"/></g>
+      </g>
+
+      <!-- ~~~~ THE ELEPHANT GROUP: lower right, bull in left profile ~~~~
+           The single most recognisable element of the monument. -->
+      <g id="elephants" filter="url(#carve)">
+        <!-- second elephant, behind and to the right -->
+        <g opacity="0.9">
+          <path d="M 852 848
+                   C 848 806 872 782 904 780
+                   C 934 778 950 796 952 822
+                   L 952 872 L 936 872 L 934 846
+                   L 900 846 L 898 872 L 880 872 L 878 848 Z"
+                fill="#B3A184"/>
+          <path d="M 852 848 C 848 812 862 792 884 784
+                   C 872 800 866 822 868 848 Z" fill="#9E8C70"/>
+          <!-- head + trunk -->
+          <path d="M 852 806 C 836 808 826 826 828 848 C 830 866 838 872 844 870
+                   C 850 868 848 852 846 840 C 844 826 848 812 852 806 Z" fill="#A8967A"/>
+        </g>
+
+        <!-- the great bull, in profile facing left -->
+        <g>
+          <!-- body -->
+          <path d="M 690 872
+                   C 676 812 700 764 748 748
+                   C 800 730 856 752 866 800
+                   C 874 838 868 862 862 872
+                   L 842 872 L 838 838 L 782 838 L 778 872 L 756 872 L 752 840
+                   L 716 840 L 712 872 Z"
+                fill="#C4B294"/>
+          <!-- shoulder/haunch shading, gives the relief its depth -->
+          <path d="M 802 748 C 842 748 866 772 868 806 C 856 776 830 760 800 758 Z"
+                fill="#AD9B7E" opacity="0.85"/>
+          <path d="M 690 872 C 680 826 696 786 730 764 C 712 796 706 836 712 872 Z"
+                fill="#B09E80" opacity="0.7"/>
+          <!-- head -->
+          <path d="M 690 800
+                   C 662 800 644 826 646 856
+                   C 648 882 664 896 678 894
+                   C 690 892 692 872 690 856
+                   C 688 834 686 812 690 800 Z"
+                fill="#CBB998"/>
+          <!-- ear, the shape that makes it read as an elephant at any size -->
+          <path d="M 692 802 C 668 806 656 830 660 856 C 664 880 682 888 694 880
+                   C 702 872 700 840 696 820 Z"
+                fill="#B8A688"/>
+          <!-- trunk, falling and curling forward -->
+          <path d="M 652 856 C 642 872 640 886 646 862 M 652 856 C 641 874 639 890 648 900"
+                fill="none" stroke="#C0AE90" stroke-width="14" stroke-linecap="round"/>
+          <!-- tusk -->
+          <path d="M 663 878 C 655 886 650 893 649 900"
+                fill="none" stroke="#E6DCC6" stroke-width="4.5" stroke-linecap="round"/>
+          <circle cx="676" cy="846" r="3.4" fill="#7C6E55" opacity="0.8"/>
+        </g>
+
+        <!-- calves, beneath and between -->
+        <g opacity="0.92">
+          <path d="M 792 872 C 788 850 800 836 818 836 C 834 836 842 848 842 864
+                   L 842 872 Z" fill="#B5A386"/>
+          <path d="M 792 858 C 782 858 776 866 778 872 L 792 872 Z" fill="#A8967A"/>
+          <path d="M 862 872 C 860 854 870 844 884 844 C 896 844 902 854 902 866
+                   L 902 872 Z" fill="#AD9B7F"/>
+        </g>
+      </g>
+
+      <!-- THE PHOTOGRAPH. Drop penance.jpg beside this file and it takes over:
+           it is opaque and covers the whole silhouette, so the drawn masses,
+           registers, shrine and elephants beneath simply stop being visible.
+           Remove the file and the drawn version comes back. Nothing else moves. -->
+      <image href="penance.jpg" x="286" y="468" width="636" height="432"
+             preserveAspectRatio="xMidYMid slice"
+             clip-path="url(#monumentClip)" filter="url(#sandstone)"/>
+      <!-- A whisper of the rock gradient back over the photo, so it sits in the
+           same light as everything else in the frame. -->
+      <path d="M 612 900 L 618 560 C 628 504 676 470 744 468 C 828 466 892 512 916 592 C 936 660 934 790 922 900 Z" fill="url(#rockShade)" opacity="0.16" clip-path="url(#monumentClip)" data-photo-tint/>
+
+      <!-- base plinth the whole relief stands on -->
+      <path d="M 272 872 L 934 872 L 942 900 L 264 900 Z" fill="#BEAD90"/>
+      <path d="M 272 872 L 934 872 L 936 880 L 270 880 Z" fill="#D2C3A6"/>
+    </g>
+
+    <!-- ================= LANDSCAPE ================= -->
+    <!-- palm, left, small and simplified -->
+    <g id="palm">
+      <ellipse cx="205" cy="1006" rx="42" ry="9" fill="#B9A788" opacity="0.3" filter="url(#soft)"/>
+      <path d="M 204 1000 C 200 960 198 926 202 894" fill="none" stroke="#B29F80" stroke-width="7" stroke-linecap="round"/>
+      <g fill="#C3B291">
+        <path d="M 202 892 C 172 872 148 872 132 884 C 156 880 180 886 200 900 Z"/>
+        <path d="M 202 892 C 232 870 258 870 274 882 C 248 878 224 884 204 900 Z"/>
+        <path d="M 202 890 C 186 858 166 844 146 842 C 172 852 190 868 200 894 Z"/>
+        <path d="M 202 890 C 218 858 240 844 260 842 C 234 852 214 868 204 894 Z"/>
+        <path d="M 202 888 C 200 862 204 844 212 830 C 208 852 208 870 206 890 Z"/>
+      </g>
+      <circle cx="202" cy="892" r="5" fill="#A8967A"/>
+    </g>
+
+    <!-- scattered boulders, the same geology as the monument -->
+    <g id="rocks">
+      <ellipse cx="1004" cy="972" rx="52" ry="11" fill="#B9A788" opacity="0.28" filter="url(#soft)"/>
+      <path d="M 962 968 C 958 942 976 924 1002 926 C 1028 928 1042 946 1038 968 Z" fill="#CBBBA0"/>
+      <path d="M 962 968 C 960 946 970 932 986 927 C 974 940 968 954 970 968 Z" fill="#B7A78C"/>
+
+      <ellipse cx="342" cy="1078" rx="38" ry="8" fill="#B9A788" opacity="0.26" filter="url(#soft)"/>
+      <path d="M 314 1074 C 312 1056 324 1044 342 1045 C 360 1046 370 1058 368 1074 Z" fill="#C6B69A"/>
+
+      <ellipse cx="836" cy="1096" rx="30" ry="7" fill="#B9A788" opacity="0.24" filter="url(#soft)"/>
+      <path d="M 814 1093 C 813 1080 822 1071 836 1072 C 850 1073 857 1082 856 1093 Z" fill="#C1B195"/>
+    </g>
+
+    <!-- ================= LABELS ================= -->
+    <g id="labels" font-family="Montserrat, sans-serif">
+      <!-- primary -->
+      <g filter="url(#pillShadow)">
+        <rect x="596" y="392" width="366" height="60" rx="30" fill="#FCF8F0"/>
+      </g>
+      <circle cx="632" cy="422" r="9" fill="#C9A961"/>
+      <circle cx="632" cy="422" r="3.4" fill="#FCF8F0"/>
+      <text x="656" y="428" font-size="19" font-weight="600" letter-spacing="2.6" fill="#6B5D46">DESCENT OF THE GANGES</text>
+      <!-- leader line down to the monument -->
+      <path d="M 700 452 L 700 486" stroke="#C9A961" stroke-width="1.6" opacity="0.55"/>
+      <circle cx="700" cy="490" r="3.4" fill="#C9A961"/>
+
+      <!-- secondary -->
+      <g filter="url(#pillShadow)">
+        <rect x="196" y="1152" width="250" height="54" rx="27" fill="#FCF8F0"/>
+      </g>
+      <circle cx="229" cy="1179" r="8" fill="#C9A961"/>
+      <circle cx="229" cy="1179" r="3" fill="#FCF8F0"/>
+      <text x="251" y="1185" font-size="17" font-weight="600" letter-spacing="2.4" fill="#6B5D46">MAHABALIPURAM</text>
+    </g>
+
+    <!-- ================= EDITORIAL TYPE ================= -->
+    <g id="type" text-anchor="middle">
+      <text x="600" y="1348" font-family="Montserrat, sans-serif" font-size="15"
+            font-weight="500" letter-spacing="6.5" fill="#A08F72">SCENE 11 OF 12</text>
+      <text x="600" y="1416" font-family="'Cormorant Garamond', Georgia, serif"
+            font-size="60" font-weight="400" fill="#5C4F3B">The Descent of the Ganges</text>
+      <path d="M 540 1450 L 660 1450" stroke="#C9A961" stroke-width="1.4" opacity="0.6"/>
+    </g>
+
+    <!-- paper grain over everything, last -->
+    <rect width="1200" height="1500" filter="url(#grain)" opacity="0.6" style="mix-blend-mode:multiply"/>
+  </g>
+</svg>
+</div>
+
+<script>
+  /* Until penance.jpg exists the <image> still paints its filter region, which
+     washes a pale haze across the drawn monument. Probe the file and drop the
+     photo layers entirely if it is not there, so the fallback renders clean. */
+  document.querySelectorAll('svg image').forEach(function (im) {
+    var probe = new Image();
+    probe.onerror = function () {
+      im.style.display = 'none';
+      document.querySelectorAll('[data-photo-tint]').forEach(function (t) { t.style.display = 'none'; });
+    };
+    probe.src = im.getAttribute('href');
+  });
+</script>
+</body>
+</html>

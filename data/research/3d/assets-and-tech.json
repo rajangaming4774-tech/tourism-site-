@@ -1,0 +1,447 @@
+[
+  {
+    "id": "ambientcg-granite004a",
+    "category": "texture",
+    "name": "Granite004A",
+    "url": "https://ambientcg.com/view?id=Granite004A",
+    "verified": true,
+    "license": "CC0 (Public Domain)",
+    "maps": ["Color", "NormalDX", "NormalGL", "Roughness", "Displacement"],
+    "resolutions": ["1K", "2K", "4K", "8K"],
+    "filesize": {
+      "1k_jpg_bytes": { "Color": 1841772, "NormalDX": 343730, "NormalGL": 343990, "Roughness": 558816, "Displacement": 216605 },
+      "1k_zip_bundle_bytes": 4928908,
+      "2k_zip_bundle_bytes": 14580540,
+      "web_reencoded_512px_q80_bytes_measured": { "Color": 91733, "NormalGL": 3295, "Roughness": 13757, "total": 108785 },
+      "web_reencoded_1024px_q80_bytes_measured": { "Color": 397097, "NormalGL": 12514, "Roughness": 68297, "total": 477908 }
+    },
+    "notes": "Primary shortlist pick. No AO/metalness map shipped (fine, granite is dielectric). Downloaded and re-encoded for real with ffmpeg (scale + -q:v 5/8) to get the 'web' sizes; not estimated. Recommend applying once as a shared tiling material multiplied against the project's existing 53-material weathering tint, not as 53 separate texture sets."
+  },
+  {
+    "id": "ambientcg-granite001a",
+    "category": "texture",
+    "name": "Granite001A",
+    "url": "https://ambientcg.com/view?id=Granite001A",
+    "verified": true,
+    "license": "CC0 (Public Domain)",
+    "maps": ["Color", "NormalDX", "NormalGL", "Roughness", "Displacement (assumed, not unpacked)"],
+    "resolutions": ["1K", "2K", "4K", "8K"],
+    "filesize": {
+      "1k_zip_bundle_bytes": 5151099,
+      "2k_zip_bundle_bytes": 15661008
+    },
+    "notes": "Alternate granite tone; zip downloaded and content-length verified but not unzipped for per-map breakdown. 14 total Granite001-007 A/B variants confirmed to exist via ambientCG search API."
+  },
+  {
+    "id": "ambientcg-granite-family",
+    "category": "texture",
+    "name": "Granite001A through Granite007B (14 variants)",
+    "url": "https://ambientcg.com/list?type=Material&q=granite",
+    "verified": true,
+    "license": "CC0 (Public Domain)",
+    "maps": ["varies by asset, generally Color/Normal/Roughness/Displacement"],
+    "resolutions": ["1K", "2K", "4K", "8K"],
+    "filesize": null,
+    "notes": "Full result set from ambientCG API search q=granite&type=Material. 14 assetIds confirmed to exist: Granite001A, Granite001B, Granite002A, Granite002B, Granite003A, Granite003B, Granite004A, Granite004B, Granite005A, Granite005B, Granite006A, Granite006B, Granite007A, Granite007B."
+  },
+  {
+    "id": "polyhaven-lichen-rock",
+    "category": "texture",
+    "name": "Lichen Rock",
+    "url": "https://polyhaven.com/a/lichen_rock",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["Diffuse", "NormalGL", "NormalDX", "Displacement", "Roughness", "AO", "ARM"],
+    "resolutions": ["1k", "2k", "4k", "8k"],
+    "filesize": {
+      "1k_jpg_bytes": { "Diffuse": 1070311, "NormalGL": 1259569, "NormalDX": 1256238, "Displacement": 322057, "Roughness": 573955, "AO": 708601, "ARM": 802718 },
+      "2k_jpg_bytes": { "Diffuse": 4010129, "NormalGL": 4844348, "NormalDX": 4858346, "Displacement": 961417, "Roughness": 2108970, "AO": 2565114, "ARM": 2978561 }
+    },
+    "notes": "Lichen-covered rock, plausible for monument-base accents. Real numbers from api.polyhaven.com/files/lichen_rock. Web-ready size not directly measured for this asset (only Granite004A was actually re-encoded); estimate by analogy is 80-150 KB for Diffuse+NormalGL+ARM at 512px."
+  },
+  {
+    "id": "polyhaven-mossy-rock",
+    "category": "texture",
+    "name": "Mossy Rock",
+    "url": "https://polyhaven.com/a/mossy_rock",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["Diffuse", "NormalGL", "NormalDX", "Roughness", "AO", "Displacement", "ARM"],
+    "resolutions": ["1k", "2k", "4k", "8k"],
+    "filesize": {
+      "1k_jpg_bytes": { "Diffuse": 1124438, "NormalDX": 991590, "NormalGL": 995727, "Roughness": 780918, "AO": 533103, "Displacement": 208904, "ARM": 926941 },
+      "2k_jpg_bytes": { "Diffuse": 4535360, "NormalDX": 4030316, "NormalGL": 4033031, "Roughness": 3205806, "AO": 2253517, "Displacement": 644550, "ARM": 3799947 }
+    },
+    "notes": "Alternate to lichen_rock, do not ship both. Real numbers from api.polyhaven.com/files/mossy_rock."
+  },
+  {
+    "id": "polyhaven-rock-pitted-mossy",
+    "category": "texture",
+    "name": "Rock Pitted Mossy",
+    "url": "https://polyhaven.com/a/rock_pitted_mossy",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["Diffuse", "NormalDX", "NormalGL", "Rough", "Displacement", "AO", "ARM"],
+    "resolutions": ["1k", "2k", "4k", "8k"],
+    "filesize": {
+      "1k_jpg_bytes": { "Diffuse": 1087680, "NormalDX": 1136602, "NormalGL": 1137508, "Rough": 647478, "Displacement": 237335, "AO": 564275, "ARM": 774539 },
+      "2k_jpg_bytes": { "Diffuse": 4272323, "NormalDX": 4507044, "NormalGL": 4510263, "Rough": 2542167, "Displacement": 725941, "AO": 2123506, "ARM": 3034281 }
+    },
+    "notes": "Third rock/moss alternative, weathered pitted granite-like surface with moss. Real numbers from api.polyhaven.com/files/rock_pitted_mossy."
+  },
+  {
+    "id": "polyhaven-red-laterite-soil-stones",
+    "category": "texture",
+    "name": "Red Laterite Soil Stones",
+    "url": "https://polyhaven.com/a/red_laterite_soil_stones",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["Diffuse", "NormalDX", "AO", "Displacement", "Rough", "NormalGL", "ARM"],
+    "resolutions": ["1k", "2k", "4k", "8k", "16k"],
+    "filesize": {
+      "1k_jpg_bytes": { "Diffuse": 906764, "NormalDX": 1496816, "NormalGL": 1494933, "AO": 1106108, "Displacement": 686915, "Rough": 722823, "ARM": 1056919 },
+      "2k_jpg_bytes": { "Diffuse": 3593564, "NormalDX": 5929409, "NormalGL": 5924499, "AO": 3914480, "Displacement": 2169376, "Rough": 2819770, "ARM": 4050156 }
+    },
+    "notes": "Laterite soil is genuinely a real coastal-Tamil-Nadu ground material. Uniquely offered up to 16k on Poly Haven. Real numbers from api.polyhaven.com/files/red_laterite_soil_stones. Low priority unless inland ground texture is added."
+  },
+  {
+    "id": "polyhaven-coast-sand-03",
+    "category": "texture",
+    "name": "Coast Sand 03",
+    "url": "https://polyhaven.com/a/coast_sand_03",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["Diffuse", "NormalDX", "NormalGL", "AO", "Displacement", "Rough", "ARM"],
+    "resolutions": ["1k", "2k", "4k"],
+    "filesize": {
+      "1k_jpg_bytes": { "Diffuse": 1164522, "NormalDX": 1519611, "NormalGL": 1522963, "AO": 1131155, "Displacement": 442632, "Rough": 579986, "ARM": 1126675 },
+      "2k_jpg_bytes": { "Diffuse": 4278557, "NormalDX": 5622994, "NormalGL": 5636070, "AO": 3942093, "Displacement": 1317229, "Rough": 2134040, "ARM": 3989281 }
+    },
+    "notes": "Beach sand ground plane. Real numbers from api.polyhaven.com/files/coast_sand_03. Only useful if the sand plane in the scene stops being a flat colour; currently low priority."
+  },
+  {
+    "id": "polyhaven-red-sandstone-pavement",
+    "category": "texture",
+    "name": "Red Sandstone Pavement",
+    "url": "https://polyhaven.com/a/red_sandstone_pavement",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["Diffuse", "NormalDX", "NormalGL", "ARM", "Displacement", "AO", "Rough"],
+    "resolutions": ["1k", "2k", "4k"],
+    "filesize": {
+      "1k_jpg_bytes": { "Diffuse": 662808, "NormalDX": 815255, "NormalGL": 815891, "ARM": 575483, "Displacement": 310295, "AO": 543470, "Rough": 486090 },
+      "2k_jpg_bytes": { "Diffuse": 2722687, "NormalDX": 3573249, "NormalGL": 3573918, "ARM": 2354240, "Displacement": 1005796, "AO": 2131836, "Rough": 2013023 }
+    },
+    "notes": "Decorative only, not the monuments' actual granite (sandstone, not charnockite). Smallest raw file sizes of the shortlist. Real numbers from api.polyhaven.com/files/red_sandstone_pavement."
+  },
+  {
+    "id": "polyhaven-square-cobblestone",
+    "category": "texture",
+    "name": "Square Cobblestone",
+    "url": "https://polyhaven.com/a/square_cobblestone",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["Diffuse", "NormalDX", "NormalGL", "ARM", "AO", "Displacement", "Roughness"],
+    "resolutions": ["1k", "2k", "4k", "8k"],
+    "filesize": {
+      "1k_jpg_bytes": { "Diffuse": 998595, "NormalDX": 928774, "NormalGL": 929523, "ARM": 800557, "AO": 822623, "Displacement": 368318, "Roughness": 515559 },
+      "2k_jpg_bytes": { "Diffuse": 4454725, "NormalDX": 3996165, "NormalGL": 3990570, "ARM": 3593615, "AO": 3360661, "Displacement": 1159975, "Roughness": 2547335 }
+    },
+    "notes": "Town/plaza paving option, low priority for current scene (buildings are flat-shaded fill-extrusion, no ground-plane paving texture used today). Real numbers from api.polyhaven.com/files/square_cobblestone."
+  },
+  {
+    "id": "polyhaven-seaside-rock",
+    "category": "texture",
+    "name": "Seaside Rock",
+    "url": "https://polyhaven.com/a/seaside_rock",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["Diffuse", "NormalDX", "NormalGL", "ARM", "AO", "Displacement", "Rough"],
+    "resolutions": ["1k", "2k", "4k"],
+    "filesize": {
+      "1k_jpg_bytes": { "Diffuse": 954872, "NormalDX": 1149939, "NormalGL": 1158486, "ARM": 640203, "AO": 666384, "Displacement": 289531, "Rough": 379230 },
+      "2k_jpg_bytes": { "Diffuse": 3883057, "NormalDX": 4527854, "NormalGL": 4527854, "ARM": 2590567, "AO": 2583864, "Displacement": 870843, "Rough": 1681507 }
+    },
+    "notes": "Closest available stand-in for 'wet dark stone at a base', though the project already solves that procedurally via its 6-step height-based weathering palette. Real numbers from api.polyhaven.com/files/seaside_rock."
+  },
+  {
+    "id": "polyhaven-hdri-secluded-beach",
+    "category": "hdri",
+    "name": "Secluded Beach",
+    "url": "https://polyhaven.com/a/secluded_beach",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["equirectangular .hdr / .exr"],
+    "resolutions": ["1k", "2k", "4k", "8k"],
+    "filesize": {
+      "hdr_bytes": { "1k": 1582472, "2k": 6315212, "4k": 25375378, "8k": 99396041 },
+      "exr_bytes": { "1k": 1535320, "2k": 6035399, "4k": 23794344, "8k": 91884373 }
+    },
+    "notes": "Clear, high-contrast morning-afternoon coastal light. Closest Poly Haven has to 'clear morning'. 1k is Poly Haven's SMALLEST offered resolution for any HDRI -- there is no smaller pre-made tier. 1.5 MB single file is 5x this project's entire current 3D gzip budget (295 KB). Recommend NOT shipping to the browser; use as a Blender lighting reference only, or bake an offline heavily-downsampled equirect (untested)."
+  },
+  {
+    "id": "polyhaven-hdri-fish-hoek-beach",
+    "category": "hdri",
+    "name": "Fish Hoek Beach",
+    "url": "https://polyhaven.com/a/fish_hoek_beach",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["equirectangular .hdr / .exr"],
+    "resolutions": ["1k", "2k", "4k", "8k"],
+    "filesize": {
+      "hdr_bytes": { "1k": 1433636, "2k": 5687874, "4k": 22759214, "8k": 89132766 },
+      "exr_bytes": { "1k": 926517, "2k": 3543784, "4k": 13824253, "8k": 53531852 }
+    },
+    "notes": "Overcast, low contrast beach -- closest available stand-in for 'hazy afternoon' (no HDRI on Poly Haven is literally tagged hazy). Same size caution as secluded_beach applies."
+  },
+  {
+    "id": "polyhaven-hdri-small-harbour-morning",
+    "category": "hdri",
+    "name": "Small Harbour Morning",
+    "url": "https://polyhaven.com/a/small_harbour_morning",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["equirectangular .hdr / .exr"],
+    "resolutions": ["1k", "2k", "4k", "8k"],
+    "filesize": {
+      "hdr_bytes": { "1k": 1496732, "2k": 6066806, "4k": 24777977, "8k": 98358495 },
+      "exr_bytes": { "1k": 6086727, "2k": 24280964, "4k": 96488473, "8k": 384215374 }
+    },
+    "notes": "Clear morning, high contrast, harbour setting. Note .exr is LARGER than .hdr for this asset (uncompressed EXR variant) -- use .hdr, not .exr, if shipped at all."
+  },
+  {
+    "id": "polyhaven-hdri-small-harbour-sunset",
+    "category": "hdri",
+    "name": "Small Harbour Sunset",
+    "url": "https://polyhaven.com/a/small_harbour_sunset",
+    "verified": true,
+    "license": "CC0",
+    "maps": ["equirectangular .hdr / .exr"],
+    "resolutions": ["1k", "2k", "4k", "8k"],
+    "filesize": {
+      "hdr_bytes": { "1k": 1499733, "2k": 6109792, "4k": 24904563, "8k": 98856101 },
+      "exr_bytes": { "1k": 6079783, "2k": 24274162, "4k": 96452410, "8k": 384801855 }
+    },
+    "notes": "Golden hour / sunset, medium contrast. Not 'morning' as requested but included as the closest tonal sibling to small_harbour_morning."
+  },
+  {
+    "id": "quaternius-palm-tree",
+    "category": "vegetation",
+    "name": "Palm Tree (Quaternius, via Poly Pizza)",
+    "url": "https://poly.pizza/m/A6cKJYFsIb",
+    "verified": true,
+    "license": "CC0 (Public Domain, per Poly Pizza listing)",
+    "maps": null,
+    "resolutions": null,
+    "filesize": { "note": "not stated on listing page; not independently downloaded/measured" },
+    "notes": "Only genuinely CC0 coconut-palm-adjacent model found. Generic stylized low-poly, not species-accurate. 5 Quaternius palm variants exist on Poly Pizza. The project's existing js/scene-palms.js already renders 142 palms as a hand-authored inline-SVG billboard sprite at ~0 KB network cost -- any GLB model here is a payload REGRESSION unless used sparingly for a few hero foreground trees, not the full scatter."
+  },
+  {
+    "id": "poly-by-google-coconut-palm",
+    "category": "vegetation",
+    "name": "Coconut palm tree (Poly by Google, via Poly Pizza)",
+    "url": "https://poly.pizza/m/bXUTyfiwqBb",
+    "verified": true,
+    "license": "CC-BY 3.0 -- NOT CC0, attribution to 'Poly by Google' required",
+    "maps": null,
+    "resolutions": null,
+    "filesize": { "note": "not stated on listing page" },
+    "notes": "Genuinely species-labelled 'coconut palm', but license is CC-BY 3.0, not CC0 as the project wants. Flagged explicitly since it's the best species match but fails the license requirement. Other Poly-by-Google palm variants (Royal, Fishtail, Ivory-cane, Umbrella, Queen, Lady, Thatch) share the same CC-BY 3.0 terms."
+  },
+  {
+    "id": "casuarina-cc0-gap",
+    "category": "vegetation",
+    "name": "Casuarina (no CC0 model found)",
+    "url": null,
+    "verified": true,
+    "license": "N/A -- confirmed gap",
+    "maps": null,
+    "resolutions": null,
+    "filesize": null,
+    "notes": "Casuarina equisetifolia is the actual dominant coastal species at Mahabalipuram, and no CC0 3D model exists for it on Poly Haven, ambientCG (no models category at all), Quaternius, Kenney, or Sketchfab's CC0-tagged results (checked; only generic pine/tree packs and a paid RenderHub listing surfaced). This is a confirmed absence, not an unsearched gap. Aligns with the project's own stated pattern of declaring what is invented rather than faking a match."
+  },
+  {
+    "id": "polyhaven-island-tree",
+    "category": "vegetation",
+    "name": "Island Tree 01/02/03 (Poly Haven)",
+    "url": "https://polyhaven.com/a/island_tree_01",
+    "verified": true,
+    "license": "CC0",
+    "maps": null,
+    "resolutions": ["textures up to 8192x8192"],
+    "filesize": { "polycount": { "island_tree_01": 3729692, "island_tree_02": 1762064, "island_tree_03": 4760490 } },
+    "notes": "Poly Haven's only 'coastal' tree models, but botanically wrong (gnarled broadleaf coastal trees, not palms or casuarina) and 1.7-4.8 MILLION polygons each -- three to four orders of magnitude too heavy for this project's entire 722-mesh, sub-1MB monument model. Not recommended for any use here."
+  },
+  {
+    "id": "gltf-transform-cli",
+    "category": "tool",
+    "name": "@gltf-transform/cli",
+    "url": "https://gltf-transform.dev/cli",
+    "verified": true,
+    "license": "MIT (tool itself; does not affect licensing of processed assets)",
+    "maps": null,
+    "resolutions": null,
+    "filesize": null,
+    "notes": "npm registry confirms latest 4.5.0, published 2026-09-01. Pure npm/npx, no separate native binary needed for draco/meshopt/resize/webp (webp needs `sharp`, pulled in automatically). KTX2 (etc1s/uastc) commands additionally require installing KTX-Software's `toktx` binary separately -- not pure npm. Commands verified by reading the actual CLI source (packages/cli/src/cli.ts) on GitHub, not just docs prose: `gltf-transform draco <in> <out> [--method edgebreaker|sequential] [--quantize-position 1-16, default 14] [...]`; `gltf-transform meshopt <in> <out> [--level medium|high, default high] [...]`; `gltf-transform resize <in> <out> --width <px> --height <px>`; `gltf-transform webp <in> <out>`; `gltf-transform etc1s|uastc <in> <out>` (requires toktx)."
+  },
+  {
+    "id": "gltf-transform-meshopt-tested",
+    "category": "technique",
+    "name": "Meshopt geometry compression, tested against the project's real GLB",
+    "url": "https://gltf-transform.dev/cli",
+    "verified": true,
+    "license": null,
+    "maps": null,
+    "resolutions": null,
+    "filesize": {
+      "command": "npx @gltf-transform/cli@4.5.0 meshopt input.glb output.glb --level high",
+      "input_raw_bytes": 1598932,
+      "input_gzip_bytes": 301860,
+      "output_raw_bytes": 818656,
+      "output_gzip_bytes": 167796,
+      "mesh_primitives_preserved": "722 -> 722 (verified unchanged via gltf-transform inspect)",
+      "decoder_meshopt_module_js_raw_bytes": 24850,
+      "decoder_meshopt_module_js_gzip_bytes": 6460
+    },
+    "notes": "RECOMMENDED: highest-leverage, lowest-risk delivery optimization available for this project today. Ran directly against assets/models/mamallapuram-monuments.glb via npx (no repo changes made). 44% gzip reduction (301,860 -> 167,796 B) for a 6,460 B gzipped decoder -- net ~128 KB win on first load, cacheable across pages. All 722 mesh primitives and 53 materials preserved unchanged."
+  },
+  {
+    "id": "gltf-transform-draco-tested",
+    "category": "technique",
+    "name": "Draco geometry compression, tested against the project's real GLB",
+    "url": "https://gltf-transform.dev/cli",
+    "verified": true,
+    "license": null,
+    "maps": null,
+    "resolutions": null,
+    "filesize": {
+      "command": "npx @gltf-transform/cli@4.5.0 draco input.glb output.glb",
+      "input_gzip_bytes": 301860,
+      "output_raw_bytes": 923408,
+      "output_gzip_bytes": 216591,
+      "decoder_gltf_optimized_pair_gzip_bytes": 74774,
+      "decoder_general_pair_gzip_bytes": 99892,
+      "decoder_asmjs_fallback_gzip_bytes": 147016
+    },
+    "notes": "NOT recommended over meshopt for this project. Real gzip cut is 85,269 B (301,860 -> 216,591), but the required decoder (draco_decoder.wasm + draco_wasm_wrapper.js) costs 74,774-99,892 B gzipped depending on which pairing is used -- meshopt's decoder is 11-15x smaller for a larger net win on this specific file. Draco tends to win more decisively on single dense meshes (e.g. photogrammetry scans); this project's 722 small architectural primitives are closer to meshopt's sweet spot."
+  },
+  {
+    "id": "gltf-transform-optimize-warning",
+    "category": "technique",
+    "name": "gltf-transform optimize (aggressive default pipeline) -- tested, flagged as unsafe here",
+    "url": "https://gltf-transform.dev/cli",
+    "verified": true,
+    "license": null,
+    "maps": null,
+    "resolutions": null,
+    "filesize": {
+      "command": "npx @gltf-transform/cli@4.5.0 optimize input.glb output.glb --compress meshopt",
+      "output_raw_bytes": 118448,
+      "output_gzip_bytes": 30813,
+      "mesh_primitives_result": "722 -> 1 (all meshes joined into one, verified via gltf-transform inspect)"
+    },
+    "notes": "Tested for completeness. Produces a dramatic 10x reduction (30,813 B gzip) but only because its default pipeline runs `join` (merges all meshes into one, destroying per-mesh identity) and `simplify` (reduces vertex count). This project's buildMassing code suppresses extruded footprints by matching modelled monuments by name/mesh, and re-anchors map markers to the measured top of specific meshes after load -- both would very likely break if all 722 primitives became 1. Do not use `optimize` blind; use the plain `meshopt` command in isolation, or explicitly disable `--join`/`--simplify` and re-test the site-marker and exclude-logic code before adopting."
+  },
+  {
+    "id": "meshopt-decoder-size",
+    "category": "tool",
+    "name": "MeshoptDecoder (three.js examples/jsm/libs)",
+    "url": "https://github.com/mrdoob/three.js/blob/master/examples/jsm/libs/meshopt_decoder.module.js",
+    "verified": true,
+    "license": "MIT",
+    "maps": null,
+    "resolutions": null,
+    "filesize": { "raw_bytes": 24850, "gzip_bytes": 6460 },
+    "notes": "Downloaded from cdn.jsdelivr.net/npm/three@0.169.0 (the project's vendored version) and measured directly. Tiny -- the single biggest practical argument for meshopt over Draco on this project."
+  },
+  {
+    "id": "draco-decoder-size",
+    "category": "tool",
+    "name": "DRACOLoader decoder files (three.js examples/jsm/libs/draco)",
+    "url": "https://github.com/mrdoob/three.js/tree/master/examples/jsm/libs/draco",
+    "verified": true,
+    "license": "Apache-2.0 (Draco itself)",
+    "maps": null,
+    "resolutions": null,
+    "filesize": {
+      "draco_decoder_js_raw_bytes": 719410, "draco_decoder_js_gzip_bytes": 147016,
+      "draco_decoder_wasm_raw_bytes": 285747, "draco_decoder_wasm_gzip_bytes": 88206,
+      "draco_wasm_wrapper_js_raw_bytes": 58763, "draco_wasm_wrapper_js_gzip_bytes": 11686,
+      "gltf_draco_decoder_wasm_raw_bytes": 192420, "gltf_draco_decoder_wasm_gzip_bytes": 63245,
+      "gltf_draco_wasm_wrapper_js_raw_bytes": 58456, "gltf_draco_wasm_wrapper_js_gzip_bytes": 11529
+    },
+    "notes": "Downloaded from cdn.jsdelivr.net/npm/three@0.169.0 and measured directly. The gltf/ subfolder pair (192,420 + 58,456 B raw) is the smaller, glTF-specific decoder; the root pair is more general-purpose. Neither is close to meshopt's 24,850 B."
+  },
+  {
+    "id": "basis-transcoder-size",
+    "category": "tool",
+    "name": "Basis/KTX2 transcoder (three.js examples/jsm/libs/basis)",
+    "url": "https://github.com/mrdoob/three.js/tree/master/examples/jsm/libs/basis",
+    "verified": true,
+    "license": "Apache-2.0",
+    "maps": null,
+    "resolutions": null,
+    "filesize": {
+      "basis_transcoder_js_raw_bytes": 57529, "basis_transcoder_js_gzip_bytes": 15066,
+      "basis_transcoder_wasm_raw_bytes": 527333, "basis_transcoder_wasm_gzip_bytes": 245414
+    },
+    "notes": "Downloaded from cdn.jsdelivr.net/npm/three@0.169.0 and measured directly. Total ~260 KB gzipped -- a large fixed cost, more than this project's entire current gzipped 3D model, that only pays off once several textured assets are shipped (not for one small texture)."
+  },
+  {
+    "id": "threejs-version",
+    "category": "tool",
+    "name": "three.js version audit",
+    "url": "https://github.com/mrdoob/three.js/releases",
+    "verified": true,
+    "license": null,
+    "maps": null,
+    "resolutions": null,
+    "filesize": null,
+    "notes": "Vendored in project (assets/vendor/three.module.js): r169, published 2024-09-26 (per npm registry time data for three@0.169.0). Current latest: r185.1, published 2026-07-01 (npm dist-tags.latest). 16 minor revisions / ~22 months behind. Checked official Migration Guide r169->r185 for breaking changes relevant to this project's actual API usage (GLTFLoader, OrbitControls, WebGLRenderer, lights -- no WebGPU/TSL found in scene-3d.js): OrbitControls.connect() became mandatory with a DOM element (r173->r174); OrbitControls keyboard input now requires explicit listenToKeyEvents() (r177->r178); RGBELoader renamed to HDRLoader (r179->r180, relevant only if HDRI work ships); Object3D.dispose() added (r184->r185, unused today). Not a risk-free drop-in upgrade -- OrbitControls call sites need checking at minimum."
+  },
+  {
+    "id": "model-viewer",
+    "category": "tool",
+    "name": "<model-viewer> web component",
+    "url": "https://modelviewer.dev/",
+    "verified": true,
+    "license": "Apache-2.0",
+    "maps": null,
+    "resolutions": null,
+    "filesize": { "min_js_raw_bytes": 1068903, "min_js_gzip_bytes": 288543 },
+    "notes": "Current version 4.3.1 (npm registry, published 2026-06-04). Downloaded and measured the actual CDN dist/model-viewer.min.js. At 288 KB gzip, it is bigger on its own than this project's entire current vendored three.js+GLTFLoader stack (365,552 + 110,040 B raw, uncompressed comparison but the size direction holds). Not a fit as a replacement for scene-3d.js's custom scroll-driven camera/terrain/globe/diorama scene, which needs raw three.js access that model-viewer deliberately abstracts away. Would only make sense as a complement -- e.g. a separate standalone single-monument AR-viewer page -- not as a swap-in."
+  },
+  {
+    "id": "gltfpack",
+    "category": "tool",
+    "name": "gltfpack (meshoptimizer CLI)",
+    "url": "https://github.com/zeux/meshoptimizer/blob/master/gltf/README.md",
+    "verified": true,
+    "license": "MIT",
+    "maps": null,
+    "resolutions": null,
+    "filesize": null,
+    "notes": "npm registry confirms latest 1.2.0, published 2026-06-30. Basic usage: `gltfpack -i scene.gltf -o scene.glb`; `-cc` enables meshopt compression, `-tc` converts textures to KTX2, `-si R` simplifies mesh to ratio R. Not run directly against the project's file in this research pass -- @gltf-transform/cli's `meshopt` command was used instead and gave the measured numbers above. gltfpack additionally does mesh merging/simplification more aggressively by default, similar caution as gltf-transform's `optimize` command applies."
+  },
+  {
+    "id": "gltf-project-baseline",
+    "category": "technique",
+    "name": "Baseline audit of the project's current GLB",
+    "url": null,
+    "verified": true,
+    "license": null,
+    "maps": null,
+    "resolutions": null,
+    "filesize": {
+      "raw_bytes": 1598932,
+      "gzip_bytes": 301860,
+      "mesh_primitives": 722,
+      "materials": 53,
+      "textures": 0,
+      "animations": 0,
+      "extensions_used": ["KHR_lights_punctual"],
+      "compression_extensions_present": "none (no KHR_draco_mesh_compression, no EXT_meshopt_compression, no KHR_texture_basisu)"
+    },
+    "notes": "Confirmed by byte-searching the file for extension strings and by `gltf-transform inspect`. The model ships with zero geometry compression today -- this is the fact that makes meshopt compression the clear highest-leverage move, independent of any texture/HDRI/vegetation decision."
+  }
+]

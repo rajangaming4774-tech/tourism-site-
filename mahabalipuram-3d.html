@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mahabalipuram in 3D | India Heritage Map</title>
+  <meta name="description" content="A rotatable 3D scene of the Mahabalipuram monument complex, with each monument clickable for its history, facilities and sources." />
+  <meta property="og:title" content="Mahabalipuram in 3D" />
+  <meta property="og:description" content="Turn the site, tap a monument, read its history." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f3ebdc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/place.css" />
+  <link rel="stylesheet" href="css/scene-3d.css" />
+</head>
+<body class="scene3d">
+  <nav class="place-bar guide-bar">
+    <div class="wrap">
+      <a class="back-link" href="mahabalipuram.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        The guide
+      </a>
+      <span class="bar-brand">In 3D</span>
+      <a class="bar-tag s3-maplink" href="mahabalipuram-guide.html">Site map &amp; facilities →</a>
+    </div>
+  </nav>
+
+  <main class="s3-shell">
+    <!-- The canvas is created by JS only when WebGL is available and the scene
+         scrolls into view. Everything below works without it. -->
+    <!-- The scroll track. In cinematic mode this grows to twelve screens and the
+         stage sticks to the top, so scroll position drives the camera along the
+         twelve scenes. Outside that mode it collapses and the stage behaves as
+         an ordinary fixed-height panel. -->
+    <div class="s3-track" id="s3-track">
+    <div class="s3-stage" id="s3-stage">
+      <div class="s3-ground" id="s3-ground" aria-hidden="true"></div>
+      <div class="s3-markers" id="s3-markers"></div>
+      <p class="s3-status" id="s3-status" role="status">Preparing the scene…</p>
+      <!-- The joystick. Movement is a held gesture, so it is a pad you drag in
+           rather than a button you press: the knob follows your finger and
+           springs back on release, and how far you push it sets the speed.
+           It is focusable and answers the arrow keys, because a drag-only
+           control would be the one way around the site that a keyboard cannot
+           use. -->
+      <div class="s3-stick" id="s3-stick" tabindex="0" role="application"
+           aria-label="Move around the site: drag, or use the arrow keys">
+        <span class="s3-stick-ring" aria-hidden="true"></span>
+        <span class="s3-stick-knob" id="s3-stick-knob" aria-hidden="true"></span>
+      </div>
+
+      <!-- Letterbox bars for the cinematic tour. Purely optical. -->
+      <div class="s3-bars" aria-hidden="true"><span></span><span></span></div>
+      <div class="s3-scene" id="s3-scene" aria-live="polite" hidden>
+        <span class="s3-scene-n" id="s3-scene-n"></span>
+        <span class="s3-scene-t" id="s3-scene-t"></span>
+      </div>
+    </div>
+    </div>
+
+    <div class="s3-controls" id="s3-controls">
+      <button type="button" id="s3-reset" class="s3-btn">Reset view</button>
+      <button type="button" id="s3-fly" class="s3-btn" aria-pressed="false">Fly through</button>
+      <button type="button" id="s3-globe" class="s3-btn" hidden>Back to globe</button>
+      <button type="button" id="s3-cine" class="s3-btn" aria-pressed="false" hidden>Cinematic tour</button>
+      <button type="button" id="s3-list-toggle" class="s3-btn" aria-expanded="false" aria-controls="s3-list">
+        All monuments
+      </button>
+    </div>
+
+    <!-- The quality floor: a plain, complete list that works with the 3D scene
+         switched off entirely, and is also the no-WebGL fallback. It is real
+         content in the document, not a consolation message. -->
+    <section class="s3-list" id="s3-list" aria-label="All monuments">
+      <h1 class="s3-list-h">Mahabalipuram monuments</h1>
+      <p class="s3-list-intro" id="s3-list-intro">Loading…</p>
+      <ol class="s3-list-items" id="s3-list-items"></ol>
+      <p class="s3-prov" id="s3-prov"></p>
+    </section>
+
+    <aside class="s3-panel" id="s3-panel" aria-labelledby="s3-panel-title" hidden>
+      <button type="button" class="s3-panel-close" id="s3-panel-close" aria-label="Close">×</button>
+      <div class="s3-panel-body" id="s3-panel-body"></div>
+    </aside>
+  </main>
+
+  <noscript>
+    <p class="s3-noscript">
+      This 3D scene needs JavaScript. Every monument, with its history and sources, is also
+      written out on the <a href="mahabalipuram.html">Mahabalipuram guide</a>.
+    </p>
+  </noscript>
+
+  <!-- The bootstrap renders the list and probes the device; the scene graph
+       is a dynamic import behind that, so a phone that will only ever show the
+       list never downloads three.js. -->
+  <script type="module" src="js/scene-boot.js"></script>
+</body>
+</html>

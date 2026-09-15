@@ -1,0 +1,1034 @@
+﻿{
+    "measured":  "2026-09-08",
+    "photographs":  145,
+    "method":  "per-image median of stone-classified pixels, then median across images; core-tier full-resolution originals only",
+    "median_srgb":  {
+                        "g":  108,
+                        "r":  123,
+                        "hex":  "#7B6C5C",
+                        "b":  92
+                    },
+    "chromaticity":  {
+                         "g":  1.0031,
+                         "r":  1.1424,
+                         "b":  0.8545
+                     },
+    "caveat":  "Chromaticity is measured. Absolute brightness is NOT: a photographed pixel is albedo times illumination, and no set of photographs separates the two.",
+    "per_image":  [
+                      {
+                          "file":  "-9.jpg",
+                          "n":  3869,
+                          "r":  73,
+                          "g":  66,
+                          "b":  61
+                      },
+                      {
+                          "file":  "01mahabalipuramshoretemple.jpg",
+                          "n":  1620,
+                          "r":  163,
+                          "g":  146,
+                          "b":  115
+                      },
+                      {
+                          "file":  "01shore-templemahabalipuramtamil-nadu.jpg",
+                          "n":  1193,
+                          "r":  213,
+                          "g":  199,
+                          "b":  200
+                      },
+                      {
+                          "file":  "02-mg-5867.jpg",
+                          "n":  2297,
+                          "r":  53,
+                          "g":  48,
+                          "b":  41
+                      },
+                      {
+                          "file":  "02shoretemplemahabalipuramtamilnaduyear2011.jpg",
+                          "n":  930,
+                          "r":  208,
+                          "g":  204,
+                          "b":  207
+                      },
+                      {
+                          "file":  "03shoretemplemahabalipuramsunsetyear2011.jpg",
+                          "n":  1246,
+                          "r":  62,
+                          "g":  53,
+                          "b":  40
+                      },
+                      {
+                          "file":  "360-degree-view-of-the-shore-temple.jpg",
+                          "n":  3401,
+                          "r":  146,
+                          "g":  135,
+                          "b":  118
+                      },
+                      {
+                          "file":  "a-beautiful-architecture-of-shore-temple-of-mamallapuram.jpg",
+                          "n":  2749,
+                          "r":  215,
+                          "g":  216,
+                          "b":  217
+                      },
+                      {
+                          "file":  "a-beautiful-shore-temple-of-mamallapuram.jpg",
+                          "n":  1560,
+                          "r":  128,
+                          "g":  106,
+                          "b":  91
+                      },
+                      {
+                          "file":  "a-distant-view-of-mahabalipurum-shore-temple.jpg",
+                          "n":  1670,
+                          "r":  179,
+                          "g":  185,
+                          "b":  182
+                      },
+                      {
+                          "file":  "a-spectacle-unmatched-highres-si-01543.jpg",
+                          "n":  1759,
+                          "r":  145,
+                          "g":  140,
+                          "b":  126
+                      },
+                      {
+                          "file":  "a-view-of-shore-temples-gopuram.jpg",
+                          "n":  2929,
+                          "r":  175,
+                          "g":  155,
+                          "b":  121
+                      },
+                      {
+                          "file":  "a-view-of-the-mahabalipuram-shore-temple-in-tamil-nadu.jpg",
+                          "n":  1630,
+                          "r":  51,
+                          "g":  44,
+                          "b":  41
+                      },
+                      {
+                          "file":  "aesthetic-colourfull-shore-temple-complex-at-mamallapuram.jpg",
+                          "n":  2729,
+                          "r":  46,
+                          "g":  44,
+                          "b":  44
+                      },
+                      {
+                          "file":  "aesthetic-long-shot-of-shore-temple-at-mamallapuram.jpg",
+                          "n":  3950,
+                          "r":  178,
+                          "g":  180,
+                          "b":  182
+                      },
+                      {
+                          "file":  "aesthetic-low-angle-shot-of-shore-temple-complex-at-mamallapuram.jpg",
+                          "n":  3723,
+                          "r":  115,
+                          "g":  106,
+                          "b":  101
+                      },
+                      {
+                          "file":  "aesthetic-mini-pond-in-shore-temple-complex-at-mamallapuram.jpg",
+                          "n":  7284,
+                          "r":  151,
+                          "g":  124,
+                          "b":  116
+                      },
+                      {
+                          "file":  "aesthetic-shore-temple-complex-at-mamallapuram.jpg",
+                          "n":  2721,
+                          "r":  141,
+                          "g":  136,
+                          "b":  132
+                      },
+                      {
+                          "file":  "aesthetic-stone-work-of-shore-temple-complex-at-mamallapuram.jpg",
+                          "n":  6136,
+                          "r":  139,
+                          "g":  112,
+                          "b":  92
+                      },
+                      {
+                          "file":  "ancient-temple-of-mahabalipuram.jpg",
+                          "n":  3102,
+                          "r":  97,
+                          "g":  84,
+                          "b":  63
+                      },
+                      {
+                          "file":  "atop-5182607652.jpg",
+                          "n":  3908,
+                          "r":  220,
+                          "g":  222,
+                          "b":  226
+                      },
+                      {
+                          "file":  "birthday-special.jpg",
+                          "n":  7172,
+                          "r":  218,
+                          "g":  217,
+                          "b":  221
+                      },
+                      {
+                          "file":  "boats-on-beach-with-shore-temple-at-rear-mamallapuram-india.jpg",
+                          "n":  5409,
+                          "r":  166,
+                          "g":  161,
+                          "b":  135
+                      },
+                      {
+                          "file":  "broad-way-to-guide-the-shore-temple.jpg",
+                          "n":  1112,
+                          "r":  171,
+                          "g":  143,
+                          "b":  110
+                      },
+                      {
+                          "file":  "bw-shoretemple-mahabs.jpg",
+                          "n":  7293,
+                          "r":  126,
+                          "g":  126,
+                          "b":  126
+                      },
+                      {
+                          "file":  "chennai-beach-temple-942115928.jpg",
+                          "n":  1015,
+                          "r":  140,
+                          "g":  129,
+                          "b":  90
+                      },
+                      {
+                          "file":  "chennai-mahabalipuram.jpg",
+                          "n":  2793,
+                          "r":  106,
+                          "g":  93,
+                          "b":  72
+                      },
+                      {
+                          "file":  "chennai-tn.jpg",
+                          "n":  2415,
+                          "r":  129,
+                          "g":  122,
+                          "b":  113
+                      },
+                      {
+                          "file":  "chennai-worship-the-cow-940878545.jpg",
+                          "n":  4691,
+                          "r":  185,
+                          "g":  162,
+                          "b":  130
+                      },
+                      {
+                          "file":  "commons-5f9cb6f.jpg",
+                          "n":  1377,
+                          "r":  113,
+                          "g":  106,
+                          "b":  75
+                      },
+                      {
+                          "file":  "commons-70ca904.jpg",
+                          "n":  3173,
+                          "r":  159,
+                          "g":  158,
+                          "b":  156
+                      },
+                      {
+                          "file":  "couldy-seashore-temple.jpg",
+                          "n":  2411,
+                          "r":  191,
+                          "g":  192,
+                          "b":  195
+                      },
+                      {
+                          "file":  "distant-view-of-shore-temple.jpg",
+                          "n":  2500,
+                          "r":  177,
+                          "g":  156,
+                          "b":  129
+                      },
+                      {
+                          "file":  "dsc-5807-01.jpg",
+                          "n":  1744,
+                          "r":  137,
+                          "g":  124,
+                          "b":  113
+                      },
+                      {
+                          "file":  "far-view-of-shore-temple.jpg",
+                          "n":  4139,
+                          "r":  186,
+                          "g":  146,
+                          "b":  113
+                      },
+                      {
+                          "file":  "five-rathas-mamallapuram.jpg",
+                          "n":  3258,
+                          "r":  184,
+                          "g":  185,
+                          "b":  180
+                      },
+                      {
+                          "file":  "folk-architecture.jpg",
+                          "n":  2742,
+                          "r":  89,
+                          "g":  88,
+                          "b":  92
+                      },
+                      {
+                          "file":  "foodstalls-at-mamallapuram-beach-wus-01821.jpg",
+                          "n":  3980,
+                          "r":  162,
+                          "g":  136,
+                          "b":  112
+                      },
+                      {
+                          "file":  "fragrance-of-history.jpg",
+                          "n":  214,
+                          "r":  187,
+                          "g":  175,
+                          "b":  142
+                      },
+                      {
+                          "file":  "front-view-mahabalipuram.jpg",
+                          "n":  6642,
+                          "r":  86,
+                          "g":  81,
+                          "b":  71
+                      },
+                      {
+                          "file":  "gods-abode.jpg",
+                          "n":  2599,
+                          "r":  56,
+                          "g":  50,
+                          "b":  42
+                      },
+                      {
+                          "file":  "gopura-shore-temple.jpg",
+                          "n":  17338,
+                          "r":  140,
+                          "g":  140,
+                          "b":  140
+                      },
+                      {
+                          "file":  "gopuram-of-the-shore-temple.jpg",
+                          "n":  4272,
+                          "r":  58,
+                          "g":  50,
+                          "b":  48
+                      },
+                      {
+                          "file":  "house-of-lord-shiva.jpg",
+                          "n":  1252,
+                          "r":  67,
+                          "g":  77,
+                          "b":  93
+                      },
+                      {
+                          "file":  "idols-in-the-courtyard-of-the-shore-temple-in-mahabalipuram.jpg",
+                          "n":  1775,
+                          "r":  201,
+                          "g":  167,
+                          "b":  124
+                      },
+                      {
+                          "file":  "img-20180828-wa0171.jpg",
+                          "n":  1349,
+                          "r":  140,
+                          "g":  135,
+                          "b":  97
+                      },
+                      {
+                          "file":  "india-mamallapuram-003-shore-temple-490979213.jpg",
+                          "n":  4496,
+                          "r":  123,
+                          "g":  112,
+                          "b":  88
+                      },
+                      {
+                          "file":  "india-mamallapuram-005-shore-temple-close-up-490965088.jpg",
+                          "n":  3350,
+                          "r":  81,
+                          "g":  69,
+                          "b":  53
+                      },
+                      {
+                          "file":  "kadarkarai-kovil.jpg",
+                          "n":  2094,
+                          "r":  122,
+                          "g":  121,
+                          "b":  95
+                      },
+                      {
+                          "file":  "kanchisirpam.jpg",
+                          "n":  8177,
+                          "r":  143,
+                          "g":  124,
+                          "b":  101
+                      },
+                      {
+                          "file":  "maamallapuram-shore-temple-1.jpg",
+                          "n":  5152,
+                          "r":  190,
+                          "g":  191,
+                          "b":  190
+                      },
+                      {
+                          "file":  "maamallapuram-shore-temple-2.jpg",
+                          "n":  1134,
+                          "r":  61,
+                          "g":  49,
+                          "b":  43
+                      },
+                      {
+                          "file":  "maamallapuram-shore-temple-long-1.jpg",
+                          "n":  3913,
+                          "r":  84,
+                          "g":  68,
+                          "b":  60
+                      },
+                      {
+                          "file":  "maamallapuram-shore-temple-long-shot.jpg",
+                          "n":  2709,
+                          "r":  70,
+                          "g":  69,
+                          "b":  66
+                      },
+                      {
+                          "file":  "maamallapuram-shore-temple-panoramic-1.jpg",
+                          "n":  2074,
+                          "r":  77,
+                          "g":  68,
+                          "b":  59
+                      },
+                      {
+                          "file":  "maamallapuram-shore-temple-panoromic.jpg",
+                          "n":  1237,
+                          "r":  71,
+                          "g":  58,
+                          "b":  50
+                      },
+                      {
+                          "file":  "mahabali-puram-world-heritage-site.jpg",
+                          "n":  1183,
+                          "r":  116,
+                          "g":  109,
+                          "b":  87
+                      },
+                      {
+                          "file":  "mahabalipur.jpg",
+                          "n":  5380,
+                          "r":  225,
+                          "g":  224,
+                          "b":  225
+                      },
+                      {
+                          "file":  "mahabalipura-m.jpg",
+                          "n":  2682,
+                          "r":  185,
+                          "g":  181,
+                          "b":  188
+                      },
+                      {
+                          "file":  "mahabalipuraam-temple.jpg",
+                          "n":  5792,
+                          "r":  108,
+                          "g":  102,
+                          "b":  87
+                      },
+                      {
+                          "file":  "mahabalipuram-04-tempel-am-meer-jalasayana-1976-gje.jpg",
+                          "n":  7356,
+                          "r":  171,
+                          "g":  133,
+                          "b":  112
+                      },
+                      {
+                          "file":  "mahabalipuram-2.jpg",
+                          "n":  3772,
+                          "r":  52,
+                          "g":  46,
+                          "b":  41
+                      },
+                      {
+                          "file":  "mahabalipuram-3.jpg",
+                          "n":  1426,
+                          "r":  48,
+                          "g":  42,
+                          "b":  37
+                      },
+                      {
+                          "file":  "mahabalipuram-at-evening.jpg",
+                          "n":  7402,
+                          "r":  156,
+                          "g":  150,
+                          "b":  148
+                      },
+                      {
+                          "file":  "mahabalipuram-beach-temple.jpg",
+                          "n":  2750,
+                          "r":  203,
+                          "g":  198,
+                          "b":  193
+                      },
+                      {
+                          "file":  "mahabalipuram-best-02-cropped.jpg",
+                          "n":  4759,
+                          "r":  68,
+                          "g":  58,
+                          "b":  55
+                      },
+                      {
+                          "file":  "mahabalipuram-best-02.jpg",
+                          "n":  2635,
+                          "r":  84,
+                          "g":  74,
+                          "b":  62
+                      },
+                      {
+                          "file":  "mahabalipuram-best-03.jpg",
+                          "n":  1544,
+                          "r":  60,
+                          "g":  65,
+                          "b":  69
+                      },
+                      {
+                          "file":  "mahabalipuram-best-04.jpg",
+                          "n":  2188,
+                          "r":  103,
+                          "g":  94,
+                          "b":  89
+                      },
+                      {
+                          "file":  "mahabalipuram-best-07.jpg",
+                          "n":  2762,
+                          "r":  159,
+                          "g":  140,
+                          "b":  112
+                      },
+                      {
+                          "file":  "mahabalipuram-chennai-1bcd5d5.jpg",
+                          "n":  240,
+                          "r":  166,
+                          "g":  150,
+                          "b":  127
+                      },
+                      {
+                          "file":  "mahabalipuram-chennai-f602164.jpg",
+                          "n":  3534,
+                          "r":  202,
+                          "g":  195,
+                          "b":  174
+                      },
+                      {
+                          "file":  "mahabalipuram-drainage-system.jpg",
+                          "n":  8499,
+                          "r":  148,
+                          "g":  135,
+                          "b":  126
+                      },
+                      {
+                          "file":  "mahabalipuram-five-rathas-7.jpg",
+                          "n":  9887,
+                          "r":  120,
+                          "g":  106,
+                          "b":  85
+                      },
+                      {
+                          "file":  "mahabalipuram-focused-view.jpg",
+                          "n":  1637,
+                          "r":  224,
+                          "g":  222,
+                          "b":  222
+                      },
+                      {
+                          "file":  "mahabalipuram-india13.jpg",
+                          "n":  3171,
+                          "r":  139,
+                          "g":  126,
+                          "b":  110
+                      },
+                      {
+                          "file":  "mahabalipuram-india14.jpg",
+                          "n":  4862,
+                          "r":  114,
+                          "g":  104,
+                          "b":  95
+                      },
+                      {
+                          "file":  "mahabalipuram-india15.jpg",
+                          "n":  2593,
+                          "r":  126,
+                          "g":  104,
+                          "b":  83
+                      },
+                      {
+                          "file":  "mahabalipuram-india3.jpg",
+                          "n":  2398,
+                          "r":  70,
+                          "g":  55,
+                          "b":  46
+                      },
+                      {
+                          "file":  "mahabalipuram-india4.jpg",
+                          "n":  2907,
+                          "r":  89,
+                          "g":  73,
+                          "b":  60
+                      },
+                      {
+                          "file":  "mahabalipuram-india5.jpg",
+                          "n":  2931,
+                          "r":  131,
+                          "g":  114,
+                          "b":  93
+                      },
+                      {
+                          "file":  "mahabalipuram-india7.jpg",
+                          "n":  7586,
+                          "r":  128,
+                          "g":  110,
+                          "b":  86
+                      },
+                      {
+                          "file":  "mahabalipuram-india9.jpg",
+                          "n":  2910,
+                          "r":  111,
+                          "g":  94,
+                          "b":  75
+                      },
+                      {
+                          "file":  "mahabalipuram-main-temple.jpg",
+                          "n":  7972,
+                          "r":  208,
+                          "g":  178,
+                          "b":  133
+                      },
+                      {
+                          "file":  "mahabalipuram-no-3.jpg",
+                          "n":  4769,
+                          "r":  93,
+                          "g":  93,
+                          "b":  93
+                      },
+                      {
+                          "file":  "mahabalipuram-no-5.jpg",
+                          "n":  803,
+                          "r":  102,
+                          "g":  105,
+                          "b":  91
+                      },
+                      {
+                          "file":  "mahabalipuram-pallavas-shore-temple.jpg",
+                          "n":  2561,
+                          "r":  164,
+                          "g":  142,
+                          "b":  116
+                      },
+                      {
+                          "file":  "mahabalipuram-panoramio-6.jpg",
+                          "n":  1347,
+                          "r":  103,
+                          "g":  71,
+                          "b":  66
+                      },
+                      {
+                          "file":  "mahabalipuram-sea-shore-sculpture.jpg",
+                          "n":  6337,
+                          "r":  136,
+                          "g":  117,
+                          "b":  98
+                      },
+                      {
+                          "file":  "mahabalipuram-sea-shore-temple-4b39cc1.jpg",
+                          "n":  6448,
+                          "r":  71,
+                          "g":  64,
+                          "b":  55
+                      },
+                      {
+                          "file":  "mahabalipuram-sea-shore-temple-702867a.jpg",
+                          "n":  2926,
+                          "r":  90,
+                          "g":  82,
+                          "b":  73
+                      },
+                      {
+                          "file":  "mahabalipuram-sea-side-temple.jpg",
+                          "n":  3143,
+                          "r":  191,
+                          "g":  163,
+                          "b":  130
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-0117a25.jpg",
+                          "n":  1449,
+                          "r":  40,
+                          "g":  33,
+                          "b":  24
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-1.jpg",
+                          "n":  593,
+                          "r":  81,
+                          "g":  74,
+                          "b":  58
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-2.jpg",
+                          "n":  780,
+                          "r":  95,
+                          "g":  85,
+                          "b":  69
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-2009.jpg",
+                          "n":  3417,
+                          "r":  184,
+                          "g":  188,
+                          "b":  182
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-3.jpg",
+                          "n":  1445,
+                          "r":  98,
+                          "g":  91,
+                          "b":  74
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-5683971635.jpg",
+                          "n":  1327,
+                          "r":  131,
+                          "g":  130,
+                          "b":  113
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-6.jpg",
+                          "n":  1804,
+                          "r":  164,
+                          "g":  142,
+                          "b":  108
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-61b7037.jpg",
+                          "n":  478,
+                          "r":  58,
+                          "g":  50,
+                          "b":  39
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-626e32d.jpg",
+                          "n":  7185,
+                          "r":  189,
+                          "g":  189,
+                          "b":  189
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-8f704b2.jpg",
+                          "n":  2292,
+                          "r":  164,
+                          "g":  140,
+                          "b":  107
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-bd1a446.jpg",
+                          "n":  3133,
+                          "r":  103,
+                          "g":  99,
+                          "b":  79
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-by-prem.jpg",
+                          "n":  997,
+                          "r":  178,
+                          "g":  173,
+                          "b":  179
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-close.jpg",
+                          "n":  10213,
+                          "r":  112,
+                          "g":  101,
+                          "b":  89
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-img-20250221-101944.jpg",
+                          "n":  3203,
+                          "r":  116,
+                          "g":  106,
+                          "b":  93
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-img-20250221-102041.jpg",
+                          "n":  2978,
+                          "r":  109,
+                          "g":  101,
+                          "b":  85
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-img-20250221-102614.jpg",
+                          "n":  2858,
+                          "r":  108,
+                          "g":  101,
+                          "b":  84
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-tamilnadu.jpg",
+                          "n":  1727,
+                          "r":  123,
+                          "g":  108,
+                          "b":  99
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01811.jpg",
+                          "n":  6141,
+                          "r":  138,
+                          "g":  125,
+                          "b":  108
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01813.jpg",
+                          "n":  5099,
+                          "r":  187,
+                          "g":  186,
+                          "b":  182
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01818.jpg",
+                          "n":  3188,
+                          "r":  208,
+                          "g":  206,
+                          "b":  204
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01954.jpg",
+                          "n":  4860,
+                          "r":  147,
+                          "g":  148,
+                          "b":  94
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01959.jpg",
+                          "n":  3720,
+                          "r":  113,
+                          "g":  103,
+                          "b":  90
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01960.jpg",
+                          "n":  3621,
+                          "r":  100,
+                          "g":  86,
+                          "b":  76
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01962.jpg",
+                          "n":  2988,
+                          "r":  95,
+                          "g":  80,
+                          "b":  71
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01963.jpg",
+                          "n":  5955,
+                          "r":  183,
+                          "g":  152,
+                          "b":  123
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01964.jpg",
+                          "n":  2984,
+                          "r":  142,
+                          "g":  119,
+                          "b":  98
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01966.jpg",
+                          "n":  6000,
+                          "r":  119,
+                          "g":  104,
+                          "b":  86
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01968.jpg",
+                          "n":  2643,
+                          "r":  116,
+                          "g":  98,
+                          "b":  82
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01969.jpg",
+                          "n":  2690,
+                          "r":  136,
+                          "g":  112,
+                          "b":  92
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01970.jpg",
+                          "n":  1961,
+                          "r":  117,
+                          "g":  98,
+                          "b":  83
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01971.jpg",
+                          "n":  2487,
+                          "r":  125,
+                          "g":  103,
+                          "b":  87
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01991.jpg",
+                          "n":  3083,
+                          "r":  92,
+                          "g":  78,
+                          "b":  70
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01995.jpg",
+                          "n":  2532,
+                          "r":  107,
+                          "g":  95,
+                          "b":  78
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temple-wus01996.jpg",
+                          "n":  2501,
+                          "r":  123,
+                          "g":  111,
+                          "b":  91
+                      },
+                      {
+                          "file":  "mahabalipuram-shore-temples.jpg",
+                          "n":  806,
+                          "r":  101,
+                          "g":  92,
+                          "b":  76
+                      },
+                      {
+                          "file":  "mahabalipuram-shoretemple-from-lighthouse.jpg",
+                          "n":  565,
+                          "r":  57,
+                          "g":  61,
+                          "b":  47
+                      },
+                      {
+                          "file":  "mahabalipuram-tamil-nadu-2c37ce1.jpg",
+                          "n":  8578,
+                          "r":  175,
+                          "g":  175,
+                          "b":  175
+                      },
+                      {
+                          "file":  "mahabalipuram-tamil-nadu-dbe0545.jpg",
+                          "n":  4288,
+                          "r":  67,
+                          "g":  68,
+                          "b":  68
+                      },
+                      {
+                          "file":  "mahabalipuram-tamilnadu-05.jpg",
+                          "n":  3269,
+                          "r":  54,
+                          "g":  49,
+                          "b":  44
+                      },
+                      {
+                          "file":  "mahabalipuram-tamilnadu-06.jpg",
+                          "n":  4447,
+                          "r":  53,
+                          "g":  48,
+                          "b":  45
+                      },
+                      {
+                          "file":  "mahabalipuram-tamilnadu.jpg",
+                          "n":  6830,
+                          "r":  222,
+                          "g":  222,
+                          "b":  221
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-01.jpg",
+                          "n":  2061,
+                          "r":  103,
+                          "g":  95,
+                          "b":  70
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-12.jpg",
+                          "n":  9337,
+                          "r":  79,
+                          "g":  72,
+                          "b":  68
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-13.jpg",
+                          "n":  3182,
+                          "r":  55,
+                          "g":  52,
+                          "b":  50
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-16.jpg",
+                          "n":  10228,
+                          "r":  71,
+                          "g":  69,
+                          "b":  70
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-7.jpg",
+                          "n":  7759,
+                          "r":  110,
+                          "g":  104,
+                          "b":  98
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-8.jpg",
+                          "n":  7824,
+                          "r":  42,
+                          "g":  38,
+                          "b":  35
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-9.jpg",
+                          "n":  3205,
+                          "r":  60,
+                          "g":  55,
+                          "b":  52
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-india.jpg",
+                          "n":  4969,
+                          "r":  122,
+                          "g":  96,
+                          "b":  80
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-longshot.jpg",
+                          "n":  1258,
+                          "r":  215,
+                          "g":  211,
+                          "b":  215
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-tn-panoramio-1.jpg",
+                          "n":  2469,
+                          "r":  159,
+                          "g":  136,
+                          "b":  107
+                      },
+                      {
+                          "file":  "mahabalipuram-temple-tn-panoramio.jpg",
+                          "n":  2105,
+                          "r":  107,
+                          "g":  88,
+                          "b":  73
+                      },
+                      {
+                          "file":  "mahabalipuram-templetamil-nadu.jpg",
+                          "n":  4602,
+                          "r":  131,
+                          "g":  115,
+                          "b":  94
+                      }
+                  ]
+}

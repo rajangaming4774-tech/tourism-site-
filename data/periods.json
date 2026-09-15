@@ -1,0 +1,143 @@
+[
+  {
+    "id": "P01",
+    "start": -2000,
+    "end": -1800,
+    "label": "2000–1800 BC",
+    "caption": "The mature Harappan cities — Dholavira, Rakhigarhi, Lothal — are at their height in the northwest, with planned streets, drains and dockyards. Across the rest of the subcontinent, hunter-gatherer and early farming communities paint hunting scenes on rock shelters like Bhimbetka, continuing a tradition already thousands of years old."
+  },
+  {
+    "id": "P02",
+    "start": -1800,
+    "end": -1600,
+    "label": "1800–1600 BC",
+    "caption": "The Harappan world is unravelling — cities shrink, writing fades, and people move east into the Ganga–Yamuna plains. Copper-hoard cultures flourish there; at Sinauli, warriors are buried with chariots and antenna swords. Rock painting continues in the shelters of central India."
+  },
+  {
+    "id": "P03",
+    "start": -1600,
+    "end": -1400,
+    "label": "1600–1400 BC",
+    "caption": "Village farming cultures spread across the subcontinent — Ochre Coloured Pottery in the north, chalcolithic towns like those of Malwa and the Deccan, and in the far south the first megalith builders begin raising stone monuments to their dead."
+  },
+  {
+    "id": "P04",
+    "start": -1400,
+    "end": -1200,
+    "label": "1400–1200 BC",
+    "caption": "The hymns of the Rigveda are being composed in the northwest. Cattle-keeping and rice farming expand along the Ganga plain, while in the Deccan, ash-mound and pastoral communities leave paintings and petroglyphs on granite hills like Kupgal."
+  },
+  {
+    "id": "P05",
+    "start": -1200,
+    "end": -1000,
+    "label": "1200–1000 BC",
+    "caption": "Iron comes into use in the Ganga plain and the south — recent digs in Tamil Nadu (Mayiladumparai, Sivakalai) push southern iron back to this horizon and earlier. Painted Grey Ware villages appear at places later woven into the Mahabharata, like Hastinapura."
+  },
+  {
+    "id": "P06",
+    "start": -1000,
+    "end": -800,
+    "label": "1000–800 BC",
+    "caption": "Iron Age villages consolidate into chiefdoms. In the south the megalithic burial tradition is in full flower — urn burials at Adichanallur hold gold diadems and bronze; stone circles and dolmens spread across the peninsula."
+  },
+  {
+    "id": "P07",
+    "start": -800,
+    "end": -600,
+    "label": "800–600 BC",
+    "caption": "The sixteen mahajanapadas — the first named kingdoms and republics of India — take shape across the north. Towns return for the first time since the Harappans: earthen ramparts rise at Kaushambi, Ujjain and Rajgir. The Upanishads are being composed."
+  },
+  {
+    "id": "P08",
+    "start": -600,
+    "end": -400,
+    "label": "600–400 BC",
+    "caption": "The age of the Buddha and Mahavira. Magadha rises under Bimbisara and Ajatashatru; cities flourish along the Ganga. In the Tamil south, urban life stirs on the Vaigai — the brick structures and inscribed potsherds of Keeladi belong to this urban horizon."
+  },
+  {
+    "id": "P09",
+    "start": -400,
+    "end": -200,
+    "label": "400–200 BC",
+    "caption": "The Mauryas build India's first empire from Pataliputra. Ashoka's edicts are carved on rocks and pillars from Kandahar to Karnataka, the polished Barabar caves are cut for ascetics, and the first stupas rise at Sanchi. Megasthenes writes of a city of wooden palisades and 64 gates."
+  },
+  {
+    "id": "P10",
+    "start": -200,
+    "end": -1,
+    "label": "200–1 BC",
+    "caption": "After the Mauryas, the Shungas and Satavahanas patronise stupa railings at Bharhut, Sanchi and Amaravati. Rock-cut cave monasteries multiply along the Western Ghats trade routes; in the Tamil country the Sangam age of kings and poets is underway, with ports like Korkai and inland towns like Kodumanal trading in gems and iron."
+  },
+  {
+    "id": "P11",
+    "start": 1,
+    "end": 200,
+    "label": "1–200 AD",
+    "caption": "Indo-Roman trade peaks: amphorae and coin hoards at Arikamedu and Pattanam (Muziris) mark ports Pliny complained were draining Rome's gold. The Kushanas rule the northwest and Mathura's workshops carve the first Buddha images; the Satavahanas and Chedis (Sisupalgarh, Udayagiri caves) hold the peninsula and Kalinga."
+  },
+  {
+    "id": "P12",
+    "start": 200,
+    "end": 400,
+    "label": "200–400 AD",
+    "caption": "The Ikshvakus make Nagarjunakonda a great Buddhist centre while Amaravati's marble stupa reaches its final glory. In the north the Gupta empire begins its rise under Chandragupta I and Samudragupta — classical Sanskrit culture is coalescing."
+  },
+  {
+    "id": "P13",
+    "start": 400,
+    "end": 600,
+    "label": "400–600 AD",
+    "caption": "The Gupta golden age: the first free-standing Hindu temples are built — Sanchi's Temple 17, Deogarh's Dashavatara, brick Bhitargaon — setting the template every later temple elaborates. Ajanta's painted caves are completed under the Vakatakas; Kalidasa writes; Aryabhata calculates."
+  },
+  {
+    "id": "P14",
+    "start": 600,
+    "end": 800,
+    "label": "600–800 AD",
+    "caption": "A great age of experiment in stone: Pallava Mahabalipuram carves monolithic rathas and the Shore Temple; Chalukya Aihole, Badami and Pattadakal try out Nagara and Dravida side by side; the Rashtrakutas cut the astonishing Kailasa temple from the living rock at Ellora. Harsha rules the north; Ladakh and Kashmir flourish on Silk Road spurs."
+  },
+  {
+    "id": "P15",
+    "start": 800,
+    "end": 1000,
+    "label": "800–1000 AD",
+    "caption": "Temple styles mature into regional schools: early Chola temples rise in the Kaveri delta, Pratihara and Chandella workshops begin Khajuraho, Odisha perfects the Kalinga style at Mukteshwar. The Cholas, Rashtrakutas and Palas contest empire; Buddhist Nalanda and Vikramashila draw students from across Asia."
+  },
+  {
+    "id": "P16",
+    "start": 1000,
+    "end": 1200,
+    "label": "1000–1200 AD",
+    "caption": "Rajaraja Chola raises the Brihadisvara at Thanjavur (1010) and his son builds Gangaikondacholapuram — Dravida architecture at its imperial peak, while Chola bronzes and navies reach Southeast Asia. Khajuraho's spires, Modhera's Sun Temple, Rani ki Vav's inverted temple-well and Hoysala Belur all belong to this exuberant century-pair. At its end, Ghurid armies take Delhi."
+  },
+  {
+    "id": "P17",
+    "start": 1200,
+    "end": 1400,
+    "label": "1200–1400 AD",
+    "caption": "The Delhi Sultanate rises — the Qutb Minar is completed, and a new Indo-Islamic architecture of arches and domes takes root. Konark's Sun Temple chariot is built in Odisha, the Kakatiyas raise Ramappa, the Hoysalas finish Somanathapura; at the period's end Vijayanagara is founded and Timur sacks Delhi."
+  },
+  {
+    "id": "P18",
+    "start": 1400,
+    "end": 1600,
+    "label": "1400–1600 AD",
+    "caption": "Vijayanagara at Hampi becomes one of the world's great cities — Virupaksha's gopurams, the Vittala temple's stone chariot — until Talikota (1565). The Lodis and then Babur (1526) begin Mughal rule; Akbar builds Fatehpur Sikri and Humayun's Tomb rises — the garden-tomb that leads to the Taj. Guru Nanak founds Sikhism; the Portuguese fortify Goa."
+  },
+  {
+    "id": "P19",
+    "start": 1600,
+    "end": 1800,
+    "label": "1600–1800 AD",
+    "caption": "Mughal architecture peaks with the Taj Mahal (1632–53) and Shahjahanabad's Red Fort; Madurai's Meenakshi temple gets its towering Nayaka gopurams; Amritsar's Harmandir Sahib is rebuilt in marble and gold. Shivaji's hill forts anchor Maratha power; by the period's end the East India Company holds Bengal and the colonial city rises at Calcutta."
+  },
+  {
+    "id": "P20",
+    "start": 1800,
+    "end": 2026,
+    "label": "1800–2026 AD",
+    "caption": "The modern age of rediscovery: the ASI is founded (1861), Bhimbetka is recognised (1957), Harappan cities are dug from the earth, and from 1947 a free India protects, excavates and shares its past — AMASR Act 1958, UNESCO inscriptions from 1983 onward, Keeladi and Rakhigarhi rewriting early history, and heritage tourism reaching every state. Slide within this period for the year-by-year record.",
+    "modern_track": true
+  }
+]

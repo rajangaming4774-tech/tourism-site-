@@ -1,0 +1,506 @@
+/* On-site visitor guide (mahabalipuram-guide.html).
+ * Loads after css/place.css and reuses its tokens — this file only adds what
+ * the map page needs.
+ *
+ * Designed for one hand, outdoors, in Tamil Nadu sun:
+ *  - everything interactive sits in the bottom third, within thumb reach
+ *  - 44px minimum touch targets throughout
+ *  - --ink-muted (~4.0:1) is NOT used for anything load-bearing here; it is
+ *    fine indoors and unreadable in glare. --ink-soft (~8.6:1) or --ink only.
+ *  - marker labels are opaque, never translucent — backdrop blur over an
+ *    aerial background is the first thing to fail in bright light.
+ */
+
+/* This page doesn't scroll; the map owns the viewport. */
+.guide, .guide body { height: 100%; }
+html:has(body.guide) { scroll-behavior: auto; overflow: hidden; }
+body.guide { overflow: hidden; background: var(--paper-deep); }
+
+.guide-shell { position: fixed; inset: 0; }
+#guide-map { position: absolute; inset: 0; }
+
+/* MapLibre inherits place.css's serif body font on its controls otherwise. */
+.maplibregl-ctrl, .maplibregl-ctrl button { font-family: var(--font-ui); }
+.maplibregl-ctrl-attribution { font-size: 0.68rem; }
+.maplibregl-ctrl-group { border: 1px solid var(--gold-line); }
+/* MapLibre's blue location dot is left exactly as it is — it is the
+   convention every phone user already recognises, and restyling "you are
+   here" in gold would be a real usability loss for a decorative gain. */
+
+/* ---------- Top bar: opaque here, not the video gradient ---------- */
+.guide-bar {
+  background: var(--paper-raised);
+  border-bottom: 1px solid var(--gold-line);
+}
+.guide-bar .back-link { color: var(--ink); border-color: rgba(166, 124, 46, 0.55); background: transparent; }
+.guide-bar .back-link:hover, .guide-bar .back-link:focus-visible { background: var(--gold-page); color: var(--paper-raised); }
+.guide-bar .bar-brand { color: var(--gold-page); }
+.guide-bar .bar-tag { color: var(--ink-soft); }
+
+/* ---------- Controls ---------- */
+.g-controls {
+  position: absolute; left: 0; right: 0; top: calc(var(--nav-h) + 0.6rem);
+  z-index: 5;
+  display: flex; gap: 0.5rem; align-items: center; justify-content: center;
+  padding: 0 0.8rem; pointer-events: none; flex-wrap: wrap;
+}
+.g-controls > * { pointer-events: auto; }
+
+.g-routes { display: flex; gap: 1px; background: var(--gold-line); border: 1px solid var(--gold-line); }
+.g-routes button, .g-locate {
+  min-height: 44px; padding: 0.55rem 1rem;
+  font-family: var(--font-label); font-size: 0.62rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  background: var(--paper-raised); color: var(--ink); border: 0; cursor: pointer;
+  transition: background 180ms var(--ease-out), color 180ms var(--ease-out);
+}
+.g-routes button[aria-pressed="true"] { background: var(--gold-page); color: var(--paper-raised); }
+.g-routes button:hover, .g-locate:hover { background: var(--paper-deep); }
+.g-locate {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  border: 1px solid var(--gold-line);
+}
+
+.g-3d[aria-pressed="true"] {
+  background: var(--gold-page); color: var(--paper-raised); border-color: var(--gold-page);
+}
+
+/* "3D" is a LINK to the cinematic scene, not a toggle. It carries the gold the
+   toggles only take when pressed, because it is a destination rather than a
+   state — and an <a> needs its underline removed to sit level with the buttons
+   it shares .g-locate with. */
+.g-tour {
+  text-decoration: none;
+  border-color: var(--gold-page);
+  color: var(--gold-page);
+}
+.g-tour:hover, .g-tour:focus-visible {
+  background: var(--gold-page); color: var(--paper-raised);
+}
+
+/* ---------- Tooltips, drawn by us and not by the OS ----------
+   These controls used to carry a native `title=`, and the browser drew it as a
+   black system box in the system font — the one thing on the page that took no
+   part in the design at all. The text moved to `data-tip` and is drawn here
+   instead; `aria-label` is untouched, so the accessible name is exactly what it
+   was and screen readers are unaffected.
+
+   Hover AND focus-visible, deliberately: a `title` never appeared for keyboard
+   users, so this is slightly more capable than what it replaces. */
+.g-locate[data-tip],
+.maplibregl-ctrl [data-tip] { position: relative; }
+.g-locate[data-tip]::after,
+.maplibregl-ctrl [data-tip]::after {
+  content: attr(data-tip);
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%) translateY(-3px);
+  padding: 0.34rem 0.6rem;
+  background: var(--ink); color: var(--paper-raised);
+  font-family: var(--font-ui); font-size: 0.68rem; font-weight: 500;
+  letter-spacing: 0.02em; text-transform: none; white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: 0 4px 14px rgba(40, 28, 8, 0.28);
+  opacity: 0; pointer-events: none;
+  transition: opacity 140ms var(--ease-out), transform 140ms var(--ease-out);
+}
+.g-locate[data-tip]:hover::after,
+.g-locate[data-tip]:focus-visible::after {
+  opacity: 1; transform: translateX(-50%) translateY(0);
+}
+/* MapLibre's own controls sit bottom-right, so their tip opens to the LEFT —
+   below would fall off the viewport edge, and to the right is off-screen. */
+.maplibregl-ctrl [data-tip]::after {
+  top: 50%; left: auto; right: calc(100% + 8px);
+  transform: translateY(-50%) translateX(3px);
+}
+.maplibregl-ctrl [data-tip]:hover::after,
+.maplibregl-ctrl [data-tip]:focus-visible::after {
+  opacity: 1; transform: translateY(-50%) translateX(0);
+}
+/* The attribution toggle must keep MapLibre's own overflow behaviour. */
+.maplibregl-ctrl-attrib-button[data-tip]::after { display: none; }
+/* Nothing hovers on a touch screen — a tip that needs a pointer is dead weight
+   there, and on a narrow bar it would be clipped anyway. */
+@media (hover: none), (max-width: 480px) {
+  .g-locate[data-tip]::after { display: none; }
+}
+
+/* ---------- Control bar polish ----------
+   The bar sits over a photographic-looking diorama, so flat cream rectangles
+   with hard 1px borders read as pasted on. Softened: rounded, a real shadow so
+   they float above the board, and a hairline top highlight. */
+.g-routes {
+  border-radius: 8px; overflow: hidden;
+  box-shadow: 0 2px 10px rgba(60, 40, 10, 0.16);
+}
+.g-locate {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(60, 40, 10, 0.16);
+}
+.g-routes button, .g-locate {
+  transition: background 180ms var(--ease-out), color 180ms var(--ease-out),
+              box-shadow 180ms var(--ease-out), transform 180ms var(--ease-out);
+}
+.g-locate:hover, .g-routes button:hover {
+  box-shadow: 0 4px 16px rgba(60, 40, 10, 0.24);
+}
+.g-locate:active, .g-routes button:active { transform: translateY(1px); }
+
+/* On a phone the four controls wrap to two rows and eat ~100px of map. Drop to
+   icons — the accessible name lives on aria-label, so nothing is lost to a
+   screen reader, and the 44px target is preserved by the padding. */
+@media (max-width: 480px) {
+  .g-locate .g-btn-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .g-locate { gap: 0; padding-inline: 0.85rem; }
+  .g-routes button { padding-inline: 0.8rem; }
+}
+
+/* In 3D the monument name labels stack toward the horizon and turn the view to
+   soup. The numbered gold pins carry the same information and survive tilt. */
+body.is-3d .g-mon-label { display: none; }
+
+/* ---------- Facility legend ---------- */
+.g-legend {
+  position: absolute; z-index: 5; left: 0; right: 0; bottom: 0;
+  display: flex; gap: 0.4rem; overflow-x: auto; scrollbar-width: none;
+  padding: 0.6rem 0.8rem calc(0.6rem + env(safe-area-inset-bottom));
+  background: linear-gradient(0deg, var(--paper) 62%, rgba(243, 235, 220, 0));
+}
+.g-legend::-webkit-scrollbar { display: none; }
+.g-cat {
+  flex: none; min-height: 44px;
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--paper-raised); border: 1px solid var(--gold-line);
+  color: var(--ink-soft); cursor: pointer; white-space: nowrap;
+  transition: background 180ms var(--ease-out), border-color 180ms var(--ease-out), color 180ms var(--ease-out);
+}
+.g-cat[aria-pressed="true"] { background: var(--gold-page); border-color: var(--gold-page); color: var(--paper-raised); }
+.g-cat.is-empty { opacity: 0.55; border-style: dashed; }
+.g-cat-glyph { display: inline-flex; width: 18px; height: 18px; }
+.g-cat-glyph svg { width: 100%; height: 100%; }
+.g-cat-label { font-family: var(--font-label); font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; }
+.g-cat-n { font-family: var(--font-ui); font-size: 0.7rem; font-variant-numeric: tabular-nums; opacity: 0.85; }
+
+/* ---------- Markers ---------- */
+/* 44px hit area with a smaller visible pin inside it. */
+.g-mon, .g-am {
+  -webkit-appearance: none; appearance: none;
+  background: none; border: 0; padding: 10px; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+}
+.g-mon-pin {
+  position: relative;
+  display: grid; place-items: center;
+  width: 30px; height: 30px; border-radius: 6px;
+  /* The picture of the monument's kind sits on a paper tile with a lit top
+     edge, so it reads as an object on the model rather than a sticker. */
+  background: linear-gradient(180deg, #fffaf0 0%, var(--paper-raised) 60%, #efe6d4 100%);
+  color: var(--ink);
+  border: 1px solid rgba(166, 124, 46, 0.55);
+  /* Two shadows: a tight contact shadow so the pin sits ON the ground, and a
+     wider soft one so it lifts off the board. One shadow can only do one. */
+  box-shadow: 0 1px 2px rgba(40, 26, 6, 0.5), 0 3px 10px rgba(60, 40, 10, 0.32);
+  transition: transform 160ms var(--ease-out), box-shadow 160ms var(--ease-out);
+}
+.g-mon-pic { width: 22px; height: 22px; fill: var(--paper-raised); stroke: var(--ink); stroke-width: 1.1; stroke-linejoin: round; stroke-linecap: round; }
+.g-mon-pic .p-fill { fill: var(--ink); stroke: none; }
+.g-mon-pic .p-thin { stroke-width: 0.8; fill: none; }
+.g-mon-pic .p-dash { stroke-dasharray: 1.5 1.5; }
+.g-mon-pic .p-rock { fill: #dccfb4; }
+.g-mon-pic .p-in { fill: #c4b593; stroke: none; }
+/* The number: the route stop while a route is on, else the monument's number
+   in the destination page's list. */
+.g-mon-badge {
+  position: absolute; right: -8px; top: -8px;
+  min-width: 17px; height: 17px; padding: 0 3px; border-radius: 9px;
+  background: linear-gradient(180deg, #b98d3c 0%, var(--gold-page) 55%, #8f6a25 100%);
+  color: var(--paper-raised); border: 1.5px solid var(--paper-raised);
+  font-family: var(--font-ui); font-size: 8.5px; line-height: 14px; font-weight: 600; text-align: center;
+  box-shadow: 0 1px 3px rgba(40, 26, 6, 0.4);
+}
+.g-mon.is-numbered .g-mon-badge { background: linear-gradient(180deg, #4a3e33 0%, var(--ink) 60%, #1a130e 100%); }
+.g-mon-label {
+  font-family: var(--font-label); font-size: 0.58rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--ink);
+  /* Opaque, deliberately — see the note at the top of this file. */
+  background: var(--paper-raised);
+  border: 1px solid var(--gold-line);
+  /* Rounded and lifted, to match the pin above it and the controls above that.
+     Tracking eased from 0.12em to 0.08em: at 0.58rem, uppercase, wide tracking
+     is what made long names like "Mahishasuramardini Mandapa" hit the 42vw
+     ellipsis on a phone. Less shouting, more names fitting. */
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(60, 40, 10, 0.16);
+  padding: 0.22rem 0.45rem; white-space: nowrap;
+  max-width: 42vw; overflow: hidden; text-overflow: ellipsis;
+}
+/* Hover lifts the whole marker and brings it to the front of its neighbours, so
+   a pin in a tight cluster can always be read before it is tapped. */
+.g-mon:hover .g-mon-pin, .g-mon:focus-visible .g-mon-pin {
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 2px 3px rgba(40, 26, 6, 0.5), 0 7px 18px rgba(60, 40, 10, 0.38);
+}
+.g-mon.is-crowded:hover .g-mon-pin { transform: scale(0.72); }
+
+.g-am-glyph {
+  display: grid; place-items: center;
+  width: 26px; height: 26px; border-radius: 50%;
+  /* Quieter than it was: 28px → 26px, a hairline gold-line border instead of
+     full gold-page, and a softer shadow. These are facilities, not monuments,
+     and at full strength a row of toilet icons competed with the thing the page
+     is actually about. They lift back to full contrast on hover. */
+  background: var(--paper-raised); color: var(--gold-deep);
+  border: 1px solid var(--gold-line);
+  box-shadow: 0 1px 2px rgba(40, 26, 6, 0.28), 0 2px 7px rgba(60, 40, 10, 0.16);
+  opacity: 0.92;
+  transition: opacity 160ms var(--ease-out), transform 160ms var(--ease-out),
+              background 160ms var(--ease-out), color 160ms var(--ease-out);
+}
+.g-am:hover .g-am-glyph, .g-am:focus-visible .g-am-glyph {
+  opacity: 1; transform: translateY(-1px) scale(1.06);
+}
+.g-am-glyph svg { width: 16px; height: 16px; }
+/* Label suppressed by the collision pass; the pin and its 44px target stay. */
+.g-mon.is-pin-only .g-mon-label { display: none; }
+
+/* Every pin carries a number now (the list's, or the route's), so the old
+   "un-numbered pin gets an inner dot" rule is gone. */
+
+/* A crowded pin shrinks rather than disappearing — see the note in
+   declutter(). Deliberately a TRANSFORM and not a width change: transform is
+   painted, not laid out, so the button keeps its full 26px + 2x10px padding box
+   and the 44px touch target survives at every crowding level. Change this to
+   `width`/`height` and you silently break the one guarantee this page is built
+   around. The shadow softens too, or a tight cluster reads as one blurred blob
+   instead of several monuments. */
+.g-mon.is-crowded .g-mon-pin {
+  transform: scale(0.55);
+  box-shadow: 0 1px 3px rgba(60, 40, 10, 0.35);
+}
+
+/* Monument labels sit ABOVE facility icons.
+   Markers are DOM elements stacked by insertion order, and
+   renderMonumentMarkers() runs before renderAmenityMarkers(), so without this a
+   toilet glyph paints over "Krishna's Butterball". z-index only — DOM order,
+   and therefore tab order, is untouched. */
+.g-mon { z-index: 3; }
+.g-am { z-index: 2; }
+.g-am:hover .g-am-glyph, .g-am:focus-visible .g-am-glyph { background: var(--gold-page); color: var(--paper-raised); }
+
+/* ---------- Bottom sheet ---------- */
+/* Two heights on purpose. Picking a route should let you SEE the route — a
+   sheet that opens full covers the very thing you just asked for. So it opens
+   at a peek and the handle expands it. */
+.g-sheet {
+  position: absolute; z-index: 6; left: 0; right: 0; bottom: 0;
+  --sheet-h: 40vh;
+  height: var(--sheet-h); overflow: hidden;
+  display: flex; flex-direction: column;
+  background: var(--paper-raised);
+  border-top: 1px solid var(--gold-line);
+  box-shadow: 0 -12px 40px rgba(60, 40, 10, 0.18);
+  transform: translateY(101%);
+  transition: transform 320ms var(--ease-out), height 320ms var(--ease-out);
+}
+.g-sheet.is-open { transform: translateY(0); }
+.g-sheet.is-expanded { --sheet-h: 78vh; }
+@media (prefers-reduced-motion: reduce) { .g-sheet { transition: none; } }
+
+.g-grab {
+  flex: none; width: 100%; min-height: 44px; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.25rem;
+  padding: 0.5rem; border: 0; border-bottom: 1px solid var(--gold-line-soft);
+  background: var(--paper-raised);
+}
+.g-grab-bar { display: block; width: 42px; height: 3px; border-radius: 2px; background: var(--gold-line); }
+.g-grab-text {
+  font-family: var(--font-label); font-size: 0.54rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold-page);
+}
+.g-sheet.is-expanded .g-grab-text::after { content: ""; }
+.g-sheet-body {
+  flex: 1; min-height: 0; overflow-y: auto;
+  padding: 1.1rem 1.2rem calc(4.6rem + env(safe-area-inset-bottom));
+  -webkit-overflow-scrolling: touch;
+}
+.g-sheet-title {
+  font-family: var(--font-display); text-transform: uppercase;
+  font-size: clamp(1.5rem, 5vw, 2.1rem); font-weight: 400; letter-spacing: 0.03em;
+  color: var(--ink); line-height: 1.05; margin-bottom: 0.7rem;
+}
+.g-sheet p, .g-sheet li { color: var(--ink-soft); font-size: 1.02rem; line-height: 1.55; }
+.g-sheet a { color: var(--gold-page); font-weight: 600; }
+.g-blurb { font-style: italic; margin-bottom: 1rem; }
+.g-note { font-size: 0.94rem; color: var(--ink-soft); margin-top: 0.7rem; }
+
+/* Consecutive paragraphs ran together — .g-sheet p sets no margin. `+ p` so
+   the first paragraph after the title doesn't gain a stray top margin. */
+.g-sheet p + p { margin-top: 0.65rem; }
+.g-lede { font-size: 1.06rem; }
+.g-source { font-family: var(--font-ui); font-size: 0.76rem; color: var(--ink-soft); margin-top: 0.9rem; }
+
+/* A button that reads as a link — used for parent/child monument navigation,
+   which must be a real button because the sheet body is re-rendered constantly
+   and click handling is delegated. */
+.g-linkish {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font: inherit; color: var(--gold-page); font-weight: 600; text-align: left;
+}
+.g-linkish:hover, .g-linkish:focus-visible { text-decoration: underline; }
+
+/* ---------- Monument photo ----------
+   The frame reserves its box before the image lands, so an async photo cannot
+   reflow the text under the reader's thumb. The caption sits OUTSIDE the
+   aspect-ratio box — inside, overflow:hidden would clip it. */
+.g-photo { margin: 0.9rem 0; }
+.g-photo-frame {
+  display: block; position: relative;
+  aspect-ratio: 4 / 3; overflow: hidden; background: #e4d9c3;
+}
+.g-photo-frame::after {
+  content: ""; position: absolute; inset: 8px;
+  border: 1px solid rgba(233, 203, 127, 0.4); pointer-events: none;
+}
+.g-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* At peek height the sheet has ~260px of body; cap the photo so the text
+   above it is never pushed off entirely. */
+.g-sheet:not(.is-expanded) .g-photo-frame { max-height: 24vh; }
+.g-photo figcaption {
+  font-family: var(--font-ui); font-size: 0.68rem; line-height: 1.4;
+  color: var(--ink-soft); margin-top: 0.35rem;
+}
+
+.g-rows { display: grid; grid-template-columns: auto 1fr; gap: 0.3rem 1rem; margin: 0.9rem 0; }
+.g-rows dt {
+  font-family: var(--font-label); font-size: 0.58rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold-page);
+  align-self: center;
+}
+.g-rows dd { color: var(--ink); font-size: 0.98rem; }
+
+.g-stops { list-style: none; display: grid; gap: 0.5rem; }
+.g-stop {
+  width: 100%; min-height: 44px; text-align: left; cursor: pointer;
+  display: flex; gap: 0.8rem; align-items: flex-start;
+  padding: 0.75rem 0.8rem;
+  background: var(--paper); border: 1px solid var(--gold-line);
+  transition: border-color 180ms var(--ease-out), background 180ms var(--ease-out);
+}
+.g-stop:hover, .g-stop:focus-visible { background: var(--paper-deep); border-color: var(--gold-page); outline: none; }
+.g-stop-num {
+  flex: none; display: grid; place-items: center;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--gold-page); color: var(--paper-raised);
+  font-family: var(--font-label); font-size: 0.7rem; font-weight: 600;
+}
+.g-stop-text b { display: block; color: var(--ink); font-size: 1.05rem; font-weight: 600; }
+.g-stop-text em {
+  display: block; font-family: var(--font-label); font-style: normal;
+  font-size: 0.56rem; text-transform: uppercase; letter-spacing: 0.18em;
+  color: var(--gold-page); margin-top: 0.2rem;
+}
+.g-stop-text small { display: block; color: var(--ink-soft); font-size: 0.92rem; margin-top: 0.35rem; line-height: 1.45; }
+
+/* ---------- Provenance: always visible, never dismissible ---------- */
+.g-provenance {
+  position: absolute; z-index: 4; left: 0; right: 0; bottom: 0;
+  padding: 0.35rem 0.8rem;
+  font-family: var(--font-ui); font-size: 0.62rem; line-height: 1.4;
+  color: var(--ink-soft); background: var(--paper);
+  border-top: 1px solid var(--gold-line-soft);
+  text-align: center;
+}
+.g-provenance.is-stale { color: #7a3b12; background: #f6e7d2; }
+
+/* The legend sits above the provenance line. */
+.g-legend { bottom: 1.9rem; }
+
+/* ---------- Fallback / noscript ---------- */
+#guide-map.is-fallback { overflow-y: auto; background: var(--paper); padding: calc(var(--nav-h) + 2rem) 1.2rem 3rem; }
+.g-fallback { max-width: 60ch; margin-inline: auto; }
+.g-fallback h2 { font-family: var(--font-display); text-transform: uppercase; font-size: 1.8rem; font-weight: 400; color: var(--ink); margin-bottom: 0.6rem; }
+.g-fallback h3 { font-family: var(--font-label); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold-page); margin: 1.6rem 0 0.4rem; }
+.g-fallback ol { padding-left: 1.2rem; }
+.g-fallback li { margin-bottom: 0.5rem; color: var(--ink-soft); }
+.g-noscript { padding: calc(var(--nav-h) + 2rem) 1.2rem 2rem; max-width: 60ch; margin-inline: auto; color: var(--ink-soft); }
+
+/* ---------- Desktop: the sheet becomes a left rail ---------- */
+@media (min-width: 820px) {
+  .g-sheet {
+    top: calc(var(--nav-h)); right: auto; bottom: 0;
+    width: 380px; max-height: none;
+    border-top: 0; border-right: 1px solid var(--gold-line);
+    transform: translateX(-101%);
+    transition: transform 320ms var(--ease-out);
+  }
+  .g-sheet.is-open { transform: translateX(0); }
+  .g-sheet-body { max-height: none; height: 100%; padding-bottom: 3rem; }
+  .g-controls { justify-content: flex-end; padding-right: 1.2rem; }
+  .g-legend { left: auto; right: 0; width: min(560px, 60vw); background: none; padding-bottom: 2.6rem; }
+}
+
+/* ---------- The diorama overlay ----------
+ *
+ * Tilt-shift and a warm vignette: the two things that make a photograph of a
+ * real place read as a photograph of a small model. Both are purely optical —
+ * they make no claim about anything on the map — so unlike the nominal
+ * building heights they need no disclosure.
+ *
+ * Scoped to body.is-3d ONLY. Flat mode is the map people use standing at the
+ * site in glare, and blurring its edges would be a straightforward regression.
+ */
+.g-diorama {
+  position: absolute;
+  inset: 0;
+  z-index: 3; /* above the map canvas, below provenance (4) and controls (5) */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 420ms var(--ease-out);
+}
+
+body.is-3d .g-diorama {
+  opacity: 1;
+  /* Warm falloff toward the corners, as if lit by one lamp over a table. */
+  background:
+    radial-gradient(120% 85% at 50% 42%, rgba(74, 54, 34, 0) 45%, rgba(74, 54, 34, 0.1) 74%, rgba(74, 54, 34, 0.26) 100%);
+}
+
+/* The blur is a separate element so it can be dropped on slow devices without
+ * losing the vignette, which costs nothing. Masked to the top and bottom bands
+ * only — a real tilt-shift keeps a sharp strip through the plane of focus. */
+body.is-3d .g-diorama::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  mask-image: linear-gradient(to bottom, #000 0%, transparent 24%, transparent 68%, #000 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 24%, transparent 68%, #000 100%);
+}
+
+/* Suspended while the camera moves — see the measurement note in guide-map.js.
+ * A fade would itself cost a frame, so this is an instant switch. */
+body.is-3d.no-tiltshift .g-diorama::after { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .g-diorama { transition: none; }
+}
+
+/* Road directions link — an action, so it reads a little stronger than the
+ * other outbound links in the sheet without becoming a button. */
+.g-directions {
+  display: inline-block;
+  margin-top: 0.1rem;
+  padding: 0.42rem 0.7rem;
+  font-size: 0.82rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--gold-line);
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+.g-directions:hover { border-color: var(--gold-page); }
+.g-directions:focus-visible { outline: 2px solid var(--gold-page); outline-offset: 2px; }

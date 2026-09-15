@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahabalipuram — Pallava Shore Temples &amp; Rock Reliefs | India Heritage Map</title>
+  <meta name="description" content="A guide to Mahabalipuram (Mamallapuram), Tamil Nadu: the Shore Temple, Pancha Rathas, Arjuna's Penance and the Pallava rock-cut caves — a UNESCO World Heritage Site since 1984." />
+  <meta property="og:title" content="Mahabalipuram — Pallava Shore Temples &amp; Rock Reliefs" />
+  <meta property="og:description" content="Where South India learned to build in stone: the 7th-century Pallava port town on the Coromandel coast." />
+  <meta property="og:type" content="article" />
+  <meta name="theme-color" content="#f3ebdc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/place.css" />
+</head>
+<body>
+  <nav class="place-bar">
+    <div class="wrap">
+      <a class="back-link" href="index.html#site=TM-018">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        Back to the map
+      </a>
+      <span class="bar-brand">India Heritage Map</span>
+      <span class="bar-tag">UNESCO World Heritage · 1984</span>
+    </div>
+  </nav>
+
+  <!-- Scroll-scrubbed video tours (Shore Temple, then Pancha Rathas) — the
+       very first thing on the page. Sections are built by js/tours-mount.js
+       from js/monuments-content.js using the generic js/scroll-tour.js
+       engine; see README.md to add another monument. The title card
+       (below) follows once the tours finish. -->
+  <div id="tours-root"></div>
+
+  <header class="hero" id="hero">
+    <div class="hero-far" id="hero-far" aria-hidden="true"></div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="wrap hero-content" id="hero-content">
+      <span class="hero-eyebrow">Tamil Nadu · Chengalpattu district</span>
+      <h1 class="hero-title">
+        Mahabalipuram
+        <span class="hero-title-sub">Mamallapuram — the Pallava port of the seven pagodas</span>
+      </h1>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <div class="hero-quote-row">
+        <p class="hero-pull">Dressed granite, not carved rock —<br />the decisive break from cave temples.</p>
+        <div class="hero-about">
+          <p class="hero-lede">
+            For roughly a century in the 600s and 700s, the Pallava kings turned a granite
+            outcrop on the Coromandel coast into a workshop. Their sculptors cut temples out of
+            living boulders and carved a cliff face into one of the largest bas-reliefs in India
+            before, at the Shore Temple, stopping the carving and starting to build.
+          </p>
+          <a class="cta" href="index.html#site=TM-018">
+            See it on the heritage map
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <dl class="hero-facts">
+        <div class="fact"><dt>Built</dt><dd>c. 630 – 728 AD</dd></div>
+        <div class="fact"><dt>Dynasty</dt><dd>Pallava</dd></div>
+        <div class="fact"><dt>Style</dt><dd>Rock-cut → early Dravida</dd></div>
+        <div class="fact"><dt>Inscribed</dt><dd>UNESCO, 1984</dd></div>
+        <div class="fact"><dt>From Chennai</dt><dd>~56 km south</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3D flythrough: the same cards, flown past the camera as you scroll.
+         Hidden until the script confirms motion is wanted; the grid below is
+         the fallback and the two are never shown together. -->
+    <div class="fly" id="fly" hidden>
+      <div class="fly-stage">
+        <div class="fly-head">
+          <div class="wrap">
+            <h2>The monuments</h2>
+            <p>Keep scrolling — they come to you, one at a time.</p>
+            <!-- Map card (js/site-map-card.js): where the tour's monuments
+                 stand. Folds away on shorter screens once the tour starts. -->
+            <div class="smc-slot" id="smc-fly"></div>
+            <a class="fly-skip" href="#monuments">Skip the tour ↓</a>
+          </div>
+        </div>
+        <div class="fly-scene" id="fly-scene"></div>
+        <div class="fly-hud">
+          <div class="wrap">
+            <span class="fly-count"><b id="fly-index">1</b> / <span id="fly-total">8</span></span>
+            <span class="fly-now" id="fly-now"></span>
+            <span class="fly-rail"><i id="fly-bar"></i></span>
+            <!-- Phones only, once the tour is under way: the skip link moves
+                 down here so the head can give its room to the card. -->
+            <a class="fly-skip fly-skip-hud" href="#monuments">Skip ↓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="monuments">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">Chapter I</span>
+          <h2 class="mon-h-flat">The monuments</h2>
+          <h2 class="mon-h-fly" hidden>Every monument, in one list</h2>
+          <p class="mon-sub-flat">
+            Around forty surviving structures are scattered over about a square kilometre —
+            monolithic rathas, excavated cave halls, open-air reliefs and one structural temple.
+            They read best as a sequence of experiments rather than as a single design.
+          </p>
+          <p class="mon-sub-fly" hidden>
+            Every monument on the site — the eight the tour flies past, plus the rathas
+            individually, the cave temples and the outlying monoliths. Also the way anyone
+            reading with a screen reader, or scrolling in a hurry, gets all of them.
+          </p>
+          <div class="smc-slot" id="smc-flat"></div>
+        </div>
+        <div class="monuments" id="monuments-grid"></div>
+      </div>
+    </section>
+
+    <!-- The site from above (js/site-plan.js): every monument as a small
+         picture of its kind on a plan drawn from the OpenStreetMap extracts —
+         sea, beach, water, landcover, roads, the granite outcrops, the
+         monuments' own outlines where OSM has them, the walking route. Zooms
+         and pans. Tap a picture for what it is, its photo, the walk from the
+         previous stop, and the way into the site map and the 3D view. The
+         pictures are type pictures, not portraits; the legend says so. -->
+    <section id="plan">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">Chapter II</span>
+          <h2>The site, laid out</h2>
+          <p>
+            Where the monuments stand, seen from above — the sea and the beach, the tanks
+            and ponds, the roads, the granite outcrops the monuments were cut from, and the
+            walking route between them. Tap a picture. Pinch, or Ctrl + scroll, to zoom.
+          </p>
+        </div>
+        <div class="spl-slot" id="site-plan"></div>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">Chapter III</span>
+          <h2>How it happened</h2>
+          <p>Phases of Pallava patronage, then twelve centuries of weather, sand and rediscovery.</p>
+        </div>
+        <ol class="tl">
+          <li>
+            <div class="tl-year">c. 610–630 · Mahendravarman I</div>
+            <p class="tl-text">The Pallavas move from brick and timber to rock. The first excavated cave temples appear across the Tamil country, establishing the pillared <em>mandapa</em> cut back into a scarp.</p>
+          </li>
+          <li>
+            <div class="tl-year">c. 630–668 · Narasimhavarman I "Mamalla"</div>
+            <p class="tl-text">The town takes his name. Sculptors carve the Pancha Rathas — five temples, each from a single boulder — as a catalogue of roof forms, and begin the great cliff relief now called Arjuna's Penance.</p>
+          </li>
+          <li>
+            <div class="tl-year">c. 700–728 · Narasimhavarman II "Rajasimha"</div>
+            <p class="tl-text">The decisive shift: the Shore Temple is <em>built</em> from dressed granite blocks rather than carved out of rock. Its twin tiered vimanas set the pattern the Cholas would later monumentalise at Thanjavur.</p>
+          </li>
+          <li>
+            <div class="tl-year">8th–17th century</div>
+            <p class="tl-text">The port keeps trading — Pallava, Chola and later ships put in here. European sailors name the skyline the "Seven Pagodas". Sand and surf take much of what stood closest to the water.</p>
+          </li>
+          <li>
+            <div class="tl-year">19th–20th century</div>
+            <p class="tl-text">Colonial surveyors record the site; the Archaeological Survey of India takes it under protection, clears the sand and shelters the Shore Temple from salt spray behind a planted windbreak.</p>
+          </li>
+          <li>
+            <div class="tl-year">1984 · World Heritage</div>
+            <p class="tl-text">The Group of Monuments at Mahabalipuram is inscribed on the UNESCO World Heritage List (site 249), in the same session as the Sun Temple at Konark, for its part in the development of Dravidian architecture.</p>
+          </li>
+          <li>
+            <div class="tl-year">2004 onward</div>
+            <p class="tl-text">The Indian Ocean tsunami briefly draws the sea back and exposes masonry and rock-cut figures on the shoreline, prompting fresh survey of the drowned parts of the town.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">Chapter IV</span>
+          <h2>Visiting</h2>
+          <p>Practical notes for planning a day here. Confirm current timings and ticket prices with the ASI before you travel.</p>
+        </div>
+
+        <div class="visit-band">
+          <div>
+            <h3>Going today?</h3>
+            <p>
+              The site map shows where you are, the walking order between the monuments, and
+              where the toilets, drinking water and parking are — from OpenStreetMap, so check
+              it on the ground.
+            </p>
+          </div>
+          <a class="cta" href="mahabalipuram-guide.html">
+            Open the site map
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a class="cta" href="mahabalipuram-3d.html">
+            See it in 3D
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="15" height="15" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="visit-grid">
+          <div class="visit-card">
+            <h3>Getting there</h3>
+            <p>About <strong>56 km</strong> south of Chennai along the East Coast Road — roughly 1.5 hours by car or bus. The nearest airport and rail head are both in Chennai.</p>
+          </div>
+          <div class="visit-card">
+            <h3>Best season</h3>
+            <p><strong>November to February</strong>, when the coast is dry and mild. Avoid April–June: the granite holds heat and there is very little shade.</p>
+          </div>
+          <div class="visit-card">
+            <h3>Time needed</h3>
+            <p><strong>Half a day</strong> covers the Shore Temple, the rathas and Arjuna's Penance. A full day if you also want the outlying caves and the Tiger Cave at Saluvankuppam.</p>
+          </div>
+          <div class="visit-card">
+            <h3>Tickets</h3>
+            <p>A single ASI ticket covers the <strong>Shore Temple and Pancha Rathas</strong>; the caves and open-air reliefs are free. Open sunrise to sunset.</p>
+          </div>
+          <div class="visit-card">
+            <h3>Go early</h3>
+            <p>The Shore Temple faces east — <strong>first light off the Bay of Bengal</strong> is the reason to be there at opening, and the crowds arrive later.</p>
+          </div>
+          <div class="visit-card">
+            <h3>Still a stone town</h3>
+            <p>Mahabalipuram remains a working <strong>sculpture centre</strong>. Workshops along the main road still cut granite by hand, in the same tradition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="place-foot">
+    <div class="wrap">
+      <div class="foot-title">Sources</div>
+      <ul>
+        <li><a href="https://whc.unesco.org/en/list/249" target="_blank" rel="noopener">UNESCO World Heritage Centre — site 249</a></li>
+        <li><a href="https://asi.nic.in/" target="_blank" rel="noopener">Archaeological Survey of India</a></li>
+        <li>Michell, <em>The Hindu Temple</em></li>
+      </ul>
+      <p class="foot-note"><a href="index.html">← India Heritage Map</a> · Photographs loaded from Wikipedia.</p>
+      <!-- Deliberately down here and not in the "Going today?" band with the site
+           map and the 3D view. Those two are for visitors; this is a working
+           document for review, and listing it as a third visitor feature would
+           misrepresent what it is. -->
+      <p class="foot-note">
+        In review: the <a href="mahabalipuram-schematic.html">schematic massing study</a> —
+        the drawing behind the 3D view, showing which monuments have cited dimensions and
+        which do not.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/scroll-tour.js"></script>
+  <script src="content/mahabalipuram-tour.js"></script>
+  <script src="js/monuments-content.js"></script>
+  <script src="js/tours-mount.js"></script>
+  <script src="content/mahabalipuram-monuments.js"></script>
+  <script src="content/mahabalipuram-routes.js"></script>
+  <script src="js/wiki-photo.js"></script>
+  <script src="js/site-geo.js"></script>
+  <script src="js/site-map-card.js"></script>
+  <script src="js/monument-pictures.js"></script>
+  <script src="js/site-plan.js"></script>
+  <script src="js/place.js"></script>
+</body>
+</html>

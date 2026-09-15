@@ -1,0 +1,76 @@
+{
+ "type": "FeatureCollection",
+ "_note": "OSM way 370135158, the Shore Temple compound wall (prakara). Fetched once for the 3D reconstruction; see scripts/build-shore-temple-measure.js. © OpenStreetMap contributors, ODbL.",
+ "fetched": "2026-09-12",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "way/370135158",
+    "amenity": "place_of_worship",
+    "building": "temple",
+    "denomination": "shaivism",
+    "historic": "heritage",
+    "name": "Mamallapuram Shore Temple",
+    "name:hi": "महाबलिपुरम के तट मंदिर",
+    "name:ml": "മഹാബലിപുരം കടൽക്കരക്ഷേത്രം",
+    "name:ta": "மாமல்லபுரம் கடற்கரைக் கோயில்",
+    "religion": "hindu",
+    "wikidata": "Q1144279",
+    "wikimedia_commons": "Category:Shore Temple",
+    "wikipedia": "en:Shore Temple"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       80.1993913,
+       12.6163383
+      ],
+      [
+       80.1994093,
+       12.6163891
+      ],
+      [
+       80.1994379,
+       12.616387
+      ],
+      [
+       80.1994601,
+       12.6164727
+      ],
+      [
+       80.199444,
+       12.6164766
+      ],
+      [
+       80.1994466,
+       12.6164915
+      ],
+      [
+       80.1993961,
+       12.616505
+      ],
+      [
+       80.1993998,
+       12.6165327
+      ],
+      [
+       80.1990639,
+       12.6166223
+      ],
+      [
+       80.1990093,
+       12.6164346
+      ],
+      [
+       80.1993913,
+       12.6163383
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
