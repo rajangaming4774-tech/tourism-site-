@@ -1,0 +1,119 @@
+{
+ "_note": "Where the numbered parts of a monument stand, for the site map. Shore Temple: the 3D reconstruction's recorded layout placed in the frame of the OSM compound outline. Pancha Rathas: the centroid of each ratha's OSM outline; the three animals are approximate, placed from Wikipedia's description. Every part says how and how accurately. Regenerate with `node scripts/build-part-positions.js`.",
+ "built": "2026-09-17",
+ "monuments": {
+  "shore-temple": {
+   "outline": "way/370135158",
+   "parts": {
+    "1": {
+     "lngLat": [
+      80.1993299,
+      12.6164502
+     ],
+     "how": "Centre of the tall tower's platform — the 3D reconstruction's recorded layout, in the frame of the OpenStreetMap compound outline",
+     "accuracy_m": 2
+    },
+    "2": {
+     "lngLat": [
+      80.1991389,
+      12.6165012
+     ],
+     "how": "Centre of the smaller tower — the 3D reconstruction's recorded layout, in the frame of the OpenStreetMap compound outline",
+     "accuracy_m": 2
+    },
+    "3": {
+     "lngLat": [
+      80.1992206,
+      12.6164794
+     ],
+     "how": "The low shrine between the towers — the 3D reconstruction's recorded layout, in the frame of the OpenStreetMap compound outline",
+     "accuracy_m": 2
+    },
+    "5": {
+     "lngLat": [
+      80.1989685,
+      12.6165232
+     ],
+     "how": "The tank outside the west wall — read from an aerial photograph (06-shore-temple-rebuild.md)",
+     "accuracy_m": 3
+    }
+   }
+  },
+  "pancha-rathas": {
+   "parts": {
+    "1": {
+     "lngLat": [
+      80.189721,
+      12.6090055
+     ],
+     "how": "Centre of Draupadi's ratha's OpenStreetMap outline (way/576022681)",
+     "accuracy_m": 1,
+     "outline": "way/576022681"
+    },
+    "2": {
+     "lngLat": [
+      80.1896834,
+      12.6089621
+     ],
+     "how": "Centre of Arjuna's ratha's OpenStreetMap outline (way/576022684)",
+     "accuracy_m": 1,
+     "outline": "way/576022684"
+    },
+    "3": {
+     "lngLat": [
+      80.1895975,
+      12.608842
+     ],
+     "how": "Centre of Bhima's ratha's OpenStreetMap outline (way/576022690)",
+     "accuracy_m": 1,
+     "outline": "way/576022690"
+    },
+    "4": {
+     "lngLat": [
+      80.1895125,
+      12.608697
+     ],
+     "how": "Centre of Dharmaraja's ratha's OpenStreetMap outline (way/576022688)",
+     "accuracy_m": 1,
+     "outline": "way/576022688"
+    },
+    "5": {
+     "lngLat": [
+      80.1895635,
+      12.6089935
+     ],
+     "how": "Centre of Nakula and Sahadeva's ratha's OpenStreetMap outline (way/576022679)",
+     "accuracy_m": 1,
+     "outline": "way/576022679"
+    },
+    "6": {
+     "lngLat": [
+      80.1896287,
+      12.6090912
+     ],
+     "how": "The lion — Approximate — placed from Wikipedia's description, not surveyed",
+     "accuracy_m": 8,
+     "approximate": true
+    },
+    "7": {
+     "lngLat": [
+      80.1896738,
+      12.608752
+     ],
+     "how": "The bull — Approximate — placed from Wikipedia's description, not surveyed",
+     "accuracy_m": 8,
+     "approximate": true
+    },
+    "8": {
+     "lngLat": [
+      80.189393,
+      12.6089329
+     ],
+     "how": "The elephant — Approximate — placed from Wikipedia's description, not surveyed",
+     "accuracy_m": 8,
+     "approximate": true
+    }
+   }
+  }
+ }
+}

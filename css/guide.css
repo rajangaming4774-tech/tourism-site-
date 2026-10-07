@@ -504,3 +504,133 @@ body.is-3d.no-tiltshift .g-diorama::after { display: none; }
 }
 .g-directions:hover { border-color: var(--gold-page); }
 .g-directions:focus-visible { outline: 2px solid var(--gold-page); outline-offset: 2px; }
+
+/* ---------- The monument card: short and visual first ----------
+   Photo, one sentence, chips, then "What you will see here": a labelled sketch
+   (js/monument-diagrams.js) with a number button over each part and a plain
+   line per number underneath. A number and its line are the same control —
+   guide-map.js lights both, and the shapes in the sketch that carry the same
+   data-part. The longer history lives under "Read more". */
+.g-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.7rem 0 0.2rem; }
+.g-chips li {
+  font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--gold-line); border-radius: 999px; padding: 0.22rem 0.7rem;
+}
+.g-chips b { font-family: var(--font-label); font-size: 0.58rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold-page); margin-right: 0.25rem; }
+
+.g-inside { margin: 1.1rem 0 0.6rem; }
+.g-inside-title {
+  font-family: var(--font-label); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--gold-page); margin-bottom: 0.55rem;
+}
+.g-sketch { margin: 0 0 0.7rem; }
+.g-sketch-box {
+  position: relative; max-width: 520px; aspect-ratio: 320 / 200;
+  background: #f4ecdc; border: 1px solid var(--gold-line); border-radius: 6px; overflow: hidden;
+}
+.g-sketch-box svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--ink); stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; }
+.g-sketch figcaption { font-size: 0.82rem; font-style: italic; color: var(--ink-muted); margin-top: 0.35rem; max-width: 520px; line-height: 1.4; }
+/* The sketch's own vocabulary. */
+.g-sketch-box .d-sea, .g-sketch-box .d-water { fill: #cfdfe0; stroke: #a9c0c2; }
+.g-sketch-box .d-ground { fill: #ece0c4; stroke: none; }
+.g-sketch-box .d-court { fill: #fbf6ec; }
+.g-sketch-box .d-rock { fill: #dccfb4; stroke: #6b5a3e; }
+.g-sketch-box .d-cut { fill: #fbf6ec; }
+.g-sketch-box .d-cleft { fill: #b9a57e; stroke: #6b5a3e; }
+.g-sketch-box .d-boulder { fill: #d2c3a3; stroke: #6b5a3e; stroke-width: 1.6; }
+.g-sketch-box .d-wall { fill: #fbf6ec; }
+.g-sketch-box .d-panel { fill: #8c6a2a; stroke: none; }
+.g-sketch-box .d-panel-soft { fill: rgba(140, 106, 42, 0.35); stroke: #6b5a3e; stroke-dasharray: 3 2; }
+.g-sketch-box .d-contact { stroke: #8c6a2a; stroke-width: 5; }
+.g-sketch-box .d-fill { fill: var(--ink); stroke: none; }
+.g-sketch-box .d-fill-soft { fill: #b9a57e; stroke: #6b5a3e; stroke-width: 1; }
+.g-sketch-box .d-thin { stroke-width: 0.9; }
+.g-sketch-box .d-note { fill: var(--ink-muted); stroke: none; font: italic 10px var(--font-serif, Georgia, serif); }
+/* Lit: whatever the part was, it turns gold with an ink edge. */
+.g-sketch-box svg .is-on { fill: #e9cb7f; stroke: var(--ink); stroke-width: 2; stroke-dasharray: none; }
+.g-sketch-box svg path.d-ink.is-on, .g-sketch-box svg .d-contact.is-on { fill: none; stroke: #c9962b; stroke-width: 4; }
+
+/* A number over the sketch: a 26 px disc inside a 40 px target. */
+.g-part-pin {
+  position: absolute; transform: translate(-50%, -50%);
+  width: 40px; height: 40px; padding: 0; border: 0; background: none; cursor: pointer;
+  display: grid; place-items: center;
+}
+.g-part-pin span, .g-part-n {
+  display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--gold-page); color: var(--paper-raised); border: 2px solid var(--paper-raised);
+  font-family: var(--font-ui); font-size: 0.8rem; font-weight: 600;
+  box-shadow: 0 1px 3px rgba(40, 26, 6, 0.4);
+  transition: transform 160ms var(--ease-out), background-color 160ms var(--ease-out);
+}
+.g-part-pin:hover span, .g-part-pin:focus-visible span { transform: scale(1.12); }
+.g-part-pin:focus-visible { outline: none; }
+.g-part-pin:focus-visible span { box-shadow: 0 0 0 3px var(--ink); }
+.g-part-pin.is-on span, .g-part.is-on .g-part-n { background: var(--ink); transform: scale(1.15); }
+
+.g-parts { list-style: none; display: grid; gap: 0.25rem; max-width: 520px; }
+.g-part {
+  display: flex; align-items: flex-start; gap: 0.6rem; width: 100%; text-align: left;
+  padding: 0.45rem 0.5rem; border: 1px solid transparent; border-radius: 6px; background: none; cursor: pointer;
+  font: inherit; color: var(--ink-soft);
+}
+.g-part-n { flex: none; box-shadow: none; border: 0; }
+.g-part-text { font-size: 1rem; line-height: 1.4; }
+.g-part-text b { color: var(--ink); font-weight: 600; }
+.g-part-text b::after { content: " — "; font-weight: 400; color: var(--ink-muted); }
+.g-part:hover, .g-part:focus-visible { background: var(--paper); outline: none; }
+.g-part:focus-visible { border-color: var(--ink); }
+.g-part.is-on { background: var(--paper); border-color: var(--gold-line); }
+.g-part-go { margin: 0 0 0.3rem 2.7rem; }
+
+.g-actions { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0.9rem 0 0.4rem; }
+.g-more { margin-top: 0.9rem; border-top: 1px solid var(--gold-line-soft); padding-top: 0.6rem; }
+.g-more > summary {
+  cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--font-label); font-size: 0.62rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold-page);
+  padding: 0.5rem 0; min-height: 44px;
+}
+.g-more > summary::-webkit-details-marker { display: none; }
+.g-more > summary::after { content: "+"; font-family: var(--font-ui); font-size: 1rem; letter-spacing: 0; }
+.g-more[open] > summary::after { content: "–"; }
+.g-more > summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.g-more p { margin-top: 0.6rem; }
+@media (prefers-reduced-motion: reduce) { .g-part-pin span, .g-part-n { transition: none; } }
+
+/* ---------- The parts on the map, the longer note, the photo ----------
+   A card whose parts stand at known places puts their numbers on the map too
+   (guide-map.js showPartMarkers). The sheet then stops halfway so the map
+   and the card are both in view; the monument's own pin hides while its
+   numbers are out. A dashed ring marks a number placed from a description
+   rather than a survey. */
+.g-sheet.is-expanded.is-parts { --sheet-h: 54vh; }
+.g-mon.is-exploded { display: none !important; }
+.g-map-part {
+  width: 40px; height: 40px; padding: 0; border: 0; background: none; cursor: pointer;
+  display: grid; place-items: center; z-index: 4;
+}
+.g-map-part span {
+  display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%;
+  background: linear-gradient(180deg, #b98d3c 0%, var(--gold-page) 55%, #8f6a25 100%);
+  color: var(--paper-raised); border: 2px solid var(--paper-raised);
+  font-family: var(--font-ui); font-size: 0.85rem; font-weight: 700;
+  box-shadow: 0 1px 2px rgba(40, 26, 6, 0.5), 0 3px 10px rgba(60, 40, 10, 0.35);
+  transition: transform 160ms var(--ease-out), background-color 160ms var(--ease-out);
+}
+.g-map-part.is-approx span { border: 2px dashed var(--paper-raised); outline: 2px dashed var(--gold-page); outline-offset: 1px; }
+.g-map-part:hover span, .g-map-part:focus-visible span { transform: scale(1.12); }
+.g-map-part:focus-visible { outline: none; }
+.g-map-part:focus-visible span { box-shadow: 0 0 0 3px var(--ink); }
+.g-map-part.is-on { z-index: 5; }
+.g-map-part.is-on span { background: var(--ink); transform: scale(1.25); }
+.g-onmap {
+  font-size: 0.86rem; line-height: 1.4; color: var(--ink-soft); max-width: 520px;
+  background: var(--paper); border-left: 3px solid var(--gold-page); padding: 0.4rem 0.6rem; margin: 0 0 0.6rem;
+}
+.g-part-more { margin: 0.1rem 0 0.6rem 2.7rem; max-width: 470px; }
+.g-part-more p { font-size: 0.98rem; line-height: 1.5; color: var(--ink-soft); margin: 0.4rem 0 0; }
+.g-part-photo { margin: 0.2rem 0 0; }
+.g-part-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; background: #e4d9c3; display: block; }
+.g-part-photo figcaption { font-size: 0.72rem; color: var(--ink-muted); margin-top: 0.25rem; line-height: 1.35; }
+.g-part-photo figcaption a { color: var(--ink-muted); }
+@media (prefers-reduced-motion: reduce) { .g-map-part span { transition: none; } }

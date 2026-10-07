@@ -52,6 +52,17 @@
  *             boulder. Picks the plan's picture for a monolith.
  *   picture   OPTIONAL override of the plan's picture where `form` cannot
  *             say (the Shore Temple compound, the unfinished gopuram).
+ *   inside    OPTIONAL. "What you will see here" on the guide's card: 3-6
+ *             parts, each { n, name, line, more?, stop?, photo? } in plain
+ *             words (a line is
+ *             about twelve words; `more` two or three sentences, shown when the
+ *             part is tapped; `photo` { src, page, author, licence, licenceUrl },
+ *             used only when it was looked at and clearly shows that part).
+ *             EVERY part must be in this entry's cited
+ *             source, in `inside.source`, or in a research note named in the
+ *             comment above it. The sketch that goes with it is in
+ *             js/monument-diagrams.js, keyed by this entry's id; a part with
+ *             no stated position is listed there under `also`, not placed.
  *   feature   in the destination page's flythrough. Kept to the original 8 —
  *             `.fly` height is calc(100vh + steps * 60vh), so putting all 23
  *             in would take that page from ~6 screens of scroll to ~15.
@@ -126,6 +137,23 @@ window.MAHABALIPURAM_MONUMENTS = [
     id: "shore-temple",
     form: "structural",
     picture: "compound", // its `osm` way is the compound wall; the plan draws two towers inside a wall
+    inside: {
+      // From Wikipedia "Shore Temple" (read 2026-09-17) and the layout recorded in
+      // data/research/3d/06-shore-temple-rebuild.md. Map positions for 1, 2, 3 and 5 are in
+      // data/mahabalipuram-part-positions.json. Photos: Wikimedia Commons, each checked by eye.
+      parts: [
+        { n: 1, name: "The tall tower", line: "A Shiva shrine facing east, to the sea and the sunrise.", more: "This is the Kshatriyasimhesvara shrine. Its five-storey tower rises about 18 metres, and it was built so the first sun falls on the linga inside. It was raised from cut granite blocks around 700–728 AD under King Rajasimha.", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Le_temple_du_rivage_%28Mahabalipuram%2C_Inde%29_%2813950016044%29.jpg/500px-Le_temple_du_rivage_%28Mahabalipuram%2C_Inde%29_%2813950016044%29.jpg","page":"https://commons.wikimedia.org/wiki/File:Le_temple_du_rivage_(Mahabalipuram,_Inde)_(13950016044).jpg","author":"Jean-Pierre Dalbéra from Paris, France","licence":"CC BY 2.0","licenceUrl":"https://creativecommons.org/licenses/by/2.0"} },
+        { n: 2, name: "The smaller tower", line: "A second Shiva shrine, facing the other way, to the town.", more: "The Rajasimha Pallavesvara shrine. It faces west, back toward the land. On its outer walls are carvings of Shiva in other forms and of a snake king." },
+        { n: 3, name: "The shrine between them", line: "Small and low, with Vishnu lying asleep.", more: "An inscription says this is the oldest shrine in the compound. Vishnu lies on the great snake Ananta. It has no tower, and the two Shiva shrines were built around it." },
+        { n: 4, name: "The wall of bulls", line: "Stone Nandi bulls sit in a row along the compound wall.", more: "Nandi is the bull Shiva rides. Large sitting bulls are carved along the top of the wall that surrounds the temples, and on the wall of the Vishnu shrine.", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/02MahabalipuramShoreTemple%26BullStatues.jpg/500px-02MahabalipuramShoreTemple%26BullStatues.jpg","page":"https://commons.wikimedia.org/wiki/File:02MahabalipuramShoreTemple%26BullStatues.jpg","author":"Andy Hay","licence":"CC BY 2.0","licenceUrl":"https://creativecommons.org/licenses/by/2.0"} },
+        { n: 5, name: "The water tank", line: "A stepped tank outside the west wall, with a tiny shrine.", more: "The steps lead down into an enclosure cut into the bedrock. In 1990 the Archaeological Survey of India found a miniature Shiva shrine here, standing in the middle.", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Miniature_Shrine_Shore_Temple.jpg/500px-Miniature_Shrine_Shore_Temple.jpg","page":"https://commons.wikimedia.org/wiki/File:Miniature_Shrine_Shore_Temple.jpg","author":"Ravichandar84","licence":"CC BY-SA 3.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/3.0"} },
+        { n: 6, name: "The stone lion", line: "A carved lion carrying a small Durga, inside the compound.", more: "The lion was cut from a single stone. A small figure of the goddess Durga, who defeated the buffalo demon, is carved on its back." },
+        { n: 7, name: "The linga inside", line: "Inside the tall tower: a dark, fluted stone linga, Shiva's sign.", more: "The linga stands in the inner room, where the morning sun reaches. On the wall behind it is a carved panel of Shiva's family.", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Le_temple_du_rivage_%28Mahabalipuram%2C_Inde%29_%2813926412196%29.jpg/500px-Le_temple_du_rivage_%28Mahabalipuram%2C_Inde%29_%2813926412196%29.jpg","page":"https://commons.wikimedia.org/wiki/File:Le_temple_du_rivage_(Mahabalipuram,_Inde)_(13926412196).jpg","author":"Jean-Pierre Dalbéra from Paris, France","licence":"CC BY 2.0","licenceUrl":"https://creativecommons.org/licenses/by/2.0"} },
+        { n: 8, name: "Shiva's family", line: "A carved panel: Shiva and Parvati, with their son Skanda between.", more: "This family scene is called Somaskanda. It is carved on the back walls of the shrines here, a favourite picture of the Pallava kings.", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Les_temples_du_rivage_%28Mahabalipuram%2C_Inde%29_%2813949513945%29.jpg/500px-Les_temples_du_rivage_%28Mahabalipuram%2C_Inde%29_%2813949513945%29.jpg","page":"https://commons.wikimedia.org/wiki/File:Les_temples_du_rivage_(Mahabalipuram,_Inde)_(13949513945).jpg","author":"Jean-Pierre Dalbéra from Paris, France","licence":"CC BY 2.0","licenceUrl":"https://creativecommons.org/licenses/by/2.0"} },
+        { n: 9, name: "The boar god", line: "In the tiny shrine by the tank: Vishnu as a boar.", more: "This is Varaha, Vishnu as a boar, diving to rescue the earth goddess. The image was found with the tiny shrine in 1990.", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Idol_inside_miniature_shrine%2C_Shore_Temple.jpg/500px-Idol_inside_miniature_shrine%2C_Shore_Temple.jpg","page":"https://commons.wikimedia.org/wiki/File:Idol_inside_miniature_shrine,_Shore_Temple.jpg","author":"Ravichandar84","licence":"CC BY-SA 3.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/3.0"} },
+      ],
+      source: {"text":"Wikipedia, “Shore Temple” (CC BY-SA)","url":"https://en.wikipedia.org/wiki/Shore_Temple","accessed":"2026-09-17"},
+    },
     title: "Shore Temple",
     when: "c. 700–728 AD",
     wiki: "Shore Temple",
@@ -148,6 +176,23 @@ window.MAHABALIPURAM_MONUMENTS = [
   {
     id: "pancha-rathas",
     form: "group",
+    inside: {
+      // Roof types and the row from data/research/3d/03-rathas-resolved.md; the rest from
+      // Wikipedia "Pancha Rathas" and § Rathas (read 2026-09-17). The two articles disagree about
+      // where the bull stands, and the note says so. Map positions: part-positions.json.
+      // `stop` opens that ratha's own card.
+      parts: [
+        { n: 1, name: "Draupadi's", line: "The smallest, with a roof like a thatched village hut.", more: "A square cell with a curved roof copied from a thatched hut. It holds a carving of the goddess Durga.", stop: "draupadi-ratha", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mahabalipuram-Pancha_Rathas-Draupadi%27s_Ratha-WUS01870.jpg/500px-Mahabalipuram-Pancha_Rathas-Draupadi%27s_Ratha-WUS01870.jpg","page":"https://commons.wikimedia.org/wiki/File:Mahabalipuram-Pancha_Rathas-Draupadi%27s_Ratha-WUS01870.jpg","author":"Rainer Halama","licence":"CC BY-SA 4.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/4.0"} },
+        { n: 2, name: "Arjuna's", line: "A small stepped tower, two storeys.", more: "A square shrine with a neat, well-carved front — like a smaller Dharmaraja. It was never finished.", stop: "arjuna-ratha", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Front_View_of_Arjuna%27s_Ratha.jpg/500px-Front_View_of_Arjuna%27s_Ratha.jpg","page":"https://commons.wikimedia.org/wiki/File:Front_View_of_Arjuna%27s_Ratha.jpg","author":"Ajaybeny1989","licence":"CC BY-SA 4.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/4.0"} },
+        { n: 3, name: "Bhima's", line: "Long, with a roof like a wagon's cover.", more: "A long rectangle. Along both long sides run open halls whose pillars stand on seated lions.", stop: "bhima-ratha", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Mahabalipuram-Pancha_Rathas-Bhima%27s_Ratha-WUS01878.jpg/500px-Mahabalipuram-Pancha_Rathas-Bhima%27s_Ratha-WUS01878.jpg","page":"https://commons.wikimedia.org/wiki/File:Mahabalipuram-Pancha_Rathas-Bhima%27s_Ratha-WUS01878.jpg","author":"Rainer Halama","licence":"CC BY-SA 4.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/4.0"} },
+        { n: 4, name: "Dharmaraja's", line: "The tallest: a stepped tower of three storeys.", more: "Its walls carry gods such as Harihara, Brahma and Skanda, and a portrait of King Narasimhavarman I. On the east face, Indra rides his elephant.", stop: "dharmaraja-ratha", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mahabalipuram-Pancha_Rathas-Dharmaraja_Ratha-WUS01885.jpg/500px-Mahabalipuram-Pancha_Rathas-Dharmaraja_Ratha-WUS01885.jpg","page":"https://commons.wikimedia.org/wiki/File:Mahabalipuram-Pancha_Rathas-Dharmaraja_Ratha-WUS01885.jpg","author":"Rainer Halama","licence":"CC BY-SA 4.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/4.0"} },
+        { n: 5, name: "Nakula and Sahadeva's", line: "Round at one end, beside the stone elephant.", more: "Its plan is rounded at the back, an apse, and it is almost bare of carving. The elephant stands in the open beside it.", stop: "nakula-sahadeva-ratha", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/N-TN-C54_Sahadevas_Nakhulas_Ratha.jpg/500px-N-TN-C54_Sahadevas_Nakhulas_Ratha.jpg","page":"https://commons.wikimedia.org/wiki/File:N-TN-C54_Sahadevas_Nakhulas_Ratha.jpg","author":"R.K.Lakshmi","licence":"CC BY-SA 4.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/4.0"} },
+        { n: 6, name: "The lion", line: "A stone lion, west of Arjuna's and Draupadi's.", more: "Carved from its own block. Its place on the map is approximate: no survey records it, so it is placed from the written description." },
+        { n: 7, name: "The bull", line: "A seated Nandi bull, carved in the open.", more: "One Wikipedia article puts it beside Dharmaraja's ratha, another east of Arjuna's and Draupadi's. Its place on the map is approximate.", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mahabalipuram-Pancha_Rathas-Nandi-WUS01872.jpg/500px-Mahabalipuram-Pancha_Rathas-Nandi-WUS01872.jpg","page":"https://commons.wikimedia.org/wiki/File:Mahabalipuram-Pancha_Rathas-Nandi-WUS01872.jpg","author":"Rainer Halama","licence":"CC BY-SA 4.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/4.0"} },
+        { n: 8, name: "The elephant", line: "Life-size, standing beside Nakula and Sahadeva's ratha.", more: "One single piece of rock. Its place on the map is approximate: placed from the written description, not surveyed.", photo: {"src":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Mahabalipuram-Pancha_Rathas-Nakula_Sahadeva_Ratha-Elephant_sculpture-WUS01876.jpg/500px-Mahabalipuram-Pancha_Rathas-Nakula_Sahadeva_Ratha-Elephant_sculpture-WUS01876.jpg","page":"https://commons.wikimedia.org/wiki/File:Mahabalipuram-Pancha_Rathas-Nakula_Sahadeva_Ratha-Elephant_sculpture-WUS01876.jpg","author":"Rainer Halama","licence":"CC BY-SA 4.0","licenceUrl":"https://creativecommons.org/licenses/by-sa/4.0"} },
+      ],
+      source: {"text":"Wikipedia, “Pancha Rathas” (CC BY-SA)","url":"https://en.wikipedia.org/wiki/Pancha_Rathas","accessed":"2026-09-17"},
+    },
     title: "Pancha Rathas",
     when: "c. 630–668 AD",
     wiki: "Pancha Rathas",
@@ -170,6 +215,20 @@ window.MAHABALIPURAM_MONUMENTS = [
   {
     id: "descent-of-the-ganges",
     form: "relief",
+    inside: {
+      // From Wikipedia "Descent of the Ganges (Mahabalipuram)" (read 2026-09-17). Parts 3-5 are
+      // listed but not placed on the sketch: the article's text and the photographs disagree
+      // about which side of the cleft they are on. Photos: 1860s prints, public domain.
+      parts: [
+        { n: 1, name: "The cleft", line: "Water once ran down it from a tank on top. Snake-gods swim up it.", more: "A brick cistern on top of the rock once fed water down this natural crack, so the carved river really flowed. The naga figures, half snake and half human, rise in it.", photo: {"src":"assets/photos/bpl-penance-cleft-nagas-640.jpg","page":"https://www.digitalcommonwealth.org/search/commonwealth:vh541018k","author":"James Fergusson Collection, Boston Public Library","licence":"Public domain","licenceUrl":"https://rightsstatements.org/page/NoC-US/1.0/"} },
+        { n: 2, name: "The elephants", line: "Life-size, with their young, walking to the water.", more: "A whole herd is shown going to drink at the river, with the babies tucked beneath the big ones. They are among the largest carved animals in India.", photo: {"src":"assets/photos/bpl-penance-elephants-640.jpg","page":"https://www.digitalcommonwealth.org/search/commonwealth:rx916s10q","author":"James Fergusson Collection, Boston Public Library","licence":"Public domain","licenceUrl":"https://rightsstatements.org/page/NoC-US/1.0/"} },
+        { n: 3, name: "The thin man on one leg", line: "Arjuna or Bhagiratha, praying. Nobody is sure which.", more: "Either Arjuna fasting to win a weapon from Shiva, or King Bhagiratha praying to bring the river Ganges down to earth. Scholars still argue about it." },
+        { n: 4, name: "Shiva", line: "Standing beside the praying man.", more: "Shiva stands near the ascetic, granting what he prayed for." },
+        { n: 5, name: "The cat", line: "It copies the holy man on one leg. Mice gather at its feet.", more: "A joke in stone, from an old fable: a cat pretends to be holy so the mice trust it." },
+        { n: 6, name: "The flying figures", line: "Gods and couples in the air, all turned toward the cleft.", more: "In the upper part, pairs of celestial beings and half-bird kinnaras fly toward the river." },
+      ],
+      source: {"text":"Wikipedia, “Descent of the Ganges (Mahabalipuram)” (CC BY-SA)","url":"https://en.wikipedia.org/wiki/Descent_of_the_Ganges_(Mahabalipuram)","accessed":"2026-09-17"},
+    },
     title: "Descent of the Ganges",
     when: "7th century",
     wiki: "Descent of the Ganges (Mahabalipuram)",
@@ -190,6 +249,17 @@ window.MAHABALIPURAM_MONUMENTS = [
   {
     id: "varaha-cave",
     form: "cave",
+    inside: {
+      // Which wall each panel is on: Wikipedia § Varaha; details from "Varaha Cave Temple" (read 2026-09-17).
+      parts: [
+        { n: 1, name: "The pillars", line: "Each one stands on a seated stone lion.", more: "The fluted pillars have cushion-shaped tops and sit on lions, a Pallava signature." },
+        { n: 2, name: "Varaha the boar", line: "Vishnu as a boar, lifting the earth goddess out of the sea.", more: "Four-armed Vishnu, with a boar's head, holds a conch and a wheel and lifts the goddess Bhudevi clear of the ocean." },
+        { n: 3, name: "Gajalakshmi", line: "The goddess Lakshmi, with elephants pouring water over her.", more: "She sits holding lotus flowers, with four attendants, while two elephants bathe her." },
+        { n: 4, name: "Durga", line: "The goddess Durga standing, with her attendants.", more: "Beside the small shrine at the back, facing the entrance, which guardian figures flank." },
+        { n: 5, name: "Trivikrama", line: "Vishnu taking one giant step across the world.", more: "In three strides Vishnu measures the three worlds and claims them all." },
+      ],
+      source: {"text":"Wikipedia, “Varaha Cave Temple” (CC BY-SA)","url":"https://en.wikipedia.org/wiki/Varaha_Cave_Temple","accessed":"2026-09-17"},
+    },
     title: "Varaha Cave Temple",
     when: "7th century",
     wiki: "Varaha Cave Temple",
@@ -209,6 +279,16 @@ window.MAHABALIPURAM_MONUMENTS = [
   {
     id: "mahishasuramardini-mandapa",
     form: "cave",
+    inside: {
+      // Which wall each panel is on: Wikipedia § Mahishasuramardini; details from "Mahishasuramardini Mandapa" (read 2026-09-17).
+      parts: [
+        { n: 1, name: "Durga's battle", line: "Durga rides her lion at the buffalo demon. All movement.", more: "Eight-armed Durga holds a sword, a bow and arrows, with a parasol over her head. The buffalo-headed demon Mahishasura swings a club and gives way." },
+        { n: 2, name: "Vishnu asleep", line: "On the facing wall, Vishnu sleeps on the great snake. All stillness.", more: "Vishnu lies on the serpent Adisesha. Two demons, Madhu and Kaitabha, come at his feet with maces, and back off as the snake rears its flaming hoods." },
+        { n: 3, name: "Three small shrines", line: "Three cells cut into the back wall.", more: "The left one has a panel of Brahma, the right one another of Shiva. Four pillars and two half-pillars stand across the front." },
+        { n: 4, name: "Shiva's family", line: "In the middle cell: Shiva, Parvati and the child Skanda.", more: "The Somaskanda panel: the crowned couple sit with their son between them." },
+      ],
+      source: {"text":"Wikipedia, “Mahishasuramardini Mandapa” (CC BY-SA)","url":"https://en.wikipedia.org/wiki/Mahishasuramardini_Mandapa","accessed":"2026-09-17"},
+    },
     title: "Mahishasuramardini Mandapa",
     when: "7th century",
     wiki: "Mahishasuramardini Mandapa",
@@ -236,6 +316,15 @@ window.MAHABALIPURAM_MONUMENTS = [
     id: "krishnas-butterball",
     form: "boulder",
     roof: "boulder", // source: content/mahabalipuram-heights.js
+    inside: {
+      // Figures from Wikipedia "Krishna's Butterball" (read 2026-09-17).
+      parts: [
+        { n: 1, name: "The boulder", line: "About 6 metres high and 5 wide. Natural, not carved.", more: "It weighs around 250 tonnes. In 1908 the governor, Arthur Havelock, tried to move it with seven elephants and failed." },
+        { n: 2, name: "Where it rests", line: "Only a small patch touches the sloping rock.", more: "It sits on a natural rock plinth about 1.2 metres high, on a slope, and looks as if it could roll at any moment." },
+        { n: 3, name: "The missing back", line: "A piece of the top back has broken away. Walk round to see.", more: "From three sides it looks round. From behind, it looks like half a ball." },
+      ],
+      source: {"text":"Wikipedia, “Krishna's Butterball” (CC BY-SA)","url":"https://en.wikipedia.org/wiki/Krishna%27s_Butterball","accessed":"2026-09-17"},
+    },
     title: "Krishna's Butterball",
     when: "Natural feature",
     wiki: "Krishna's Butterball",
@@ -263,6 +352,16 @@ window.MAHABALIPURAM_MONUMENTS = [
      * is that ids are never renamed, because #stop= links in the wild use them. */
     id: "olakkanneshwara",
     form: "structural",
+    inside: {
+      // From Wikipedia "Olakkannesvara Temple" (read 2026-09-17).
+      parts: [
+        { n: 1, name: "The temple on the rock", line: "It faces east. Its tower is gone, and it is empty inside.", more: "Worn carvings survive outside: Shiva as the teacher Dakshinamurti on the south wall, Ravana shaking Mount Kailash on the west, and Nataraja on the north." },
+        { n: 2, name: "The climb", line: "Short, but with almost no shade.", more: "Bring water. The granite holds the heat through the afternoon." },
+        { n: 3, name: "The view", line: "The whole site, the town and the coast. Its roof was once the lighthouse.", more: "Before the present lighthouse beside it was built in 1900, a light was kept on this temple's roof." },
+        { n: 4, name: "The cave below", line: "The Mahishasuramardini cave is cut into the rock right under it.", more: "Walk down and round to see Durga's battle and the sleeping Vishnu inside." },
+      ],
+      source: {"text":"Wikipedia, “Olakkannesvara Temple” (CC BY-SA)","url":"https://en.wikipedia.org/wiki/Olakkannesvara_Temple","accessed":"2026-09-17"},
+    },
     title: "Olakkanesvara Temple",
     when: "8th century",
     wiki: "Olakkannesvara Temple",
@@ -282,6 +381,18 @@ window.MAHABALIPURAM_MONUMENTS = [
   {
     id: "tiger-cave",
     form: "cave",
+    inside: {
+      // Parts 1-4 from this entry's own cited text; part 5 and the dates from Wikipedia
+      // "Tiger Cave (India)" (read 2026-09-17). 4 and 5 are listed, not placed, on the sketch.
+      parts: [
+        { n: 1, name: "The ring of heads", line: "Carved beasts called yalis, not tigers, all round the opening.", more: "Yalis are mythical lion-like animals. The name Tiger Cave stuck anyway." },
+        { n: 2, name: "The stage", line: "A shallow platform inside the opening.", more: "A small porch between two half-pillars, which stand on rearing beasts." },
+        { n: 3, name: "The open ground", line: "Room for a crowd. It was likely made for shows or meetings.", more: "The cave is about 4.8 km north of Mahabalipuram, at Saluvankuppam." },
+        { n: 4, name: "The old brick shrine", line: "Found nearby: a very old Murugan temple.", more: "An inscription found on a rock here in 2005 led to digging that uncovered a Murugan temple from the Sangam period." },
+        { n: 5, name: "The elephant heads", line: "Two more small cells, with elephant heads carved beneath them.", more: "They sit to the sides of the main opening." },
+      ],
+      source: {"text":"Wikipedia, “Tiger Cave (India)” (CC BY-SA)","url":"https://en.wikipedia.org/wiki/Tiger_Cave_(India)","accessed":"2026-09-17"},
+    },
     title: "Tiger Cave, Saluvankuppam",
     when: "8th century",
     wiki: "Tiger Cave (India)",

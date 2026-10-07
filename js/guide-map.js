@@ -55,13 +55,19 @@ window.GuideMap = (function () {
 
   function create(config) {
     const {
-      container, osm, paths, park, routes, monuments, routeDefs, plan,
+      container, osm, paths, park, routes, monuments, routeDefs, plan, partPositions,
       legendEl, sheetEl, sheetBodyEl, provenanceEl, routeBarEl, locateBtn, grabBtn, threeDBtn, photo, allBtn,
     } = config;
     /* The pictures on the pins (js/monument-pictures.js), the same drawings
      * the destination page's site plan uses. Optional: without the script the
      * pins fall back to a plain disc. */
     const pictures = window.MonumentPictures || null;
+    /* The monuments the 3D scene has a panel for (the ids in data/pois.json,
+     * which this page does not load). Only these get "See it in 3D". */
+    const IN_3D = new Set([
+      "shore-temple", "pancha-rathas", "descent-of-the-ganges", "krishnas-butterball",
+      "varaha-cave", "mahishasuramardini-mandapa", "olakkanneshwara",
+    ]);
 
     const monById = new Map(monuments.map((m) => [m.id, m]));
     const osmMonById = new Map(osm.monuments.map((m) => [m.id, m]));
@@ -1348,6 +1354,7 @@ window.GuideMap = (function () {
 
     /* ---------- Routes ---------- */
     function setRoute(id) {
+      clearPartMarkers();
       activeRoute = id ? routeDefs.find((r) => r.id === id) || null : null;
       const feats = activeRoute ? routes.features.filter((f) => f.properties.route === activeRoute.id) : [];
       const src = map.getSource("route");
@@ -1439,12 +1446,72 @@ window.GuideMap = (function () {
       const kids = monuments.filter((x) => x.partOf === m.id);
       const parent = m.partOf ? monById.get(m.partOf) : null;
 
+      /* THE CARD, SHORT AND VISUAL FIRST.
+       *
+       * Photo, one sentence, three chips, then "What you will see here" — a
+       * labelled sketch of the monument with a plain line per number — and
+       * only then the way there. The longer history, the sources and the
+       * links are all still here, folded under "Read more"; for a monument
+       * with no `inside` yet the fold is rendered open, so nothing that used
+       * to show is hidden. */
+      const chips = rows.map(([k, v]) => `<li><b>${esc(k)}</b> ${esc(v)}</li>`).join("");
+      const inside = m.inside && m.inside.parts && m.inside.parts.length ? m.inside : null;
+      const diagram = inside && window.MonumentDiagrams ? window.MonumentDiagrams.get(m.id) : null;
+      if (DEV && inside && diagram) {
+        const placed = new Set([...Object.keys(diagram.pins).map(Number), ...(diagram.also || [])]);
+        for (const part of inside.parts) if (!placed.has(part.n)) console.warn(`[guide] ${m.id}: part ${part.n} is neither placed nor listed in the sketch`);
+        for (const n of placed) if (!inside.parts.some((x) => x.n === n)) console.warn(`[guide] ${m.id}: the sketch has a number ${n} with no words`);
+      }
+      /* Parts that stand at a known place (data/mahabalipuram-part-positions.json):
+       * the Shore Temple and the Pancha Rathas. Their numbers also go on the map. */
+      const onMap = inside && partPositions && partPositions.monuments && partPositions.monuments[m.id] ? partPositions.monuments[m.id] : null;
+      const insideHtml = !inside ? "" :
+        `<section class="g-inside" aria-label="What you will see here">` +
+        `<h3 class="g-inside-title">${esc(inside.lead || "What you will see here")}</h3>` +
+        (diagram
+          ? `<figure class="g-sketch">` +
+            `<div class="g-sketch-box"><svg viewBox="0 0 320 200" aria-hidden="true">${diagram.svg}</svg>` +
+            Object.entries(diagram.pins).map(([n, [x, y]]) =>
+              `<button type="button" class="g-part-pin" data-part="${esc(n)}" aria-pressed="false" style="left:${x}%;top:${y}%" aria-label="${esc(n)}: ${esc((inside.parts.find((q) => String(q.n) === String(n)) || {}).name || "")}"><span>${esc(n)}</span></button>`
+            ).join("") +
+            `</div>` +
+            `<figcaption>${esc(diagram.view)}. A simple sketch of what is where — not to scale, not a survey.` +
+            ((diagram.also || []).length
+              ? ` ${diagram.also.length > 1 ? "Numbers" : "Number"} ${esc(diagram.also.join(", "))} ${diagram.also.length > 1 ? "are" : "is"} here too, but no source says exactly where, so ${diagram.also.length > 1 ? "they are" : "it is"} not placed.`
+              : "") +
+            `</figcaption></figure>`
+          : "") +
+        (onMap
+          ? `<p class="g-onmap">The numbers are also on the map. Positions come from OpenStreetMap and the reconstruction layout, and are right to within a few metres${Object.values(onMap.parts).some((x) => x && x.approximate) ? "; a dashed ring means approximate" : ""}.</p>`
+          : "") +
+        `<ol class="g-parts">${inside.parts.map((q) => {
+          const panelId = `gpm-${m.id}-${q.n}`;
+          const ph = q.photo;
+          const via = ph && /commons\.wikimedia\.org/.test(ph.page) ? "Wikimedia Commons" : "the holding library";
+          const panel = q.more || ph
+            ? `<div class="g-part-more" id="${esc(panelId)}" hidden>` +
+              (ph
+                ? `<figure class="g-part-photo"><img src="${esc(ph.src)}" alt="${esc(q.name)}" loading="lazy" decoding="async">` +
+                  `<figcaption>Photo: <a href="${esc(ph.page)}" target="_blank" rel="noopener">${esc(ph.author || "unknown")}</a>, ` +
+                  `<a href="${esc(ph.licenceUrl || ph.page)}" target="_blank" rel="noopener">${esc(ph.licence || "see source")}</a>, via ${via}</figcaption></figure>`
+                : "") +
+              (q.more ? `<p>${esc(q.more)}</p>` : "") +
+              `</div>`
+            : "";
+          return `<li><button type="button" class="g-part" data-part="${esc(q.n)}" aria-pressed="false"${panel ? ` aria-expanded="false" aria-controls="${esc(panelId)}"` : ""}><span class="g-part-n">${esc(q.n)}</span><span class="g-part-text"><b>${esc(q.name)}</b> ${esc(q.line)}</span></button>` +
+            panel +
+            (q.stop && monById.get(q.stop) ? `<button type="button" class="g-linkish g-part-go" data-stop="${esc(q.stop)}">Open ${esc(monById.get(q.stop).title)} →</button>` : "") +
+            `</li>`;
+        }).join("")}</ol>` +
+        `</section>`;
+
       const body =
-        `<p class="g-lede">${esc(m.text)}</p>` +
         // The box is reserved ONLY when a photo is actually expected, so a
         // monument with no article never shows an empty frame.
         (m.photo ? `<figure class="g-photo" data-photo></figure>` : "") +
-        `<dl class="g-rows">${rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` +
+        `<p class="g-lede">${esc(m.text)}</p>` +
+        `<ul class="g-chips">${chips}</ul>` +
+        insideHtml +
         /* Road directions, handed off to Google Maps.
          *
          * Deliberately delegated. This guide draws its own routes from the OSM
@@ -1457,9 +1524,13 @@ window.GuideMap = (function () {
          * The destination is the monument's real OSM coordinate, in Maps' own
          * lat,lng order. Nothing about the visitor is sent — the link carries a
          * destination and nothing else. */
+        `<p class="g-actions">` +
         (lngLat
-          ? `<p><a class="g-directions" href="https://www.google.com/maps/dir/?api=1&destination=${lngLat[1]},${lngLat[0]}&travelmode=driving" target="_blank" rel="noopener">Road directions on Google Maps →</a></p>`
+          ? `<a class="g-directions" href="https://www.google.com/maps/dir/?api=1&destination=${lngLat[1]},${lngLat[0]}&travelmode=driving" target="_blank" rel="noopener">Road directions on Google Maps →</a>`
           : "") +
+        (IN_3D.has(m.id) ? `<a class="g-directions" href="mahabalipuram-3d.html#site&poi=${encodeURIComponent(m.id)}">See it in 3D →</a>` : "") +
+        `</p>` +
+        `<details class="g-more"${inside ? "" : " open"}><summary>Read more</summary>` +
         (m.detail || []).map((t) => `<p>${esc(t)}</p>`).join("") +
         (m.photo
           ? ""
@@ -1470,11 +1541,25 @@ window.GuideMap = (function () {
               .join("")}</ol>`
           : "") +
         (parent ? `<p><button class="g-linkish" type="button" data-stop="${esc(parent.id)}">Part of ${esc(parent.title)} →</button></p>` : "") +
-        (m.sources || []).map((s) => `<p class="g-source">${esc(s.text)} — <a href="${esc(s.url)}" target="_blank" rel="noopener">source</a>, accessed ${esc(s.accessed)}</p>`).join("") +
+        [...(m.sources || []), ...(inside && inside.source ? [inside.source] : [])]
+          .map((src) => `<p class="g-source">${esc(src.text)} — <a href="${esc(src.url)}" target="_blank" rel="noopener">source</a>, accessed ${esc(src.accessed)}</p>`).join("") +
         (m.mapSite ? `<p><a href="index.html#site=${esc(m.mapSite)}">See it on the heritage map →</a></p>` : "") +
-        `<p><a href="mahabalipuram.html">Read the full guide →</a></p>`;
+        `<p><a href="mahabalipuram.html">Read the full guide →</a></p>` +
+        `</details>`;
 
       setSheet(m.title, body);
+      /* A card with a sketch opens tall: at the 40vh peek the picture — the
+       * thing this card is for — would sit below the fold. */
+      if (inside) {
+        sheetEl.classList.add("is-expanded");
+        // With numbers on the map the sheet stops halfway, so both can be seen.
+        sheetEl.classList.toggle("is-parts", Boolean(onMap));
+        if (grabBtn) {
+          grabBtn.setAttribute("aria-expanded", "true");
+          const t = grabBtn.querySelector(".g-grab-text");
+          if (t) t.textContent = "Less";
+        }
+      }
       // Looked up AFTER setSheet, which replaces the body wholesale. render()
       // re-checks isConnected after its await, so opening another card first
       // simply leaves this node detached and the injection no-ops.
@@ -1482,7 +1567,8 @@ window.GuideMap = (function () {
         const slot = sheetBodyEl.querySelector("[data-photo]");
         if (slot) photo.render(slot, [m.wiki], { size: "thumb", alt: m.title, credit: m.photoCredit });
       }
-      if (lngLat) map.easeTo({ center: lngLat, zoom: Math.max(map.getZoom(), 17), offset: centreOffset(), duration: dur(650) });
+      if (onMap) showPartMarkers(m, inside, onMap);
+      else if (lngLat) map.easeTo({ center: lngLat, zoom: Math.max(map.getZoom(), 17), offset: centreOffset(), duration: dur(650) });
       updateHash({ stop: id });
     }
 
@@ -1511,6 +1597,8 @@ window.GuideMap = (function () {
     }
 
     function setSheet(title, html) {
+      clearPartMarkers();
+      sheetEl.classList.remove("is-parts");
       sheetBodyEl.innerHTML = title ? `<h2 class="g-sheet-title">${esc(title)}</h2>${html}` : "";
       sheetEl.classList.toggle("is-open", Boolean(title));
       // Always reopen at the peek height: the map is the point, and the
@@ -1530,8 +1618,105 @@ window.GuideMap = (function () {
 
     sheetBodyEl.addEventListener("click", (e) => {
       const stop = e.target.closest("[data-stop]");
-      if (stop) showStop(stop.dataset.stop);
+      if (stop) { showStop(stop.dataset.stop); return; }
+      /* "What you will see here": a number on the sketch and its line in the
+       * list are the same control. One part lit at a time; tapping the lit
+       * one turns it off. */
+      const part = e.target.closest(".g-part-pin, .g-part");
+      if (!part) return;
+      lightPart(part.dataset.part, part.matches(".g-part-pin") ? "sketch" : "list");
     });
+
+    /* ---------- The parts of a monument, in three places ----------
+     * A part's number on the map, its number on the sketch and its line in the
+     * card are one control: lighting one lights all three, opens that part's
+     * longer note and photo, and closes any other. Tapping the lit one again
+     * turns it off. From the map or the sketch the card scrolls to the line;
+     * from the card the map pans to the part if it is off screen. */
+    let partMarkers = [];
+    let explodedId = null;
+
+    function lightPart(n, from) {
+      const box = sheetBodyEl.querySelector(".g-inside");
+      if (!box) return;
+      const line = box.querySelector(`.g-part[data-part="${CSS.escape(n)}"]`);
+      const on = !line || line.getAttribute("aria-pressed") !== "true";
+      box.querySelectorAll("[data-part]").forEach((el) => {
+        const hit = on && el.dataset.part === n;
+        el.classList.toggle("is-on", hit);
+        if (el.matches("button")) el.setAttribute("aria-pressed", String(hit));
+        if (el.matches(".g-part[aria-controls]")) {
+          el.setAttribute("aria-expanded", String(hit));
+          const panel = document.getElementById(el.getAttribute("aria-controls"));
+          if (panel) panel.hidden = !hit;
+        }
+      });
+      for (const pm of partMarkers) {
+        const hit = on && pm._part === n;
+        const el = pm.getElement();
+        el.classList.toggle("is-on", hit);
+        el.setAttribute("aria-pressed", String(hit));
+      }
+      if (!on || !line) return;
+      /* Scroll the sheet itself: scrollIntoView does nothing reliable here, because
+       * the sheet is an overflow:hidden box whose body is the scroller. */
+      if (from !== "list") {
+        const top = line.getBoundingClientRect().top - sheetBodyEl.getBoundingClientRect().top + sheetBodyEl.scrollTop - 12;
+        sheetBodyEl.scrollTo({ top, behavior: REDUCED_MOTION ? "auto" : "smooth" });
+      }
+      const pm = partMarkers.find((x) => x._part === n);
+      if (from !== "map" && pm && !map.getBounds().contains(pm.getLngLat())) {
+        map.panTo(pm.getLngLat(), { offset: centreOffset(), duration: dur(500) });
+      }
+    }
+
+    function clearPartMarkers() {
+      for (const pm of partMarkers) pm.remove();
+      partMarkers = [];
+      if (explodedId) {
+        for (const mk of monMarkers) mk.getElement().classList.remove("is-exploded");
+        explodedId = null;
+      }
+    }
+
+    function showPartMarkers(m, inside, onMap) {
+      clearPartMarkers();
+      const bounds = new maplibregl.LngLatBounds();
+      for (const [n, pos] of Object.entries(onMap.parts)) {
+        if (!pos || !Array.isArray(pos.lngLat)) continue;
+        const q = inside.parts.find((x) => String(x.n) === n);
+        if (!q) continue;
+        const el = document.createElement("button");
+        el.type = "button";
+        el.className = "g-map-part" + (pos.approximate ? " is-approx" : "");
+        el.setAttribute("aria-pressed", "false");
+        el.setAttribute("aria-label", `${n}, ${q.name}${pos.approximate ? " (approximate position)" : ""}`);
+        el.title = `${q.name} — ${pos.how}${pos.accuracy_m ? `, about ±${pos.accuracy_m} m` : ""}`;
+        el.innerHTML = `<span>${esc(n)}</span>`;
+        el.addEventListener("click", (e) => {
+          e.stopPropagation();
+          lightPart(n, "map");
+        });
+        const mk = new maplibregl.Marker({ element: el, anchor: "center" }).setLngLat(pos.lngLat).addTo(map);
+        mk._part = n;
+        partMarkers.push(mk);
+        bounds.extend(pos.lngLat);
+      }
+      if (!partMarkers.length) return;
+      /* The monument's own pin — and, for the rathas, the five rathas' own pins —
+       * would sit on top of its numbers: hide them until the card closes. */
+      explodedId = m.id;
+      for (const mk of monMarkers) {
+        if (mk._mon.id === m.id || mk._mon.partOf === m.id) mk.getElement().classList.add("is-exploded");
+      }
+      const sheetPx = sheetEl.getBoundingClientRect().height || window.innerHeight * 0.5;
+      const topPx = window.innerWidth < 820 ? 120 : 90;
+      map.fitBounds(bounds, {
+        padding: { top: topPx, bottom: Math.min(sheetPx + 30, window.innerHeight - topPx - 80), left: 50, right: 50 },
+        maxZoom: 19,
+        duration: dur(800),
+      });
+    }
 
     /* ---------- Legend ---------- */
     function renderLegend() {

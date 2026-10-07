@@ -31,12 +31,14 @@
     // The monuments' own outlines (and water, landcover) — optional: the map
     // is complete without them, they only add the areas under the pins.
     json("data/mahabalipuram-plan.geojson").catch(() => null),
+    // Where the numbered parts of a monument stand — optional too.
+    json("data/mahabalipuram-part-positions.json").catch(() => null),
   ])
-    .then(([osm, paths, park, routes, plan]) => {
+    .then(([osm, paths, park, routes, plan, partPositions]) => {
       if (typeof maplibregl === "undefined") throw new Error("maplibre failed to load");
       const instance = window.GuideMap.create({
         container: "guide-map",
-        osm, paths, park, routes, monuments, routeDefs, plan,
+        osm, paths, park, routes, monuments, routeDefs, plan, partPositions,
         legendEl: el("g-legend"),
         sheetEl: el("g-sheet"),
         sheetBodyEl: el("g-sheet-body"),
