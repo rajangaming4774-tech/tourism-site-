@@ -656,3 +656,64 @@ button { font: inherit; color: inherit; }
   transition: transform 160ms var(--ease-out), box-shadow 160ms var(--ease-out);
 }
 .guide-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(245, 181, 63, 0.28); }
+
+/* ---------- Mobile: Google-Maps-style chrome ----------
+   Full-bleed map; floating search pill, a row of filter chips, and the
+   timeline as a rounded bottom sheet. Desktop layout is untouched. */
+@media (max-width: 768px) {
+  .site-header {
+    position: absolute; top: 0; left: 0; right: 0; z-index: var(--z-header);
+    padding: 10px 12px 0; gap: 8px; background: none; border: none;
+    pointer-events: none;
+  }
+  .site-header > * { pointer-events: auto; }
+  .brand { display: none; }
+  .header-meta { flex: 1; gap: 8px; }
+  .search-wrap { flex: 1; }
+  #search {
+    width: 100%; min-height: 44px; padding-left: 40px; font-size: 0.9rem;
+    background: var(--bg-raised); border-color: var(--border);
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.45);
+  }
+  .search-icon { left: 14px; width: 18px; height: 18px; }
+  .search-results { left: 0; right: auto; width: calc(100vw - 24px); }
+  #browse-btn {
+    min-height: 44px; padding: 0 16px; border-radius: 999px;
+    background: var(--bg-raised); box-shadow: 0 3px 14px rgba(0, 0, 0, 0.45);
+  }
+
+  /* Filter chips: each its own pill, scrolling row under the search bar. */
+  .layer-panel {
+    top: 62px; left: 0; right: 0; padding: 4px 12px; gap: 8px;
+    background: none; border: none; box-shadow: none;
+    backdrop-filter: none; -webkit-backdrop-filter: none; border-radius: 0;
+  }
+  .lrow {
+    min-height: 34px; padding: 6px 12px 6px 10px; gap: 7px;
+    background: var(--bg-raised); border: 1px solid var(--border); border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  /* "Who ruled" sits on the second row of the top chrome. */
+  .kingdom-legend { top: 108px; bottom: auto; left: 12px; }
+  .legend-pills { flex-direction: column; flex-wrap: nowrap; }
+
+  .layout::after { display: none; }
+
+  /* Timeline becomes the bottom sheet. */
+  .timeline {
+    position: relative; margin-top: -14px; z-index: var(--z-header);
+    border-radius: 18px 18px 0 0; border-top: 1px solid var(--border);
+    box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.45);
+    padding: 18px 16px calc(12px + env(safe-area-inset-bottom));
+  }
+  .timeline::before {
+    content: ""; position: absolute; top: 7px; left: 50%;
+    width: 36px; height: 4px; margin-left: -18px;
+    border-radius: 2px; background: rgba(148, 163, 184, 0.45);
+  }
+  .timeline-info { gap: 10px; margin-bottom: 4px; }
+  .period-caption { flex-basis: 100%; }
+  .records-btn { bottom: 24px; }
+  .terrain-btn { bottom: 96px; }
+}
