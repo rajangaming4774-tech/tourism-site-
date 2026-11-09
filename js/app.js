@@ -20,6 +20,7 @@
       url: "mahabalipuram.html",
       // The on-site wayfinding map — routes, facilities and "you are here".
       mapUrl: "mahabalipuram-guide.html",
+      modelUrl: "mahabalipuram-3d.html",
       center: [80.1928, 12.6269],
       sites: ["TM-015", "TM-018"],
     },
@@ -108,9 +109,24 @@
   const INDIA_CENTER = [80.5, 22.5];
   const INDIA_ZOOM = isMobileViewport ? 3.35 : 4.1;
 
+  /* Visual theme: ?theme=parchment|temple|monsoon (remembered), default light. */
+  const THEMES = {
+    parchment: { background: "#eadcb9", water: "#b9c7b8", water_shadow: "#b9c7b8", landcover: "#e2d2a8", landuse: "#e2d2a8" },
+    temple: { background: "#1a1233", water: "#0d0820", water_shadow: "#0d0820", landcover: "#221845", landuse: "#221845", landuse_residential: "#221845" },
+    monsoon: { background: "#e4f1ec", water: "#9fd3df", water_shadow: "#9fd3df", landcover: "#cfe6d8" },
+  };
+  let theme = new URLSearchParams(location.search).get("theme");
+  try {
+    if (theme === "default") localStorage.removeItem("ihm-theme");
+    else if (theme) localStorage.setItem("ihm-theme", theme);
+    else theme = localStorage.getItem("ihm-theme");
+  } catch { /* storage blocked */ }
+  if (THEMES[theme]) document.documentElement.dataset.theme = theme;
+  else theme = null;
+
   const map = new maplibregl.Map({
     container: "map",
-    style: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+    style: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
     center: skipIntro ? INDIA_CENTER : [72, 12],
     zoom: skipIntro ? INDIA_ZOOM : 1.6,
     minZoom: 1.2,
@@ -121,6 +137,8 @@
     // The 3D camera asks for pitch 62; the default 60 clamps it silently.
     maxPitch: 75,
     fadeDuration: 300,
+    // Render at least 2x so the canvas is sharp on 4K / retina screens.
+    pixelRatio: Math.max(window.devicePixelRatio || 1, 2),
   });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
   // Local dev only: a console handle for the same checks the guide map exposes
@@ -620,6 +638,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>` : ""}
       ${guide && guide.mapUrl ? `<a class="guide-cta guide-cta-alt" href="${esc(guide.mapUrl)}">Site map &amp; facilities
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>` : ""}
+      ${guide && guide.modelUrl ? `<a class="guide-cta guide-cta-alt" href="${esc(guide.modelUrl)}">3D monument models <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>` : ""}
       ${rows.length ? `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : ""}
       ${ruler ? `<div class="chip-row"><h3>Who ruled here then</h3><button class="era-chip" id="ruler-chip"><span class="k-swatch" style="background:${ruler.pol.color};display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px"></span>${esc(ruler.pol.name)} · ${esc(ruler.p.label)}</button></div>` : ""}
       ${near.length ? `<div class="chip-row"><h3>Also at this location</h3>${near.map((f) => `<button class="also-chip" data-site="${f.properties.id}">${esc(f.properties.name.split(",")[0])}</button>`).join("")}</div>` : ""}
@@ -925,11 +944,12 @@
       });
     } catch { /* no sky support */ }
 
-    // Tint the vector basemap toward the site's navy.
-    try {
-      map.setPaintProperty("background", "background-color", "#0b1220");
-      map.setPaintProperty("water", "fill-color", "#0e1830");
-    } catch { /* layer ids differ — keep style defaults */ }
+    // Recolour the basemap to the chosen theme.
+    for (const [id, color] of Object.entries(THEMES[theme] || {})) {
+      const layer = map.getLayer(id);
+      if (!layer) continue;
+      try { map.setPaintProperty(id, layer.type === "background" ? "background-color" : "fill-color", color); } catch { /* keep default */ }
+    }
 
     // Overlays that belong *under* the basemap's place labels.
     const firstSymbolId = map.getStyle().layers.find((l) => l.type === "symbol")?.id;
@@ -958,11 +978,11 @@
         type: "hillshade",
         source: "dem-hills",
         paint: {
-          // Strong enough to read as mountains on a very dark basemap.
-          "hillshade-exaggeration": 0.62,
-          "hillshade-shadow-color": "#04070d",
-          "hillshade-highlight-color": "#5b7099",
-          "hillshade-accent-color": "#16233d",
+                    "hillshade-exaggeration": 0.62,
+          // Night palette for the dark theme; soft grey relief on the light ones.
+          "hillshade-shadow-color": theme === "temple" ? "#04030c" : "rgba(60, 50, 40, 0.45)",
+          "hillshade-highlight-color": theme === "temple" ? "#3a2f66" : "rgba(255, 255, 255, 0.55)",
+          "hillshade-accent-color": theme === "temple" ? "#140e2a" : "rgba(60, 50, 40, 0.18)",
         },
       },
       firstSymbolId
@@ -977,19 +997,20 @@
      * exists, from levels where it doesn't, and from a default where neither
      * does — and the three are indistinguishable once baked into the tile.
      * A tall tower really is tall here; a 5 m shop may just be untagged. */
+    // The basemap's own building layer names the tile source and layer to extrude.
+    const BLD = map.getStyle().layers.find((l) => l.id === "building") || {};
     try {
       map.addLayer(
         {
           id: "massing",
           type: "fill-extrusion",
-          source: "carto",
-          "source-layer": "building",
+          source: BLD.source,
+          "source-layer": BLD["source-layer"],
           minzoom: 12.5,
-          filter: ["!=", ["get", "hide_3d"], true],
           paint: {
-            "fill-extrusion-color": "#22304e",
-            "fill-extrusion-height": ["coalesce", ["get", "render_height"], 8],
-            "fill-extrusion-base": ["coalesce", ["get", "render_min_height"], 0],
+            "fill-extrusion-color": ["interpolate", ["linear"], ["coalesce", ["get", "height"], ["get", "render_height"], 8], 0, "#e3dfd6", 40, "#d3cec4", 120, "#bdb7ac"],
+            "fill-extrusion-height": ["coalesce", ["get", "height"], ["get", "render_height"], 8],
+            "fill-extrusion-base": ["coalesce", ["get", "min_height"], ["get", "render_min_height"], 0],
             // Comes up with the tilt rather than popping in at full strength.
             "fill-extrusion-opacity": ["interpolate", ["linear"], ["zoom"], 12.5, 0, 14.5, 0.85],
             "fill-extrusion-vertical-gradient": true,

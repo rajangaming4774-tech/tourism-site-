@@ -350,7 +350,7 @@ button { font: inherit; color: inherit; }
 .detail-panel dl { display: grid; grid-template-columns: auto 1fr; gap: 7px 14px; margin: 14px 0; font-size: 0.84rem; }
 .detail-panel dt { color: var(--text-muted); font-weight: 500; white-space: nowrap; }
 .detail-panel dd { color: var(--text); line-height: 1.5; }
-.detail-panel p.summary { font-size: 0.88rem; line-height: 1.65; color: #cbd5e1; margin: 10px 0; }
+.detail-panel p.summary { font-size: 0.88rem; line-height: 1.65; color: var(--text-muted); margin: 10px 0; }
 .detail-sources { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border); }
 .detail-sources h3 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 6px; }
 .detail-sources li { font-size: 0.76rem; color: var(--text-muted); margin: 4px 0 4px 16px; overflow-wrap: anywhere; }
@@ -716,4 +716,138 @@ button { font: inherit; color: inherit; }
   .period-caption { flex-basis: 100%; }
   .records-btn { bottom: 24px; }
   .terrain-btn { bottom: 96px; }
+}
+
+/* ---------- Google-Maps light theme ----------
+   White chrome, grey text, Google blue accent. The splash keeps its own
+   night-sky palette, so it re-declares the dark tokens. */
+:root {
+  --bg: #ffffff;
+  --bg-raised: #ffffff;
+  --bg-overlay: rgba(255, 255, 255, 0.96);
+  --text: #202124;
+  --text-muted: #5f6368;
+  --border: #dadce0;
+  --accent: #1a73e8;
+  --shadow: 0 2px 10px rgba(60, 64, 67, 0.3);
+  color-scheme: light;
+}
+.splash {
+  --bg: #0b1220; --text: #f1f5f9; --text-muted: #94a3b8;
+  --border: rgba(148, 163, 184, 0.18); --accent: #f5b53f;
+}
+body { background: #e8eaed; }
+#map { background: #e8eaed; }
+.layout::after { display: none; }
+.site-header { background: #fff; border-bottom: 1px solid var(--border); }
+.timeline { background: #fff; border-top: 1px solid var(--border); }
+#search, .hdr-btn, .trail-select { background: #fff; color: var(--text); }
+#search { background: #f1f3f4; border-color: transparent; }
+#search:focus { background: #fff; border-color: var(--accent); }
+.sr-item:hover, .sr-item.active, .lrow:hover, .browse-item:hover, .browse-item:focus-visible,
+.detail-close:hover { background: rgba(60, 64, 67, 0.08); }
+.lrow:active { background: rgba(60, 64, 67, 0.16); }
+.lrow, .k-pill, .layer-panel, .terrain-btn, .records-btn { color: var(--text); }
+.records-btn { color: var(--accent); border-color: var(--border); }
+.records-btn:hover, .records-btn[aria-pressed="true"] { background: #e8f0fe; border-color: var(--accent); }
+.k-toggle { border-color: var(--border); }
+.play-btn { color: #fff; background: var(--accent); box-shadow: 0 2px 6px rgba(26, 115, 232, 0.4); }
+.play-btn:hover { box-shadow: 0 3px 10px rgba(26, 115, 232, 0.55); }
+.period-label { font-family: "Inter", system-ui, sans-serif; color: var(--text); font-weight: 600; }
+.period-caption:hover { color: var(--text); }
+.maplibregl-ctrl-group { background: #fff !important; box-shadow: 0 2px 6px rgba(60, 64, 67, 0.3) !important; }
+.maplibregl-ctrl-group button span { filter: none; }
+.maplibregl-ctrl-attrib { color: var(--text-muted); }
+.gm-label { color: var(--text); border-color: var(--border); }
+.guide-marker:hover .gm-label, .guide-marker:focus-visible .gm-label { background: var(--accent); color: #fff; }
+.guide-cta { color: #fff; }
+@media (max-width: 768px) {
+  .site-header { background: none; border: none; }
+  #search { background: #fff; border-color: transparent; box-shadow: 0 2px 6px rgba(60, 64, 67, 0.35); }
+  #browse-btn { background: #fff; box-shadow: 0 2px 6px rgba(60, 64, 67, 0.35); }
+  .lrow { background: #fff; border-color: transparent; box-shadow: 0 1px 4px rgba(60, 64, 67, 0.35); }
+  .layer-panel { background: none; }
+  .timeline { box-shadow: 0 -2px 10px rgba(60, 64, 67, 0.3); }
+  .timeline::before { background: #dadce0; }
+}
+
+/* 3D toggle: labelled, Google-Maps-style, so it reads as a view switch. */
+.terrain-btn { width: auto; height: 40px; padding: 0 12px 0 10px; gap: 5px; grid-auto-flow: column; border-radius: 20px; }
+.terrain-btn .t3d { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.02em; }
+.terrain-btn[aria-pressed="true"] { background: #e8f0fe; }
+
+/* ---------- Alternative themes (?theme=parchment | temple | monsoon) ----------
+   Default is the Google-Maps light look above. */
+
+/* Heritage Parchment: an antique atlas, sepia paper and terracotta ink. */
+html[data-theme="parchment"] {
+  --bg: #f3e9d2; --bg-raised: #f8f0dc; --bg-overlay: rgba(248, 240, 220, 0.96);
+  --text: #3b2a1a; --text-muted: #7a6248; --border: #d6c3a0; --accent: #a4471f;
+}
+html[data-theme="parchment"] body, html[data-theme="parchment"] #map { background: #e9dcbd; }
+html[data-theme="parchment"] .site-header, html[data-theme="parchment"] .timeline { background: #f3e9d2; }
+html[data-theme="parchment"] .timeline { border-top: 3px double #b89a68; }
+html[data-theme="parchment"] :is(#search, #browse-btn, .k-pill, .terrain-btn, .records-btn) {
+  background: #f8f0dc; border: 1px solid #cdb68c; box-shadow: 0 2px 0 #cdb68c;
+}
+@media (min-width: 769px) {
+  html[data-theme="parchment"] .layer-panel { background: #f8f0dc; border: 1px solid #cdb68c; }
+  html[data-theme="parchment"] .layer-panel .lrow { background: none; border: none; box-shadow: none; }
+  html[data-theme="temple"] .layer-panel { background: rgba(29, 20, 56, 0.8); border: 1px solid rgba(232, 180, 80, 0.4); }
+  html[data-theme="monsoon"] .layer-panel { background: rgba(255, 255, 255, 0.75); border: 1px solid #fff; }
+}
+.search-icon { z-index: 1; }
+html[data-theme="parchment"] #search { font-family: "Fraunces", Georgia, serif; font-style: italic; }
+html[data-theme="parchment"] :is(.lrow, .k-pill, .brand h1) { font-family: "Fraunces", Georgia, serif; }
+html[data-theme="parchment"] .period-label { font-family: "Fraunces", Georgia, serif; color: var(--accent); font-size: 1.3rem; }
+html[data-theme="parchment"] .play-btn { background: var(--accent); box-shadow: 0 2px 0 #6e2c10; }
+html[data-theme="parchment"] .timeline::before { background: #b89a68; }
+
+/* Temple Night: deep indigo sky, gold-lit glass, like a lamp-lit gopuram. */
+html[data-theme="temple"] {
+  --bg: #120c24; --bg-raised: #1d1438; --bg-overlay: rgba(29, 20, 56, 0.82);
+  --text: #f6eedd; --text-muted: #b9a9d6; --border: rgba(232, 180, 80, 0.35); --accent: #e8b450;
+  color-scheme: dark;
+}
+html[data-theme="temple"] body, html[data-theme="temple"] #map { background: #0d0820; }
+html[data-theme="temple"] .site-header { background: rgba(18, 12, 36, 0.9); border-bottom-color: var(--border); }
+html[data-theme="temple"] .timeline { background: linear-gradient(180deg, #1d1438, #120c24); border-top: 1px solid rgba(232, 180, 80, 0.45); }
+html[data-theme="temple"] :is(#search, #browse-btn, .k-pill, .terrain-btn, .records-btn, .maplibregl-ctrl-group) {
+  background: rgba(29, 20, 56, 0.8) !important; color: var(--text); border: 1px solid rgba(232, 180, 80, 0.4);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 0 18px rgba(232, 180, 80, 0.16) !important;
+}
+html[data-theme="temple"] .maplibregl-ctrl-group button span { filter: invert(0.9); }
+html[data-theme="temple"] .period-label { font-family: "Fraunces", Georgia, serif; color: var(--accent); font-size: 1.3rem; }
+html[data-theme="temple"] .play-btn { color: #1a1200; background: linear-gradient(135deg, #ffd98a, #e8b450); box-shadow: 0 0 20px rgba(232, 180, 80, 0.6); }
+html[data-theme="temple"] .records-btn { color: var(--accent); }
+html[data-theme="temple"] .gm-label { color: var(--text); }
+html[data-theme="temple"] .timeline::before { background: rgba(232, 180, 80, 0.6); }
+
+/* Monsoon Glass: fresh teal, frosted floating panels, a detached timeline card. */
+html[data-theme="monsoon"] {
+  --bg: #eef6f3; --bg-raised: #ffffff; --bg-overlay: rgba(255, 255, 255, 0.72);
+  --text: #0f2e2a; --text-muted: #4d6f69; --border: rgba(15, 46, 42, 0.12); --accent: #0f8b74;
+}
+html[data-theme="monsoon"] body, html[data-theme="monsoon"] #map { background: #d9ece6; }
+html[data-theme="monsoon"] .site-header { background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(16px); }
+html[data-theme="monsoon"] .timeline {
+  background: rgba(255, 255, 255, 0.78); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  margin: 0 10px 10px; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px rgba(15, 46, 42, 0.18);
+}
+html[data-theme="monsoon"] :is(#search, #browse-btn, .terrain-btn, .records-btn, .k-pill, .maplibregl-ctrl-group) {
+  background: rgba(255, 255, 255, 0.75) !important; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.9); box-shadow: 0 6px 20px rgba(15, 46, 42, 0.15) !important;
+}
+html[data-theme="monsoon"] .lrow[aria-pressed="true"] { background: var(--accent); color: #fff; }
+html[data-theme="monsoon"] .lrow[aria-pressed="true"] .dot { border-color: #fff; }
+html[data-theme="monsoon"] .period-label { font-weight: 700; }
+html[data-theme="monsoon"] .play-btn { background: linear-gradient(135deg, #19b394, #0f6e5d); box-shadow: 0 6px 16px rgba(15, 139, 116, 0.45); }
+@media (max-width: 768px) {
+  html[data-theme="parchment"] .site-header, html[data-theme="temple"] .site-header, html[data-theme="monsoon"] .site-header { background: none; border: none; backdrop-filter: none; }
+  html[data-theme] .layer-panel { background: none !important; border: none; box-shadow: none !important; backdrop-filter: none; }
+  html[data-theme="monsoon"] .lrow { background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(14px); border: none; box-shadow: 0 4px 14px rgba(15, 46, 42, 0.12); }
+  html[data-theme="monsoon"] .lrow[aria-pressed="true"] { background: var(--accent); }
+  html[data-theme="parchment"] .lrow { background: #f8f0dc; border: 1px solid #cdb68c; box-shadow: 0 2px 0 #cdb68c; }
+  html[data-theme="temple"] .lrow { background: rgba(29, 20, 56, 0.85); color: var(--text); border: 1px solid rgba(232, 180, 80, 0.4); }
 }
